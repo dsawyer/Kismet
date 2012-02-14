@@ -45,6 +45,12 @@ namespace KismetDataTypes
             animationDictionary.Add(newAnimation.Name, newAnimation);
             
         }
+
+        /// <summary>
+        /// Current animation of sprite
+        /// </summary>
+        float scale;
+        public float Scale { get { return scale; } set { scale = value; } }
         
         /// <summary>
         /// Sets the current animation to be from the dictionary based on name parameter
@@ -56,8 +62,8 @@ namespace KismetDataTypes
             this.TimePerFrame = this.CurrentAnimation.TimePerFrame; 
             CurrentFrame = 0;
             int index = CurrentFrame * 4;
-            BoundingBox = new Rectangle(CurrentAnimation.CollisionBounds[index], CurrentAnimation.CollisionBounds[index + 1], CurrentAnimation.CollisionBounds[index + 2], CurrentAnimation.CollisionBounds[index + 3]);
-
+            //BoundingBox = new Rectangle(CurrentAnimation.CollisionBounds[index], CurrentAnimation.CollisionBounds[index + 1], CurrentAnimation.CollisionBounds[index + 2], CurrentAnimation.CollisionBounds[index + 3]);
+            BoundingBox = new Rectangle((int)((float)CurrentAnimation.CollisionBounds[index] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 1] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 2] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 3] * Scale));
 
         }
 
@@ -66,7 +72,7 @@ namespace KismetDataTypes
         /// </summary> 
         public Vector2 Position
         {
-            get { return new Vector2(position.X - (CurrentAnimation.FrameWidth / 2), position.Y - (CurrentAnimation.FrameHeight) + (CurrentAnimation.FrameHeight -BoundingBox.Bottom)); }
+            get { return new Vector2((position.X - (CurrentAnimation.FrameWidth / 2)), position.Y - (CurrentAnimation.FrameHeight) + (CurrentAnimation.FrameHeight - BoundingBox.Bottom)); }
             set { position = value; }
         }
         Vector2 position;
@@ -168,19 +174,19 @@ namespace KismetDataTypes
 
             }//End while loop
             int index = CurrentFrame*4;
-         
-            BoundingBox = new Rectangle(CurrentAnimation.CollisionBounds[index], CurrentAnimation.CollisionBounds[index + 1], CurrentAnimation.CollisionBounds[index + 2], CurrentAnimation.CollisionBounds[index + 3]);
+            BoundingBox = new Rectangle((int)((float)CurrentAnimation.CollisionBounds[index] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 1] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 2] * Scale), (int)((float)CurrentAnimation.CollisionBounds[index + 3] * Scale));
+            //BoundingBox = new Rectangle(CurrentAnimation.CollisionBounds[index], CurrentAnimation.CollisionBounds[index + 1], CurrentAnimation.CollisionBounds[index + 2], CurrentAnimation.CollisionBounds[index + 3]);
             // Calculate the source rectangle of the current frame.
             Rectangle source = new Rectangle(CurrentFrame * this.CurrentAnimation.FrameWidth, 0, this.CurrentAnimation.FrameWidth, this.CurrentAnimation.FrameHeight);
     
             // Draw the current frame.
-            spriteBatch.Draw(this.Content.Load<Texture2D>(this.CurrentAnimation.FilePath), Position, source, Color.White, 0.0f, this.Origin, 1.0f, this.SpriteEffect, 0.0f);
+            spriteBatch.Draw(this.Content.Load<Texture2D>(this.CurrentAnimation.FilePath), Position, source, Color.White, 0.0f, this.Origin, Scale, this.SpriteEffect, 0.0f);
 
             if (GV.ShowBoxes)
             {
-                Rectangle positionBox = new Rectangle((int)Position.X, (int)Position.Y, CurrentAnimation.FrameWidth, CurrentAnimation.FrameHeight);
-                BoundingBox boundBox = new BoundingBox();
-                boundBox.Draw(spriteBatch, positionBox, Color.Yellow);
+                //Rectangle positionBox = new Rectangle((int)Position.X, (int)Position.Y, CurrentAnimation.FrameWidth, CurrentAnimation.FrameHeight);
+                //BoundingBox boundBox = new BoundingBox();
+                //boundBox.Draw(spriteBatch, positionBox, Color.Yellow);
          
                 
             }

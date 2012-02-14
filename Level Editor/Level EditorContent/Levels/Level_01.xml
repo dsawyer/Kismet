@@ -5,9 +5,6 @@
     <Width>11520</Width>
     <Height>736</Height>
     <PlayerStartingPosition>50 450</PlayerStartingPosition>
-    <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
-    <BackgroundWidth>640</BackgroundWidth>
-    <BackgroundHeight>640</BackgroundHeight>
     <GroundLayerTexture>Tiles</GroundLayerTexture>
     <GroundLayerValues>
       50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
@@ -69,7 +66,7 @@
     <NumWarps>2</NumWarps>
     <NumSpawners>2</NumSpawners>
     <NumTriggers>4</NumTriggers>
-    <NumLights>1</NumLights>
+    <NumLights>0</NumLights>
     <Warps>
       <Item>
         <Name>Warp1</Name>
@@ -78,7 +75,7 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
         <DestinationLevel>Level01_A</DestinationLevel>
-        <TargetPosition>5200 300</TargetPosition>
+        <TargetPosition>5100 100</TargetPosition>
       </Item>
       <Item>
         <Name>Warp2</Name>
@@ -87,7 +84,7 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
         <DestinationLevel>Level01_A</DestinationLevel>
-        <TargetPosition>200 600</TargetPosition>
+        <TargetPosition>200 400</TargetPosition>
       </Item>
     </Warps>
     <Spawners>
@@ -152,17 +149,6 @@
         <Target>Warp2</Target>
       </Item>
     </Triggers>
-    <Lights>
-      <Item>
-        <Name>Light1</Name>
-        <Position>100 500</Position>
-        <BoundingBox>100 500 32 32</BoundingBox>
-        <ImageName>Tiles</ImageName>
-        <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>116 516</Centre>
-        <Radius>10</Radius>
-        <Brightness>1</Brightness>
-      </Item>
-    </Lights>
+    <Lights></Lights>
   </Asset>
 </XnaContent>

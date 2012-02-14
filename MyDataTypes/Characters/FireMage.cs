@@ -21,7 +21,7 @@ namespace KismetDataTypes
         {
 
             Sprite = new Sprite(p_Content, p_XMLFile);
-
+            Sprite.Scale = 1.0f;
             State = new EnemyIdleState(this);
             Direction = GV.LEFT;
             Velocity = new Vector2(0, 0);

@@ -32,6 +32,8 @@ namespace KismetDataTypes
             Player = player;
             Player.Sprite.PlayAnimation("idle");
             //Player.Velocity = new Vector2(0, GV.GRAVITY);
+            Player.MaxLightRadius = 0;
+            Player.Rate = 0;
         }
         #endregion
 
@@ -40,28 +42,33 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
-
+            Player.Rate = 0;
+            Player.UpdateRadius();
             if (Player.IsHit)
             {
                 Player.State = new HittingState(this);
 
+            }
+            // if player is attacking
+            else if (keyboardState.IsKeyDown(Keys.S))
+            {
+                Player.State = new Attack1State(this);
             }
             else if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left))
             {
                 Player.State = new WalkingState(this);
             }
            
-            // if player is attacking
-            else if (keyboardState.IsKeyDown(Keys.S))
-            {
-                Player.State = new Attack1State(this);
-            }
+           
             else if (keyboardState.IsKeyDown(Keys.D))
             {
-                Player.State = new MagicAttackState(this);
+                if (Player.CheckInventory(Player.CurrentMagicItem))
+                {
+                    Player.State = new MagicAttackState(this);
+                }
             }
                 //if player is jumping
             else if (keyboardState.IsKeyDown(Keys.A))

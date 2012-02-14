@@ -24,7 +24,7 @@ namespace KismetDataTypes
         private StateMachine stateMachine;
         public Vector2 velocity;
         protected string direction;
-        private string input;
+        private Vector2 jumpVelocity;
         private int health;
         public bool animationReversed = false;
 
@@ -84,6 +84,7 @@ namespace KismetDataTypes
 
         public bool AnimationReversed { get { return animationReversed; } set { animationReversed = value; } }
 
+        public Vector2 JumpVelocity { get { return jumpVelocity; } set { jumpVelocity = value; } }
         
 
         #endregion
@@ -100,7 +101,7 @@ namespace KismetDataTypes
         #region AI Collisions
         //AI collisions
         private bool collisionDetected = false;
-
+        private bool sightDetected = false;
         private bool isOnGround = false;
         private bool wallDetected = false;
         private bool isHit = false; 
@@ -116,6 +117,17 @@ namespace KismetDataTypes
                 return newCollision;
             }
             set { collisionDetected = value; }
+        }
+
+        public bool SightDetected
+        {
+            get
+            {
+                bool newCollision = sightDetected;
+                sightDetected = false;
+                return newCollision;
+            }
+            set { sightDetected = value; }
         }
 
         /// <summary>
@@ -200,6 +212,14 @@ namespace KismetDataTypes
 
         }
 
+
+        //float sightRangee;
+        /// <summary>
+        /// gets and sets the range the enemy can view for a collision
+        /// </summary>
+       // public int SightRangee { get { return sightRangee; } set { sightRangee = value; } }
+
+
         #endregion
 
         #region Methods
@@ -224,18 +244,19 @@ namespace KismetDataTypes
         /// Handles input, and animates the player sprite.
         /// </summary>
         /// <param name="p_GameTime"></param>
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             
             Velocity = new Vector2(Velocity.X, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
+            state.Update(gameTime);
             Velocity = CollisionManager.ResolveCollisions(this,nextPosition,Velocity, MagicItemManager.GetList());
+            //state.Update(gameTime);
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
+           // state.Update(gameTime);
 
-            state.Update();
-
-
+            Console.WriteLine("" + Velocity.X + " " +  Velocity.Y);
             
         }
         /// <summary>
@@ -252,6 +273,11 @@ namespace KismetDataTypes
                 BoundingBox boundBox = new BoundingBox();
                 boundBox.Draw(spriteBatch, Bounds, Color.Green);
                 boundBox.Draw(spriteBatch, SightRange, Color.Red);
+
+
+                Circle boundcircle = new Circle(new Vector2 (Position.X, Position.Y - (((float)Sprite.BoundingBox.Bottom - (float)Sprite.BoundingBox.Top))/2), 100);
+                boundcircle.Draw(spriteBatch, Color.Green);
+     
             }
         }
 

@@ -14,6 +14,8 @@ namespace KismetDataTypes
 {
     class PursueState : EnemyState
     {
+        private float time = 0;
+        int randomNumber;
         //private float deviation;
         #region Constructors
         /// <summary>
@@ -32,7 +34,9 @@ namespace KismetDataTypes
         {
             Enemy = enemy;
             Enemy.Range = 50;
-
+            Random random = new Random();
+            randomNumber = random.Next(3, 10);
+           
 
            
         }
@@ -43,12 +47,13 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
-            if (Enemy.Direction == GV.LEFT)
-                Enemy.Velocity = new Vector2(-5, Enemy.Velocity.Y);
+            // Process passing time.
+             if (Enemy.Direction == GV.LEFT)
+                Enemy.Velocity = new Vector2(-randomNumber, Enemy.Velocity.Y);
             else if (Enemy.Direction == GV.RIGHT)
-                Enemy.Velocity = new Vector2(5, Enemy.Velocity.Y);
+                Enemy.Velocity = new Vector2(randomNumber, Enemy.Velocity.Y);
 
             //CollisionManager.ResolveCollisions(Enemy);
             if (Enemy.IsHit)
@@ -61,7 +66,7 @@ namespace KismetDataTypes
                 Enemy.StateMachine.UpdateState("collision");
 
             }
-            if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
+            else if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
             {
            
                 Enemy.StateMachine.UpdateState("noCollision");

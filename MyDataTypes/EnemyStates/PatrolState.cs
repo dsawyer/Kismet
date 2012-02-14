@@ -14,7 +14,7 @@ namespace KismetDataTypes
 {
     class PatrolState : EnemyState
     {
-       
+        private float time;
         //private float deviation;
         #region Constructors
         /// <summary>
@@ -32,8 +32,8 @@ namespace KismetDataTypes
         public PatrolState(Enemy enemy)
         {
             Enemy = enemy;
-            Enemy.Range = 500;
-            
+            //Enemy.Range = 500;
+            time = 0.0f;
             Enemy.Sprite.PlayAnimation("walking");
 
 
@@ -45,24 +45,37 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
+            // Process passing time.
+            time += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            if (Enemy.Direction == GV.LEFT)
-                Enemy.Velocity = new Vector2(-2, Enemy.Velocity.Y);
-            else if (Enemy.Direction == GV.RIGHT)
-                Enemy.Velocity = new Vector2(2, Enemy.Velocity.Y);
-
-            //CollisionManager.ResolveCollisions(Enemy);
-            if (Enemy.IsHit)
+            if (time <= 5.0f)
             {
-                Enemy.StateMachine.UpdateState("isHit");
+                if (Enemy.Direction == GV.LEFT)
+                    Enemy.Velocity = new Vector2(-2, Enemy.Velocity.Y);
+                else if (Enemy.Direction == GV.RIGHT)
+                    Enemy.Velocity = new Vector2(2, Enemy.Velocity.Y);
 
+                //CollisionManager.ResolveCollisions(Enemy);
+                if (Enemy.IsHit)
+                {
+                    Enemy.StateMachine.UpdateState("isHit");
+
+                }
+                else if (Enemy.SightDetected)
+                {
+                    if (Enemy.JumpVelocity.Y < -32)
+                        Enemy.StateMachine.UpdateState("jump");
+                    else
+                        Enemy.StateMachine.UpdateState("insight");
+
+                }
             }
-            else if (Enemy.CollisionDetected)
+            else
             {
-                Enemy.StateMachine.UpdateState("collision");
-
+                time = 0.0f;
+                Enemy.ToggleDirections();
             }
 
          }

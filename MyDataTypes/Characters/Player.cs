@@ -194,6 +194,53 @@ namespace KismetDataTypes
 
         }
 
+        /// <summary>
+        /// Gets or Sets for players visability circle bases on this radius.
+        /// </summary>
+        public float LightRadius {
+            get {
+                if (lightRadius <= 0)
+                    lightRadius = 0;
+                
+                    
+                return lightRadius;
+            
+            } 
+            set {
+                lightRadius = value;
+            }
+        }
+        private float lightRadius = 0;
+
+        public void UpdateRadius()
+        {
+            if ((lightRadius + Rate) < MaxLightRadius)
+            {
+                lightRadius += Rate;
+            }
+            else if (lightRadius < MaxLightRadius && lightRadius + Rate > MaxLightRadius)
+                lightRadius += MaxLightRadius - lightRadius;
+
+            else 
+                lightRadius--;
+
+        }
+
+        /// <summary>
+        /// Gets or Sets for player velocity.
+        /// </summary>
+        public float Rate
+        {
+            get { return rate; }
+            set { rate = value; }
+        }
+        private float rate;
+        /// <summary>
+        /// Gets or Sets for players visability circle bases on this radius.
+        /// </summary>
+        public float MaxLightRadius { get { return maxRadius; } set { maxRadius = value; } }
+        private float maxRadius;
+
         public void ToggleMagicItems()
         {
             KeyboardState keyboardState = Keyboard.GetState();
@@ -237,6 +284,8 @@ namespace KismetDataTypes
 
         }
 
+
+
         public void DirectionCheck()
         {
             if (this.AnalogState > 0.0 && Direction == GV.LEFT )
@@ -271,11 +320,133 @@ namespace KismetDataTypes
                         return 0.0f;
                     }
             }
- 
+        }
+        #endregion
+       
+
+
+        #region Inventory
+
+        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100;
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int FireCount { get { return fireCount; } set { fireCount = value; } }
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int EarthCount { get { return earthCount; } set { earthCount = value; } }
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int WaterCount { get { return waterCount; } set { waterCount = value; } }
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int WindCount { get { return windCount; } set { windCount = value; } }
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int DarkCount { get { return darkCount; } set { darkCount = value; } }
+
+        public void AddToInventory(string type)
+        {
+            if (type == "pickupFire")
+            {
+                  FireCount +=1; 
+            }
+            else if (type == "pickupEarth")
+            {
+                   EarthCount+=1;
+            }
+            else if (type == "pickupWater")
+            {
+                    WaterCount+=1;
+            }
+            else if (type == "pickupWind")
+            {
+                   WindCount +=1;
+            }
+            else if (type == "pickupDark")
+            {
+                    DarkCount +=1;
+            }
         }
 
-        #endregion
+        public bool CheckInventory(string type)
+        {
+            if (CurrentMagicItem == "fire")
+            {
+                if (FireCount > 0)
+                {
+                    FireCount -= 1;
+                    return true;
+                }
+                else
+                {
+                    FireCount = 0;
+                    return false;
+                }
+            }
+            else if (CurrentMagicItem == "earth")
+            {
+                if (EarthCount > 0)
+                {
+                    EarthCount -= 1;
+                    return true;
+                }
+                else
+                {
+                    EarthCount = 0;
+                    return false;
+                }
+            }
+            else if (CurrentMagicItem == "water")
+            {
+                if (WaterCount > 0)
+                {
+                    WaterCount -= 1;
+                    return true;
+                }
+                else
+                {
+                    WaterCount = 0;
+                    return false;
+                }
+            }
+            else if (CurrentMagicItem == "wind")
+            {
+                if (WindCount > 0)
+                {
+                    WindCount -= 1;
+                    return true;
+                }
+                else
+                {
+                    WindCount = 0;
+                    return false;
+                }
+            }
+            else if (CurrentMagicItem == "dark")
+            {
+                if (DarkCount > 0)
+                {
+                    DarkCount -= 1;
+                    return true;
+                }
+                else
+                {
+                    DarkCount = 0;
+                    return false;
+                }
+            }
+            else
+                return false;
+        }
 
+
+
+        #endregion
         /// <summary>
         /// Constructors a new sprite.
         /// </summary>        
@@ -285,7 +456,7 @@ namespace KismetDataTypes
             sprite = new Sprite(GV.ContentManager, p_XMLFile);
             this.state = new IdleState(this);
             this.Direction = GV.RIGHT;
-
+            Sprite.Scale = 1.0f;
             velocity = new Vector2(0,0);
             Position = initialPosition;
 
@@ -320,7 +491,7 @@ namespace KismetDataTypes
         /// Handles input, and animates the player sprite.
         /// </summary>
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             repositionCamera();
             DirectionCheck();
@@ -329,19 +500,16 @@ namespace KismetDataTypes
             Velocity = new Vector2(AnalogState, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
             //localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
-            
-            state.Update();
-            Velocity = CollisionManager.ResolvePlayerStaticCollisions(nextPosition, Velocity, MagicItemManager.GetList());
+            UpdateRadius();
+            state.Update(gameTime);
+            Velocity = CollisionManager.ResolvePlayerStaticCollisions(nextPosition, Velocity, MagicItemManager.GetList(), PickUpItemManager.GetList());
             //IsHit = false;
             //we want to look at the next move.  Adjusts velocity accordingly
             //NextPosition = Position + Velocity;
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
-
-            if (IsHit)
-            {
-               State = new HittingState(this);
-            }
+            
+            
             
 
            
@@ -366,6 +534,10 @@ namespace KismetDataTypes
                 boundBox.Draw(spriteBatch, AttackBounds, Color.Blue);
                 boundBox.Draw(spriteBatch, getBounds(Position+Velocity), Color.Blue);
                 boundBox.Draw(spriteBatch, positionBox, Color.Yellow);
+
+
+                Circle boundcircle = new Circle(new Vector2(Position.X, Position.Y - (((float)Sprite.BoundingBox.Bottom - (float)Sprite.BoundingBox.Top)) / 2), lightRadius);
+                boundcircle.Draw(spriteBatch, Color.Green);
             }
         }
     }

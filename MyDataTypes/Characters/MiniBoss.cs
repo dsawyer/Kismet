@@ -21,12 +21,11 @@ namespace KismetDataTypes
         {
 
             Sprite = new Sprite(p_Content, p_XMLFile);
-
+            Sprite.Scale = 1.0f;
             State = new EnemyIdleState(this);
             AnimationReversed = true;
             Direction = GV.LEFT;
             Velocity = new Vector2(0, 0);
-
             PositionInTile(p_InitialPosition);
             IsAlive = true;
             Health = 100;

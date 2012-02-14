@@ -41,7 +41,7 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             if (Enemy.IsHit)
             {

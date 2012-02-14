@@ -41,7 +41,7 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             Enemy.Velocity = new Vector2(0.0f, Enemy.Velocity.Y);
 

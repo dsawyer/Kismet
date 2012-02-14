@@ -31,14 +31,14 @@
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.2</TimePerFrame>
       <CollisionBounds>
-        80 130 40 70
-        80 130 48 70
-        80 130 48 70
-        80 130 48 70
-        80 130 48 70
-        80 130 48 70
-        80 130 48 70
-        80 130 48 70
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
       </CollisionBounds>
     </Item>
 
@@ -53,15 +53,15 @@
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.2</TimePerFrame>
       <CollisionBounds>
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
-        77 130 50 70
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
+        70 110 60 90
       </CollisionBounds>
     </Item>
    
@@ -74,7 +74,7 @@
       <NextAnimation></NextAnimation>
       <FrameWidth>200</FrameWidth>
       <FrameHeight>200</FrameHeight>
-      <TimePerFrame>0.2</TimePerFrame>
+      <TimePerFrame>0.08</TimePerFrame>
       <CollisionBounds>
         78 140 49 60
         80 147 47 53

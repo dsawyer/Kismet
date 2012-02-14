@@ -48,13 +48,14 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             Enemy.Velocity = new Vector2(0.0f, Enemy.Velocity.Y);
 
-            if (enemy.CollisionDetected && enemy.GetType().ToString() != "KismetDataTypes.DemonArcher")
+            if (enemy.CollisionDetected && (enemy.Sprite.CurrentFrame == 2 || enemy.Sprite.CurrentFrame == 6) && Enemy.GetType().ToString() != "KismetDataTypes.DemonArcher")
             {
-                GV.Player.IsHit = true;
+                if (!GV.Player.IsHit)
+                    GV.Player.IsHit = true;
             }
             //CollisionManager.ResolveCollisions(Enemy);
             if (Enemy.IsHit)
@@ -63,7 +64,7 @@ namespace KismetDataTypes
 
             }
 
-            if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
+            else if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
             {
                 if (Enemy.GetType().ToString() == "KismetDataTypes.DemonArcher")
                 {

@@ -35,7 +35,7 @@ namespace KismetDataTypes
             set { sprite = value; }
         }
 
-        public abstract void Update();
+        public abstract void Update(GameTime gameTime);
     }
 
     

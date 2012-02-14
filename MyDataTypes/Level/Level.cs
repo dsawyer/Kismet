@@ -91,49 +91,7 @@ namespace KismetDataTypes
 
         #region Layer Information
 
-        #region Background Layer
-
-        private string backgroundTexture;
-        private int backgroundWidth;
-        private int backgroundHeight;
-
-        /// <summary>
-        /// The name of the image used for the background
-        /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("BackgroundLayerTexture")]
-        public string BackgroundLayerTexture
-        {
-            get { return backgroundTexture; }
-            set { backgroundTexture = value; }
-        }
-
-        /// <summary>
-        /// The width of the image used for the bakground
-        /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("BackgroundWidth")]
-        public int BackgroundWidth
-        {
-            get { return backgroundWidth; }
-            set { backgroundWidth = value; }
-        }
-
-        /// <summary>
-        /// The height of the image used for the background
-        /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("BackgroundHeight")]
-        public int BackgroundHeight
-        {
-            get { return backgroundHeight; }
-            set { backgroundHeight = value; }
-        }
-
-        #endregion
-
         #region Object layer
-
-        private Vector2[] lightPositions;
-        private float[] lightRadii;
-        private float[] lightBrightness;
 
         [System.Xml.Serialization.XmlElementAttribute("NumWarps")]
         // the number of warps in a level
@@ -161,7 +119,7 @@ namespace KismetDataTypes
         /// Contains the objects in the level
         /// </summary>
         //[System.Xml.Serialization.XmlElementAttribute("Objects")]
-        private Dictionary<string, LevelObject> objects = new Dictionary<string, LevelObject>();
+        private Dictionary<string, LevelObject> objects = new Dictionary<string,LevelObject>();
         /// <summary>
         /// Get an object out of the level
         /// </summary>
@@ -390,15 +348,6 @@ namespace KismetDataTypes
         /// </summary>
         public void Initialise(ContentManager contentManager)
         {
-            if (!ResourceManager.Instance.ContainsTexture(BackgroundLayerTexture))
-            {
-                ResourceManager.Instance.Texture(BackgroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", BackgroundLayerTexture)));
-            }
-            // Initialise the surGroundlayer
-            if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
-            {
-                ResourceManager.Instance.Texture(SurGroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurGroundLayerTexture)));
-            }
             // Initialise the ground layer
             if (!ResourceManager.Instance.ContainsTexture(GroundLayerTexture))
             {
@@ -442,20 +391,15 @@ namespace KismetDataTypes
                 TDManager.TriggerboxList.Add(Triggers[i]);
             }
 
-            // Initialise the arrays that hold the information
-            // for calculating the amount of light
-            lightPositions = new Vector2[NumLights];
-            lightRadii = new float[NumLights];
-            lightBrightness = new float[NumLights];
+            // Testing values and printing them to the console
 
-            // Load up the values used for calculating the amount of light
-            // in the shaders
-            for (int i = 0; i < NumLights; i += 1)
-            {
-                lightPositions[i] = Lights[i].Position;
-                lightRadii[i] = Lights[i].Radius;
-                lightBrightness[i] = Lights[i].Brightness;
-            }
+            /*Console.WriteLine("Number of Warp Points: " + NumWarps);
+            Console.WriteLine("X: " + Warps[0].Position.X + "\tY: " + Warps[0].Position.Y);
+            Console.WriteLine("Width: " + Warps[0].BoundingBox.Width + "\tHeight: " + Warps[0].BoundingBox.Height);
+            Console.WriteLine("Image: " + Warps[0].ImageName);
+            Console.WriteLine("ImageX: " + Warps[0].ImageBounds.X + "\tImageY: " + Warps[0].ImageBounds.Y);
+            Console.WriteLine("ImageWidth: " + Warps[0].ImageBounds.Width + "\tImageHeight: " + Warps[0].ImageBounds.Height);
+            */
         }
 
         /// <summary>
@@ -463,27 +407,15 @@ namespace KismetDataTypes
         /// </summary>
         public void Draw(SpriteBatch spriteBatch)
         {
-            //if (!GV.EDITING)
-            { DrawBackground(spriteBatch); }
             groundLayer.Draw(spriteBatch);
             //surGroundLayer.Draw(spriteBatch);
             if (GV.EDITING)
             { DrawObjects(spriteBatch); }
             //foregroundLayer.Draw(spriteBatch);
-
-        }
-
-        // Draws the background image on the level
-        private void DrawBackground(SpriteBatch spriteBatch)
-        {
-            Rectangle destRect = new Rectangle((int)Camera.Position.X, (int)Camera.Position.Y, Camera.ViewPortWidth, Camera.ViewPortHeight);
-            Rectangle sourceRect = new Rectangle(0, 0, BackgroundWidth, BackgroundHeight);
-
-            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTexture), destRect, sourceRect, Color.White);
         }
 
         // Draw the warps in the level (used in the editor and for testing)
-        private void DrawWarps(SpriteBatch spriteBatch)
+        public void DrawWarps(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < NumWarps; i += 1)
             {
@@ -492,7 +424,7 @@ namespace KismetDataTypes
         }
 
         // Draws the spawners in the level (used for the editor and testing)
-        private void DrawSpawners(SpriteBatch spriteBatch)
+        public void DrawSpawners(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < NumSpawners; i += 1)
             {
@@ -501,27 +433,24 @@ namespace KismetDataTypes
         }
 
         // Draws the trigger boxes in the level (used in the editor and for testing)
-        private void DrawTriggerBoxes(SpriteBatch spriteBatch)
+        public void DrawTriggerBoxes(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < NumTriggers; i += 1)
             {
-                Triggers[i].DrawTriggerBox(spriteBatch);
+                Triggers[i].Draw(spriteBatch);
             }
         }
 
         // Draws the lights in the level (used in the editor and for testing)
-        private void DrawLights(SpriteBatch spriteBatch)
+        public void DrawLights(SpriteBatch spriteBatch)
         {
-            for (int i = 0; i < NumLights; i += 1)
-            {
-                Lights[i].Draw(spriteBatch);
-            }
+            // Empty for now
         }
 
         /// <summary>
         /// Draws the objects in the level
         /// </summary>
-        private void DrawObjects(SpriteBatch spriteBatch)
+        public void DrawObjects(SpriteBatch spriteBatch)
         {
             // Draw in the warp points
             DrawWarps(spriteBatch);
@@ -533,22 +462,38 @@ namespace KismetDataTypes
             DrawTriggerBoxes(spriteBatch);
 
             // And finally the light sources
-            DrawLights(spriteBatch);
-        }
+            //DrawLights(spriteBatch);
 
-        public Vector2[] GetLightPositions()
-        {
-            return lightPositions;
-        }
+            /*if (objects.Count > 0)
+            {
+                // Draw all the warps in the level
+                for (int i = 0; i < NumWarps; i += 1)
+                {
+                    if (objects.ContainsKey("Warp" + i))
+                    {
+                        objects["Warp" + i].Draw(spriteBatch);
+                    }
+                }
 
-        public float[] GetLightRadii()
-        {
-            return lightRadii;
-        }
+                // Have to figure out how to move the spawners around,
+                // to try and save on time...
+                for (int i = 0; i < NumSpawners; i += 1)
+                {
+                    if (objects.ContainsKey("Spawner" + i))
+                    {
+                        objects["Spawner" + i].Draw(spriteBatch);
+                    }
+                }
 
-        public float[] GetLightBrightness()
-        {
-            return lightBrightness;
+                // Draw all the light sources
+                for (int i = 0; i < NumLights; i += 1)
+                {
+                    if (objects.ContainsKey("Light" + i))
+                    {
+                        objects["Light" + i].Draw(spriteBatch);
+                    }
+                }
+            }*/
         }
 
         #endregion

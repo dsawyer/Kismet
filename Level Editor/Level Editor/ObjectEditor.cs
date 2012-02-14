@@ -228,7 +228,6 @@ namespace LevelEditor
             }
             else if (game.CurrentCodeValue == "Trigger Box")
             {
-                Console.WriteLine("Adding a Trigger Box");
                 TriggerBox trigger = new TriggerBox(triggerBoxTarget.Text, triggerBoxTarget.Text, game.currentObject.BoundingBox);
                 trigger.Name = game.currentObject.Name;
                 GV.Level.AddTriggerBox(trigger);

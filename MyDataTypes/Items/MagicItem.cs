@@ -31,7 +31,7 @@ namespace KismetDataTypes
             Enemy = enemy;
             Owner = owner;
             sprite = new Sprite(GV.ContentManager, filePath);
-            
+            Sprite.Scale = 1.0f;
             if (Owner != "player")
             {
                 if (p_ItemType == "arrow")
@@ -242,7 +242,7 @@ namespace KismetDataTypes
         {
             Velocity = new Vector2(Velocity.X, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
-            state.Update();
+            state.Update(gameTime);
 
 
             Velocity = CollisionManager.ResolveMagicStaticCollisions(this, nextPosition, Velocity, MagicItemManager.GetList());
@@ -250,10 +250,10 @@ namespace KismetDataTypes
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
 
-            if (IsCollision)
-            {
-                Active = false;
-            } 
+            //if (IsCollision)
+            //{
+            //    Active = false;
+            //} 
         }
 
 

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>pickupFire</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>19</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupFire</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>pickupEarth</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>19</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupEarth</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>pickupWater</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>19</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupWater</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>pickupWind</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>19</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupWind</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>pickupHeal</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupHeal</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+      </CollisionBounds>
+  </Item>
+
+    <Item>
+      <Name>pickupDark</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanPickupDark</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+        48 48 96 96
+      </CollisionBounds>
+    </Item>
+ </Asset>
+</XnaContent>
+

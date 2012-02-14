@@ -28,7 +28,7 @@ namespace KismetDataTypes
             this.Player.Sprite.PlayAnimation("jumpingAttack");
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             Player.Velocity = new Vector2(Player.AnalogState, Player.Velocity.Y);
             if (Player.IsOnGround)

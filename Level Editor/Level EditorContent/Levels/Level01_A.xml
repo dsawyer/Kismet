@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="KismetDataTypes.Level">
   <NumWarps>2</NumWarps>
-  <NumSpawners>2</NumSpawners>
-  <NumTriggers>4</NumTriggers>
-  <NumLights>1</NumLights>
+  <NumSpawners>3</NumSpawners>
+  <NumTriggers>5</NumTriggers>
+  <NumLights>0</NumLights>
   <Warps>
     <Name xmlns="KismetDataTypes.LevelObject">Warp1</Name>
     <Position xmlns="KismetDataTypes.LevelObject">
@@ -33,8 +33,8 @@
     </ImageBounds>
     <DestinationLevel>Level01_A</DestinationLevel>
     <TargetPosition>
-      <X>5200</X>
-      <Y>300</Y>
+      <X>5100</X>
+      <Y>100</Y>
     </TargetPosition>
   </Warps>
   <Warps>
@@ -67,7 +67,7 @@
     <DestinationLevel>Level01_A</DestinationLevel>
     <TargetPosition>
       <X>200</X>
-      <Y>600</Y>
+      <Y>400</Y>
     </TargetPosition>
   </Warps>
   <Spawners>
@@ -129,6 +129,35 @@
     </ImageBounds>
     <Type>goblin</Type>
     <PointID>goblin1</PointID>
+  </Spawners>
+  <Spawners>
+    <Name xmlns="KismetDataTypes.LevelObject">pickupFire1</Name>
+    <Position xmlns="KismetDataTypes.LevelObject">
+      <X>500</X>
+      <Y>490</Y>
+    </Position>
+    <BoundingBox xmlns="KismetDataTypes.LevelObject">
+      <X>0</X>
+      <Y>0</Y>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+    </BoundingBox>
+    <ImageBounds xmlns="KismetDataTypes.LevelObject">
+      <X>0</X>
+      <Y>0</Y>
+      <Width>0</Width>
+      <Height>0</Height>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+    </ImageBounds>
+    <Type>Goblin</Type>
+    <PointID>pickupFire1</PointID>
   </Spawners>
   <Triggers>
     <Name xmlns="KismetDataTypes.LevelObject">Trigger1</Name>
@@ -290,40 +319,45 @@
     </Triggerbox>
     <Target>Warp2</Target>
   </Triggers>
-  <Lights>
-    <Name xmlns="KismetDataTypes.LevelObject">Light1</Name>
+  <Triggers>
+    <Name xmlns="KismetDataTypes.LevelObject">pickupFire1</Name>
     <Position xmlns="KismetDataTypes.LevelObject">
-      <X>100</X>
-      <Y>500</Y>
+      <X>0</X>
+      <Y>0</Y>
     </Position>
     <BoundingBox xmlns="KismetDataTypes.LevelObject">
-      <X>100</X>
-      <Y>500</Y>
-      <Width>32</Width>
-      <Height>32</Height>
+      <X>0</X>
+      <Y>0</Y>
+      <Width>0</Width>
+      <Height>0</Height>
       <Location>
-        <X>100</X>
-        <Y>500</Y>
+        <X>0</X>
+        <Y>0</Y>
       </Location>
     </BoundingBox>
-    <ImageName xmlns="KismetDataTypes.LevelObject">Tiles</ImageName>
     <ImageBounds xmlns="KismetDataTypes.LevelObject">
-      <X>160</X>
-      <Y>128</Y>
+      <X>32</X>
+      <Y>160</Y>
       <Width>32</Width>
       <Height>32</Height>
       <Location>
-        <X>160</X>
-        <Y>128</Y>
+        <X>32</X>
+        <Y>160</Y>
       </Location>
     </ImageBounds>
-    <Centre>
-      <X>116</X>
-      <Y>516</Y>
-    </Centre>
-    <Radius>10</Radius>
-    <Brightness>1</Brightness>
-  </Lights>
+    <Type>pickupFire</Type>
+    <Triggerbox>
+      <X>500</X>
+      <Y>490</Y>
+      <Width>100</Width>
+      <Height>100</Height>
+      <Location>
+        <X>500</X>
+        <Y>490</Y>
+      </Location>
+    </Triggerbox>
+    <Target>pickupFire</Target>
+  </Triggers>
   <Name>Level01_A</Name>
   <Width>11520</Width>
   <Height>736</Height>
@@ -331,9 +365,6 @@
     <X>50</X>
     <Y>450</Y>
   </PlayerStartingPosition>
-  <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
-  <BackgroundWidth>640</BackgroundWidth>
-  <BackgroundHeight>640</BackgroundHeight>
   <GroundLayerTexture>Tiles</GroundLayerTexture>
   <GroundLayerValues>
     <int>50</int>

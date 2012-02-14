@@ -19,7 +19,8 @@ namespace Kismet
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Effect shaders;
+        Level level;
+        Player player;
 
         public Kismet()
         {
@@ -58,23 +59,23 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = GV.ContentManager.Load<Level>("Levels/Level_01");
+            level = Content.Load<Level>("Levels/Level_01");
             // New loading method
             //level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
-            GV.Level.Initialise(GV.ContentManager);
+            level.Initialise(Content);
 
-            // Load the shaders in the effect file (.fx) and set everything up
-            shaders = GV.ContentManager.Load<Effect>("LightEffects");
-
+            GV.Level = level;
             GV.SpriteBatch = spriteBatch;
 
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
-            GV.ShowBoxes = false;
+            GV.ShowBoxes = true;
 
-            GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
-            
+            player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
+
+            GV.Player = player;
+
             Camera.WorldRectangle = new Rectangle(0, 0, GV.Level.Width, GV.Level.Height);
             Camera.Position = new Vector2(0, 0);
             Camera.ViewPortWidth = 1280;
@@ -111,9 +112,10 @@ namespace Kismet
             KeyboardState keyboardState = Keyboard.GetState();
             GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
 
-            GV.Player.Update();
-            TDManager.Update();
+            GV.Player.Update(gameTime);
+            TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
+            PickUpItemManager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -126,29 +128,20 @@ namespace Kismet
         {
             GraphicsDevice.Clear(Color.White);
 
-            // Setup the transform matrix that is used in the shader
             Matrix cameraTranslation = Matrix.CreateTranslation(-Camera.Position.X, -Camera.Position.Y, 0.0f);
+            //Camera.Zoom = 1.25f;
             Matrix cameraZoom = Matrix.CreateScale(Camera.Zoom);
             Matrix cameraTransform = cameraTranslation * cameraZoom;
-
-            // Set all the shader's parameters based on the lights in the level
-            shaders.Parameters["lightPositions"].SetValue(GV.Level.GetLightPositions());
-            shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii());
-            shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness());
-            shaders.Parameters["numLights"].SetValue(GV.Level.NumLights);
-
-            //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-            //                  RasterizerState.CullCounterClockwise, null, cameraTransform);
-
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                              RasterizerState.CullCounterClockwise, shaders, cameraTransform);
+                              RasterizerState.CullCounterClockwise, null, cameraTransform);
 
             // Draw the layers and the player
             GV.Level.Draw(spriteBatch);
             NPCManager.Draw(gameTime, spriteBatch);
-            GV.Player.Draw(gameTime, spriteBatch);
+            //GV.Player.Draw(gameTime, spriteBatch);
             MagicItemManager.Draw(gameTime, spriteBatch);
-
+            GV.Player.Draw(gameTime, spriteBatch);
+            PickUpItemManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

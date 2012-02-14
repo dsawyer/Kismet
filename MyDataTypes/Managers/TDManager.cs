@@ -20,9 +20,26 @@ namespace KismetDataTypes
 
         public static void Initialize()
         {
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupFire1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupFire1", new PickUpPoint("pickupFire", "pickupFire1", new Vector2(100, 440)));
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupWater1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupWater1", new PickUpPoint("pickupWater", "pickupWater1", new Vector2(250, 440)));
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupWind1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupWind1", new PickUpPoint("pickupWind", "pickupWind1", new Vector2(450, 440)));
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupEarth1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupEarth1", new PickUpPoint("pickupEarth", "pickupEarth1", new Vector2(650, 440)));
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupHeal1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupHeal1", new PickUpPoint("pickupHeal", "pickupHeal1", new Vector2(850, 440)));
+            TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
+           
+            TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));
+            //TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
+            //DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(6,18)));
             /*
             //TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(400, 300, 200, 100)));
-           TriggerboxList.Add(new TriggerBox("spawn", "goblin1", new Rectangle(250, 440, 500, 300)));
+           
             //TriggerboxList.Add(new TriggerBox("spawn", "miniboss", new Rectangle(250, 440, 500, 300)));
             //DataList.Add("goblin1",new SpawnPoint("goblin","goblin1",new Vector2(500.0f, 440.0f)));
             TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(250, 440, 500, 300)));
@@ -51,6 +68,13 @@ namespace KismetDataTypes
                      TriggerboxList.Remove(p_TriggerBox);
                      DataList.Remove(target);
                     break;
+                case "KismetDataTypes.PickUpPoint":
+                    PickUpPoint newPickUpObject = (PickUpPoint)point;
+                    PickUpItemManager.CreatePickUpItem(newPickUpObject.Type, newPickUpObject.Position);
+                    // Remove the trigger box for a spawn point
+                    TriggerboxList.Remove(p_TriggerBox);
+                    DataList.Remove(target);
+                    break;
                 case "KismetDataTypes.Warp":
                     Warp warp = (Warp)point;
                     if (GV.Level.Name == warp.DestinationLevel)
@@ -72,9 +96,9 @@ namespace KismetDataTypes
         /// <summary>
         /// updates the TDManager to check all the triggerboxes in the list.
         /// </summary>
-        public static void Update()
+        public static void Update(GameTime gameTime)
         {
-            NPCManager.Update();
+            NPCManager.Update(gameTime);
             if (TriggerboxList.Count > 0)
             {
                 for (int i = 0; i < TriggerboxList.Count; i++) // Loop through List with for each item in list

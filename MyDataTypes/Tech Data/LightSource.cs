@@ -67,8 +67,6 @@ namespace KismetDataTypes
             Centre = new Vector2(centreX, centreY);
             Radius = lightRadius;
             Brightness = lightBright;
-            ImageName = "Tiles";
-            ImageBounds = new Rectangle(160, 128, 32, 32);
         }
     }
 }

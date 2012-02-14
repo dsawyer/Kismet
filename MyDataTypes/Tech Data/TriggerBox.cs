@@ -39,20 +39,15 @@ namespace KismetDataTypes
         /// <summary>
         /// Constructors a new sprite.
         /// </summary>        
-        public TriggerBox(string p_Type, string p_Target, Rectangle p_Triggerbox)
+         public TriggerBox(string p_Type, string p_Target, Rectangle p_Triggerbox)
         {   
              Type = p_Type;
              Target = p_Target;
              Triggerbox = p_Triggerbox;
+             ImageBounds = new Rectangle(32, 160, 32, 32);
         }
 
-        public TriggerBox()
-        { }
-
-        public void DrawTriggerBox(SpriteBatch spriteBatch)
-        {
-            BoundingBox boundBox = new BoundingBox();
-            boundBox.Draw(spriteBatch, Triggerbox, Color.BlueViolet);
-        }
+         public TriggerBox()
+         { }
     }
 }

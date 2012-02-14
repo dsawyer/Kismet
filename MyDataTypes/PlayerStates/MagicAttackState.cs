@@ -21,15 +21,13 @@ namespace KismetDataTypes
 
         }
         public MagicAttackState(Player player)
-        {
-
+        {   
             Player = player;
             Player.Sprite.PlayAnimation("magicAttack");
             Player.Velocity = new Vector2(0, 0);
-
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
 
             if (Player.Sprite.CurrentFrame == Player.Sprite.CurrentAnimation.EndFrame)

@@ -34,12 +34,12 @@ namespace KismetDataTypes
 
             if (Enemy.Direction == "left" && Enemy.BackStabber)
             {
-                Enemy.Velocity = new Vector2(2, -10);
+                Enemy.Velocity = new Vector2(-2, -10);
                 Enemy.ToggleDirections();
             }
             else if (Enemy.Direction == "right" && Enemy.BackStabber)
             {
-                Enemy.Velocity = new Vector2(-2, -10);
+                Enemy.Velocity = new Vector2(2, -10);
                 Enemy.ToggleDirections();
             }
             else if (Enemy.Direction == "left" && Enemy.FaceOff)
@@ -48,7 +48,7 @@ namespace KismetDataTypes
             }
             else if (Enemy.Direction == "right" && Enemy.FaceOff)
             {
-                Enemy.Velocity = new Vector2(-2, 10);
+                Enemy.Velocity = new Vector2(-2, -10);
             }
         }
         #endregion
@@ -58,11 +58,12 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             //CollisionManager.ResolveCollisions(Enemy);
             if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
             {
+                Enemy.IsHit = false;
                     Enemy.StateMachine.UpdateState(""); 
             }
         }

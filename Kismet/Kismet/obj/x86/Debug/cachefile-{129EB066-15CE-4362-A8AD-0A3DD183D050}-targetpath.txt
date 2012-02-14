@@ -45,7 +45,13 @@ Content\Sprites\Items\DanMagicWater.xnb
 Content\Sprites\Items\DanMagicWater1.xnb
 Content\Sprites\Items\DanMagicWind.xnb
 Content\Sprites\Items\DanMagicWind1.xnb
-Content\tiles\Mountain.xnb
+Content\Sprites\Items\DanHeal.xnb
+Content\Sprites\Items\DanPickupDark.xnb
+Content\Sprites\Items\DanPickupEarth.xnb
+Content\Sprites\Items\DanPickupFire.xnb
+Content\Sprites\Items\DanPickupHeal.xnb
+Content\Sprites\Items\DanPickupWater.xnb
+Content\Sprites\Items\DanPickupWind.xnb
 Content\Levels\Level_01.xnb
 Content\XML Documents\DanAnimations.xnb
 Content\XML Documents\DanMagicAnimations.xnb
@@ -55,4 +61,4 @@ Content\XML Documents\EnemyMagicAnimations.xnb
 Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\MiniBossAnimations.xnb
 Content\XML Documents\Goblin.xnb
-Content\LightEffects.xnb
+Content\XML Documents\PickUpItemsAnimations.xnb

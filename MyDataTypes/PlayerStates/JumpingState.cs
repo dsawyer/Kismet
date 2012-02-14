@@ -37,6 +37,8 @@ namespace KismetDataTypes
             //Player.Velocity = new Vector2(Player.Velocity.X, -(Math.Abs(Player.AnalogState)) +JUMPVELOCITY);
             Player.Velocity = new Vector2(Player.Velocity.X, JUMPVELOCITY);
             Player.IsOnGround = false;
+            Player.MaxLightRadius = 0;
+            Player.Rate = 0;
         }
         #endregion
 
@@ -45,7 +47,7 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
 
@@ -56,6 +58,9 @@ namespace KismetDataTypes
             }
             if (Player.IsOnGround)
             {
+                Player.MaxLightRadius = 200;
+                Player.Rate = 200;
+                Player.UpdateRadius();
                 if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left))
                     Player.State = new WalkingState(this);
                 else 
@@ -68,9 +73,13 @@ namespace KismetDataTypes
             {
                 Player.State = new JumpingAttackState(this);
             }
-           
+
             else
+            {
+                Player.Rate = 0; 
+                Player.UpdateRadius();
                 Player.Velocity = new Vector2(Player.AnalogState, Player.Velocity.Y);
+            }
           
 
         }

@@ -21,6 +21,7 @@ namespace KismetDataTypes
         {
             switch (type)
             {
+                //player magic spells
                 case "fire":
                 case "earth":
                 case "water":
@@ -29,8 +30,8 @@ namespace KismetDataTypes
                 case "light":
                     magicItemList.Add(new MagicItem("XML Documents/DanMagicAnimations", "player", type, 5, null));
                     break;
-               
 
+                // enemy weapons
                 case "arrow":
                     magicItemList.Add(new MagicItem("XML Documents/EnemyMagicAnimations", "enemy", type, 5, enemy));
                     break;

@@ -14,6 +14,8 @@ namespace KismetDataTypes
 {
     class InUseState : MagicState
     {
+        private float time= 0;
+
         #region Constructors
         /// <summary>
         /// Constructor
@@ -43,21 +45,36 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
-            MagicItem.Velocity = new Vector2(0, MagicItem.Velocity.Y);
-            if (MagicItem.Sprite.CurrentFrame == MagicItem.Sprite.CurrentAnimation.EndFrame)
+            // Process passing time.
+            time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (time < 4.0)
             {
-                if (MagicItem.Owner != "enemy" &&  MagicItem.ItemType != "earth")
+                if (MagicItem.ItemType == "wind")
                 {
-                    MagicItem.Active = false;
-                }
-                else
-                {
-                    MagicItem.Sprite.CurrentFrame = MagicItem.Sprite.CurrentAnimation.EndFrame;
+                    MagicItem.Velocity = new Vector2(GV.Player.Velocity.X,-2);
 
                 }
-            }
+                else
+                    MagicItem.Velocity = new Vector2(0, MagicItem.Velocity.Y);
+
+                if (MagicItem.Sprite.CurrentFrame == MagicItem.Sprite.CurrentAnimation.EndFrame)
+                {
+                    if (MagicItem.Owner != "enemy" && MagicItem.ItemType != "earth")
+                    {
+                        MagicItem.Active = false;
+                    }
+                    else
+                    {
+                        MagicItem.Sprite.CurrentFrame = MagicItem.Sprite.CurrentAnimation.EndFrame;
+
+                    }
+                }
+           }
+            else
+                MagicItem.Active = false;
+
         }
         #endregion
     }

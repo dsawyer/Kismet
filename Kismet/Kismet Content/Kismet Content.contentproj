@@ -360,17 +360,47 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="tiles\Mountain.png">
-      <Name>Mountain</Name>
+    <Compile Include="Sprites\Items\DanHeal.png">
+      <Name>DanHeal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupDark.png">
+      <Name>DanPickupDark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupEarth.png">
+      <Name>DanPickupEarth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupFire.png">
+      <Name>DanPickupFire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupHeal.png">
+      <Name>DanPickupHeal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupWater.png">
+      <Name>DanPickupWater</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Items\DanPickupWind.png">
+      <Name>DanPickupWind</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LightEffects.fx">
-      <Name>LightEffects</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
+    <Compile Include="XML Documents\PickUpItemsAnimations.xml">
+      <Name>PickUpItemsAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

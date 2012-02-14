@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animation\BoundingBox.cs" />
+    <Compile Include="Animation\Circle.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Characters\DemonArcher.cs" />
     <Compile Include="Characters\Enemy.cs" />
@@ -74,6 +75,12 @@
     <Compile Include="EnemyStates\PursueState.cs" />
     <Compile Include="EnemyStates\TeleportState.cs" />
     <Compile Include="Extras\GV.cs" />
+    <Compile Include="Items\PickUpItem.cs" />
+    <Compile Include="Items\PickUpState.cs" />
+    <Compile Include="Managers\PickUpItemManager.cs" />
+    <Compile Include="PickUpStates\ActiveState.cs" />
+    <Compile Include="PickUpStates\InActiveState.cs" />
+    <Compile Include="Tech Data\PickUpPoint.cs" />
     <Compile Include="Tech Data\SpawnPoint.cs" />
     <Compile Include="Tech Data\TriggerBox.cs" />
     <Compile Include="Items\MagicItem.cs" />

@@ -41,7 +41,7 @@ namespace KismetDataTypes
 
         }
 
-        public static void Update()
+        public static void Update(GameTime gameTime)
         {
             if (sceneObjectsList.Count > 0)
             {
@@ -55,7 +55,7 @@ namespace KismetDataTypes
                     }
                     else
                     {
-                        enemy.Update();
+                        enemy.Update(gameTime);
                     }
 
                 }

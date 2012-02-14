@@ -23,6 +23,8 @@ namespace KismetDataTypes
         {
           this.player = state.Player;
           Player.Sprite.PlayAnimation("walking");
+          Player.MaxLightRadius = 150;
+         
         }
         #endregion
 
@@ -31,7 +33,7 @@ namespace KismetDataTypes
         /// Update
        /// </summary>
        /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
 
@@ -55,8 +57,12 @@ namespace KismetDataTypes
             {
                 Player.State = new Attack1State(this);
             }
-           
+            else
+            {
+                Player.Rate = 5;
+                Player.UpdateRadius();
                 Player.Velocity = new Vector2(Player.AnalogState, Player.Velocity.Y);
+            }
 
         }
         #endregion

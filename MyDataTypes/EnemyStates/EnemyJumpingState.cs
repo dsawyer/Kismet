@@ -34,9 +34,15 @@ namespace KismetDataTypes
         {
             Enemy = enemy;
             Enemy.Sprite.PlayAnimation("jumping");
+
+            Enemy.JumpVelocity = new Vector2(0, 0);
             //Player.Velocity = new Vector2(Player.Velocity.X, -(Math.Abs(Player.AnalogState)) +JUMPVELOCITY);
-            Enemy.Velocity = new Vector2(Enemy.Velocity.X, JUMPVELOCITY);
-            //Enemy.IsOnGround = false;
+            if (Enemy.Direction == GV.LEFT)
+                Enemy.Velocity = new Vector2(-5, -20);
+            else if (Enemy.Direction == GV.RIGHT)
+                Enemy.Velocity = new Vector2(5, -20);
+           
+            Enemy.IsOnGround = false;
         }
         #endregion
 
@@ -45,18 +51,27 @@ namespace KismetDataTypes
         /// Update
         /// </summary>
         /// <param name="gameTime"></param>
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
-            KeyboardState keyboardState = Keyboard.GetState();
-
-            //CollisionManager.ResolveEnemyCollisions(enemy, Enemy.EnemyBounds);
-
-            /*if (Enemy.IsOnGround)
+            //if (Enemy.Direction == GV.LEFT)
+               // Enemy.Velocity = new Vector2(, Enemy.Velocity.Y);
+            //else if (Enemy.Direction == GV.RIGHT)
+            //    Enemy.Velocity = new Vector2(0, Enemy.Velocity.Y);
+            //CollisionManager.ResolveCollisions(Enemy);
+            if (Enemy.IsHit)
             {
-                Enemy.State = new PatrolState(this);
+                Enemy.StateMachine.UpdateState("isHit");
 
-            }*/
-           
+            }
+           //CollisionManager.ResolveEnemyCollisions(enemy, Enemy.EnemyBounds);
+            if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
+            {
+                if (Enemy.IsOnGround)
+                {
+                    Enemy.Velocity = new Vector2(0, 0);
+                    Enemy.StateMachine.UpdateState("");
+                }
+            }
 
 
         }

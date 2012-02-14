@@ -21,11 +21,10 @@ namespace KismetDataTypes
         {   
 
             Sprite = new Sprite(p_Content, p_XMLFile);
-
+            Sprite.Scale = 1.0f;
             State = new AwakeState(this);
             Direction = GV.LEFT;
             Velocity = new Vector2(0, 0);
-
             PositionInTile(p_InitialPosition);
             IsAlive = true;
             Health = 100;
@@ -36,9 +35,12 @@ namespace KismetDataTypes
 
             StateMachine.AddState("KismetDataTypes.AwakeState", "", "PatrolState");
 
-            StateMachine.AddState("KismetDataTypes.PatrolState", "collision", "PursueState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "insight", "PursueState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "jump", "EnemyJumpingState");
             StateMachine.AddState("KismetDataTypes.PatrolState", "isHit", "KnockedDownState");
-
+            
+            StateMachine.AddState("KismetDataTypes.EnemyJumpingState", "", "PatrolState");
+            StateMachine.AddState("KismetDataTypes.EnemyJumpingState", "isHit", "KnockedDownState");
 
             StateMachine.AddState("KismetDataTypes.PursueState", "collision", "AttackState");
             StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "PatrolState");

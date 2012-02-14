@@ -7,6 +7,7 @@ Content\XML Documents\DemonArcherAnimations.xnb
 Content\XML Documents\EnemyMagicAnimations.xnb
 Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\Goblin.xnb
+Content\XML Documents\PickUpItemsAnimations.xnb
 Content\Sprites\Dan\DanAttack1.xnb
 Content\Sprites\Dan\DanIdle.xnb
 Content\Sprites\Dan\DanWalking.xnb
@@ -54,4 +55,9 @@ Content\Sprites\Items\DanMagicWind1.xnb
 Content\Sprites\Items\DemonArcherArrow.xnb
 Content\Sprites\Items\FireMageFire.xnb
 Content\Sprites\Items\MiniBossEnergy.xnb
-Content\tiles\Mountain.xnb
+Content\Sprites\Items\DanPickupDark.xnb
+Content\Sprites\Items\DanPickupWind.xnb
+Content\Sprites\Items\DanPickupEarth.xnb
+Content\Sprites\Items\DanPickupFire.xnb
+Content\Sprites\Items\DanPickupHeal.xnb
+Content\Sprites\Items\DanPickupWater.xnb

@@ -131,8 +131,8 @@ namespace LevelEditor
             //ResourceManager.Instance.Texture("Tiles", Content.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", "Tiles")));
             GV.ContentManager = Content;
             TDManager.Initialize();
-            level01 = Level.Load("../../../../Level EditorContent/Levels/Level01_A.xml");
-            //level01 = Content.Load<Level>("Levels/Level_01");
+            //level01 = Level.Load("../../../../Level EditorContent/Levels/Level01_A.xml");
+            level01 = Content.Load<Level>("Levels/Level_01");
             level01.Initialise(Content);
 
             GV.Level = level01;
@@ -157,7 +157,7 @@ namespace LevelEditor
             pictureBox_SizeChanged(null, null);
 
             GV.EDITING = true;
-            followPlayer = true;
+            followPlayer = false;
         }
 
         /// <summary>
@@ -185,9 +185,9 @@ namespace LevelEditor
             }
 
             // Can zoom around
-            if (Keyboard.GetState().IsKeyDown(Keys.I) && Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Camera.Zoom < 1.5f)
+            if (Keyboard.GetState().IsKeyDown(Keys.I) && Camera.Zoom < 1.5f)
             { Camera.Zoom += 0.05f; }
-            if (Keyboard.GetState().IsKeyDown(Keys.K) && Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Camera.Zoom > 0.5f)
+            if (Keyboard.GetState().IsKeyDown(Keys.K) && Camera.Zoom > 0.5f)
             { Camera.Zoom -= 0.05f; }
 
 
@@ -196,8 +196,6 @@ namespace LevelEditor
             // Change so the camera follows the player or goes with the scroll bars
             if (Keyboard.GetState().IsKeyDown(Keys.Q))
             { followPlayer = true; }
-            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.Q))
-            { followPlayer = false; }
 
             // if (followPlayer)
             //{ player1.Update(gameTime); }
@@ -209,11 +207,13 @@ namespace LevelEditor
 
             if (followPlayer)
             {
-                GV.Player.Update();
+                GV.Player.Update(gameTime);
+                hscroll.Value = (int)Camera.Position.X;
+                vscroll.Value = (int)Camera.Position.Y;
             }
-            TDManager.Update();
+            TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
-
+            PickUpItemManager.Update(gameTime);
             MouseState ms = Mouse.GetState();
             
             if ((ms.LeftButton == ButtonState.Pressed) && (Keyboard.GetState().IsKeyDown(Keys.LeftControl)))
@@ -312,6 +312,7 @@ namespace LevelEditor
             NPCManager.Draw(gameTime, spriteBatch);
             GV.Player.Draw(gameTime, spriteBatch);
             MagicItemManager.Draw(gameTime, spriteBatch);
+            PickUpItemManager.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
 

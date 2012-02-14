@@ -24,24 +24,31 @@ namespace KismetDataTypes
  
             Player = player;
             Player.Sprite.PlayAnimation("attack");
-            Player.Velocity = new Vector2(0, 0);
-          
+            Player.Velocity = new Vector2(0, Player.Velocity.Y);
+            Player.MaxLightRadius = 0;
+            Player.Rate = 0;
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
-            
+
+            Player.Velocity = new Vector2(0, Player.Velocity.Y);
             if (Player.Sprite.CurrentFrame == Player.Sprite.CurrentAnimation.EndFrame)
             {
-                KeyboardState keyboardState = Keyboard.GetState();
+                Player.MaxLightRadius = 300;
+                Player.Rate = 300;
+                Player.UpdateRadius();
 
+                KeyboardState keyboardState = Keyboard.GetState();
+                if (Player.IsHit)
+                    Player.State = new HittingState(this);
                 //is there movement not movement on the thumbstick
-                if (Player.IdleCheck())
+                else if (Player.IdleCheck())
                     Player.State = new IdleState(this);
-                else if (keyboardState.IsKeyDown(Keys.S))
-                    Player.State = new Attack1State(this);
-                else if (keyboardState.IsKeyDown(Keys.Left) || keyboardState.IsKeyDown(Keys.Right))
-                    Player.State = new WalkingState(this);
+               // else if (keyboardState.IsKeyDown(Keys.S))
+                //    Player.State = new Attack1State(this);
+                //else if (keyboardState.IsKeyDown(Keys.Left) || keyboardState.IsKeyDown(Keys.Right))
+                  //  Player.State = new WalkingState(this);
             }
 
             //Player.Velocity = new Vector2(0.0f, Player.Velocity.Y + GV.GRAVITY);
