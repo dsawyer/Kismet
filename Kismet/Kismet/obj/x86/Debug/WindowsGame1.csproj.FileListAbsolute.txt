@@ -1,0 +1,8 @@
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\tiles\Icons.xnb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\tiles\Tiles.xnb

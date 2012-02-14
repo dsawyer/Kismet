@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{999363E1-0FFD-49C2-890C-AE48899124E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KismetDataTypes</RootNamespace>
+    <AssemblyName>KismetDataTypes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\BoundingBox.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Characters\DemonArcher.cs" />
+    <Compile Include="Characters\Enemy.cs" />
+    <Compile Include="Characters\EnemyState.cs" />
+    <Compile Include="Characters\FireMage.cs" />
+    <Compile Include="Characters\Goblin.cs" />
+    <Compile Include="Characters\MiniBoss.cs" />
+    <Compile Include="Characters\Player.cs" />
+    <Compile Include="Characters\PlayerState.cs" />
+    <Compile Include="Characters\StateMachine.cs" />
+    <Compile Include="ContentObject.cs" />
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="EnemyStates\AttackState.cs" />
+    <Compile Include="EnemyStates\AwakeState.cs" />
+    <Compile Include="EnemyStates\EnemyIdleState.cs" />
+    <Compile Include="EnemyStates\EnemyJumpingState.cs" />
+    <Compile Include="EnemyStates\KnockedDownState.cs" />
+    <Compile Include="EnemyStates\LittleHitState.cs" />
+    <Compile Include="EnemyStates\PatrolState.cs" />
+    <Compile Include="EnemyStates\PursueState.cs" />
+    <Compile Include="EnemyStates\TeleportState.cs" />
+    <Compile Include="Extras\GV.cs" />
+    <Compile Include="Tech Data\SpawnPoint.cs" />
+    <Compile Include="Tech Data\TriggerBox.cs" />
+    <Compile Include="Items\MagicItem.cs" />
+    <Compile Include="Items\MagicState.cs" />
+    <Compile Include="Tech Data\LevelObject.cs" />
+    <Compile Include="Level\Layer.cs" />
+    <Compile Include="Level\Level.cs" />
+    <Compile Include="Tech Data\LightSource.cs" />
+    <Compile Include="Level\Spawner.cs" />
+    <Compile Include="Tech Data\Warp.cs" />
+    <Compile Include="MagicStates\ArrowState.cs" />
+    <Compile Include="MagicStates\InAirState.cs" />
+    <Compile Include="MagicStates\InUseState.cs" />
+    <Compile Include="Managers\CollisionManager.cs" />
+    <Compile Include="Managers\MagicItemManager.cs" />
+    <Compile Include="Managers\NPCManager.cs" />
+    <Compile Include="Managers\TDManager.cs" />
+    <Compile Include="ObjectXMLSerialiser.cs" />
+    <Compile Include="PlayerStates\Attack1State.cs" />
+    <Compile Include="PlayerStates\HittingState.cs" />
+    <Compile Include="PlayerStates\IdleState.cs" />
+    <Compile Include="PlayerStates\JumpingAttackState.cs" />
+    <Compile Include="PlayerStates\JumpingState.cs" />
+    <Compile Include="PlayerStates\MagicAttackState.cs" />
+    <Compile Include="PlayerStates\WalkingState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Level\TileSet.cs" />
+    <Compile Include="Extras\RectangleExtensions.cs" />
+    <Compile Include="Animation\Sprite.cs" />
+    <Compile Include="ResourceManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

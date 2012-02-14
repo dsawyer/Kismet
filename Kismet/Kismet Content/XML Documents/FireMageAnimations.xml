@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>idle</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageIdle</FilePath>
+      <NextAnimation>idle</NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>attack1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>3</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageAttack1</FilePath>
+      <NextAnimation>attack1</NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>attack2</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>5</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageAttack2</FilePath>
+      <NextAnimation>attack2</NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.07</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        
+      </CollisionBounds>
+    </Item>
+
+
+
+  </Asset>
+</XnaContent>
+

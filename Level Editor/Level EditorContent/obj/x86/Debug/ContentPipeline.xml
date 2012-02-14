@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Levels\Level_01.xml</Source>
+      <Name>Levels\Level_01</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb</Output>
+      <Time>2012-02-03T18:11:35.2959162-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\DanAnimations.xml</Source>
+      <Name>XML Documents\DanAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4461521-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\DanMagicAnimations.xml</Source>
+      <Name>XML Documents\DanMagicAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4481522-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\GoblinAnimations.xml</Source>
+      <Name>XML Documents\GoblinAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4531525-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\MiniBossAnimations.xml</Source>
+      <Name>XML Documents\MiniBossAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4551526-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\DemonArcherAnimations.xml</Source>
+      <Name>XML Documents\DemonArcherAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4491523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\EnemyMagicAnimations.xml</Source>
+      <Name>XML Documents\EnemyMagicAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4501523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\FireMageAnimations.xml</Source>
+      <Name>XML Documents\FireMageAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22.4511524-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\Goblin.xml</Source>
+      <Name>XML Documents\Goblin</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb</Output>
+      <Time>2012-01-31T20:41:22.4521525-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanAttack1.png</Source>
+      <Name>Sprites\Dan\DanAttack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb</Output>
+      <Time>2012-01-31T18:28:38.1999987-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanIdle.png</Source>
+      <Name>Sprites\Dan\DanIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb</Output>
+      <Time>2012-01-31T18:28:39.6020789-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanWalking.png</Source>
+      <Name>Sprites\Dan\DanWalking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb</Output>
+      <Time>2012-01-31T18:28:39.6070792-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\Icons.png</Source>
+      <Name>tiles\Icons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb</Output>
+      <Time>2012-01-05T14:08:23.8791747-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\Tiles.png</Source>
+      <Name>tiles\Tiles</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb</Output>
+      <Time>2012-01-17T23:48:28.1716394-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinAttack.png</Source>
+      <Name>Sprites\Goblin\GoblinAttack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb</Output>
+      <Time>2012-01-31T18:28:40.5041305-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinAwake.png</Source>
+      <Name>Sprites\Goblin\GoblinAwake</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb</Output>
+      <Time>2012-01-31T18:28:40.5051305-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinIdle.png</Source>
+      <Name>Sprites\Goblin\GoblinIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb</Output>
+      <Time>2012-01-31T18:28:40.5061306-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinJumping.png</Source>
+      <Name>Sprites\Goblin\GoblinJumping</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb</Output>
+      <Time>2012-01-31T18:28:40.5071306-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinKnockedDown.png</Source>
+      <Name>Sprites\Goblin\GoblinKnockedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb</Output>
+      <Time>2012-01-31T18:28:40.5091308-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinLittleHit.png</Source>
+      <Name>Sprites\Goblin\GoblinLittleHit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb</Output>
+      <Time>2012-01-31T18:28:40.5101308-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Goblin\GoblinWalking.png</Source>
+      <Name>Sprites\Goblin\GoblinWalking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb</Output>
+      <Time>2012-01-31T18:28:40.5111309-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanHitting.png</Source>
+      <Name>Sprites\Dan\DanHitting</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb</Output>
+      <Time>2012-01-31T18:28:39.6010788-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanJumping.png</Source>
+      <Name>Sprites\Dan\DanJumping</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb</Output>
+      <Time>2012-01-31T18:28:39.604079-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanJumpingAttack.png</Source>
+      <Name>Sprites\Dan\DanJumpingAttack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb</Output>
+      <Time>2012-01-31T18:28:39.605079-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dan\DanMagicAttack.png</Source>
+      <Name>Sprites\Dan\DanMagicAttack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb</Output>
+      <Time>2012-01-31T18:28:39.6060791-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossAttack1.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossAttack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb</Output>
+      <Time>2012-01-31T18:28:36.2748886-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossIdle.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb</Output>
+      <Time>2012-01-31T18:28:36.2758886-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossKnockedDown.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossKnockedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb</Output>
+      <Time>2012-01-31T18:28:36.2778887-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossTeleport1.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossTeleport1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb</Output>
+      <Time>2012-01-31T18:28:36.2788888-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossTeleport2.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossTeleport2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb</Output>
+      <Time>2012-01-31T18:28:36.2798889-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MiniBoss\MiniBossWalking.png</Source>
+      <Name>Sprites\MiniBoss\MiniBossWalking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb</Output>
+      <Time>2012-01-31T18:28:36.2808889-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonAttack.png</Source>
+      <Name>Sprites\DemonArcher\DemonAttack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb</Output>
+      <Time>2012-01-31T18:28:39.6090793-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonGetUp.png</Source>
+      <Name>Sprites\DemonArcher\DemonGetUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb</Output>
+      <Time>2012-01-31T18:28:39.6100793-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonIdle.png</Source>
+      <Name>Sprites\DemonArcher\DemonIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb</Output>
+      <Time>2012-01-31T18:28:39.6460814-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonKnockedDown.png</Source>
+      <Name>Sprites\DemonArcher\DemonKnockedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb</Output>
+      <Time>2012-01-31T18:28:39.6470814-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonLittleHit.png</Source>
+      <Name>Sprites\DemonArcher\DemonLittleHit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb</Output>
+      <Time>2012-01-31T18:28:39.6490816-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\DemonArcher\DemonWalking.png</Source>
+      <Name>Sprites\DemonArcher\DemonWalking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb</Output>
+      <Time>2012-01-31T18:28:39.6500816-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageAttack1.png</Source>
+      <Name>Sprites\FireMage\FireMageAttack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb</Output>
+      <Time>2012-01-31T18:28:39.6530818-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageAttack2.png</Source>
+      <Name>Sprites\FireMage\FireMageAttack2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb</Output>
+      <Time>2012-01-31T18:28:39.6540818-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageIdle.png</Source>
+      <Name>Sprites\FireMage\FireMageIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb</Output>
+      <Time>2012-01-31T18:28:39.656082-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\WhitePixel.png</Source>
+      <Name>Sprites\WhitePixel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\WhitePixel.xnb</Output>
+      <Time>2012-01-31T20:43:05.6680561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\greenPixel.png</Source>
+      <Name>Sprites\greenPixel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\greenPixel.xnb</Output>
+      <Time>2012-01-31T20:43:05.6700562-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicDark.png</Source>
+      <Name>Sprites\Items\DanMagicDark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb</Output>
+      <Time>2012-01-31T20:46:26.6975543-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicDark1.png</Source>
+      <Name>Sprites\Items\DanMagicDark1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb</Output>
+      <Time>2012-01-31T20:46:26.6985544-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicEarth.png</Source>
+      <Name>Sprites\Items\DanMagicEarth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb</Output>
+      <Time>2012-01-31T20:46:26.7025546-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicFire.png</Source>
+      <Name>Sprites\Items\DanMagicFire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb</Output>
+      <Time>2012-01-31T20:46:26.7035546-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicItem.png</Source>
+      <Name>Sprites\Items\DanMagicItem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb</Output>
+      <Time>2012-01-31T20:46:26.7045547-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicLight.png</Source>
+      <Name>Sprites\Items\DanMagicLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb</Output>
+      <Time>2012-01-31T20:46:26.7055548-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicLight1.png</Source>
+      <Name>Sprites\Items\DanMagicLight1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb</Output>
+      <Time>2012-01-31T20:46:26.7065548-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicWater.png</Source>
+      <Name>Sprites\Items\DanMagicWater</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb</Output>
+      <Time>2012-01-31T20:46:26.7085549-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicWater1.png</Source>
+      <Name>Sprites\Items\DanMagicWater1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb</Output>
+      <Time>2012-01-31T20:46:26.709555-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicWind.png</Source>
+      <Name>Sprites\Items\DanMagicWind</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb</Output>
+      <Time>2012-01-31T20:46:26.7295561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DanMagicWind1.png</Source>
+      <Name>Sprites\Items\DanMagicWind1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb</Output>
+      <Time>2012-01-31T20:46:26.7315562-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\DemonArcherArrow.png</Source>
+      <Name>Sprites\Items\DemonArcherArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb</Output>
+      <Time>2012-01-31T20:46:26.7325563-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\FireMageFire.png</Source>
+      <Name>Sprites\Items\FireMageFire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb</Output>
+      <Time>2012-01-31T20:46:26.7355565-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Items\MiniBossEnergy.png</Source>
+      <Name>Sprites\Items\MiniBossEnergy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb</Output>
+      <Time>2012-01-31T20:46:26.7365565-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\Mountain.png</Source>
+      <Name>tiles\Mountain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Mountain.xnb</Output>
+      <Time>2012-01-31T21:44:18.4691283-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level EditorContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
+        <Value>2012-02-03T15:06:57.7797509-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-08-08T10:14:20.8401019-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

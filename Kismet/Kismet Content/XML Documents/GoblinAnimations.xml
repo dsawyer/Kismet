@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>idle</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Goblin/GoblinIdle</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>walking</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>7</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Goblin/GoblinWalking</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        80 130 40 70
+        80 130 48 70
+        80 130 48 70
+        80 130 48 70
+        80 130 48 70
+        80 130 48 70
+        80 130 48 70
+        80 130 48 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>attack1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>8</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Goblin/GoblinAttack</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+   
+    <Item>
+      <Name>jumping</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Goblin/GoblinJumping</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+        74 120 52 80
+        80 125 51 75
+        80 130 51 70
+      </CollisionBounds>
+    </Item>
+    
+     <Item>
+      <Name>awake</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>7</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Goblin/GoblinAwake</FilePath>
+       <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+        74 120 52 80
+        80 125 51 75
+        80 130 51 70
+        78 140 49 60
+        80 147 47 53
+        74 120 52 80
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>littleHit</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>1</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Goblin/GoblinLittleHit</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+       
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>knockedDown</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Goblin/GoblinKnockedDown</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+        74 120 52 80
+        80 125 51 75
+        80 130 51 70
+      </CollisionBounds>
+    </Item>
+
+  </Asset>
+</XnaContent>
+

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>idle</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>3</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Dan/DanIdle</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>walking</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>11</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Dan/DanWalking</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+        80 130 40 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>attack</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>9</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Dan/DanAttack1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.04</TimePerFrame>
+      <CollisionBounds>
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>jumping</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>10</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Dan/DanJumping</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+                        78 140 49 60
+                        80 147 47 53
+                        74 120 52 80
+                        80 125 51 75
+                        80 130 51 70
+                        80 135 48 65
+                        80 136 47 64
+                        85 135 46 65
+                        80 137 55 63
+                        80 130 54 70
+                        70 120 61 88
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>magicAttack</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>3</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Dan/DanMagicAttack</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>jumpingAttack</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>5</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Dan/DanJumpingAttack</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.04</TimePerFrame>
+      <CollisionBounds>
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>hitting</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Dan/DanHitting</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>dying</Name>
+      <StartFrame>5</StartFrame>
+      <EndFrame>7</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Dan/DanHitting</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+                        77 130 50 70
+                        77 130 50 70
+                        77 130 50 70
+      </CollisionBounds>
+    </Item>
+    
+  </Asset>
+</XnaContent>
+

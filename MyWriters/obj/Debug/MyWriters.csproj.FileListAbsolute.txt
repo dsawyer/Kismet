@@ -1,0 +1,16 @@
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\bin\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\bin\Debug\MyWriters.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\bin\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\obj\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\obj\Debug\MyWriters.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\bin\Debug\KismetDataTypes.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyWriters\bin\Debug\KismetDataTypes.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\bin\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\bin\Debug\MyWriters.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\bin\Debug\KismetDataTypes.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\bin\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\bin\Debug\KismetDataTypes.pdb
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\obj\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\MyWriters\obj\Debug\MyWriters.pdb

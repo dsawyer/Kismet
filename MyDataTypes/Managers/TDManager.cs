@@ -1,0 +1,94 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+
+namespace KismetDataTypes
+{
+    public static class TDManager
+    {
+
+        public static List<TriggerBox> TriggerboxList  = new List<TriggerBox>();
+        public static Dictionary<string, Object> DataList = new Dictionary<string, Object>();
+
+        public static void Initialize()
+        {
+            /*
+            //TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(400, 300, 200, 100)));
+           TriggerboxList.Add(new TriggerBox("spawn", "goblin1", new Rectangle(250, 440, 500, 300)));
+            //TriggerboxList.Add(new TriggerBox("spawn", "miniboss", new Rectangle(250, 440, 500, 300)));
+            //DataList.Add("goblin1",new SpawnPoint("goblin","goblin1",new Vector2(500.0f, 440.0f)));
+            TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("goblin1", new SpawnPoint("goblin", "goblin1", new Vector2(400.0f, 300.0f)));
+            //DataList.Add("demon1", new SpawnPoint("demon", "demon1", new Vector2(400.0f, 300.0f)));
+            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));
+            //DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(1000.0f, 440.0f)));
+            DataList.Add("demon1", new SpawnPoint("demon", "demon1", new Vector2(1000.0f, 440.0f)));*/
+        }
+
+        public static void Add(TriggerBox p_TriggerBox)
+        {
+            string type = p_TriggerBox.Type;
+            string target = p_TriggerBox.Target;
+            //get object from list 
+            Object point = DataList[target];
+            string objectType = point.GetType().ToString(); ;
+
+            switch (objectType)
+            {
+                
+                case "KismetDataTypes.SpawnPoint":
+                     SpawnPoint newObject = (SpawnPoint)point;
+                     NPCManager.SpawnObject(newObject.Type, newObject.Position);
+                     // Remove the trigger box for a spawn point
+                     TriggerboxList.Remove(p_TriggerBox);
+                     DataList.Remove(target);
+                    break;
+                case "KismetDataTypes.Warp":
+                    Warp warp = (Warp)point;
+                    if (GV.Level.Name == warp.DestinationLevel)
+                    {
+                        GV.Player.Position = warp.TargetPosition;
+                        GV.Player.Velocity = Vector2.Zero;
+                    }
+                    else
+                    {
+                        // Add a loading method to change the level and set the player inside it
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Invalid selection");
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// updates the TDManager to check all the triggerboxes in the list.
+        /// </summary>
+        public static void Update()
+        {
+            NPCManager.Update();
+            if (TriggerboxList.Count > 0)
+            {
+                for (int i = 0; i < TriggerboxList.Count; i++) // Loop through List with for each item in list
+                {
+                    TriggerBox box = TriggerboxList[i];
+                    Vector2 Depth = RectangleExtensions.GetIntersectionDepth(GV.Player.Bounds, box.Triggerbox);
+                    if (Depth != Vector2.Zero)
+                    {
+                        Add(box);
+                        // Don't want to remove it if it belongs to a warp point
+                        //TriggerboxList.Remove(box);
+                    }
+                }
+            } 
+        }
+    }
+}

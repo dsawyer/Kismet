@@ -1,0 +1,57 @@
+Content\Levels\Level_01.xnb
+Content\XML Documents\DanAnimations.xnb
+Content\XML Documents\DanMagicAnimations.xnb
+Content\XML Documents\GoblinAnimations.xnb
+Content\XML Documents\MiniBossAnimations.xnb
+Content\XML Documents\DemonArcherAnimations.xnb
+Content\XML Documents\EnemyMagicAnimations.xnb
+Content\XML Documents\FireMageAnimations.xnb
+Content\XML Documents\Goblin.xnb
+Content\Sprites\Dan\DanAttack1.xnb
+Content\Sprites\Dan\DanIdle.xnb
+Content\Sprites\Dan\DanWalking.xnb
+Content\tiles\Icons.xnb
+Content\tiles\Tiles.xnb
+Content\Sprites\Goblin\GoblinAttack.xnb
+Content\Sprites\Goblin\GoblinAwake.xnb
+Content\Sprites\Goblin\GoblinIdle.xnb
+Content\Sprites\Goblin\GoblinJumping.xnb
+Content\Sprites\Goblin\GoblinKnockedDown.xnb
+Content\Sprites\Goblin\GoblinLittleHit.xnb
+Content\Sprites\Goblin\GoblinWalking.xnb
+Content\Sprites\Dan\DanHitting.xnb
+Content\Sprites\Dan\DanJumping.xnb
+Content\Sprites\Dan\DanJumpingAttack.xnb
+Content\Sprites\Dan\DanMagicAttack.xnb
+Content\Sprites\MiniBoss\MiniBossAttack1.xnb
+Content\Sprites\MiniBoss\MiniBossIdle.xnb
+Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
+Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
+Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
+Content\Sprites\MiniBoss\MiniBossWalking.xnb
+Content\Sprites\DemonArcher\DemonAttack.xnb
+Content\Sprites\DemonArcher\DemonGetUp.xnb
+Content\Sprites\DemonArcher\DemonIdle.xnb
+Content\Sprites\DemonArcher\DemonKnockedDown.xnb
+Content\Sprites\DemonArcher\DemonLittleHit.xnb
+Content\Sprites\DemonArcher\DemonWalking.xnb
+Content\Sprites\FireMage\FireMageAttack1.xnb
+Content\Sprites\FireMage\FireMageAttack2.xnb
+Content\Sprites\FireMage\FireMageIdle.xnb
+Content\Sprites\WhitePixel.xnb
+Content\Sprites\greenPixel.xnb
+Content\Sprites\Items\DanMagicDark.xnb
+Content\Sprites\Items\DanMagicDark1.xnb
+Content\Sprites\Items\DanMagicEarth.xnb
+Content\Sprites\Items\DanMagicFire.xnb
+Content\Sprites\Items\DanMagicItem.xnb
+Content\Sprites\Items\DanMagicLight.xnb
+Content\Sprites\Items\DanMagicLight1.xnb
+Content\Sprites\Items\DanMagicWater.xnb
+Content\Sprites\Items\DanMagicWater1.xnb
+Content\Sprites\Items\DanMagicWind.xnb
+Content\Sprites\Items\DanMagicWind1.xnb
+Content\Sprites\Items\DemonArcherArrow.xnb
+Content\Sprites\Items\FireMageFire.xnb
+Content\Sprites\Items\MiniBossEnergy.xnb
+Content\tiles\Mountain.xnb

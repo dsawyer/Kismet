@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>base</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>1</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Items/DanMagicItem</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>fire</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>16</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicFire</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+        25 25 142 115
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>water</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicWater</FilePath>
+      <NextAnimation>water1</NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>water1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicWater1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+        61 0 69 154
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>wind</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicWind</FilePath>
+      <NextAnimation>wind1</NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>wind1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicWind1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+        0 0 192 192
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>dark</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicDark</FilePath>
+      <NextAnimation>dark1</NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>dark1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicDark1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>light</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>14</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicLight</FilePath>
+      <NextAnimation>light1</NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>light1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>9</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicLight1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>192</FrameWidth>
+      <FrameHeight>192</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>fire1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>5</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicFire1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 35
+        77 130 50 30
+        77 130 50 40
+        77 130 50 30
+        77 130 50 20
+        77 130 50 20
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>earth</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>6</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/DanMagicEarth</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.1</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+
+
+  </Asset>
+</XnaContent>

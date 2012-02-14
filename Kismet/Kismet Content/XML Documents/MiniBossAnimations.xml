@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>idle</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>5</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossIdle</FilePath>
+      <NextAnimation>idle</NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>walking</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>7</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossWalking</FilePath>
+      <NextAnimation>walking</NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        80 130 40 70
+        84 130 36 69
+        82 130 45 70
+        81 130 45 70
+        80 130 48 70
+        80 130 49 70
+        80 130 50 70
+        85 130 47 70
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>attack1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>16</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossAttack1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.07</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+
+
+    <Item>
+      <Name>littleHit</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>2</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossKnockedDown</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+        80 147 47 53
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>knockedDown</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>6</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossKnockedDown</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        78 140 49 60
+        80 147 47 53
+        74 120 52 80
+        80 125 51 75
+        80 147 47 53
+        74 120 52 80
+        80 125 51 75
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>teleport1</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>5</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossTeleport1</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>teleport2</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/MiniBoss/MiniBossTeleport2</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
+
+  </Asset>
+</XnaContent>
+
