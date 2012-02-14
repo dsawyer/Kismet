@@ -135,6 +135,10 @@ namespace Kismet
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, null, cameraTransform);
 
+            //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
+
+
             // Draw the layers and the player
             GV.Level.Draw(spriteBatch);
             NPCManager.Draw(gameTime, spriteBatch);
