@@ -18,3 +18,8 @@ C:\Users\philso\Documents\Kismet\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.pd
 C:\Users\philso\Documents\Kismet\Kismet\MyDataTypes\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\philso\Documents\Kismet\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.dll
 C:\Users\philso\Documents\Kismet\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.pdb
+C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll
+C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.pdb
+C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.dll
+C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.pdb

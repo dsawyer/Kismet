@@ -22,3 +22,11 @@ C:\Users\philso\Documents\Kismet\Kismet\MyWriters\bin\Debug\KismetDataTypes.pdb
 C:\Users\philso\Documents\Kismet\Kismet\MyWriters\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\philso\Documents\Kismet\Kismet\MyWriters\obj\Debug\MyWriters.dll
 C:\Users\philso\Documents\Kismet\Kismet\MyWriters\obj\Debug\MyWriters.pdb
+C:\Users\Dylan\Documents\Kismet\MyWriters\bin\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\Kismet\MyWriters\bin\Debug\MyWriters.pdb
+C:\Users\Dylan\Documents\Kismet\MyWriters\bin\Debug\KismetDataTypes.dll
+C:\Users\Dylan\Documents\Kismet\MyWriters\bin\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dylan\Documents\Kismet\MyWriters\bin\Debug\KismetDataTypes.pdb
+C:\Users\Dylan\Documents\Kismet\MyWriters\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dylan\Documents\Kismet\MyWriters\obj\Debug\MyWriters.dll
+C:\Users\Dylan\Documents\Kismet\MyWriters\obj\Debug\MyWriters.pdb

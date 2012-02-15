@@ -49,5 +49,11 @@ namespace KismetDataTypes
 
          public TriggerBox()
          { }
+
+         public void DrawTriggerBox(SpriteBatch spriteBatch)
+         {
+             BoundingBox boundBox = new BoundingBox();
+             boundBox.Draw(spriteBatch, Triggerbox, Color.BlueViolet);
+         }
     }
 }

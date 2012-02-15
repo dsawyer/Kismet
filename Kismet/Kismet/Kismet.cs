@@ -19,8 +19,7 @@ namespace Kismet
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Level level;
-        Player player;
+        Effect shaders;
 
         public Kismet()
         {
@@ -59,22 +58,22 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            level = Content.Load<Level>("Levels/Level_01");
+            GV.Level = Content.Load<Level>("Levels/Level_01");
             // New loading method
             //level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
-            level.Initialise(Content);
+            GV.Level.Initialise(Content);
 
-            GV.Level = level;
+            // Load the shaders in the effect file (.fx) and set everything up
+            shaders = GV.ContentManager.Load<Effect>("LightEffects");
+
             GV.SpriteBatch = spriteBatch;
 
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
-            GV.ShowBoxes = true;
+            GV.ShowBoxes = false;
 
-            player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
-
-            GV.Player = player;
+            GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
 
             Camera.WorldRectangle = new Rectangle(0, 0, GV.Level.Width, GV.Level.Height);
             Camera.Position = new Vector2(0, 0);
@@ -132,6 +131,13 @@ namespace Kismet
             //Camera.Zoom = 1.25f;
             Matrix cameraZoom = Matrix.CreateScale(Camera.Zoom);
             Matrix cameraTransform = cameraTranslation * cameraZoom;
+
+            // Set all the shader's parameters based on the lights in the level
+            shaders.Parameters["lightPositions"].SetValue(GV.Level.GetLightPositions());
+            shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii());
+            shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness());
+            shaders.Parameters["numLights"].SetValue(GV.Level.NumLights);
+
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, null, cameraTransform);
 

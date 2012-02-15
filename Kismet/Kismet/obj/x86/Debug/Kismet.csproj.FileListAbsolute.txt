@@ -238,3 +238,4 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyRefer
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb

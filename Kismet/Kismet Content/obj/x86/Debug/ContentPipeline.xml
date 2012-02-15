@@ -494,7 +494,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01.xnb</Output>
-      <Time>2012-02-14T15:00:27.6903708-04:00</Time>
+      <Time>2012-02-03T18:11:58.3092325-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -577,6 +577,15 @@
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
       <Time>2012-02-14T15:00:27.7213725-04:00</Time>
     </Item>
+    <Item>
+      <Source>LightEffects.fx</Source>
+      <Name>LightEffects</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
+      <Time>2012-02-14T12:50:15.1605196-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -615,7 +624,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-02-14T15:00:28.131396-04:00</Value>
+        <Value>2012-02-14T20:17:03.1833675-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
