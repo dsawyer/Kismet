@@ -238,6 +238,7 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyRefer
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+<<<<<<< HEAD
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Icons.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Tiles.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
@@ -310,3 +311,7 @@ C:\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+=======
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
+>>>>>>> a61be4b1ad23c7d25890ed4950c9171648c80976
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
