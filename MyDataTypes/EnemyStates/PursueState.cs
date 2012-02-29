@@ -33,7 +33,20 @@ namespace KismetDataTypes
         public PursueState(Enemy enemy)
         {
             Enemy = enemy;
-            Enemy.Range = 50;
+            if(Enemy.GetType().ToString() == "KismetDataTypes.Goblin")
+            {
+                Enemy.Range = 50;
+            }
+            else if(Enemy.GetType().ToString() == "KismetDataTypes.FireMage")
+            {
+                 Enemy.Range = 200;
+            }
+            else if(Enemy.GetType().ToString() == "KismetDataTypes.DemonAracher")
+            {
+                     Enemy.Range = 500;
+            }
+
+            //Enemy.Range = 50;
             Random random = new Random();
             randomNumber = random.Next(3, 10);
            

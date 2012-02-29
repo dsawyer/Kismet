@@ -32,6 +32,9 @@ namespace KismetDataTypes
                 case "miniboss":
                     sceneObjectsList.Add(new MiniBoss(GV.ContentManager, "XML Documents/MiniBossAnimations", point));
                     break;
+                case "imp":
+                    sceneObjectsList.Add(new ImpFlock(GV.ContentManager, "XML Documents/ImpAnimations", point));
+                    break;
                 
                 default:
                     Console.WriteLine("Invalid selection");

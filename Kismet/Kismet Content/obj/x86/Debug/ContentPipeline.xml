@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb</Output>
-      <Time>2012-01-17T21:52:26-04:00</Time>
+      <Time>2012-02-28T10:06:35.0527645-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\FireMage\FireMageAttack2.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb</Output>
-      <Time>2012-01-17T21:47:54-04:00</Time>
+      <Time>2012-02-28T10:07:23.6875463-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanMagicFire.png</Source>
@@ -488,13 +488,85 @@
       <Time>2012-02-08T10:53:09.3100034-04:00</Time>
     </Item>
     <Item>
+      <Source>greenPixel.png</Source>
+      <Name>greenPixel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\greenPixel.xnb</Output>
+      <Time>2012-02-21T19:08:59.654367-04:00</Time>
+    </Item>
+    <Item>
+      <Source>WhitePixel.png</Source>
+      <Name>WhitePixel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\WhitePixel.xnb</Output>
+      <Time>2012-02-21T19:08:59.653367-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Imp\ImpFly.png</Source>
+      <Name>Sprites\Imp\ImpFly</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpFly.xnb</Output>
+      <Time>2012-02-24T10:11:36.6794678-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Imp\ImpIdle.png</Source>
+      <Name>Sprites\Imp\ImpIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpIdle.xnb</Output>
+      <Time>2012-02-24T10:01:20.8472443-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Imp\ImpKnockedDown.png</Source>
+      <Name>Sprites\Imp\ImpKnockedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpKnockedDown.xnb</Output>
+      <Time>2012-02-24T10:11:36.6794678-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageWalking.png</Source>
+      <Name>Sprites\FireMage\FireMageWalking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageWalking.xnb</Output>
+      <Time>2012-02-28T09:53:30.5318925-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageJumping.png</Source>
+      <Name>Sprites\FireMage\FireMageJumping</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageJumping.xnb</Output>
+      <Time>2012-02-28T09:49:49.1132281-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\FireMage\FireMageKnockedDown.png</Source>
+      <Name>Sprites\FireMage\FireMageKnockedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageKnockedDown.xnb</Output>
+      <Time>2012-02-28T10:07:10.4227876-04:00</Time>
+    </Item>
+    <Item>
       <Source>Levels\Level_01.xml</Source>
       <Name>Levels\Level_01</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01.xnb</Output>
-      <Time>2012-02-14T20:35:41.1589094-04:00</Time>
+      <Time>2012-02-21T20:29:49.0477365-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -539,7 +611,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
-      <Time>2012-01-31T10:53:16-04:00</Time>
+      <Time>2012-02-28T11:50:24.1630492-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\FireMageAnimations.xml</Source>
@@ -548,7 +620,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
-      <Time>2012-01-31T10:53:58-04:00</Time>
+      <Time>2012-02-28T10:04:34.617876-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\MiniBossAnimations.xml</Source>
@@ -578,13 +650,22 @@
       <Time>2012-02-09T15:30:30.7666393-04:00</Time>
     </Item>
     <Item>
+      <Source>XML Documents\ImpAnimations.xml</Source>
+      <Name>XML Documents\ImpAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\ImpAnimations.xnb</Output>
+      <Time>2012-02-27T10:08:32.6006029-04:00</Time>
+    </Item>
+    <Item>
       <Source>LightEffects.fx</Source>
       <Name>LightEffects</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
-      <Time>2012-02-14T14:57:47.6151285-04:00</Time>
+      <Time>2012-02-22T12:48:55.9617988-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -624,7 +705,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-02-14T20:35:41.3919228-04:00</Value>
+        <Value>2012-02-28T19:47:43.1969349-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

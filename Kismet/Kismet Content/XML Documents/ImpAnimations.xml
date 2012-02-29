@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Animation[]">
+    <Item>
+      <Name>idle</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>8</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Imp/ImpIdle</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>100</FrameWidth>
+      <FrameHeight>100</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>flying</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>8</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Imp/ImpFly</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>100</FrameWidth>
+      <FrameHeight>100</FrameHeight>
+      <TimePerFrame>0.5</TimePerFrame>
+      <CollisionBounds>
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+      </CollisionBounds>
+    </Item>
+    <Item>
+      <Name>knockedDown</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>8</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/Imp/ImpKnockedDown</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>100</FrameWidth>
+      <FrameHeight>100</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+        40 50 20 30
+      </CollisionBounds>
+    </Item>
+  </Asset>
+</XnaContent>
+

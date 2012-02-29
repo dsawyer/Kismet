@@ -30,7 +30,7 @@ namespace KismetDataTypes
         public EnemyIdleState(Enemy enemy)
         {
             Enemy = enemy;
-            Enemy.Range = 500;
+            //Enemy.Range = 500;
             Enemy.Sprite.PlayAnimation("idle");
             Enemy.Velocity = new Vector2(0, 0);
         }

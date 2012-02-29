@@ -32,7 +32,7 @@ namespace KismetDataTypes
         public PatrolState(Enemy enemy)
         {
             Enemy = enemy;
-            //Enemy.Range = 500;
+            Enemy.Range = 0;
             time = 0.0f;
             Enemy.Sprite.PlayAnimation("walking");
 

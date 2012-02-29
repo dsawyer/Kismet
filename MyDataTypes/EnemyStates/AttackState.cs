@@ -70,6 +70,10 @@ namespace KismetDataTypes
                 {
                     MagicItemManager.CreateMagicItem("arrow", Enemy);
                 }
+                else if (Enemy.GetType().ToString() == "KismetDataTypes.FireMage")
+                {
+                    MagicItemManager.CreateMagicItem("fireRow", Enemy);
+                }
                     Enemy.StateMachine.UpdateState("");
 
                     

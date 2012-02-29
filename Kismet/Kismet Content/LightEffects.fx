@@ -1,64 +1,86 @@
-float2 lightPositions[100];
-float lightRadii[100];
-float lightBrightness[100];
+float4x4 MatrixTransform : register(vs, c0);
+float2 cameraPosition;
+float2 lightPositions[60];
+float lightRadii[60];
+float lightBrightness[60];
 int numLights;
+sampler TextureSampler : register(s0);
 
-// From application to vertex shader
-struct a2v
-{ 
-    float4 Position : POSITION;
-    float4 Color    : COLOR0; 
-};
-
-// From vertex shader to pixel shader
-struct v2p
+// Sampler for the incoming texture that
+// allows manipulation of the texture
+/*sampler2D TextureSampler = sampler_state
 {
-    float4 Position : POSITION;
+	Texture = (myTexture);
+	minFilter = Linear;
+	magFilter = Linear;
+	AddressU = Clamp;
+	AddressV = Clamp;
+};*/
+
+// The input for the pixel shader
+struct PixelInput
+{
+    float4 Position : VPOS;
     float4 Color    : COLOR0;
+	float2 TexCoord : TEXCOORD0;
 };
 
-// From pixel shader to screen
-struct p2f
+// Vertex shader (dummy vertex shader needed to be able to make ps_3_0 work...
+void SpriteVertexShader(inout float4 color    : COLOR0,
+                        inout float2 texCoord : TEXCOORD0,
+                        inout float4 position : SV_Position)
 {
-	float4 Color	: COLOR0;
-};
-
-// Vertex shader
-void VS(in a2v IN, out v2p OUT)
-{
-	OUT.Position = IN.Position;
-	OUT.Color = IN.Color;
+    position = mul(position, MatrixTransform);
 }
 
 // Pixel Shader
-void PS(in v2p IN, out p2f OUT)
+float4 PS(PixelInput input) : COLOR0
 {
-	float distanceToLight;
-	float4 Colour = float4(0, 0, 0, 0.5);
-	float lightRatio = 0.0;
-	
-	// Loop through all the lights in the level
-	/*for (int i = 0; i < numLights; i+=1)
-	{
-		// Get the distance between the point and the light
-		distanceToLight = distance(Pos, lightPositions[i]);
-		
-		if (distanceToLight < lightRadii[i])
-		{
-			lightRatio += distanceToLight/lightRadii[i];
-		}
-	}*/
+	float4 Colour = tex2D(TextureSampler, input.TexCoord);
 
-	//OUT.Color = IN.Color;
-	//OUT.Color[3] *= Colour[3];
-	OUT.Color = Colour;
+	// The value that represents how much light is to be removed at most
+	float4 darkness = float4(0.5f, 0.5f,0.5f, 0);
+
+	// Various needed variables for calculating the necessary lighting
+	float2 distanceToLight;
+	float distance;
+	float lightRatio = 1.0f;
+	float2 currentLight;
+
+	for (int i = 0; i < numLights; i+=1)
+	{
+		// Get the position of the light in screen coordinates
+		currentLight = lightPositions[i] - cameraPosition;
+
+		// Get the distance between the point and the light
+		distanceToLight = input.Position - currentLight;
+		distance = sqrt((distanceToLight.x * distanceToLight.x) + (distanceToLight.y * distanceToLight.y));
+		
+		// If the distance between the point and a light source is less than
+		// the light source's radius, then the point is provided with some light
+		if (distance < lightRadii[i])
+		{
+			lightRatio -= (lightRadii[i]*1.2f - distance)/lightRadii[i];
+		}
+	}
+
+	// Clamp the lighting ratio
+	if (lightRatio > 1)
+	{ lightRatio = 1; }
+	else if (lightRatio < 0)
+	{ lightRatio = 0; }
+
+	// Modify the colour based on the amount of light coming in
+	Colour = Colour - (lightRatio * darkness);
+
+	return Colour;
 }
 
 technique Shader
 {
 	pass P0
 	{
-		//VertexShader = compile vs_2_0 VS();
-		PixelShader = compile ps_2_0 PS();
+		VertexShader = compile vs_3_0 SpriteVertexShader();
+		PixelShader = compile ps_3_0 PS();
 	}
 }

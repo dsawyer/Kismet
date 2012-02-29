@@ -25,9 +25,9 @@ namespace KismetDataTypes
             this.Player = player;
             this.Player.Sprite.PlayAnimation("hitting");
             if (Player.Direction == "left")
-                Player.Velocity = new Vector2(5,0);
+                Player.Velocity = new Vector2(5,Player.Velocity.Y);
             else if (Player.Direction == "right")
-                Player.Velocity = new Vector2(-5,0);
+                Player.Velocity = new Vector2(-5, Player.Velocity.Y);
 
         }
 
@@ -46,7 +46,7 @@ namespace KismetDataTypes
                 //Player.IsHit = false;
                 Player.State = new Attack1State(this);
             }
-            else if (keyboardState.IsKeyDown(Keys.A))
+            else if (keyboardState.IsKeyDown(Keys.A) && Player.IsOnGround )
             {
                 Player.IsHit = false;
                 Player.State = new JumpingState(this);
@@ -54,7 +54,7 @@ namespace KismetDataTypes
             if (this.Player.Sprite.CurrentFrame == this.Player.Sprite.CurrentAnimation.EndFrame)
             {
                 Player.IsHit = false;
-                Console.WriteLine("got hit");
+                //Console.WriteLine("got hit");
                 if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left))
                 {
                     //Player.State = new WalkingState(this);

@@ -41,9 +41,11 @@ namespace KismetDataTypes
                     Direction = enemy.Direction;
                     
                 }
-                else if (p_ItemType == "fireMage")
+                else if (p_ItemType == "fireRow")
                 {
-                    //this.state = new fireMageState(this);
+                        this.state = new FireState(this);
+                        //Position = new Vector2(enemy.Position.X, enemy.Position.Y);
+                        //Direction = enemy.Direction;
                 }
             }
             else

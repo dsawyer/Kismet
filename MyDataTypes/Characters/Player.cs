@@ -31,9 +31,9 @@ namespace KismetDataTypes
         private string direction;
         private Vector2 nextPosition;
         private Vector2 velocity;
-         
-
-        
+        private bool isAlive;
+        private int health;
+        private string checkPoint;
         private bool isOnGround = false;
         private bool isHit = false;
         private float idleTime = 0.2f;
@@ -151,7 +151,22 @@ namespace KismetDataTypes
             set { velocity = value; }
         }
 
-       
+        /// <summary>
+        /// Gets and Sets the check point of the player 
+        /// </summary>
+        public string CheckPoint { get { return checkPoint; }
+            set { checkPoint = value; } }
+
+        /// <summary>
+        /// Gets and Sets the status of the Enemy object 
+        /// </summary>
+        public bool IsAlive { get { return isAlive; } set { isAlive = value; } }
+
+        /// <summary>
+        /// Gets and Sets the health of the player object 
+        /// </summary>
+        public int Health { get { if (health <= 0)IsAlive = false; return health; } set { health = value; } }
+        public int Damage { set { health -= value; } }
         /// <summary>
         /// gets the bounds for the next position.  Used for collisions
         /// </summary>
@@ -327,7 +342,7 @@ namespace KismetDataTypes
 
         #region Inventory
 
-        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100;
+        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100, lightCount = 1;
         /// <summary>
         /// Gets or Sets for fire Inventory.
         /// </summary>
@@ -348,6 +363,10 @@ namespace KismetDataTypes
         /// Gets or Sets for fire Inventory.
         /// </summary>
         public int DarkCount { get { return darkCount; } set { darkCount = value; } }
+        /// <summary>
+        /// Gets or Sets for fire Inventory.
+        /// </summary>
+        public int LightCount { get { return 1; } set { lightCount = value; } }
 
         public void AddToInventory(string type)
         {
@@ -459,7 +478,8 @@ namespace KismetDataTypes
             Sprite.Scale = 1.0f;
             velocity = new Vector2(0,0);
             Position = initialPosition;
-
+            IsAlive = true;
+            health = 100;
 
             localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
         }
@@ -496,7 +516,7 @@ namespace KismetDataTypes
             repositionCamera();
             DirectionCheck();
             ToggleMagicItems();
-
+            int health = Health;
             Velocity = new Vector2(AnalogState, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
             //localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);

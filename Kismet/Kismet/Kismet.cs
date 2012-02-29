@@ -71,7 +71,7 @@ namespace Kismet
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
-            GV.ShowBoxes = false;
+            GV.ShowBoxes = true;
 
             GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
 
@@ -80,7 +80,7 @@ namespace Kismet
             Camera.ViewPortWidth = 1280;
             Camera.ViewPortHeight = 720;
 
-            GV.EDITING = false;
+            GV.EDITING = true;
         }
 
         /// <summary>
@@ -110,8 +110,10 @@ namespace Kismet
             // Get the state of the keyboard or the game pad and update the player
             KeyboardState keyboardState = Keyboard.GetState();
             GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
-
-            GV.Player.Update(gameTime);
+            if (GV.Player.IsAlive)
+                GV.Player.Update(gameTime);
+            else
+                GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
@@ -138,11 +140,11 @@ namespace Kismet
             shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness());
             shaders.Parameters["numLights"].SetValue(GV.Level.NumLights);
 
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                              RasterizerState.CullCounterClockwise, null, cameraTransform);
+           spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                            RasterizerState.CullCounterClockwise, null, cameraTransform);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
+           //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
 
 
             // Draw the layers and the player

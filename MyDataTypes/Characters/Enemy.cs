@@ -62,20 +62,27 @@ namespace KismetDataTypes
         public string Direction {   get { return direction; } 
                                     set
                                     {
+
                                         if (AnimationReversed)
                                         {
-                                           if (value == GV.LEFT)
-                                               Sprite.SpriteEffect = SpriteEffects.None;
-                                            else if (value == GV.RIGHT)
-                                               Sprite.SpriteEffect = SpriteEffects.FlipHorizontally;
+                                            if (this.GetType().ToString() != "KismetDataTypes.ImpFlock")
+                                            {
+                                                if (value == GV.LEFT)
+                                                    Sprite.SpriteEffect = SpriteEffects.None;
+                                                else if (value == GV.RIGHT)
+                                                    Sprite.SpriteEffect = SpriteEffects.FlipHorizontally;
+                                            }
                                             direction = value;
                                         }
                                         else if (!AnimationReversed)
                                         {
-                                            if (value == GV.LEFT)
-                                                Sprite.SpriteEffect = SpriteEffects.FlipHorizontally;
-                                            else if (value == GV.RIGHT)
-                                                Sprite.SpriteEffect = SpriteEffects.None;
+                                            if (this.GetType().ToString() != "KismetDataTypes.ImpFlock")
+                                            {
+                                                if (value == GV.LEFT)
+                                                    Sprite.SpriteEffect = SpriteEffects.FlipHorizontally;
+                                                else if (value == GV.RIGHT)
+                                                    Sprite.SpriteEffect = SpriteEffects.None;
+                                            }
                                             direction = value;
                                         }
 
@@ -244,10 +251,10 @@ namespace KismetDataTypes
         /// Handles input, and animates the player sprite.
         /// </summary>
         /// <param name="p_GameTime"></param>
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
-            
-            Velocity = new Vector2(Velocity.X, Velocity.Y + GV.GRAVITY);
+            int health = Health;
+           Velocity = new Vector2(Velocity.X, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
             state.Update(gameTime);
             Velocity = CollisionManager.ResolveCollisions(this,nextPosition,Velocity, MagicItemManager.GetList());
@@ -256,7 +263,7 @@ namespace KismetDataTypes
             PreviousBottom = Position.Y;
            // state.Update(gameTime);
 
-            Console.WriteLine("" + Velocity.X + " " +  Velocity.Y);
+           // Console.WriteLine("" + Velocity.X + " " +  Velocity.Y);
             
         }
         /// <summary>
@@ -264,7 +271,7 @@ namespace KismetDataTypes
         /// </summary>
         /// <param name="gameTime"></param>
         /// <param name="spriteBatch"></param>
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
             sprite.Draw(gameTime, spriteBatch);
