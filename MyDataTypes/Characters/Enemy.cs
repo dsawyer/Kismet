@@ -262,14 +262,9 @@ namespace KismetDataTypes
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
            // state.Update(gameTime);
-<<<<<<< HEAD
             /*Console.WriteLine(Name + ":");
             Console.WriteLine("X: " + Position.X + "\tY: " + Position.Y);
             Console.WriteLine("" + Velocity.X + " " +  Velocity.Y);*/
-=======
-
-           // Console.WriteLine("" + Velocity.X + " " +  Velocity.Y);
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
             
         }
         /// <summary>

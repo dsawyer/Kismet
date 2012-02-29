@@ -411,7 +411,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Levels\Level_01B.xml">
       <Name>Level_01B</Name>
       <Importer>XmlImporter</Importer>
@@ -428,16 +427,8 @@
   <ItemGroup>
     <Compile Include="Levels\Level_01D.xml">
       <Name>Level_01D</Name>
-=======
-    <Compile Include="greenPixel.png">
-      <Name>greenPixel</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="WhitePixel.png">
-      <Name>WhitePixel</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -451,46 +442,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="XML Documents\ImpAnimations.xml">
-      <Name>ImpAnimations</Name>
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
     <Compile Include="Sprites\Imp\ImpKnockedDown.png">
       <Name>ImpKnockedDown</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites\FireMage\FireMageWalking.png">
-      <Name>FireMageWalking</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites\FireMage\FireMageJumping.png">
-      <Name>FireMageJumping</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites\FireMage\FireMageKnockedDown.png">
-      <Name>FireMageKnockedDown</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

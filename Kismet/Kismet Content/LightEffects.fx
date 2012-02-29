@@ -1,6 +1,5 @@
 float4x4 MatrixTransform : register(vs, c0);
 float2 cameraPosition;
-<<<<<<< HEAD
 float2 lightPositions[4];
 float2 lightDirections[4];
 float lightAttenuations[4];
@@ -18,33 +17,6 @@ struct PixelInput
 	float2 TexCoord : TEXCOORD0;
 };
 
-=======
-float2 lightPositions[60];
-float lightRadii[60];
-float lightBrightness[60];
-int numLights;
-sampler TextureSampler : register(s0);
-
-// Sampler for the incoming texture that
-// allows manipulation of the texture
-/*sampler2D TextureSampler = sampler_state
-{
-	Texture = (myTexture);
-	minFilter = Linear;
-	magFilter = Linear;
-	AddressU = Clamp;
-	AddressV = Clamp;
-};*/
-
-// The input for the pixel shader
-struct PixelInput
-{
-    float4 Position : VPOS;
-    float4 Color    : COLOR0;
-	float2 TexCoord : TEXCOORD0;
-};
-
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
 // Vertex shader (dummy vertex shader needed to be able to make ps_3_0 work...
 void SpriteVertexShader(inout float4 color    : COLOR0,
                         inout float2 texCoord : TEXCOORD0,
@@ -59,32 +31,26 @@ float4 PS(PixelInput input) : COLOR0
 	float4 Colour = tex2D(TextureSampler, input.TexCoord);
 
 	// The value that represents how much light is to be removed at most
-	float4 darkness = float4(0.5f, 0.5f,0.5f, 0);
+	float4 darkness = float4(0.7f, 0.7f,0.7f, 0);
 
 	// Various needed variables for calculating the necessary lighting
 	float2 distanceToLight;
 	float distance;
-<<<<<<< HEAD
 	float darknessRatio = 1.0f;
 	float2 currentLight;
 	float angleBetweenLight;
-=======
-	float lightRatio = 1.0f;
-	float2 currentLight;
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
 
 	for (int i = 0; i < numLights; i+=1)
 	{
 		// Get the position of the light in screen coordinates
 		currentLight = lightPositions[i] - cameraPosition;
-<<<<<<< HEAD
 		
 		// Get the distance between the point and the light
 		distanceToLight = input.Position - currentLight;
 
-		angleBetweenLight = dot(lightDirections[i], normalize(distanceToLight));
+		angleBetweenLight = dot(normalize(lightDirections[i]), normalize(distanceToLight));
 
-		if (angleBetweenLight > lightAngles[i])
+		if (angleBetweenLight >= lightAngles[i])
 		{
 			distance = sqrt((distanceToLight.x * distanceToLight.x) + (distanceToLight.y * distanceToLight.y));
 		
@@ -92,9 +58,12 @@ float4 PS(PixelInput input) : COLOR0
 			// the light source's radius, then the point is provided with some light
 			if (distance < lightRadii[i])
 			{
-				darknessRatio -= ((lightRadii[i]*1.2f - distance)/lightRadii[i]) * (lightAttenuations[i] / 8);
+				darknessRatio -= ((lightRadii[i] - distance)/lightRadii[i]) * (lightAttenuations[i] / 10);
 				darknessRatio /= lightBrightness[i];
-				darknessRatio /= angleBetweenLight;
+				if (angleBetweenLight >= 0)
+				{ darknessRatio /= angleBetweenLight; }
+				else if (angleBetweenLight < 0)
+				{ darknessRatio /= (-1 * angleBetweenLight); }
 			}
 		}
 	}
@@ -107,29 +76,6 @@ float4 PS(PixelInput input) : COLOR0
 
 	// Modify the colour based on the amount of light coming in
 	Colour = Colour - (darknessRatio * darkness);
-=======
-
-		// Get the distance between the point and the light
-		distanceToLight = input.Position - currentLight;
-		distance = sqrt((distanceToLight.x * distanceToLight.x) + (distanceToLight.y * distanceToLight.y));
-		
-		// If the distance between the point and a light source is less than
-		// the light source's radius, then the point is provided with some light
-		if (distance < lightRadii[i])
-		{
-			lightRatio -= (lightRadii[i]*1.2f - distance)/lightRadii[i];
-		}
-	}
-
-	// Clamp the lighting ratio
-	if (lightRatio > 1)
-	{ lightRatio = 1; }
-	else if (lightRatio < 0)
-	{ lightRatio = 0; }
-
-	// Modify the colour based on the amount of light coming in
-	Colour = Colour - (lightRatio * darkness);
->>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
 
 	return Colour;
 }

@@ -175,7 +175,7 @@
       </Item>
       <Item>
         <Name>Spawn11</Name>
-        <Position>3776 224</Position>
+        <Position>3776 288</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
