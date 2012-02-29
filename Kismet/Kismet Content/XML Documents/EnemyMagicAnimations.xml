@@ -16,7 +16,39 @@
         77 130 50 70
       </CollisionBounds>
     </Item>
-
+    <Item>
+      <Name>fireRow</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>19</EndFrame>
+      <Type>playOnce</Type>
+      <FilePath>Sprites/Items/FireMageFire</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.05</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+      </CollisionBounds>
+    </Item>
    
 
 

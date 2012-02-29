@@ -22,22 +22,35 @@ namespace KismetDataTypes
 
             Sprite = new Sprite(p_Content, p_XMLFile);
             Sprite.Scale = 1.0f;
-            State = new EnemyIdleState(this);
-            Direction = GV.LEFT;
+            State = new PatrolState(this);
+            Direction = GV.RIGHT;
             Velocity = new Vector2(0, 0);
 
             Position = p_InitialPosition;
             IsAlive = true;
+            Health = 50;
+
             IsOnGround = false;
-            
 
-            StateMachine = new StateMachine(this, new EnemyIdleState(this));
 
-            StateMachine.AddState("KismetDataTypes.EnemyIdleState", "collision", "AttackState");
-            StateMachine.AddState("KismetDataTypes.EnemyIdleState", "isHit", "EnemyIdleState");
-            StateMachine.AddState("KismetDataTypes.AttackState", "collision", "EnemyIdleState");
-            StateMachine.AddState("KismetDataTypes.AttackState", "isHit", "EnemyIdleState");
-            StateMachine.AddState("KismetDataTypes.AttackState", "", "EnemyIdleState");
+
+            StateMachine = new StateMachine(this, new PatrolState(this));
+
+            StateMachine.AddState("KismetDataTypes.PatrolState", "insight", "PursueState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "jump", "EnemyJumpingState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "isHit", "KnockedDownState");
+
+            StateMachine.AddState("KismetDataTypes.EnemyJumpingState", "", "PatrolState");
+            StateMachine.AddState("KismetDataTypes.EnemyJumpingState", "isHit", "KnockedDownState");
+
+            StateMachine.AddState("KismetDataTypes.PursueState", "collision", "AttackState");
+            StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "PatrolState");
+            StateMachine.AddState("KismetDataTypes.PursueState", "isHit", "KnockedDownState");
+
+            StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "PatrolState");
+
+            StateMachine.AddState("KismetDataTypes.AttackState", "", "PatrolState");
+            StateMachine.AddState("KismetDataTypes.AttackState", "isHit", "KnockedDownState");
 
         }
     }

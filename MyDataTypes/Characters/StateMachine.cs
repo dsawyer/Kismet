@@ -75,6 +75,12 @@ namespace KismetDataTypes
                 case "TeleportState":
                     Enemy.State = new TeleportState(Enemy);
                     break;
+                case "FlyState":
+                    Enemy.State = new FlyState(Enemy);
+                    break;
+                case "FlockPatrolStateState":
+                    Enemy.State = new FlockPatrolState(Enemy);
+                    break;
 
 
                 default:

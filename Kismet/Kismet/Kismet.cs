@@ -79,6 +79,7 @@ namespace Kismet
             Camera.ViewPortWidth = 1280;
             Camera.ViewPortHeight = 720;
 
+<<<<<<< HEAD
             GV.EDITING = false;
 
             // Shader crap so that the graphics actually appear on screen...
@@ -89,6 +90,9 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
+=======
+            GV.EDITING = true;
+>>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
         }
 
         /// <summary>
@@ -118,8 +122,10 @@ namespace Kismet
             // Get the state of the keyboard or the game pad and update the player
             KeyboardState keyboardState = Keyboard.GetState();
             GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
-
-            GV.Player.Update(gameTime);
+            if (GV.Player.IsAlive)
+                GV.Player.Update(gameTime);
+            else
+                GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
@@ -147,6 +153,7 @@ namespace Kismet
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
             GV.Level.SortLights();
 
+<<<<<<< HEAD
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
             shaders.Parameters["cameraPosition"].SetValue(Camera.Position);
@@ -157,9 +164,13 @@ namespace Kismet
             shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii(min));
             shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness(min));
             shaders.Parameters["numLights"].SetValue(min);
+=======
+           spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                            RasterizerState.CullCounterClockwise, null, cameraTransform);
+>>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
+           //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
             //                  RasterizerState.CullCounterClockwise, null, cameraTransform);

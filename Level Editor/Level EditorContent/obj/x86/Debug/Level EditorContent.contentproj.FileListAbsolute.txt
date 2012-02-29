@@ -1,4 +1,1 @@
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache

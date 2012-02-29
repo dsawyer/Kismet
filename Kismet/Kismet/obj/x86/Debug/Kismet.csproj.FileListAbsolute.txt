@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
@@ -242,3 +243,87 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb
+=======
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Icons.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Tiles.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\greenPixel.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\WhitePixel.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanHeal.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\greenPixel.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\WhitePixel.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpFly.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpIdle.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\Goblin.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\ImpAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.exe
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.pdb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\KismetDataTypes.dll
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\KismetDataTypes.pdb
+C:\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
+C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpKnockedDown.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageWalking.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageJumping.xnb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageKnockedDown.xnb
+>>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543

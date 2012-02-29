@@ -33,8 +33,23 @@ namespace KismetDataTypes
             TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
            
+<<<<<<< HEAD
             /*TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
             DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));*/
+=======
+            TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));
+            TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
+
+            TriggerboxList.Add(new TriggerBox("spawn", "imp1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("imp1", new SpawnPoint("imp", "imp1", new Vector2(300.0f, 300.0f)));
+
+            TriggerboxList.Add(new TriggerBox("checkPoint", "checkpoint1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("checkpoint1", new CheckPoint());
+
+
+>>>>>>> 9596670ad749c1b4f9ce2c5fb1b6a941d267d543
             //TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
             //DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(6,18)));
             /*
@@ -72,6 +87,12 @@ namespace KismetDataTypes
                     PickUpPoint newPickUpObject = (PickUpPoint)point;
                     PickUpItemManager.CreatePickUpItem(newPickUpObject.Type, newPickUpObject.Position);
                     // Remove the trigger box for a spawn point
+                    TriggerboxList.Remove(p_TriggerBox);
+                    DataList.Remove(target);
+                    break;
+
+                case "KismetDataTypes.CheckPoint":
+                    GV.Player.CheckPoint = target;
                     TriggerboxList.Remove(p_TriggerBox);
                     DataList.Remove(target);
                     break;

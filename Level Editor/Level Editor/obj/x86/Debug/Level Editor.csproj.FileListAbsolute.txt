@@ -1,247 +1,74 @@
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\LevelEditor.ObjectEditor.resources
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\LevelEditor.ObjectEditor.resources
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\WhitePixel.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\greenPixel.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\WhitePixel.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\greenPixel.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.pdb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\LevelEditor.ObjectEditor.resources
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
-C:\Users\philso\Documents\Kismet\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\WhitePixel.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\greenPixel.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.pdb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\LevelEditor.ObjectEditor.resources
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Icons.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\tiles\Tiles.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\WhitePixel.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\greenPixel.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
+C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.pdb
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\LevelEditor.ObjectEditor.resources
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
+C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb

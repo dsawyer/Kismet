@@ -129,8 +129,10 @@ namespace KismetDataTypes
                     if (ItemCollisionDepth != Vector2.Zero && magicItem.Owner == "enemy")
                     {
                         GV.Player.IsHit = true;
+                        GV.Player.Damage = 1;
                         magicItem.IsCollision = true;
-                        magicItem.Active = false;
+                        if(magicItem.ItemType != "fireRow")
+                            magicItem.Active = false;
                     }
                     else if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType == "earth" && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState" && vel.Y>0)
                     {
@@ -293,12 +295,13 @@ namespace KismetDataTypes
 
                 if (enemy.State.GetType().ToString() != "KismetDataTypes.KnockedDownState")
                 {
-                    if (GV.Player.State.GetType().ToString() == "KismetDataTypes.Attack1State" && GV.Player.Sprite.CurrentFrame == 7)
+                    if (GV.Player.State.GetType().ToString() == "KismetDataTypes.Attack1State" && GV.Player.Sprite.CurrentFrame == 7
+                        || GV.Player.State.GetType().ToString() == "KismetDataTypes.JumpingAttackState" && GV.Player.Sprite.CurrentFrame == 2)
                     {
 
-                        Console.WriteLine("Enemy Health " + enemy.Health);
+                       // Console.WriteLine("Enemy Health " + enemy.Health);
                         enemy.IsHit = true;
-                        //enemy.Damage = 10;
+                        enemy.Damage = 10;
 
                         if (enemy.Direction == GV.Player.Direction)
                         {
@@ -331,7 +334,7 @@ namespace KismetDataTypes
 
             double diffRadius = Math.Sqrt(Math.Pow((double)diffx,2) + Math.Pow((double)diffy,2));
 
-            if (diffRadius <= radius)
+            if (diffRadius <= radius && GV.Player.IsOnGround)
             {
                 if (diffx < 0)
                     enemy.Direction = GV.LEFT;
@@ -352,7 +355,9 @@ namespace KismetDataTypes
             if (boundDepth != Vector2.Zero)
             {
                 //if (enemy.IsHit && enemy.State.GetType().ToString() != "KismetDataTypes.KnockedDownState")
-                GV.Player.State = new HittingState(GV.Player);
+                //GV.Player.State = new HittingState(GV.Player);
+                GV.Player.IsHit = true;
+                GV.Player.Damage = 1;
             }
 
            
@@ -365,7 +370,7 @@ namespace KismetDataTypes
                     Vector2 ItemCollisionDepth = RectangleExtensions.GetIntersectionDepth(enemy.Bounds, magicItem.Bounds);
                     if (ItemCollisionDepth != Vector2.Zero && magicItem.Enemy == null && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState")
                     {
-                        Console.WriteLine("Enemy Health " + enemy.Health);
+                        //Console.WriteLine("Enemy Health " + enemy.Health);
 
                         if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType == "earth" && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState" && vel.Y > 0)
                         {
@@ -385,36 +390,38 @@ namespace KismetDataTypes
                                     xVel = -10;
                                     enemy.Direction = GV.LEFT;
                                 }
-                              
+
                             }
                             //if (GV.Player.PreviousBottom <= magicItem.Bounds.Top)
                             else
                             {
-                                xVel =1;
+                                xVel = 1;
                                 yVel = -10;
                                 enemy.IsHit = true;
                             }
 
-                            //enemy.Damage = 50;
-                           
+                            enemy.Damage = 2;
+
                         }
 
                         if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType == "wind" && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState")
                         {
 
-                            enemy.Position = new Vector2(magicItem.Position.X,magicItem.Bounds.Bottom);
+                            enemy.Position = new Vector2(magicItem.Position.X, magicItem.Bounds.Bottom);
                             enemy.State = new KnockedDownState(enemy);
                             enemy.ToggleDirections();
+                            enemy.Damage = 2;
 
                         }
+                        enemy.Damage = 2;
+                        enemy.State = new KnockedDownState(enemy);
                     }
-
+                 
                 }
             }
 
             return new Vector2(xVel, yVel);
         }
-
 
 
         static public Vector2 ResolveMagicStaticCollisions(MagicItem item, Vector2 nextPosition, Vector2 vel, List<MagicItem> magicItemList)

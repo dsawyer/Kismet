@@ -22,7 +22,7 @@ namespace KismetDataTypes
             Name = "Demon Archer";
             Sprite = new Sprite(p_Content, p_XMLFile);
             Sprite.Scale = 1.0f;
-            State = new EnemyIdleState(this);
+            State = new PatrolState(this);
             Direction = GV.RIGHT;
             Velocity = new Vector2(0, 0);
 
@@ -34,7 +34,7 @@ namespace KismetDataTypes
 
 
 
-            StateMachine = new StateMachine(this, new EnemyIdleState(this));
+            StateMachine = new StateMachine(this, new PatrolState(this));
 
             StateMachine.AddState("KismetDataTypes.PatrolState", "insight", "AttackState");
             StateMachine.AddState("KismetDataTypes.EnemyIdleState", "collision", "AttackState");
@@ -45,12 +45,12 @@ namespace KismetDataTypes
             StateMachine.AddState("KismetDataTypes.PatrolState", "jump", "AttackState");
 
             StateMachine.AddState("KismetDataTypes.PursueState", "collision", "AttackState");
-            StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "EnemyIdleState");
+            StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "PatrolState");
             StateMachine.AddState("KismetDataTypes.PursueState", "isHit", "KnockedDownState");
 
-            StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "EnemyIdleState");
+            StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "PatrolState");
 
-            StateMachine.AddState("KismetDataTypes.AttackState", "", "EnemyIdleState");
+            StateMachine.AddState("KismetDataTypes.AttackState", "", "PatrolState");
             StateMachine.AddState("KismetDataTypes.AttackState", "isHit", "KnockedDownState");
 
 

@@ -7,7 +7,7 @@
       <EndFrame>4</EndFrame>
       <Type>loop</Type>
       <FilePath>Sprites/FireMage/FireMageIdle</FilePath>
-      <NextAnimation>idle</NextAnimation>
+      <NextAnimation></NextAnimation>
       <FrameWidth>200</FrameWidth>
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.2</TimePerFrame>
@@ -22,12 +22,73 @@
     </Item>
 
     <Item>
+      <Name>walking</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageWalking</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+
+      </CollisionBounds>
+    </Item>
+
+    <Item>
+      <Name>jumping</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageJumping</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+
+      </CollisionBounds>
+    </Item>
+
+
+    <Item>
+      <Name>knockedDown</Name>
+      <StartFrame>0</StartFrame>
+      <EndFrame>4</EndFrame>
+      <Type>loop</Type>
+      <FilePath>Sprites/FireMage/FireMageKnockedDown</FilePath>
+      <NextAnimation></NextAnimation>
+      <FrameWidth>200</FrameWidth>
+      <FrameHeight>200</FrameHeight>
+      <TimePerFrame>0.2</TimePerFrame>
+      <CollisionBounds>
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+        77 130 50 70
+
+      </CollisionBounds>
+    </Item>
+    
+    <Item>
       <Name>attack1</Name>
       <StartFrame>0</StartFrame>
       <EndFrame>3</EndFrame>
       <Type>loop</Type>
       <FilePath>Sprites/FireMage/FireMageAttack1</FilePath>
-      <NextAnimation>attack1</NextAnimation>
+      <NextAnimation></NextAnimation>
       <FrameWidth>200</FrameWidth>
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.2</TimePerFrame>
@@ -46,7 +107,7 @@
       <EndFrame>5</EndFrame>
       <Type>loop</Type>
       <FilePath>Sprites/FireMage/FireMageAttack2</FilePath>
-      <NextAnimation>attack2</NextAnimation>
+      <NextAnimation></NextAnimation>
       <FrameWidth>200</FrameWidth>
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.07</TimePerFrame>
