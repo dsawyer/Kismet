@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="KismetDataTypes.Level">
-  <NumWarps>2</NumWarps>
+  <NumWarps>0</NumWarps>
   <NumSpawners>2</NumSpawners>
-  <NumTriggers>4</NumTriggers>
-  <NumLights>1</NumLights>
+  <NumTriggers>2</NumTriggers>
+  <NumLights>2</NumLights>
   <Warps>
     <Name xmlns="KismetDataTypes.LevelObject">Warp1</Name>
     <Position xmlns="KismetDataTypes.LevelObject">
@@ -73,7 +73,7 @@
   <Spawners>
     <Name xmlns="KismetDataTypes.LevelObject">Spawn1</Name>
     <Position xmlns="KismetDataTypes.LevelObject">
-      <X>1000</X>
+      <X>960</X>
       <Y>320</Y>
     </Position>
     <BoundingBox xmlns="KismetDataTypes.LevelObject">
@@ -210,100 +210,20 @@
     </Triggerbox>
     <Target>demon1</Target>
   </Triggers>
-  <Triggers>
-    <Name xmlns="KismetDataTypes.LevelObject">Trigger3</Name>
-    <Position xmlns="KismetDataTypes.LevelObject">
-      <X>100</X>
-      <Y>450</Y>
-    </Position>
-    <BoundingBox xmlns="KismetDataTypes.LevelObject">
-      <X>100</X>
-      <Y>450</Y>
-      <Width>32</Width>
-      <Height>64</Height>
-      <Location>
-        <X>100</X>
-        <Y>450</Y>
-      </Location>
-    </BoundingBox>
-    <ImageName xmlns="KismetDataTypes.LevelObject">Tiles</ImageName>
-    <ImageBounds xmlns="KismetDataTypes.LevelObject">
-      <X>32</X>
-      <Y>160</Y>
-      <Width>32</Width>
-      <Height>32</Height>
-      <Location>
-        <X>32</X>
-        <Y>160</Y>
-      </Location>
-    </ImageBounds>
-    <Type>warp</Type>
-    <Triggerbox>
-      <X>100</X>
-      <Y>450</Y>
-      <Width>32</Width>
-      <Height>64</Height>
-      <Location>
-        <X>100</X>
-        <Y>450</Y>
-      </Location>
-    </Triggerbox>
-    <Target>Warp1</Target>
-  </Triggers>
-  <Triggers>
-    <Name xmlns="KismetDataTypes.LevelObject">Trigger4</Name>
-    <Position xmlns="KismetDataTypes.LevelObject">
-      <X>5048</X>
-      <Y>100</Y>
-    </Position>
-    <BoundingBox xmlns="KismetDataTypes.LevelObject">
-      <X>5048</X>
-      <Y>300</Y>
-      <Width>32</Width>
-      <Height>64</Height>
-      <Location>
-        <X>5048</X>
-        <Y>300</Y>
-      </Location>
-    </BoundingBox>
-    <ImageName xmlns="KismetDataTypes.LevelObject">Tiles</ImageName>
-    <ImageBounds xmlns="KismetDataTypes.LevelObject">
-      <X>32</X>
-      <Y>160</Y>
-      <Width>32</Width>
-      <Height>32</Height>
-      <Location>
-        <X>32</X>
-        <Y>160</Y>
-      </Location>
-    </ImageBounds>
-    <Type>warp</Type>
-    <Triggerbox>
-      <X>5048</X>
-      <Y>300</Y>
-      <Width>32</Width>
-      <Height>64</Height>
-      <Location>
-        <X>5048</X>
-        <Y>300</Y>
-      </Location>
-    </Triggerbox>
-    <Target>Warp2</Target>
-  </Triggers>
   <Lights>
     <Name xmlns="KismetDataTypes.LevelObject">Light1</Name>
     <Position xmlns="KismetDataTypes.LevelObject">
       <X>100</X>
-      <Y>500</Y>
+      <Y>400</Y>
     </Position>
     <BoundingBox xmlns="KismetDataTypes.LevelObject">
       <X>100</X>
-      <Y>500</Y>
+      <Y>400</Y>
       <Width>32</Width>
       <Height>32</Height>
       <Location>
         <X>100</X>
-        <Y>500</Y>
+        <Y>400</Y>
       </Location>
     </BoundingBox>
     <ImageName xmlns="KismetDataTypes.LevelObject">Tiles</ImageName>
@@ -319,10 +239,54 @@
     </ImageBounds>
     <Centre>
       <X>116</X>
+      <Y>416</Y>
+    </Centre>
+    <Direction>
+      <X>0</X>
+      <Y>1</Y>
+    </Direction>
+    <Attenuation>-1</Attenuation>
+    <Radius>100</Radius>
+    <Brightness>5</Brightness>
+  </Lights>
+  <Lights>
+    <Name xmlns="KismetDataTypes.LevelObject">Light1</Name>
+    <Position xmlns="KismetDataTypes.LevelObject">
+      <X>400</X>
+      <Y>500</Y>
+    </Position>
+    <BoundingBox xmlns="KismetDataTypes.LevelObject">
+      <X>400</X>
+      <Y>500</Y>
+      <Width>32</Width>
+      <Height>32</Height>
+      <Location>
+        <X>400</X>
+        <Y>500</Y>
+      </Location>
+    </BoundingBox>
+    <ImageName xmlns="KismetDataTypes.LevelObject">Tiles</ImageName>
+    <ImageBounds xmlns="KismetDataTypes.LevelObject">
+      <X>160</X>
+      <Y>128</Y>
+      <Width>32</Width>
+      <Height>32</Height>
+      <Location>
+        <X>160</X>
+        <Y>128</Y>
+      </Location>
+    </ImageBounds>
+    <Centre>
+      <X>416</X>
       <Y>516</Y>
     </Centre>
-    <Radius>10</Radius>
-    <Brightness>1</Brightness>
+    <Direction>
+      <X>0</X>
+      <Y>1</Y>
+    </Direction>
+    <Attenuation>-1</Attenuation>
+    <Radius>200</Radius>
+    <Brightness>10</Brightness>
   </Lights>
   <Name>Level01_A</Name>
   <Width>11520</Width>

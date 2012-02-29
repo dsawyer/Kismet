@@ -27,5 +27,6 @@ namespace KismetDataTypes
             public static bool EDITING;
             public static bool ShowBoxes;
             public static bool ShowGrid = false;
+            public static float DefaultAttenuation = (float)Math.Cos(45);
     } 
 }

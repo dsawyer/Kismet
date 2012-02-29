@@ -33,8 +33,8 @@ namespace KismetDataTypes
             TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
            
-            TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));
+            /*TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));*/
             //TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
             //DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(6,18)));
             /*
@@ -82,9 +82,15 @@ namespace KismetDataTypes
                         GV.Player.Position = warp.TargetPosition;
                         GV.Player.Velocity = Vector2.Zero;
                     }
+                    // Change the level
                     else
                     {
-                        // Add a loading method to change the level and set the player inside it
+                        // Load and initialise the new level
+                        GV.Level = GV.ContentManager.Load<Level>("Level/" + warp.DestinationLevel);
+                        GV.Level.Initialise(GV.ContentManager);
+                        // Put the player in the new level
+                        GV.Player.Position = warp.TargetPosition;
+                        GV.Player.Velocity = Vector2.Zero;
                     }
                     break;
                 default:

@@ -131,7 +131,7 @@ namespace KismetDataTypes
 
         #region Object layer
 
-        private Vector2[] lightPositions;
+        private Vector2[] lightCentres;
         private float[] lightRadii;
         private float[] lightBrightness;
 
@@ -424,6 +424,8 @@ namespace KismetDataTypes
             }*/
             collisionLayer = new Layer(Width, Height, 0, CollisionLayerTexture, CollisionLayerValues, 0, 0);
 
+            TDManager.Initialize();
+
             // Add all the spawnpoints to the tech data manager
             for (int i = 0; i < NumSpawners; i += 1)
             {
@@ -441,21 +443,6 @@ namespace KismetDataTypes
             {
                 TDManager.TriggerboxList.Add(Triggers[i]);
             }
-
-            // Initialise the arrays that hold the information
-            // for calculating the amount of light
-            lightPositions = new Vector2[NumLights];
-            lightRadii = new float[NumLights];
-            lightBrightness = new float[NumLights];
-
-            // Load up the values used for calculating the amount of light
-            // in the shaders
-            for (int i = 0; i < NumLights; i += 1)
-            {
-                lightPositions[i] = Lights[i].Position;
-                lightRadii[i] = Lights[i].Radius;
-                lightBrightness[i] = Lights[i].Brightness;
-            }
         }
 
         /// <summary>
@@ -469,6 +456,8 @@ namespace KismetDataTypes
             //surGroundLayer.Draw(spriteBatch);
             if (GV.EDITING)
             { DrawObjects(spriteBatch); }
+            else
+            { DrawLights(spriteBatch); }
             //foregroundLayer.Draw(spriteBatch);
 
         }
@@ -514,7 +503,7 @@ namespace KismetDataTypes
         {
             for (int i = 0; i < NumLights; i += 1)
             {
-                Lights[i].Draw(spriteBatch);
+                Lights[i].DrawLightSource(spriteBatch);
             }
         }
 
@@ -536,20 +525,120 @@ namespace KismetDataTypes
             DrawLights(spriteBatch);
         }
 
-        public Vector2[] GetLightPositions()
+        #region Getting Light Information
+
+        public Vector2[] GetLightCentres(int num)
         {
-            return lightPositions;
+            Vector2[] lightCentres = new Vector2[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightCentres[i] = Lights[i].Centre;
+            }
+
+            return lightCentres;
         }
 
-        public float[] GetLightRadii()
+        public Vector2[] GetLightDirections(int num)
         {
+            Vector2[] lightDirections = new Vector2[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightDirections[i] = Lights[i].Direction;
+            }
+
+            return lightDirections;
+        }
+
+        public float[] GetLightRadii(int num)
+        {
+            float[] lightRadii = new float[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightRadii[i] = Lights[i].Radius;
+            }
+
             return lightRadii;
         }
 
-        public float[] GetLightBrightness()
+        public float[] GetLightBrightness(int num)
         {
+            float[] lightBrightness = new float[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightBrightness[i] = Lights[i].Brightness;
+            }
+
             return lightBrightness;
         }
+
+        public float[] GetLightAttenuations(int num)
+        {
+            float[] lightAttenuations = new float[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightAttenuations[i] = Lights[i].Attenuation;
+            }
+
+            return lightAttenuations;
+        }
+
+        public float[] GetLightAngles(int num)
+        {
+            float[] lightAngles = new float[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightAngles[i] = Lights[i].IlluminationAngle;
+            }
+
+            return lightAngles;
+        }
+
+        /// <summary>
+        /// Calculates the distances of the lights in relation to the player
+        /// and sorts them in increasing order. Also sorts the lights.
+        /// </summary>
+        /// <returns>An array of IDs for each light </returns>
+        public void SortLights()
+        {
+            float[] values = new float[NumLights];
+
+            // This loop gets all the distances between all the lights and the player
+            // and associates them with an id (which will be used to get the 4 nearest
+            // lights to the player)
+            for (int i = 0; i < NumLights; i += 1)
+            {
+                values[i] = Vector2.Distance(Lights[i].Centre, GV.Player.Position);
+            }
+
+            float key;
+            int index;
+            LightSource light;
+
+            // Perform a quick insertion sort to get the distances in order, sorting
+            // the lights based on their respective distances to the player
+            for (int j = 0; j < NumLights; j += 1)
+            {
+                key = values[j];
+                light = Lights[j];
+                index = j - 1;
+                while ((index >= 0) && (values[index] > key))
+                {
+                    values[index + 1] = values[index];
+                    Lights[index + 1] = Lights[index];
+                    index--;
+                }
+                values[index + 1] = key;
+                Lights[index + 1] = light;
+            }
+        }
+
+        #endregion
 
         #endregion
 

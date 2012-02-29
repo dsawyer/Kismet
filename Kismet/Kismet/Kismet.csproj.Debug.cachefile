@@ -52,7 +52,7 @@ Content\Sprites\Items\DanPickupFire.xnb
 Content\Sprites\Items\DanPickupHeal.xnb
 Content\Sprites\Items\DanPickupWater.xnb
 Content\Sprites\Items\DanPickupWind.xnb
-Content\Levels\Level_01.xnb
+Content\Levels\Level_01A.xnb
 Content\XML Documents\DanAnimations.xnb
 Content\XML Documents\DanMagicAnimations.xnb
 Content\XML Documents\GoblinAnimations.xnb
@@ -62,4 +62,7 @@ Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\MiniBossAnimations.xnb
 Content\XML Documents\Goblin.xnb
 Content\XML Documents\PickUpItemsAnimations.xnb
+Content\Levels\Level_01B.xnb
 Content\LightEffects.xnb
+Content\Levels\Level_01C.xnb
+Content\Levels\Level_01D.xnb

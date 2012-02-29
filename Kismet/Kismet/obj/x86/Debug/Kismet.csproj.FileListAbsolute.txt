@@ -220,7 +220,6 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Item
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb
-C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
@@ -239,3 +238,7 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framew
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb
+C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb

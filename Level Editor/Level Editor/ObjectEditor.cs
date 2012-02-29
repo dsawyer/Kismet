@@ -65,6 +65,8 @@ namespace LevelEditor
             cboLevelIndicator.Items.Add("Level01_B");
             cboLevelIndicator.Items.Add("Level01_C");
             cboLevelIndicator.SelectedIndex = 0;
+
+            boundingBoxesCheck.Checked = true;
         }
 
         // Change the values of the scroll bars
@@ -277,10 +279,16 @@ namespace LevelEditor
             }
         }
 
-        // Show hide the grid on the editor
+        // Show/Hide the grid on the editor
         private void gridCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             GV.ShowGrid = gridCheckBox.Checked;
+        }
+
+        // Show/Hide the bounding boxes for collision and light/detection
+        private void boundingBoxesCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            GV.ShowBoxes = boundingBoxesCheck.Checked;
         }
 
     }

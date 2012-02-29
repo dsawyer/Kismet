@@ -477,13 +477,13 @@ namespace KismetDataTypes
             {
                 Camera.Move(new Vector2(screenLocX - 240, 0));
             }
-            if (screenLocY > 100)
+            if (screenLocY > 420)
             {
-                Camera.Move(new Vector2(0, screenLocY - 100));
+                Camera.Move(new Vector2(0, screenLocY - 420));
             }
-            if (screenLocY < 60)
+            if (screenLocY < 320)
             {
-                Camera.Move(new Vector2(0, screenLocY - 60));
+                Camera.Move(new Vector2(0, screenLocY - 320));
             }
         }
 
