@@ -20,30 +20,30 @@ namespace KismetDataTypes
         Vector2[] PlusPattern = new Vector2[]
         {
             new Vector2(2,2),
-            new Vector2(1,2),
             new Vector2(3,2),
+            new Vector2(1,2),
             new Vector2(2,1),
             new Vector2(2,3)
         };
         Vector2[] ArrowPatternRight = new Vector2[]
         {
             //column/row
-            new Vector2(2,4),
+            new Vector2(0,2),
             new Vector2(1,3),
             new Vector2(3,3),
-            new Vector2(0,2),
+            new Vector2(2,4),
             new Vector2(4,2),
         };
         Vector2[] ArrowPatternLeft = new Vector2[]
         {
             //column/row
             new Vector2(2,0),
-            new Vector2(1,1),
-            new Vector2(3,1),
             new Vector2(0,2),
+            new Vector2(3,1),
             new Vector2(4,2),
+            new Vector2(1,1),
         };
-        Vector2[] AttackPattern1 = new Vector2[]
+        Vector2[] LinePattern = new Vector2[]
         {
             //column/row
             new Vector2(2,0),
@@ -51,6 +51,15 @@ namespace KismetDataTypes
             new Vector2(2,2),
             new Vector2(2,3),
             new Vector2(2,4),
+        };
+        Vector2[] AttackPattern1 = new Vector2[]
+        {
+            //column/row
+            new Vector2(4,0),
+            new Vector2(3,1),
+            new Vector2(2,2),
+            new Vector2(3,3),
+            new Vector2(4,4),
         };
 
         
@@ -151,19 +160,20 @@ namespace KismetDataTypes
                             
                             if (time >= 2.0f)
                             {
-                                currentPattern = (currentPattern + 1) % 4;
+                                currentPattern = (currentPattern + 1) % 3;
                                 time = 0.0f;
                             }
-                            
+
+                            if (State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
+                            {
+                                currentPattern = 3;
+                            }
+                               
                                                        
                             Vector2 patternPosition = patternList[currentPattern][i];
                             Vector2 flockPosition = PatternMap[(int)patternPosition.X, (int)patternPosition.Y];
                             //Vector2 patternPosition = patternList[1][i];
-                           /* if (State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
-                            {
-                                flockPosition = GV.Player.Position - Position;
-                            }
-                            */
+                           
                             
                           
                             Vector2 worldPosition = Position + flockPosition;
@@ -192,7 +202,7 @@ namespace KismetDataTypes
                 }
                 else if (!SightDetected && State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
                 {
-                    Position = new Vector2 (GV.Player.Position.X,returnPosition.Y);
+                    Position = new Vector2(returnPosition.X, returnPosition.Y);
                     State = new FlockPatrolState(this);
                     //Console.WriteLine("  switch to patrol state");
                 }

@@ -35,13 +35,7 @@ namespace KismetDataTypes
             
             /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
-
-            TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
-            DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));*/
-
-            TriggerboxList.Add(new TriggerBox("checkPoint", "checkpoint1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("checkpoint1", new CheckPoint());
-
             /*
             //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));*/
         }
@@ -79,7 +73,8 @@ namespace KismetDataTypes
                     break;
 
                 case "KismetDataTypes.CheckPoint":
-                    GV.Player.CheckPoint = target;
+                     CheckPoint newcheckpoint = (CheckPoint)point;
+                     GV.Player.CheckPoint = newcheckpoint.Position;
                     TriggerboxList.Remove(p_TriggerBox);
                     DataList.Remove(target);
                     break;

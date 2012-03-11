@@ -42,7 +42,10 @@ namespace KismetDataTypes
             if (Player.IdleCheck())
                 Player.State = new IdleState(this);
 
-            
+            else if (Player.IsHit)
+            {
+                Player.State = new HittingState(this);
+            }
 
 
             //if player is jumping

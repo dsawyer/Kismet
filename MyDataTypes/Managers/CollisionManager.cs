@@ -42,12 +42,14 @@ namespace KismetDataTypes
 
             bool BottomCollision = false;
             bool LeftCollision = false;
+            bool TopCollision = false;
 
             bool XCollision = false;
             Rectangle tileBounds;
             Vector2 depth1 = new Vector2(0.0f,0.0f);
             Vector2 depth2 = new Vector2(0.0f,0.0f);
 
+            depth2 = new Vector2(0.0f, 0.0f);
                         // For each potentially colliding tile,
             for (int y = topTile; y < bottomTile; ++y)
             {
@@ -87,8 +89,32 @@ namespace KismetDataTypes
                 topTile = (int)Math.Floor((float)nextBounds.Top / Layer.TileHeight);
                 bottomTile = (int)Math.Ceiling(((float)nextBounds.Bottom / Layer.TileHeight)) - 1;
               
-            }  
+            }
 
+            if (vel.Y < 0 && !GV.Player.IsOnGround)
+            {
+                for (int x = leftTile; x <= rightTile; ++x)
+                {
+                    int collision = GV.Level.GetCollision(x, topTile);
+                    if (collision == Layer.Impassable)
+                    {
+                        TopCollision = true;
+                    }
+
+                }
+            }
+            if (TopCollision)
+            {
+                tileBounds = GV.Level.GetBounds(leftTile, bottomTile);
+                depth1 = RectangleExtensions.GetIntersectionDepth(nextBounds, tileBounds);
+                float absDepthY = Math.Abs(depth1.Y);
+                float absDepthX = Math.Abs(depth1.X);
+                yVel = 0.0f;
+                xVel = 0;
+                topTile++;
+
+            }
+           
             if (vel.Y > 0)
             {
                 for (int x = leftTile; x <= rightTile; ++x)
@@ -146,9 +172,6 @@ namespace KismetDataTypes
                        
                         GV.Player.IsOnGround = true;
 
-
-
-
                     }
 
                 }
@@ -204,10 +227,11 @@ namespace KismetDataTypes
             bool LeftLedgeDetected = false;
             bool RightLedgeDetected = false;
             bool LeftCollision = false;
+            bool TopCollision = false;
             bool XCollision = false;
             Rectangle tileBounds;
             Vector2 depth;
-
+            Vector2 depth1;
             // For each potentially colliding tile,
             for (int y = topTile; y < bottomTile; ++y)
             {
@@ -244,7 +268,33 @@ namespace KismetDataTypes
                 xVel = vel.X + depth.X;
             }
 
+            if (vel.Y < 0)
+            {
+                for (int x = leftTile; x <= rightTile; ++x)
+                {
+                    int collision = GV.Level.GetCollision(x, topTile);
+                    if (collision != Layer.Passable)
+                    {
+                        TopCollision = true;
+                    }
 
+                }
+            }
+            if (TopCollision)
+            {
+                tileBounds = GV.Level.GetBounds(leftTile, bottomTile);
+                depth1 = RectangleExtensions.GetIntersectionDepth(nextBounds, tileBounds);
+                float absDepthY = Math.Abs(depth1.Y);
+                float absDepthX = Math.Abs(depth1.X);
+                yVel = vel.Y - depth1.Y;
+                nextBounds = new Rectangle(nextBounds.X, nextBounds.Y + (int)absDepthY, nextBounds.Width, nextBounds.Height - (int)depth1.Y);
+                //Rectangle pBounds = GV.Player.Bounds;
+                leftTile = (int)Math.Floor((float)nextBounds.Left / Layer.TileWidth);
+                rightTile = (int)Math.Ceiling(((float)nextBounds.Right / Layer.TileWidth)) - 1;
+                topTile = (int)Math.Floor((float)nextBounds.Top / Layer.TileHeight);
+                bottomTile = (int)Math.Ceiling(((float)nextBounds.Bottom / Layer.TileHeight)) - 1;
+
+            }
 
             if (vel.Y > 0)
             {
@@ -299,7 +349,7 @@ namespace KismetDataTypes
                         || GV.Player.State.GetType().ToString() == "KismetDataTypes.JumpingAttackState" && GV.Player.Sprite.CurrentFrame == 2)
                     {
 
-                       // Console.WriteLine("Enemy Health " + enemy.Health);
+                       //Console.WriteLine("Enemy Health " + enemy.Health);
                         enemy.IsHit = true;
                         enemy.Damage = 10;
 
@@ -397,10 +447,10 @@ namespace KismetDataTypes
                             {
                                 xVel = 1;
                                 yVel = -10;
-                                enemy.IsHit = true;
+                                //enemy.IsHit = true;
                             }
 
-                            enemy.Damage = 2;
+                            //enemy.Damage = 2;
 
                         }
 
@@ -411,10 +461,16 @@ namespace KismetDataTypes
                             enemy.State = new KnockedDownState(enemy);
                             enemy.ToggleDirections();
                             enemy.Damage = 2;
-
+                            enemy.State = new KnockedDownState(enemy);
                         }
-                        enemy.Damage = 2;
-                        enemy.State = new KnockedDownState(enemy);
+                        else
+                        {
+
+                            enemy.Damage = 2;
+                            //enemy.State = new KnockedDownState(enemy);
+                        }
+                        
+                        
                     }
                  
                 }
@@ -452,6 +508,7 @@ namespace KismetDataTypes
 
             bool BottomCollision = false;
             bool LeftCollision = false;
+            bool TopCollision = false;
 
             bool XCollision = false;
             Rectangle tileBounds;
@@ -499,12 +556,40 @@ namespace KismetDataTypes
                     item.Active = false;
             }
 
+            if (vel.Y < 0)
+            {
+                for (int x = leftTile; x <= rightTile; ++x)
+                {
+                    int collision = GV.Level.GetCollision(x, topTile);
+                    if (collision == Layer.Impassable)
+                    {
+                        TopCollision = true;
+                    }
+
+                }
+            }
+            if (TopCollision)
+            {
+                tileBounds = GV.Level.GetBounds(leftTile, bottomTile);
+                depth1 = RectangleExtensions.GetIntersectionDepth(nextBounds, tileBounds);
+                float absDepthY = Math.Abs(depth1.Y);
+                float absDepthX = Math.Abs(depth1.X);
+                yVel = 0.0f;
+                nextBounds = new Rectangle(nextBounds.X, nextBounds.Y + (int)absDepthY, nextBounds.Width, nextBounds.Height - (int)depth1.Y);
+                //Rectangle pBounds = GV.Player.Bounds;
+                leftTile = (int)Math.Floor((float)nextBounds.Left / Layer.TileWidth);
+                rightTile = (int)Math.Ceiling(((float)nextBounds.Right / Layer.TileWidth)) - 1;
+                topTile = (int)Math.Floor((float)nextBounds.Top / Layer.TileHeight);
+                bottomTile = (int)Math.Ceiling(((float)nextBounds.Bottom / Layer.TileHeight)) - 1;
+
+            }
+
             if (vel.Y > 0)
             {
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     int collision = GV.Level.GetCollision(x, bottomTile);
-                    if (collision != Layer.Passable)
+                    if (collision != Layer.Passable && item.ItemType != "arrow")
                     {
                         BottomCollision = true;
                     }

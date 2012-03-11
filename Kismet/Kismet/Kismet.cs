@@ -20,7 +20,7 @@ namespace Kismet
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Effect shaders;
-
+        HubManager hubManager;
         public Kismet()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -89,6 +89,8 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
+
+            hubManager = new HubManager();
         }
 
         /// <summary>
@@ -121,12 +123,14 @@ namespace Kismet
             if (GV.Player.IsAlive)
                 GV.Player.Update(gameTime);
             else
-                GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
-            GV.Level.Update(gameTime);
+            {
+                GV.Player.ResetPlayer();
+                GV.Level.Update(gameTime);
+            }
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
-
+            hubManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -177,6 +181,12 @@ namespace Kismet
             MagicItemManager.Draw(gameTime, spriteBatch);
             GV.Player.Draw(gameTime, spriteBatch);
             PickUpItemManager.Draw(gameTime, spriteBatch);
+
+            
+
+            spriteBatch.End();
+            spriteBatch.Begin();
+            hubManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

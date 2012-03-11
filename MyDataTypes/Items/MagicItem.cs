@@ -22,6 +22,7 @@ namespace KismetDataTypes
         public Vector2 velocity;
         private const float GRAVITY = 1.0f;
         private string owner;
+        LightSource light;
         
         /// <summary>
         /// Constructors a new sprite.
@@ -38,7 +39,9 @@ namespace KismetDataTypes
                 {
                     this.state = new ArrowState(this);
                     Position = new Vector2(enemy.Position.X, enemy.Position.Y -9) ;
+                    Velocity = new Vector2((GV.Player.Position.X - enemy.Position.X) / 20, (GV.Player.Position.Y - enemy.Position.Y)/20); 
                     Direction = enemy.Direction;
+                    Sprite.Rotation = 0.0f;
                     
                 }
                 else if (p_ItemType == "fireRow")
@@ -52,6 +55,14 @@ namespace KismetDataTypes
             {
                 this.state = new InAirState(this);
                 Position = GV.Player.Position;
+
+                if (p_ItemType == "light")
+                {
+                    light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 500, 2);
+                   
+                }
+                //this.state = new InAirState(this);
+                Position = GV.Player.Position;
              
             }
 
@@ -61,6 +72,15 @@ namespace KismetDataTypes
             active = true;
         }
 
+
+        /// <summary>
+        /// The level the players is on at a point in time
+        /// </summary>
+        public LightSource Light
+        {
+            get { return light; }
+            set { light = value; }
+        }
         private Enemy enemy;
         /// <summary>
         /// The level the players is on at a point in time
@@ -245,11 +265,19 @@ namespace KismetDataTypes
             Velocity = new Vector2(Velocity.X, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
             state.Update(gameTime);
-
+            
 
             Velocity = CollisionManager.ResolveMagicStaticCollisions(this, nextPosition, Velocity, MagicItemManager.GetList());
 
             Position = Position + Velocity;
+
+            if (itemType == "light")
+            {
+                light.Position = Position;
+                //Console.WriteLine("light x" + light.Position.X + " y " + light.Position.X);
+
+            }
+            
             PreviousBottom = Position.Y;
 
             //if (IsCollision)
@@ -263,7 +291,12 @@ namespace KismetDataTypes
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
+            if (itemType == "light")
+            {
+                light.DrawLightSource(spriteBatch);
 
+
+            }
             //new Vector2(positionX, -positionY + 280);
             sprite.Draw(gameTime, spriteBatch);
             if (GV.ShowBoxes)

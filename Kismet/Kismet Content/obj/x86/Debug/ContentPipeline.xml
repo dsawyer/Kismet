@@ -539,7 +539,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
-      <Time>2012-02-14T15:00:27.7203725-04:00</Time>
+      <Time>2012-03-11T16:52:52.4208282-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\GoblinAnimations.xml</Source>
@@ -651,7 +651,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-11T16:36:37.1570463-03:00</Value>
+        <Value>2012-03-11T16:56:08.4050379-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

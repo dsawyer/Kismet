@@ -1,12 +1,3 @@
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
@@ -60,6 +51,16 @@ C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
+C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll
@@ -71,4 +72,3 @@ C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Generate
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb

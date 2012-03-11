@@ -51,6 +51,12 @@ namespace KismetDataTypes
         /// </summary>
         float scale;
         public float Scale { get { return scale; } set { scale = value; } }
+
+        /// <summary>
+        /// Current animation of sprite
+        /// </summary>
+        float rotation;
+        public float Rotation { get { return rotation; } set { rotation = value; } }
         
         /// <summary>
         /// Sets the current animation to be from the dictionary based on name parameter
@@ -140,6 +146,8 @@ namespace KismetDataTypes
             {
                 AddAnimation(newAnimation);
             }
+
+            rotation = 0.0f;
         }//End Constructor
 
         /// <summary>
@@ -180,7 +188,7 @@ namespace KismetDataTypes
             Rectangle source = new Rectangle(CurrentFrame * this.CurrentAnimation.FrameWidth, 0, this.CurrentAnimation.FrameWidth, this.CurrentAnimation.FrameHeight);
     
             // Draw the current frame.
-            spriteBatch.Draw(this.Content.Load<Texture2D>(this.CurrentAnimation.FilePath), Position, source, Color.White, 0.0f, this.Origin, Scale, this.SpriteEffect, 0.0f);
+            spriteBatch.Draw(this.Content.Load<Texture2D>(this.CurrentAnimation.FilePath), Position, source, Color.White, Rotation, this.Origin, Scale, this.SpriteEffect, 0.0f);
 
             if (GV.ShowBoxes)
             {

@@ -12,8 +12,8 @@
       <FrameHeight>200</FrameHeight>
       <TimePerFrame>0.2</TimePerFrame>
       <CollisionBounds>
-        77 130 50 70
-        77 130 50 70
+        90 180 20 20
+        90 180 20 20
       </CollisionBounds>
     </Item>
 

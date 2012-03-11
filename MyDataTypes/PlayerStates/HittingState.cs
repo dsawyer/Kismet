@@ -29,6 +29,8 @@ namespace KismetDataTypes
             else if (Player.Direction == "right")
                 Player.Velocity = new Vector2(-5, Player.Velocity.Y);
 
+            Player.Damage = 10;
+
         }
 
         public override void Update(GameTime gameTime)
