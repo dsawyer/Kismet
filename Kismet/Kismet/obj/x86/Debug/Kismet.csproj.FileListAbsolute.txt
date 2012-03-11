@@ -77,6 +77,7 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyRefer
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+<<<<<<< HEAD
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Icons.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Tiles.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
@@ -157,3 +158,5 @@ C:\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb
+=======
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8

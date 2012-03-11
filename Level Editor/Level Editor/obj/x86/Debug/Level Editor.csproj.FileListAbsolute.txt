@@ -72,6 +72,7 @@ C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Generate
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
 C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
+<<<<<<< HEAD
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb
@@ -149,3 +150,5 @@ C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.exe
 C:\Kismet\Level Editor\Level Editor\obj\x86\Debug\Level Editor.pdb
+=======
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8

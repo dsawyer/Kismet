@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Icons.xnb</Output>
-      <Time>2011-10-22T15:06:32-03:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Icons.xnb</Output>
+      <Time>2011-10-22T15:06:32.3949738-03:00</Time>
     </Item>
     <Item>
       <Source>tiles\Tiles.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Tiles.xnb</Output>
-      <Time>2012-01-17T23:49:00-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\Tiles.xnb</Output>
+      <Time>2012-01-17T23:49:01.698557-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Dan\DanAttack1.png</Source>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanAttack1.xnb</Output>
       <Time>2011-11-16T19:46:42-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanIdle.xnb</Output>
       <Time>2011-11-16T19:20:40-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanWalking.xnb</Output>
       <Time>2011-11-16T19:28:38-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAttack.xnb</Output>
       <Time>2011-12-14T12:57:00-04:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinAwake.xnb</Output>
       <Time>2011-12-15T16:12:28-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinIdle.xnb</Output>
       <Time>2011-12-14T12:44:52-04:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinJumping.xnb</Output>
       <Time>2011-12-14T13:00:48-04:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinKnockedDown.xnb</Output>
       <Time>2011-12-15T15:52:16-04:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinLittleHit.xnb</Output>
       <Time>2011-12-15T15:26:32-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Goblin\GoblinWalking.xnb</Output>
       <Time>2011-12-14T13:08:38-04:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicItem.xnb</Output>
       <Time>2012-01-05T12:25:16-04:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanHitting.xnb</Output>
       <Time>2011-11-17T17:34:06-04:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumping.xnb</Output>
       <Time>2011-11-17T13:56:52-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanJumpingAttack.xnb</Output>
       <Time>2011-11-17T17:08:32-04:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Dan\DanMagicAttack.xnb</Output>
       <Time>2012-01-04T13:00:42-04:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonAttack.xnb</Output>
       <Time>2012-01-18T11:04:26-04:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonGetUp.xnb</Output>
       <Time>2012-01-12T14:14:38-04:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonIdle.xnb</Output>
       <Time>2012-01-12T12:47:16-04:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonKnockedDown.xnb</Output>
       <Time>2012-01-12T13:19:18-04:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonLittleHit.xnb</Output>
       <Time>2012-01-12T14:19:56-04:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\DemonArcher\DemonWalking.xnb</Output>
       <Time>2012-01-12T13:03:12-04:00</Time>
     </Item>
     <Item>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb</Output>
-      <Time>2012-02-28T10:06:35.0527645-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack1.xnb</Output>
+      <Time>2012-02-29T09:59:54.6619991-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\FireMage\FireMageAttack2.png</Source>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageAttack2.xnb</Output>
       <Time>2012-01-17T21:58:26-04:00</Time>
     </Item>
     <Item>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb</Output>
-      <Time>2012-02-28T10:07:23.6875463-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\FireMage\FireMageIdle.xnb</Output>
+      <Time>2012-02-29T09:59:54.6629992-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanMagicFire.png</Source>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicFire.xnb</Output>
       <Time>2012-01-31T10:02:06-04:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DemonArcherArrow.xnb</Output>
       <Time>2012-01-17T23:49:00-04:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\FireMageFire.xnb</Output>
       <Time>2012-01-17T22:43:08-04:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\MiniBossEnergy.xnb</Output>
       <Time>2012-01-17T22:43:40-04:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossAttack1.xnb</Output>
       <Time>2012-01-17T11:54:56-04:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossIdle.xnb</Output>
       <Time>2012-01-17T14:22:04-04:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb</Output>
       <Time>2012-01-17T14:00:54-04:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport1.xnb</Output>
       <Time>2012-01-17T11:03:20-04:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossTeleport2.xnb</Output>
       <Time>2012-01-17T11:16:50-04:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb</Output>
       <Time>2012-01-17T10:05:16-04:00</Time>
     </Item>
     <Item>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\greenPixel.xnb</Output>
-      <Time>2012-01-31T20:42:52-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\greenPixel.xnb</Output>
+      <Time>2012-01-31T20:42:52.903326-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\WhitePixel.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\WhitePixel.xnb</Output>
-      <Time>2012-01-31T20:42:52-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\WhitePixel.xnb</Output>
+      <Time>2012-01-31T20:42:52.9053261-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanMagicDark.png</Source>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark.xnb</Output>
       <Time>2012-01-31T15:42:28-04:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicDark1.xnb</Output>
       <Time>2012-01-31T15:43:24-04:00</Time>
     </Item>
     <Item>
@@ -367,7 +367,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicEarth.xnb</Output>
       <Time>2012-01-27T10:06:48-04:00</Time>
     </Item>
     <Item>
@@ -376,7 +376,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb</Output>
       <Time>2012-01-31T15:52:06-04:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb</Output>
       <Time>2012-01-31T15:53:24-04:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater.xnb</Output>
       <Time>2012-01-31T10:44:26-04:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWater1.xnb</Output>
       <Time>2012-01-31T10:43:26-04:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind.xnb</Output>
       <Time>2012-01-31T15:34:02-04:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicWind1.xnb</Output>
       <Time>2012-01-31T15:34:46-04:00</Time>
     </Item>
     <Item>
@@ -430,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanHeal.xnb</Output>
-      <Time>2012-02-08T11:06:02.149632-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanHeal.xnb</Output>
+      <Time>2012-02-14T15:00:27.6933709-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupDark.png</Source>
@@ -439,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb</Output>
-      <Time>2012-02-08T10:51:08.4370899-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupDark.xnb</Output>
+      <Time>2012-02-14T15:00:27.6983712-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupEarth.png</Source>
@@ -448,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb</Output>
-      <Time>2012-02-09T15:14:36.0950352-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupEarth.xnb</Output>
+      <Time>2012-02-14T15:00:27.7023714-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupFire.png</Source>
@@ -457,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb</Output>
-      <Time>2012-02-08T10:43:50.1250198-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupFire.xnb</Output>
+      <Time>2012-02-14T15:00:27.7083718-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupHeal.png</Source>
@@ -466,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb</Output>
-      <Time>2012-02-09T15:42:10.4996617-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupHeal.xnb</Output>
+      <Time>2012-02-14T15:00:27.7103719-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupWater.png</Source>
@@ -475,8 +475,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb</Output>
-      <Time>2012-02-08T10:48:20.0354578-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb</Output>
+      <Time>2012-02-14T15:00:27.7143721-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanPickupWind.png</Source>
@@ -484,8 +484,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb</Output>
       <Time>2012-02-08T10:53:09.3100034-04:00</Time>
+=======
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanPickupWind.xnb</Output>
+      <Time>2012-02-14T15:00:27.7193724-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <Item>
       <Source>Sprites\Imp\ImpFly.png</Source>
@@ -493,8 +498,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpFly.xnb</Output>
-      <Time>2012-02-24T10:11:36.6794678-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpFly.xnb</Output>
+      <Time>2012-02-29T10:09:24.0325653-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Imp\ImpIdle.png</Source>
@@ -502,8 +507,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpIdle.xnb</Output>
-      <Time>2012-02-24T10:01:20.8472443-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpIdle.xnb</Output>
+      <Time>2012-02-29T10:09:24.0335653-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Imp\ImpKnockedDown.png</Source>
@@ -511,8 +516,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpKnockedDown.xnb</Output>
       <Time>2012-02-24T10:11:36.6794678-04:00</Time>
+=======
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Imp\ImpKnockedDown.xnb</Output>
+      <Time>2012-02-29T10:09:24.0355655-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <Item>
       <Source>Levels\Level_01A.xml</Source>
@@ -520,8 +530,13 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
       <Time>2012-02-29T17:27:46.4896627-04:00</Time>
+=======
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
+      <Time>2012-02-29T16:45:18.1642239-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -529,8 +544,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
-      <Time>2012-02-10T11:10:51.7386139-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
+      <Time>2012-01-31T14:47:32-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanMagicAnimations.xml</Source>
@@ -538,8 +553,13 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
       <Time>2012-03-08T22:14:33.9856669-04:00</Time>
+=======
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
+      <Time>2012-02-14T15:00:27.7203725-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <Item>
       <Source>XML Documents\GoblinAnimations.xml</Source>
@@ -547,8 +567,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
-      <Time>2012-02-11T18:28:01.6635152-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
+      <Time>2012-02-14T15:00:27.7213725-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DemonArcherAnimations.xml</Source>
@@ -556,7 +576,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb</Output>
       <Time>2012-01-31T15:15:04-04:00</Time>
     </Item>
     <Item>
@@ -565,8 +585,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
-      <Time>2012-02-28T11:50:24.1630492-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
+      <Time>2012-02-29T09:59:54.6679995-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\FireMageAnimations.xml</Source>
@@ -574,8 +594,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
-      <Time>2012-02-28T10:04:34.617876-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
+      <Time>2012-02-29T09:59:54.6689995-04:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\MiniBossAnimations.xml</Source>
@@ -583,7 +603,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
       <Time>2012-01-31T17:34:54-04:00</Time>
     </Item>
     <Item>
@@ -592,7 +612,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\Goblin.xnb</Output>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\Goblin.xnb</Output>
       <Time>2012-01-31T10:59:44-04:00</Time>
     </Item>
     <Item>
@@ -601,10 +621,29 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
-      <Time>2012-02-09T15:30:30.7666393-04:00</Time>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
+      <Time>2012-02-14T15:00:27.7213725-04:00</Time>
     </Item>
     <Item>
+      <Source>Levels\Level_01B.xml</Source>
+      <Name>Levels\Level_01B</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb</Output>
+      <Time>2012-02-29T16:31:48.8869359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01C.xml</Source>
+      <Name>Levels\Level_01C</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
+      <Time>2012-02-29T10:45:07.0681399-04:00</Time>
+    </Item>
+    <Item>
+<<<<<<< HEAD
       <Source>Levels\Level_01B.xml</Source>
       <Name>Levels\Level_01B</Name>
       <Importer>XmlImporter</Importer>
@@ -630,6 +669,15 @@
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
       <Time>2012-02-29T17:27:46.5086638-04:00</Time>
+=======
+      <Source>Levels\Level_01D.xml</Source>
+      <Name>Levels\Level_01D</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
+      <Time>2012-02-29T10:56:25.5819487-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <Item>
       <Source>LightEffects.fx</Source>
@@ -637,6 +685,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
       <Time>2012-03-11T16:08:33.1543194-03:00</Time>
     </Item>
@@ -648,6 +697,10 @@
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2012-03-09T01:43:53.4963348-04:00</Time>
+=======
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
+      <Time>2012-02-29T16:40:42.1994396-04:00</Time>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -655,10 +708,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Kismet\Kismet\Kismet Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Kismet\Kismet\Kismet\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Kismet\Kismet\Kismet Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -686,12 +739,17 @@
         <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
+<<<<<<< HEAD
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
         <Value>2012-03-11T16:33:07.412202-03:00</Value>
+=======
+        <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
+        <Value>2012-02-29T16:30:53.7057797-04:00</Value>
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-09-22T11:46:59.2413858-03:00</Value>
+        <Value>2011-08-08T10:14:20.8401019-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

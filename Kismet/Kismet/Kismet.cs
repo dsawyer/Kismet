@@ -70,7 +70,7 @@ namespace Kismet
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
-            GV.ShowBoxes = true;
+            GV.ShowBoxes = false;
 
             GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
 
@@ -89,8 +89,11 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
+<<<<<<< HEAD
 
             hubManager = new HubManager();
+=======
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
         }
 
         /// <summary>
@@ -152,8 +155,13 @@ namespace Kismet
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+<<<<<<< HEAD
             //GV.Level.SortLights();
             //GV.Level.Lights;
+=======
+            GV.Level.SortLights();
+
+>>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
             shaders.Parameters["cameraPosition"].SetValue(Camera.Position);
