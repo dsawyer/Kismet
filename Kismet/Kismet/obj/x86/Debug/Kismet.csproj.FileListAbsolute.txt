@@ -65,9 +65,6 @@ C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Document
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\Goblin.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
-C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb
-C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb
-C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.exe
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.pdb

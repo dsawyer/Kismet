@@ -131,10 +131,6 @@ namespace KismetDataTypes
 
         #region Object layer
 
-        private Vector2[] lightCentres;
-        private float[] lightRadii;
-        private float[] lightBrightness;
-
         [System.Xml.Serialization.XmlElementAttribute("NumWarps")]
         // the number of warps in a level
         public int NumWarps = 0;
@@ -394,11 +390,6 @@ namespace KismetDataTypes
             {
                 ResourceManager.Instance.Texture(BackgroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", BackgroundLayerTexture)));
             }
-            // Initialise the surGroundlayer
-            if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
-            {
-                ResourceManager.Instance.Texture(SurGroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurGroundLayerTexture)));
-            }
             // Initialise the ground layer
             if (!ResourceManager.Instance.ContainsTexture(GroundLayerTexture))
             {
@@ -406,13 +397,13 @@ namespace KismetDataTypes
             }
             groundLayer = new Layer(Width, Height, 0, GroundLayerTexture, GroundLayerValues, 0, 0);
             // Initialise the surGroundlayer
-            if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
+            /*if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
             {
                 ResourceManager.Instance.Texture(SurGroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurGroundLayerTexture)));
             }
-            /*surGroundLayer = new Layer(Width, Height, 0, SurGroundLayerTexture, SurGroundLayerValues, 0, 0);
+            surGroundLayer = new Layer(Width, Height, 0, SurGroundLayerTexture, SurGroundLayerValues, 16, 16);
             // Initialise the foreground layer
-            if (!ResourceManager.Instance.ContainsTexture(ForegroundLayerTexture))
+            /*if (!ResourceManager.Instance.ContainsTexture(ForegroundLayerTexture))
             {
                 ResourceManager.Instance.Texture(ForegroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", ForegroundLayerTexture)));
             }
@@ -452,8 +443,8 @@ namespace KismetDataTypes
         {
             //if (!GV.EDITING)
             { DrawBackground(spriteBatch); }
-            groundLayer.Draw(spriteBatch);
             //surGroundLayer.Draw(spriteBatch);
+            groundLayer.Draw(spriteBatch);
             if (GV.EDITING)
             { DrawObjects(spriteBatch); }
             else
@@ -549,6 +540,18 @@ namespace KismetDataTypes
             }
 
             return lightDirections;
+        }
+
+        public Vector3[] GetLightColours(int num)
+        {
+            Vector3[] lightColours = new Vector3[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightColours[i] = Lights[i].Colour;
+            }
+
+            return lightColours;
         }
 
         public float[] GetLightRadii(int num)
@@ -647,8 +650,14 @@ namespace KismetDataTypes
         /// <summary>
         /// Method called during update process
         /// </summary>
-        public void Update()
+        public void Update(GameTime gameTime)
         {
+            SortLights();
+
+            for (int i = 0; i < NumLights; i += 1)
+            {
+                Lights[i].UpdatePosition(gameTime);
+            }
         }
 
         /// <summary>

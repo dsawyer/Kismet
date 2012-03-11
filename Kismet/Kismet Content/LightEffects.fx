@@ -6,6 +6,7 @@ float lightAttenuations[4];
 float lightAngles[4];
 float lightRadii[4];
 float lightBrightness[4];
+float3 lightColours[4];
 int numLights;
 sampler TextureSampler : register(s0);
 
@@ -31,7 +32,7 @@ float4 PS(PixelInput input) : COLOR0
 	float4 Colour = tex2D(TextureSampler, input.TexCoord);
 
 	// The value that represents how much light is to be removed at most
-	float4 darkness = float4(0.7f, 0.7f,0.7f, 0);
+	float4 darkness = float4(0.5f, 0.5f,0.5f, 0);
 
 	// Various needed variables for calculating the necessary lighting
 	float2 distanceToLight;
@@ -58,12 +59,14 @@ float4 PS(PixelInput input) : COLOR0
 			// the light source's radius, then the point is provided with some light
 			if (distance < lightRadii[i])
 			{
-				darknessRatio -= ((lightRadii[i] - distance)/lightRadii[i]) * (lightAttenuations[i] / 10);
-				darknessRatio /= lightBrightness[i];
+				darknessRatio -= ((lightRadii[i] - distance)/lightRadii[i]) * (lightAttenuations[i] / 2);
+				//darknessRatio /= lightBrightness[i];
 				if (angleBetweenLight >= 0)
 				{ darknessRatio /= angleBetweenLight; }
 				else if (angleBetweenLight < 0)
 				{ darknessRatio /= (-1 * angleBetweenLight); }
+
+				darkness = float4(lightColours[i].x, lightColours[i].y, lightColours[i].z, 0);
 			}
 		}
 	}

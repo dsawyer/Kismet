@@ -179,22 +179,22 @@ namespace KismetDataTypes
                     Position += Velocity;
                 
                 //Console.WriteLine("insight " + SightDetected);
-                Console.WriteLine("state " + State.GetType().ToString());
+                //Console.WriteLine("state " + State.GetType().ToString());
                 if (SightDetected)
                 {
-                    Console.WriteLine("insight " + SightDetected);
+                    //Console.WriteLine("insight " + SightDetected);
                     attackTime = 0;
                     //StateMachine.UpdateState("insight");
                     //returnPosition = Position;
                     State = new FlockAttackState(this);
                     SightDetected = true;
-                    Console.WriteLine("  switch to attack state");
+                    //Console.WriteLine("  switch to attack state");
                 }
                 else if (!SightDetected && State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
                 {
                     Position = new Vector2 (GV.Player.Position.X,returnPosition.Y);
                     State = new FlockPatrolState(this);
-                    Console.WriteLine("  switch to patrol state");
+                    //Console.WriteLine("  switch to patrol state");
                 }
 
 

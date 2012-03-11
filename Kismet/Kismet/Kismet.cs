@@ -122,6 +122,7 @@ namespace Kismet
                 GV.Player.Update(gameTime);
             else
                 GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
+            GV.Level.Update(gameTime);
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
@@ -147,7 +148,6 @@ namespace Kismet
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
-            GV.Level.SortLights();
 
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
@@ -158,6 +158,7 @@ namespace Kismet
             shaders.Parameters["lightAngles"].SetValue(GV.Level.GetLightAngles(min));
             shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii(min));
             shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness(min));
+            shaders.Parameters["lightColours"].SetValue(GV.Level.GetLightColours(min));
             shaders.Parameters["numLights"].SetValue(min);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,

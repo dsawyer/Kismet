@@ -1,13 +1,3 @@
-Content\Levels\Level_01.xnb
-Content\XML Documents\DanAnimations.xnb
-Content\XML Documents\DanMagicAnimations.xnb
-Content\XML Documents\GoblinAnimations.xnb
-Content\XML Documents\MiniBossAnimations.xnb
-Content\XML Documents\DemonArcherAnimations.xnb
-Content\XML Documents\EnemyMagicAnimations.xnb
-Content\XML Documents\FireMageAnimations.xnb
-Content\XML Documents\Goblin.xnb
-Content\XML Documents\PickUpItemsAnimations.xnb
 Content\Sprites\Dan\DanAttack1.xnb
 Content\Sprites\Dan\DanIdle.xnb
 Content\Sprites\Dan\DanWalking.xnb
@@ -61,3 +51,13 @@ Content\Sprites\Items\DanPickupEarth.xnb
 Content\Sprites\Items\DanPickupFire.xnb
 Content\Sprites\Items\DanPickupHeal.xnb
 Content\Sprites\Items\DanPickupWater.xnb
+Content\XML Documents\DanAnimations.xnb
+Content\XML Documents\DanMagicAnimations.xnb
+Content\XML Documents\GoblinAnimations.xnb
+Content\XML Documents\MiniBossAnimations.xnb
+Content\XML Documents\DemonArcherAnimations.xnb
+Content\XML Documents\EnemyMagicAnimations.xnb
+Content\XML Documents\FireMageAnimations.xnb
+Content\XML Documents\Goblin.xnb
+Content\XML Documents\PickUpItemsAnimations.xnb
+Content\Levels\Level_01A.xnb

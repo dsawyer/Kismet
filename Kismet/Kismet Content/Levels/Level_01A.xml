@@ -36,10 +36,10 @@
     </GroundLayerValues>
     <SurGroundLayerTexture>Tiles</SurGroundLayerTexture>
     <SurGroundLayerValues>
-      </SurGroundLayerValues>
+    </SurGroundLayerValues>
     <ForegroundLayerTexture>Tiles</ForegroundLayerTexture>
     <ForegroundLayerValues>
-      </ForegroundLayerValues>
+    </ForegroundLayerValues>
     <CollisionLayerTexture>Tiles</CollisionLayerTexture>
     <CollisionLayerValues>
       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
@@ -892,10 +892,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>416 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>416 66</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>2</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>500</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.0 0.4 0.4</Colour>
       </Item>
       <Item>
         <Name>Light2</Name>
@@ -905,10 +909,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1116 266</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1116 216</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.8</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light3</Name>
@@ -918,10 +926,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1916 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1916 66</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.5</IlluminationAngle>
         <Radius>500</Radius>
         <Brightness>3</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light4</Name>
@@ -931,10 +943,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>2916 316</Centre>
         <Direction>0 1</Direction>
+        <Anchor>2916 266</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>350</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light5</Name>
@@ -944,10 +960,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>4016 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>4016 66</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>8</Attenuation>
         <IlluminationAngle>0</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light6</Name>
@@ -957,10 +977,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1344 -284</Centre>
         <Direction>0 1</Direction>
+        <Anchor>400 50</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.98</IlluminationAngle>
         <Radius>360</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light7</Name>
@@ -970,10 +994,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>5344 80</Centre>
         <Direction>0 1</Direction>
+        <Anchor>5344 30</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light8</Name>
@@ -983,10 +1011,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>8304 320</Centre>
         <Direction>0 1</Direction>
+        <Anchor>8304 270</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>8</Attenuation>
         <IlluminationAngle>0</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light9</Name>
@@ -996,10 +1028,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>9712 384</Centre>
         <Direction>0 1</Direction>
+        <Anchor>9712 334</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light10</Name>
@@ -1009,10 +1045,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>11440 496</Centre>
         <Direction>0 1</Direction>
+        <Anchor>11440 446</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.97</IlluminationAngle>
         <Radius>200</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
       <Item>
         <Name>Light11</Name>
@@ -1022,10 +1062,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>6656 80</Centre>
         <Direction>0 1</Direction>
+        <Anchor>6656 30</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>600</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.6 0.8 0.6</Colour>
       </Item>
     </Lights>
   </Asset>
