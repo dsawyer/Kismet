@@ -2,96 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Levels\Level_01.xml</Source>
-      <Name>Levels\Level_01</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01.xnb</Output>
-      <Time>2012-02-21T19:49:51.5486074-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\DanAnimations.xml</Source>
-      <Name>XML Documents\DanAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\DanMagicAnimations.xml</Source>
-      <Name>XML Documents\DanMagicAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\GoblinAnimations.xml</Source>
-      <Name>XML Documents\GoblinAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\MiniBossAnimations.xml</Source>
-      <Name>XML Documents\MiniBossAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\DemonArcherAnimations.xml</Source>
-      <Name>XML Documents\DemonArcherAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\EnemyMagicAnimations.xml</Source>
-      <Name>XML Documents\EnemyMagicAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\FireMageAnimations.xml</Source>
-      <Name>XML Documents\FireMageAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\Goblin.xml</Source>
-      <Name>XML Documents\Goblin</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb</Output>
-      <Time>2012-01-31T20:41:22-04:00</Time>
-    </Item>
-    <Item>
-      <Source>XML Documents\PickUpItemsAnimations.xml</Source>
-      <Name>XML Documents\PickUpItemsAnimations</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
-      <Time>2012-02-09T15:25:41.7031058-04:00</Time>
-    </Item>
-    <Item>
       <Source>Sprites\Dan\DanAttack1.png</Source>
       <Name>Sprites\Dan\DanAttack1</Name>
       <Importer>TextureImporter</Importer>
@@ -568,6 +478,123 @@
       <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Sprites\Items\DanPickupWater.xnb</Output>
       <Time>2012-02-09T19:29:42.7926082-04:00</Time>
     </Item>
+    <Item>
+      <Source>XML Documents\DanAnimations.xml</Source>
+      <Name>XML Documents\DanAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\DanMagicAnimations.xml</Source>
+      <Name>XML Documents\DanMagicAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\GoblinAnimations.xml</Source>
+      <Name>XML Documents\GoblinAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\MiniBossAnimations.xml</Source>
+      <Name>XML Documents\MiniBossAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\DemonArcherAnimations.xml</Source>
+      <Name>XML Documents\DemonArcherAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\DemonArcherAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\EnemyMagicAnimations.xml</Source>
+      <Name>XML Documents\EnemyMagicAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMagicAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\FireMageAnimations.xml</Source>
+      <Name>XML Documents\FireMageAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\Goblin.xml</Source>
+      <Name>XML Documents\Goblin</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb</Output>
+      <Time>2012-01-31T20:41:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>XML Documents\PickUpItemsAnimations.xml</Source>
+      <Name>XML Documents\PickUpItemsAnimations</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
+      <Time>2012-02-09T15:25:41.7031058-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01A.xml</Source>
+      <Name>Levels\Level_01A</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
+      <Time>2012-02-29T17:27:46.6756734-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01D.xml</Source>
+      <Name>Levels\Level_01D</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
+      <Time>2012-02-29T17:27:46.6786736-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01B.xml</Source>
+      <Name>Levels\Level_01B</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01B.xnb</Output>
+      <Time>2012-02-29T17:27:46.6766734-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01C.xml</Source>
+      <Name>Levels\Level_01C</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
+      <Time>2012-02-29T17:27:46.6776735-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -606,7 +633,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-02-28T19:47:43.1969349-04:00</Value>
+        <Value>2012-03-11T16:33:07.412202-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

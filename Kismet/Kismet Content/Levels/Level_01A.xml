@@ -66,34 +66,342 @@
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
     </CollisionLayerValues>
-    <NumWarps>2</NumWarps>
-    <NumSpawners>2</NumSpawners>
-    <NumTriggers>4</NumTriggers>
-    <NumLights>1</NumLights>
+    <NumWarps>1</NumWarps>
+    <NumSpawners>41</NumSpawners>
+    <NumTriggers>42</NumTriggers>
+    <NumLights>11</NumLights>
     <Warps>
       <Item>
         <Name>Warp1</Name>
-        <Position>100 450</Position>
-        <BoundingBox>100 450 32 64</BoundingBox>
+        <Position>11424 576</Position>
+        <BoundingBox>11424 576 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
-        <DestinationLevel>Level01_A</DestinationLevel>
-        <TargetPosition>5200 300</TargetPosition>
-      </Item>
-      <Item>
-        <Name>Warp2</Name>
-        <Position>5048 300</Position>
-        <BoundingBox>5048 300 32 64</BoundingBox>
-        <ImageName>Tiles</ImageName>
-        <ImageBounds>224 0 32 64</ImageBounds>
-        <DestinationLevel>Level01_A</DestinationLevel>
-        <TargetPosition>200 600</TargetPosition>
+        <DestinationLevel>Level_01B</DestinationLevel>
+        <TargetPosition>50 2850</TargetPosition>
       </Item>
     </Warps>
     <Spawners>
+      <!-- Goblin Spawners -->
       <Item>
         <Name>Spawn1</Name>
-        <Position>1000 320</Position>
+        <Position>500 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn2</Name>
+        <Position>570 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin2</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn3</Name>
+        <Position>1408 416</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin3</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn4</Name>
+        <Position>1856 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin4</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn5</Name>
+        <Position>1888 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin5</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn6</Name>
+        <Position>2528 416</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin6</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn7</Name>
+        <Position>2816 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin7</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn8</Name>
+        <Position>2816 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin8</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn9</Name>
+        <Position>3328 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin9</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn10</Name>
+        <Position>3520 416</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin10</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn11</Name>
+        <Position>3776 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin11</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn12</Name>
+        <Position>3394 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin12</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn13</Name>
+        <Position>3586 352</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin13</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn14</Name>
+        <Position>3394 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin14</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn15</Name>
+        <Position>4800 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin15</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn16</Name>
+        <Position>4864 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin16</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn17</Name>
+        <Position>5376 352</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin17</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn18</Name>
+        <Position>5632 0</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin18</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn19</Name>
+        <Position>5888 96</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin19</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn20</Name>
+        <Position>6528 96</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin20</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn21</Name>
+        <Position>6592 352</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin21</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn22</Name>
+        <Position>6592 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin22</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn23</Name>
+        <Position>6784 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin23</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn24</Name>
+        <Position>7936 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin24</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn25</Name>
+        <Position>8064 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin25</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn26</Name>
+        <Position>8128 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin26</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn27</Name>
+        <Position>8256 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin27</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn28</Name>
+        <Position>9408 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin28</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn29</Name>
+        <Position>9664 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin29</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn30</Name>
+        <Position>9792 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin30</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn31</Name>
+        <Position>9920 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin31</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn32</Name>
+        <Position>10112 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin32</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn33</Name>
+        <Position>10496 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin33</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn34</Name>
+        <Position>10560 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin34</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn35</Name>
+        <Position>11136 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin35</PointID>
+      </Item>
+      <!-- Demon Archer Spawners -->
+      <Item>
+        <Name>Spawn36</Name>
+        <Position>1500 160</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
@@ -101,26 +409,66 @@
         <PointID>demon1</PointID>
       </Item>
       <Item>
-        <Name>Spawn1</Name>
-        <Position>400 300</Position>
+        <Name>Spawn37</Name>
+        <Position>2510 288</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
-        <Type>goblin</Type>
-        <PointID>goblin1</PointID>
+        <Type>demon</Type>
+        <PointID>demon2</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn38</Name>
+        <Position>6100 0</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon3</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn39</Name>
+        <Position>6100 96</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon4</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn40</Name>
+        <Position>8704 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon5</PointID>
+      </Item>
+      <!-- Imp Spawners -->
+      <!-- Fire Mage Spawners -->
+      <Item>
+        <Name>Spawn1</Name>
+        <Position>11264 608</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>fireMage</Type>
+        <PointID>firemage1</PointID>
       </Item>
     </Spawners>
     <Triggers>
+      <!-- Warp Triggers -->
       <Item>
         <Name>Trigger1</Name>
-        <Position>250 440</Position>
-        <BoundingBox>250 440 500 300</BoundingBox>
+        <Position>11424 576</Position>
+        <BoundingBox>11424 576 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
-        <Type>spawn</Type>
-        <Triggerbox>250 440 500 300</Triggerbox>
-        <Target>goblin1</Target>
+        <Type>warp</Type>
+        <Triggerbox>11424 576 32 64</Triggerbox>
+        <Target>Warp1</Target>
       </Item>
+      <!-- Goblin Spawner Triggers -->
       <Item>
         <Name>Trigger2</Name>
         <Position>250 440</Position>
@@ -128,40 +476,556 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
         <Type>spawn</Type>
-        <Triggerbox>250 440 500 300</Triggerbox>
-        <Target>demon1</Target>
+        <Triggerbox>0 440 500 300</Triggerbox>
+        <Target>goblin1</Target>
       </Item>
       <Item>
         <Name>Trigger3</Name>
-        <Position>100 450</Position>
-        <BoundingBox>100 450 32 64</BoundingBox>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
-        <Type>warp</Type>
-        <Triggerbox>100 450 32 64</Triggerbox>
-        <Target>Warp1</Target>
+        <Type>spawn</Type>
+        <Triggerbox>0 440 500 300</Triggerbox>
+        <Target>goblin2</Target>
       </Item>
       <Item>
         <Name>Trigger4</Name>
-        <Position>5048 100</Position>
-        <BoundingBox>5048 300 32 64</BoundingBox>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
-        <Type>warp</Type>
-        <Triggerbox>5048 300 32 64</Triggerbox>
-        <Target>Warp2</Target>
+        <Type>spawn</Type>
+        <Triggerbox>704 0 64 736</Triggerbox>
+        <Target>goblin3</Target>
+      </Item>
+      <Item>
+        <Name>Trigger5</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>800 0 64 736</Triggerbox>
+        <Target>goblin4</Target>
+      </Item>
+      <Item>
+        <Name>Trigger6</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>800 0 64 736</Triggerbox>
+        <Target>goblin5</Target>
+      </Item>
+      <Item>
+        <Name>Trigger7</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1280 0 64 736</Triggerbox>
+        <Target>goblin6</Target>
+      </Item>
+      <Item>
+        <Name>Trigger8</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1600 0 64 736</Triggerbox>
+        <Target>goblin7</Target>
+      </Item>
+      <Item>
+        <Name>Trigger9</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1600 0 64 736</Triggerbox>
+        <Target>goblin8</Target>
+      </Item>
+      <Item>
+        <Name>Trigger10</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2176 0 64 736</Triggerbox>
+        <Target>goblin9</Target>
+      </Item>
+      <Item>
+        <Name>Trigger11</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2176 0 64 736</Triggerbox>
+        <Target>goblin10</Target>
+      </Item>
+      <Item>
+        <Name>Trigger12</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2176 0 64 736</Triggerbox>
+        <Target>goblin11</Target>
+      </Item>
+      <Item>
+        <Name>Trigger13</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2752 0 64 736</Triggerbox>
+        <Target>goblin12</Target>
+      </Item>
+      <Item>
+        <Name>Trigger14</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2752 0 64 736</Triggerbox>
+        <Target>goblin13</Target>
+      </Item>
+      <Item>
+        <Name>Trigger15</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2752 0 64 736</Triggerbox>
+        <Target>goblin14</Target>
+      </Item>
+      <Item>
+        <Name>Trigger16</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>3840 0 64 736</Triggerbox>
+        <Target>goblin15</Target>
+      </Item>
+      <Item>
+        <Name>Trigger17</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>3840 0 64 736</Triggerbox>
+        <Target>goblin16</Target>
+      </Item>
+      <Item>
+        <Name>Trigger18</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>4608 0 64 736</Triggerbox>
+        <Target>goblin17</Target>
+      </Item>
+      <Item>
+        <Name>Trigger19</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5376 0 64 736</Triggerbox>
+        <Target>goblin18</Target>
+      </Item>
+      <Item>
+        <Name>Trigger20</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5376 0 64 736</Triggerbox>
+        <Target>goblin19</Target>
+      </Item>
+      <Item>
+        <Name>Trigger21</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5888 0 64 736</Triggerbox>
+        <Target>goblin20</Target>
+      </Item>
+      <Item>
+        <Name>Trigger22</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5888 0 64 736</Triggerbox>
+        <Target>goblin21</Target>
+      </Item>
+      <Item>
+        <Name>Trigger23</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5888 0 64 736</Triggerbox>
+        <Target>goblin22</Target>
+      </Item>
+      <Item>
+        <Name>Trigger24</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5888 0 64 736</Triggerbox>
+        <Target>goblin23</Target>
+      </Item>
+      <Item>
+        <Name>Trigger25</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>7360 0 64 736</Triggerbox>
+        <Target>goblin24</Target>
+      </Item>
+      <Item>
+        <Name>Trigger26</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>7360 0 64 736</Triggerbox>
+        <Target>goblin25</Target>
+      </Item>
+      <Item>
+        <Name>Trigger27</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>7360 0 64 736</Triggerbox>
+        <Target>goblin26</Target>
+      </Item>
+      <Item>
+        <Name>Trigger28</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>7360 0 64 736</Triggerbox>
+        <Target>goblin27</Target>
+      </Item>
+      <Item>
+        <Name>Trigger29</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>8576 0 64 736</Triggerbox>
+        <Target>goblin28</Target>
+      </Item>
+      <Item>
+        <Name>Trigger30</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9344 0 64 736</Triggerbox>
+        <Target>goblin29</Target>
+      </Item>
+      <Item>
+        <Name>Trigger31</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9344 0 64 736</Triggerbox>
+        <Target>goblin30</Target>
+      </Item>
+      <Item>
+        <Name>Trigger32</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9344 0 64 736</Triggerbox>
+        <Target>goblin31</Target>
+      </Item>
+      <Item>
+        <Name>Trigger33</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9344 0 64 736</Triggerbox>
+        <Target>goblin32</Target>
+      </Item>
+      <Item>
+        <Name>Trigger34</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9920 0 64 736</Triggerbox>
+        <Target>goblin33</Target>
+      </Item>
+      <Item>
+        <Name>Trigger35</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>9920 0 64 736</Triggerbox>
+        <Target>goblin34</Target>
+      </Item>
+      <Item>
+        <Name>Trigger36</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>10560 0 64 736</Triggerbox>
+        <Target>goblin35</Target>
+      </Item>
+      <!-- Demon Archer Spawner Triggers -->
+      <Item>
+        <Name>Trigger37</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>576 0 64 736</Triggerbox>
+        <Target>demon1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger38</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2048 0 64 736</Triggerbox>
+        <Target>demon2</Target>
+      </Item>
+      <Item>
+        <Name>Trigger39</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5504 0 64 736</Triggerbox>
+        <Target>demon3</Target>
+      </Item>
+      <Item>
+        <Name>Trigger40</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>5504 0 64 736</Triggerbox>
+        <Target>demon4</Target>
+      </Item>
+      <Item>
+        <Name>Trigger41</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>8128 0 64 736</Triggerbox>
+        <Target>demon5</Target>
+      </Item>
+      <!-- Imp Spawner Triggers -->
+      <!-- Fire Mage Spawner Triggers -->
+      <Item>
+        <Name>Trigger42</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>10240 0 64 736</Triggerbox>
+        <Target>firemage1</Target>
       </Item>
     </Triggers>
     <Lights>
       <Item>
         <Name>Light1</Name>
-        <Position>100 500</Position>
-        <BoundingBox>100 500 32 32</BoundingBox>
+        <Position>400 100</Position>
+        <BoundingBox>400 100 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>116 516</Centre>
-        <Radius>10</Radius>
-        <Brightness>1</Brightness>
+        <Centre>416 116</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.9</IlluminationAngle>
+        <Radius>500</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light2</Name>
+        <Position>1100 250</Position>
+        <BoundingBox>1100 250 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>1116 266</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.8</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light3</Name>
+        <Position>1900 100</Position>
+        <BoundingBox>1900 100 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>1916 116</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.5</IlluminationAngle>
+        <Radius>500</Radius>
+        <Brightness>3</Brightness>
+      </Item>
+      <Item>
+        <Name>Light4</Name>
+        <Position>2900 300</Position>
+        <BoundingBox>2900 300 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>2916 316</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>350</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light5</Name>
+        <Position>4000 100</Position>
+        <BoundingBox>4000 100 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>4016 116</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>8</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light6</Name>
+        <Position>1364 -300</Position>
+        <BoundingBox>1364 -300 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>1344 -284</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.98</IlluminationAngle>
+        <Radius>360</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light7</Name>
+        <Position>5328 64</Position>
+        <BoundingBox>5328 64 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>5344 80</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.9</IlluminationAngle>
+        <Radius>400</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light8</Name>
+        <Position>8288 304</Position>
+        <BoundingBox>8288 304 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>8304 320</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>8</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>400</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light9</Name>
+        <Position>9696 368</Position>
+        <BoundingBox>9696 368 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>9712 384</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light10</Name>
+        <Position>11424 464</Position>
+        <BoundingBox>11424 464 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>11440 496</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.97</IlluminationAngle>
+        <Radius>200</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light11</Name>
+        <Position>6640 64</Position>
+        <BoundingBox>6640 64 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>6656 80</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.9</IlluminationAngle>
+        <Radius>600</Radius>
+        <Brightness>2</Brightness>
       </Item>
     </Lights>
   </Asset>

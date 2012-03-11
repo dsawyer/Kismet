@@ -132,7 +132,7 @@ namespace LevelEditor
             GV.ContentManager = Content;
             TDManager.Initialize();
             //level01 = Level.Load("../../../../Level EditorContent/Levels/Level01_A.xml");
-            level01 = Content.Load<Level>("Levels/Level_01");
+            level01 = Content.Load<Level>("Levels/Level_01A");
             level01.Initialise(Content);
 
             GV.Level = level01;

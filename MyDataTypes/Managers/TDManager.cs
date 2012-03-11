@@ -32,32 +32,24 @@ namespace KismetDataTypes
             DataList.Add("pickupHeal1", new PickUpPoint("pickupHeal", "pickupHeal1", new Vector2(850, 440)));
             TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
-           
-            TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(18.0f, 15.0f)));
-            TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
+            
+            /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
 
-            TriggerboxList.Add(new TriggerBox("spawn", "imp1", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("imp1", new SpawnPoint("imp", "imp1", new Vector2(300.0f, 300.0f)));
+            TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
+            DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
 
             TriggerboxList.Add(new TriggerBox("checkPoint", "checkpoint1", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("checkpoint1", new CheckPoint());
-
-
-            //TriggerboxList.Add(new TriggerBox("spawn", "goblin100", new Rectangle(250, 440, 500, 300)));
-            //DataList.Add("goblin100", new SpawnPoint("goblin", "goblin100", new Vector2(6,18)));
+            DataList.Add("checkpoint1", new CheckPoint("1", "checkpoint1", new Vector2(300.0f, 300.0f)));
+            */
             /*
-            //TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(400, 300, 200, 100)));
-           
-            //TriggerboxList.Add(new TriggerBox("spawn", "miniboss", new Rectangle(250, 440, 500, 300)));
-            //DataList.Add("goblin1",new SpawnPoint("goblin","goblin1",new Vector2(500.0f, 440.0f)));
-            TriggerboxList.Add(new TriggerBox("spawn", "demon1", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("goblin1", new SpawnPoint("goblin", "goblin1", new Vector2(400.0f, 300.0f)));
-            //DataList.Add("demon1", new SpawnPoint("demon", "demon1", new Vector2(400.0f, 300.0f)));
-            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));
-            //DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(1000.0f, 440.0f)));
-            DataList.Add("demon1", new SpawnPoint("demon", "demon1", new Vector2(1000.0f, 440.0f)));*/
+            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));*/
+        }
+
+        public static void Release()
+        {
+            TriggerboxList = new List<TriggerBox>();
+            DataList = new Dictionary<string, Object>();
         }
 
         public static void Add(TriggerBox p_TriggerBox)
@@ -87,7 +79,8 @@ namespace KismetDataTypes
                     break;
 
                 case "KismetDataTypes.CheckPoint":
-                    GV.Player.CheckPoint = target;
+                     CheckPoint newcheckpoint = (CheckPoint)point;
+                     GV.Player.CheckPoint = newcheckpoint.Position;
                     TriggerboxList.Remove(p_TriggerBox);
                     DataList.Remove(target);
                     break;
@@ -98,9 +91,17 @@ namespace KismetDataTypes
                         GV.Player.Position = warp.TargetPosition;
                         GV.Player.Velocity = Vector2.Zero;
                     }
+                    // Change the level
                     else
                     {
-                        // Add a loading method to change the level and set the player inside it
+                        // Load and initialise the new level
+                        TDManager.Release();
+                        GV.Level = GV.ContentManager.Load<Level>("Levels/" + warp.DestinationLevel);
+                        GV.Level.Initialise(GV.ContentManager);
+                        Camera.WorldRectangle = new Rectangle(0, 0, GV.Level.Width, GV.Level.Height);
+                        // Put the player in the new level
+                        GV.Player.Position = warp.TargetPosition;
+                        GV.Player.Velocity = Vector2.Zero;
                     }
                     break;
                 default:

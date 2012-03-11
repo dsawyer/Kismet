@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Level">
+    <Name>Level01_B</Name>
+    <Width>1280</Width>
+    <Height>2944</Height>
+    <PlayerStartingPosition>50 2850</PlayerStartingPosition>
+    <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
+    <BackgroundWidth>640</BackgroundWidth>
+    <BackgroundHeight>640</BackgroundHeight>
+    <GroundLayerTexture>Tiles</GroundLayerTexture>
+    <GroundLayerValues>
+      0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  10 2
+      10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 11 12
+      10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 11 11 21 21 21 21 21 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 3  4  4  4  4  4  5  10 12
+      10 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 23 24 24 24 24 24 25 10 12
+      10 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 0  1  1  1  1  1  1  11 12
+      10 11 11 11 11 11 11 11 21 21 21 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 11 11 11 11 11 12
+      10 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 10 11 11 11 11 11 11 11 12
+      10 12 21 21 21 21 21 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 10 11 11 11 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 20 21 21 21 21 21 21 11 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 3  4  4  4  4  4  4  4  4  4  4  5  50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 23 24 24 24 24 24 24 24 24 24 24 25 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 1  1  1  1  1  1  1  1  1  1  1  2  50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 11 21 21 21 22 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 39 39 39 39 39 39 39 39 39 39 10 12
+      10 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 28 28 28 28 28 28 28 28 28 28 10 12
+      10 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 11 21 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 11 21 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 11 22 22 22 22 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 10 12
+      10 12 39 39 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 10 12
+      10 12 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 10 12
+      10 12 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 10 12
+      10 12 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 10 12
+      10 12 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 10 12
+      10 12 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 10 12
+      10 12 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 10 12
+      10 12 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 50 50 50 50 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 50 50 50 50 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 10 12
+      10 12 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 39 39 39 39 50 50 50 50 50 50 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 50 50 50 50 50 50 39 39 39 39 10 12
+      10 12 28 28 28 28 50 50 50 50 50 50 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 50 50 50 50 50 50 28 28 28 28 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 10 12
+      10 12 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 50 50 39 39 39 39 39 39 39 39 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 50 50 28 28 28 28 28 28 28 28 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 10 12
+      10 12 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 3  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  5  10 12
+      10 12 23 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 10 12
+      10 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 12
+      20 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22
+    </GroundLayerValues>
+    <SurGroundLayerTexture>Tiles</SurGroundLayerTexture>
+    <SurGroundLayerValues>
+    </SurGroundLayerValues>
+    <ForegroundLayerTexture>Tiles</ForegroundLayerTexture>
+    <ForegroundLayerValues>
+    </ForegroundLayerValues>
+    <CollisionLayerTexture>Tiles</CollisionLayerTexture>
+    <CollisionLayerValues>
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  2  2  2  2  2  2  2  2  2  2  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  1  1 
+      1  1  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  0  0  0  0  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  2  2  2  2  0  0  0  0  0  0  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  0  0  0  0  0  0  2  2  2  2  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  0  0  2  2  2  2  2  2  2  2  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+    </CollisionLayerValues>
+    <NumWarps>1</NumWarps>
+    <NumSpawners>26</NumSpawners>
+    <NumTriggers>27</NumTriggers>
+    <NumLights>5</NumLights>
+    <Warps>
+      <Item>
+        <Name>Warp1</Name>
+        <Position>100 450</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <DestinationLevel>Level_01C</DestinationLevel>
+        <TargetPosition>100 90</TargetPosition>
+      </Item>
+    </Warps>
+    <Spawners>
+      <!-- Goblin Spawners -->
+      <Item>
+        <Name>Spawn1</Name>
+        <Position>384 2816</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn2</Name>
+        <Position>704 2816</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin2</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn3</Name>
+        <Position>448 2432</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin3</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn4</Name>
+        <Position>640 2432</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin4</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn5</Name>
+        <Position>576 2144</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin5</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn6</Name>
+        <Position>640 2144</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin6</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn7</Name>
+        <Position>896 1632</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin7</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn8</Name>
+        <Position>576 1472</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin8</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn9</Name>
+        <Position>608 1472</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin9</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn10</Name>
+        <Position>128 1344</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin10</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn11</Name>
+        <Position>1024 1344</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin11</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn12</Name>
+        <Position>768 2816</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin12</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn13</Name>
+        <Position>576 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin13</PointID>
+      </Item>
+      <!-- Demon Archer Spawners -->
+      <Item>
+        <Name>Spawn14</Name>
+        <Position>128 2208</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn15</Name>
+        <Position>1016 2208</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon2</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn16</Name>
+        <Position>448 1824</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon3</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn17</Name>
+        <Position>128 1760</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon4</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn18</Name>
+        <Position>1016 1760</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon5</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn19</Name>
+        <Position>128 768</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon6</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn20</Name>
+        <Position>1016 768</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon7</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn21</Name>
+        <Position>96 992</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon8</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn22</Name>
+        <Position>1016 960</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon9</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn23</Name>
+        <Position>320 1024</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon10</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn24</Name>
+        <Position>256 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon11</PointID>
+      </Item>
+      <!-- Imp Spawners -->
+      <Item>
+        <Name>Spawn25</Name>
+        <Position>640 256</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>imp</Type>
+        <PointID>imp1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn26</Name>
+        <Position>736 1280</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>imp</Type>
+        <PointID>imp2</PointID>
+      </Item>
+      <!-- Fire Mage Spawners -->
+    </Spawners>
+    <Triggers>
+      <Item>
+        <Name>Trigger1</Name>
+        <Position>1184 128</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>warp</Type>
+        <Triggerbox>1184 128 32 64</Triggerbox>
+        <Target>Warp1</Target>
+      </Item>
+      <!-- Goblin Spawner Triggers -->
+      <Item>
+        <Name>Trigger2</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>goblin1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger3</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>goblin2</Target>
+      </Item>
+      <Item>
+        <Name>Trigger4</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>goblin3</Target>
+      </Item>
+      <Item>
+        <Name>Trigger5</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>goblin4</Target>
+      </Item>
+      <Item>
+        <Name>Trigger6</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2560 1280 64</Triggerbox>
+        <Target>goblin5</Target>
+      </Item>
+      <Item>
+        <Name>Trigger7</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2560 1280 64</Triggerbox>
+        <Target>goblin6</Target>
+      </Item>
+      <Item>
+        <Name>Trigger8</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1952 1280 64</Triggerbox>
+        <Target>goblin7</Target>
+      </Item>
+      <Item>
+        <Name>Trigger9</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1760 1280 64</Triggerbox>
+        <Target>goblin8</Target>
+      </Item>
+      <Item>
+        <Name>Trigger10</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1760 1280 64</Triggerbox>
+        <Target>goblin9</Target>
+      </Item>
+      <Item>
+        <Name>Trigger11</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1760 1280 64</Triggerbox>
+        <Target>goblin10</Target>
+      </Item>
+      <Item>
+        <Name>Trigger12</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1760 1280 64</Triggerbox>
+        <Target>goblin11</Target>
+      </Item>
+      <Item>
+        <Name>Trigger13</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1344 1280 64</Triggerbox>
+        <Target>goblin12</Target>
+      </Item>
+      <Item>
+        <Name>Trigger14</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1344 1280 64</Triggerbox>
+        <Target>goblin13</Target>
+      </Item>
+      <!-- Demon Archer Spawner Triggers -->
+      <Item>
+        <Name>Trigger15</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>demon1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger16</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2816 1280 64</Triggerbox>
+        <Target>demon2</Target>
+      </Item>
+      <Item>
+        <Name>Trigger17</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2464 1280 64</Triggerbox>
+        <Target>demon3</Target>
+      </Item>
+      <Item>
+        <Name>Trigger18</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2080 1280 64</Triggerbox>
+        <Target>demon4</Target>
+      </Item>
+      <Item>
+        <Name>Trigger19</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 2080 1280 64</Triggerbox>
+        <Target>demon5</Target>
+      </Item>
+      <Item>
+        <Name>Trigger20</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1824 1280 64</Triggerbox>
+        <Target>demon6</Target>
+      </Item>
+      <Item>
+        <Name>Trigger21</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1824 1280 64</Triggerbox>
+        <Target>demon7</Target>
+      </Item>
+      <Item>
+        <Name>Trigger22</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1280 1280 64</Triggerbox>
+        <Target>demon8</Target>
+      </Item>
+      <Item>
+        <Name>Trigger23</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1280 1280 64</Triggerbox>
+        <Target>demon9</Target>
+      </Item>
+      <Item>
+        <Name>Trigger24</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1280 1280 64</Triggerbox>
+        <Target>demon10</Target>
+      </Item>
+      <Item>
+        <Name>Trigger25</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 544 1280 64</Triggerbox>
+        <Target>demon11</Target>
+      </Item>
+      <!-- Imp Spawner Triggers -->
+      <Item>
+        <Name>Trigger26</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 544 1280 64</Triggerbox>
+        <Target>imp1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger27</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>0 1728 1280 64</Triggerbox>
+        <Target>imp2</Target>
+      </Item>
+      <!-- Fire Mage Spawner Triggers -->
+    </Triggers>
+    <Lights>
+      <Item>
+        <Name>Light1</Name>
+        <Position>624 2240</Position>
+        <BoundingBox>624 2240 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>640 2256</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>7</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>400</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light2</Name>
+        <Position>624 1760</Position>
+        <BoundingBox>624 1760 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>640 1776</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>7</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>400</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light3</Name>
+        <Position>624 1092</Position>
+        <BoundingBox>624 1092 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>640 1108</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>7</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>500</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light4</Name>
+        <Position>624 764</Position>
+        <BoundingBox>624 764 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>640 780</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>7</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light5</Name>
+        <Position>624 96</Position>
+        <BoundingBox>624 96 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>640 112</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>7</Attenuation>
+        <IlluminationAngle>0</IlluminationAngle>
+        <Radius>600</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+    </Lights>
+  </Asset>
+</XnaContent>

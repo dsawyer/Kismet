@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="KismetDataTypes.Level">
+    <Name>Level01_D</Name>
+    <Width>1280</Width>
+    <Height>736</Height>
+    <PlayerStartingPosition>50 600</PlayerStartingPosition>
+    <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
+    <BackgroundWidth>640</BackgroundWidth>
+    <BackgroundHeight>640</BackgroundHeight>
+    <GroundLayerTexture>Tiles</GroundLayerTexture>
+    <GroundLayerValues>
+      0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  2
+      10 11 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 11 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 50 50 3  4  4  5  10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 28 28 28 28 50 50 50 50 50 50 23 24 24 25 10 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 0  1  1  1  11 12
+      10 12 50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 11 11 12
+      10 12 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 3  4  4  5  50 50 10 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 23 24 24 25 50 50 10 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 3  4  4  5  50 50 50 50 50 50 50 50 3  4  4  5  50 50 0  1  1  2  50 50 10 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 23 24 24 25 50 50 50 50 50 50 50 50 23 24 24 25 50 50 10 11 11 12 50 50 10 11 11 11 11 12
+      10 12 3  4  4  4  4  4  4  5  0  1  1  2  3  4  4  4  4  4  4  5  0  1  1  2  3  5  10 11 11 12 3  5  10 11 11 11 11 12
+      10 12 23 24 24 24 24 24 24 25 10 11 11 12 23 14 14 14 14 14 14 25 10 11 11 12 23 25 10 11 11 12 23 25 10 11 11 11 11 12
+      10 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  11 11 11 11 1  1  11 11 11 11 11 12
+      20 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22
+    </GroundLayerValues>
+    <SurGroundLayerTexture>Tiles</SurGroundLayerTexture>
+    <SurGroundLayerValues>
+    </SurGroundLayerValues>
+    <ForegroundLayerTexture>Tiles</ForegroundLayerTexture>
+    <ForegroundLayerValues>
+    </ForegroundLayerValues>
+    <CollisionLayerTexture>Tiles</CollisionLayerTexture>
+    <CollisionLayerValues>
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+    </CollisionLayerValues>
+    <NumWarps>0</NumWarps>
+    <NumSpawners>0</NumSpawners>
+    <NumTriggers>0</NumTriggers>
+    <NumLights>0</NumLights>
+    <Warps>
+      <Item>
+        <Name>Warp1</Name>
+        <Position>100 450</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <DestinationLevel>Level01_B</DestinationLevel>
+        <TargetPosition>300 300</TargetPosition>
+      </Item>
+    </Warps>
+    <Spawners>
+      <Item>
+        <Name>Spawn1</Name>
+        <Position>960 580</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn2</Name>
+        <Position>400 300</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn3</Name>
+        <Position>400 300</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin2</PointID>
+      </Item>
+    </Spawners>
+    <Triggers>
+      <Item>
+        <Name>Trigger1</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>250 440 500 300</Triggerbox>
+        <Target>goblin1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger2</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>250 440 500 300</Triggerbox>
+        <Target>demon1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger3</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>250 440 500 300</Triggerbox>
+        <Target>goblin2</Target>
+      </Item>
+      <!--
+      <Item>
+        <Name>Trigger4</Name>
+        <Position>100 450</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>warp</Type>
+        <Triggerbox>100 450 32 64</Triggerbox>
+        <Target>Warp1</Target>
+      </Item>
+      -->
+    </Triggers>
+    <Lights>
+      <Item>
+        <Name>Light1</Name>
+        <Position>400 350</Position>
+        <BoundingBox>400 350 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>416 366</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light2</Name>
+        <Position>900 350</Position>
+        <BoundingBox>900 350 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>916 366</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light3</Name>
+        <Position>1400 180</Position>
+        <BoundingBox>1400 180 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>1416 196</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+      <Item>
+        <Name>Light4</Name>
+        <Position>1900 350</Position>
+        <BoundingBox>1900 350 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>1916 366</Centre>
+        <Direction>0 1</Direction>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+      </Item>
+    </Lights>
+  </Asset>
+</XnaContent>
+

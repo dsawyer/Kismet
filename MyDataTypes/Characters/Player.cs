@@ -33,11 +33,12 @@ namespace KismetDataTypes
         private Vector2 velocity;
         private bool isAlive;
         private int health;
-        private string checkPoint;
+        private Vector2 checkPoint;
         private bool isOnGround = false;
         private bool isHit = false;
         private float idleTime = 0.2f;
         private string currentMagicItem = "fire";
+        private int currentMagicCount = 0;
         private bool lastButtonState;
         
         // Used to help with testing for platform collision
@@ -66,12 +67,21 @@ namespace KismetDataTypes
         }
         
          /// <summary>
-        /// Handles input, and animates the player sprite.
+        /// gets and sets the current magic item
         /// </summary>
         public string CurrentMagicItem
         {
             get { return currentMagicItem; }
             set { currentMagicItem = value; }
+        }
+
+        /// <summary>
+        /// gets and sets the current magic count
+        /// </summary>
+        public int CurrentMagicCount
+        {
+            get { return currentMagicCount; }
+            set { currentMagicCount = value; }
         }
         
         // Properties
@@ -107,7 +117,7 @@ namespace KismetDataTypes
         {
             set
             {
-                Console.WriteLine("reset ");
+                //Console.WriteLine("reset ");
                 idleTime = value; }
         }
 
@@ -154,7 +164,7 @@ namespace KismetDataTypes
         /// <summary>
         /// Gets and Sets the check point of the player 
         /// </summary>
-        public string CheckPoint { get { return checkPoint; }
+        public Vector2 CheckPoint { get { return checkPoint; }
             set { checkPoint = value; } }
 
         /// <summary>
@@ -229,6 +239,38 @@ namespace KismetDataTypes
 
         public void UpdateRadius()
         {
+
+
+            bool isinLight = false;
+            LightSource[] lightarray = GV.Level.Lights;
+            for (int i = 0; i < 4; i++)
+            {
+                Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height /2));
+                Vector2 pVector = positionvec - lightarray[i].Centre;
+                double distance = Math.Sqrt((Math.Pow((pVector.X),2) + Math.Pow((pVector.Y),2)));
+                pVector.Normalize();
+                lightarray[i].Direction.Normalize();
+                float angle = Vector2.Dot(lightarray[i].Direction, pVector);
+                if (angle > lightarray[i].IlluminationAngle && (float)distance <= lightarray[i].Radius )
+                {
+                    isinLight = true;
+                    
+                }
+
+
+            }
+
+            if (isinLight)
+            {
+                MaxLightRadius = 400;
+                Rate = 400;
+            }
+            else
+            {
+                if (lightRadius + Rate > MaxLightRadius)
+                    lightRadius = MaxLightRadius;
+            }
+            
             if ((lightRadius + Rate) < MaxLightRadius)
             {
                 lightRadius += Rate;
@@ -236,8 +278,10 @@ namespace KismetDataTypes
             else if (lightRadius < MaxLightRadius && lightRadius + Rate > MaxLightRadius)
                 lightRadius += MaxLightRadius - lightRadius;
 
-            else 
+            else
                 lightRadius--;
+            
+            
 
         }
 
@@ -264,27 +308,33 @@ namespace KismetDataTypes
             {
                 if (CurrentMagicItem == "fire")
                 {
-                    CurrentMagicItem = "earth";
-                }
-                else if (CurrentMagicItem == "earth")
-                {
                     CurrentMagicItem = "water";
+                    CurrentMagicCount = WaterCount;
                 }
                 else if (CurrentMagicItem == "water")
                 {
+                    CurrentMagicItem = "earth";
+                    CurrentMagicCount = EarthCount;
+                }
+                else if (CurrentMagicItem == "earth")
+                {
                     CurrentMagicItem = "wind";
+                    CurrentMagicCount = WindCount;
                 }
                 else if (CurrentMagicItem == "wind")
                 {
                     CurrentMagicItem = "dark";
+                    CurrentMagicCount = DarkCount;
                 }
                 else if (CurrentMagicItem == "dark")
                 {
                     CurrentMagicItem = "light";
+                    CurrentMagicCount = LightCount;
                 }
                 else if (CurrentMagicItem == "light")
                 {
                     CurrentMagicItem = "fire";
+                    CurrentMagicCount = FireCount;
                 }
                 lastButtonState = false;
             }
@@ -311,6 +361,21 @@ namespace KismetDataTypes
             {
                 this.Direction = GV.LEFT;
             }
+        }
+
+        /// <summary>
+        /// resets the players health and coordinates from the checkpoint.
+        /// </summary>
+        public void ResetPlayer()
+        {
+            this.state = new IdleState(this);
+            this.Direction = GV.RIGHT;
+            Sprite.Scale = 1.0f;
+            velocity = new Vector2(0, 0);
+            Position = CheckPoint;
+            IsAlive = true;
+            health = 600;
+           
         }
 
 
@@ -342,7 +407,7 @@ namespace KismetDataTypes
 
         #region Inventory
 
-        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100, lightCount = 1;
+        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100, lightCount = 100;
         /// <summary>
         /// Gets or Sets for fire Inventory.
         /// </summary>
@@ -399,11 +464,13 @@ namespace KismetDataTypes
                 if (FireCount > 0)
                 {
                     FireCount -= 1;
+                    CurrentMagicCount = FireCount;
                     return true;
                 }
                 else
                 {
                     FireCount = 0;
+                    CurrentMagicCount = FireCount;
                     return false;
                 }
             }
@@ -412,11 +479,13 @@ namespace KismetDataTypes
                 if (EarthCount > 0)
                 {
                     EarthCount -= 1;
+                    CurrentMagicCount = EarthCount;
                     return true;
                 }
                 else
                 {
                     EarthCount = 0;
+                    CurrentMagicCount = EarthCount;
                     return false;
                 }
             }
@@ -425,11 +494,13 @@ namespace KismetDataTypes
                 if (WaterCount > 0)
                 {
                     WaterCount -= 1;
+                    CurrentMagicCount = WaterCount;
                     return true;
                 }
                 else
                 {
                     WaterCount = 0;
+                    CurrentMagicCount = WaterCount;
                     return false;
                 }
             }
@@ -438,11 +509,13 @@ namespace KismetDataTypes
                 if (WindCount > 0)
                 {
                     WindCount -= 1;
+                    CurrentMagicCount = WindCount;
                     return true;
                 }
                 else
                 {
                     WindCount = 0;
+                    CurrentMagicCount = WindCount;
                     return false;
                 }
             }
@@ -451,11 +524,29 @@ namespace KismetDataTypes
                 if (DarkCount > 0)
                 {
                     DarkCount -= 1;
+                    CurrentMagicCount = DarkCount;
                     return true;
                 }
                 else
                 {
                     DarkCount = 0;
+                    CurrentMagicCount = DarkCount;
+                    return false;
+                }
+            }
+
+            else if (CurrentMagicItem == "light")
+            {
+                if (LightCount > 0)
+                {
+                    LightCount -= 1;
+                    CurrentMagicCount = LightCount;
+                    return true;
+                }
+                else
+                {
+                    LightCount = 0;
+                    CurrentMagicCount = LightCount;
                     return false;
                 }
             }
@@ -478,8 +569,9 @@ namespace KismetDataTypes
             Sprite.Scale = 1.0f;
             velocity = new Vector2(0,0);
             Position = initialPosition;
+            CheckPoint = initialPosition;
             IsAlive = true;
-            health = 100;
+            health = 600;
 
             localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
         }
@@ -497,13 +589,13 @@ namespace KismetDataTypes
             {
                 Camera.Move(new Vector2(screenLocX - 240, 0));
             }
-            if (screenLocY > 100)
+            if (screenLocY > 420)
             {
-                Camera.Move(new Vector2(0, screenLocY - 100));
+                Camera.Move(new Vector2(0, screenLocY - 420));
             }
-            if (screenLocY < 60)
+            if (screenLocY < 320)
             {
-                Camera.Move(new Vector2(0, screenLocY - 60));
+                Camera.Move(new Vector2(0, screenLocY - 320));
             }
         }
 
@@ -519,20 +611,13 @@ namespace KismetDataTypes
             int health = Health;
             Velocity = new Vector2(AnalogState, Velocity.Y + GV.GRAVITY);
             Vector2 nextPosition = Position + Velocity;
-            //localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
+           
             UpdateRadius();
             state.Update(gameTime);
             Velocity = CollisionManager.ResolvePlayerStaticCollisions(nextPosition, Velocity, MagicItemManager.GetList(), PickUpItemManager.GetList());
-            //IsHit = false;
-            //we want to look at the next move.  Adjusts velocity accordingly
-            //NextPosition = Position + Velocity;
+
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
-            
-            
-            
-
-           
           
             //Velocity = new Vector2(this.Velocity.X, this.Velocity.Y + GV.GRAVITY);
             //state.Update();

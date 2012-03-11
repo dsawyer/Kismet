@@ -19,7 +19,7 @@ namespace KismetDataTypes
         /// </summary>        
         public DemonArcher(ContentManager p_Content, string p_XMLFile, Vector2 p_InitialPosition)
         {
-
+            Name = "Demon Archer";
             Sprite = new Sprite(p_Content, p_XMLFile);
             Sprite.Scale = 1.0f;
             State = new PatrolState(this);

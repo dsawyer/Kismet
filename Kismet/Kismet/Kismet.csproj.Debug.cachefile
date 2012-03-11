@@ -52,15 +52,10 @@ Content\Sprites\Items\DanPickupFire.xnb
 Content\Sprites\Items\DanPickupHeal.xnb
 Content\Sprites\Items\DanPickupWater.xnb
 Content\Sprites\Items\DanPickupWind.xnb
-Content\greenPixel.xnb
-Content\WhitePixel.xnb
 Content\Sprites\Imp\ImpFly.xnb
 Content\Sprites\Imp\ImpIdle.xnb
 Content\Sprites\Imp\ImpKnockedDown.xnb
-Content\Sprites\FireMage\FireMageWalking.xnb
-Content\Sprites\FireMage\FireMageJumping.xnb
-Content\Sprites\FireMage\FireMageKnockedDown.xnb
-Content\Levels\Level_01.xnb
+Content\Levels\Level_01A.xnb
 Content\XML Documents\DanAnimations.xnb
 Content\XML Documents\DanMagicAnimations.xnb
 Content\XML Documents\GoblinAnimations.xnb
@@ -70,5 +65,8 @@ Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\MiniBossAnimations.xnb
 Content\XML Documents\Goblin.xnb
 Content\XML Documents\PickUpItemsAnimations.xnb
-Content\XML Documents\ImpAnimations.xnb
+Content\Levels\Level_01B.xnb
+Content\Levels\Level_01C.xnb
+Content\Levels\Level_01D.xnb
 Content\LightEffects.xnb
+Content\SpriteFont1.xnb

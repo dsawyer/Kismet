@@ -16,7 +16,7 @@ namespace KismetDataTypes
     {
 
         public static List<MagicItem> magicItemList = new List<MagicItem>();
-        
+        public static int lightCount = 0;
         public static void CreateMagicItem(string type, Enemy enemy)
         {
             switch (type)
@@ -29,6 +29,8 @@ namespace KismetDataTypes
                 case "dark":
                 case "light":
                     magicItemList.Add(new MagicItem("XML Documents/DanMagicAnimations", "player", type, 5, null));
+                    if (type == "light")
+                        lightCount++;
                     break;
 
                 // enemy weapons
@@ -76,8 +78,12 @@ namespace KismetDataTypes
                 for (int i = 0; i< magicItemList.Count; i++) // Loop through List with for each item in list
                 {
                     MagicItem item = magicItemList[i];
+                    if (item.ItemType == "light")
+                        lightCount--;
+
                     if (!item.Active)
                     {
+                        
                         magicItemList.Remove(item);
                     
                     }
@@ -89,6 +95,24 @@ namespace KismetDataTypes
 
                 }
             }
+        }
+
+        public static LightSource[] GetLightMagicArray()
+        {
+            LightSource[] lightarray = new LightSource[lightCount];
+            int count = 0;
+            if (magicItemList.Count > 0)
+            {
+                foreach (MagicItem item in magicItemList) // Loop through List with foreach
+                {
+                    if (item.ItemType == "light")
+                    {
+                        lightarray[count] = item.Light;
+                        count++;
+                    }
+                }
+            }
+            return lightarray;
         }
 
         public static List<MagicItem> GetList()
@@ -106,6 +130,8 @@ namespace KismetDataTypes
                 }
             }
         }
+
+
 
     }
 }

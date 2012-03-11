@@ -25,10 +25,14 @@ namespace KismetDataTypes
             State = new AwakeState(this);
             Direction = GV.LEFT;
             Velocity = new Vector2(0, 0);
-            PositionInTile(p_InitialPosition);
+            // Position based on tile
+            //PositionInTile(p_InitialPosition);
+            // Actual pixel position
+            Position = p_InitialPosition;
             IsAlive = true;
             Health = 100;
             IsOnGround = false;
+            Name = "Goblin";
 
 
             StateMachine = new StateMachine(this, new AwakeState(this));

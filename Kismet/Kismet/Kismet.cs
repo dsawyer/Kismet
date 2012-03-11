@@ -20,7 +20,7 @@ namespace Kismet
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Effect shaders;
-
+        HubManager hubManager;
         public Kismet()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -54,13 +54,12 @@ namespace Kismet
         protected override void LoadContent()
         {
             GV.ContentManager = Content;
-            TDManager.Initialize();
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = Content.Load<Level>("Levels/Level_01");
+            GV.Level = Content.Load<Level>("Levels/Level_01A");
             // New loading method
-            //level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
+            //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);
 
             // Load the shaders in the effect file (.fx) and set everything up
@@ -80,7 +79,18 @@ namespace Kismet
             Camera.ViewPortWidth = 1280;
             Camera.ViewPortHeight = 720;
 
-            GV.EDITING = true;
+            GV.EDITING = false;
+
+            // Shader crap so that the graphics actually appear on screen...
+            // This was a serious pain to deal with
+            Viewport viewport = GraphicsDevice.Viewport;
+
+            Matrix projection = Matrix.CreateOrthographicOffCenter(0, viewport.Width, viewport.Height, 0, 0, 1);
+            Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
+
+            shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
+
+            hubManager = new HubManager();
         }
 
         /// <summary>
@@ -113,11 +123,14 @@ namespace Kismet
             if (GV.Player.IsAlive)
                 GV.Player.Update(gameTime);
             else
-                GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
+            {
+                GV.Player.ResetPlayer();
+
+            }
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
-
+            hubManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -129,23 +142,37 @@ namespace Kismet
         {
             GraphicsDevice.Clear(Color.White);
 
+            Viewport viewport = GraphicsDevice.Viewport;
+
+            Matrix projection = Matrix.CreateOrthographicOffCenter(0, viewport.Width, viewport.Height, 0, 0, 1);
+
             Matrix cameraTranslation = Matrix.CreateTranslation(-Camera.Position.X, -Camera.Position.Y, 0.0f);
             //Camera.Zoom = 1.25f;
             Matrix cameraZoom = Matrix.CreateScale(Camera.Zoom);
-            Matrix cameraTransform = cameraTranslation * cameraZoom;
+            Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
+            int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+            //GV.Level.SortLights();
+            //GV.Level.Lights;
             // Set all the shader's parameters based on the lights in the level
-            shaders.Parameters["lightPositions"].SetValue(GV.Level.GetLightPositions());
-            shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii());
-            shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness());
-            shaders.Parameters["numLights"].SetValue(GV.Level.NumLights);
-
-           spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                            RasterizerState.CullCounterClockwise, null, cameraTransform);
+            shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
+            shaders.Parameters["cameraPosition"].SetValue(Camera.Position);
+            shaders.Parameters["lightPositions"].SetValue(GV.Level.GetLightCentres(min));
+            shaders.Parameters["lightDirections"].SetValue(GV.Level.GetLightDirections(min));
+            shaders.Parameters["lightAttenuations"].SetValue(GV.Level.GetLightAttenuations(min));
+            shaders.Parameters["lightAngles"].SetValue(GV.Level.GetLightAngles(min));
+            shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii(min));
+            shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness(min));
+            shaders.Parameters["numLights"].SetValue(min);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
 
+            //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+            //                  RasterizerState.CullCounterClockwise, null, cameraTransform);
+
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                              RasterizerState.CullCounterClockwise, shaders);
 
             // Draw the layers and the player
             GV.Level.Draw(spriteBatch);
@@ -154,6 +181,12 @@ namespace Kismet
             MagicItemManager.Draw(gameTime, spriteBatch);
             GV.Player.Draw(gameTime, spriteBatch);
             PickUpItemManager.Draw(gameTime, spriteBatch);
+
+            
+
+            spriteBatch.End();
+            spriteBatch.Begin();
+            hubManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

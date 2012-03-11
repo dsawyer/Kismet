@@ -88,6 +88,7 @@
             this.mouseXLevel = new System.Windows.Forms.Label();
             this.mouseYLevelLabel = new System.Windows.Forms.Label();
             this.mouseYLevel = new System.Windows.Forms.Label();
+            this.boundingBoxesCheck = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctSurface)).BeginInit();
             this.groupBoxLeftClick.SuspendLayout();
@@ -649,11 +650,23 @@
             this.mouseYLevel.TabIndex = 16;
             this.mouseYLevel.Text = "0";
             // 
+            // boundingBoxesCheck
+            // 
+            this.boundingBoxesCheck.AutoSize = true;
+            this.boundingBoxesCheck.Location = new System.Drawing.Point(10, 676);
+            this.boundingBoxesCheck.Name = "boundingBoxesCheck";
+            this.boundingBoxesCheck.Size = new System.Drawing.Size(170, 21);
+            this.boundingBoxesCheck.TabIndex = 17;
+            this.boundingBoxesCheck.Text = "Show Bounding Boxes";
+            this.boundingBoxesCheck.UseVisualStyleBackColor = true;
+            this.boundingBoxesCheck.CheckedChanged += new System.EventHandler(this.boundingBoxesCheck_CheckedChanged);
+            // 
             // ObjectEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1582, 775);
+            this.Controls.Add(this.boundingBoxesCheck);
             this.Controls.Add(this.mouseYLevel);
             this.Controls.Add(this.mouseYLevelLabel);
             this.Controls.Add(this.mouseXLevel);
@@ -758,5 +771,6 @@
         private System.Windows.Forms.Label mouseXLevel;
         private System.Windows.Forms.Label mouseYLevelLabel;
         private System.Windows.Forms.Label mouseYLevel;
+        private System.Windows.Forms.CheckBox boundingBoxesCheck;
     }
 }

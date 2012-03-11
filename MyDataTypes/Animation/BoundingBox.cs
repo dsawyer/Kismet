@@ -49,10 +49,10 @@ namespace KismetDataTypes
         /// <param name="color">The draw color.</param>
         public void Draw(SpriteBatch spriteBatch, Rectangle rectangle, Color color)
         {
-            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Top, rectangle.Width, 1), color);
-            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, 1), color);
-            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Top, 1, rectangle.Height), color);
-            spriteBatch.Draw(Tex, new Rectangle(rectangle.Right, rectangle.Top, 1, rectangle.Height + 1), color);
+            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Top, rectangle.Width, 3), color);
+            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, 3), color);
+            spriteBatch.Draw(Tex, new Rectangle(rectangle.Left, rectangle.Top, 3, rectangle.Height), color);
+            spriteBatch.Draw(Tex, new Rectangle(rectangle.Right, rectangle.Top, 3, rectangle.Height + 3), color);
         }
 
 
