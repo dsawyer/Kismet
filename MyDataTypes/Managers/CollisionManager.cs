@@ -173,6 +173,28 @@ namespace KismetDataTypes
                         GV.Player.IsOnGround = true;
 
                     }
+                    else if (magicItem.ItemType == "light" && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState")
+                    {
+                        Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 2));
+                        Vector2 pVector = positionvec - magicItem.Light.Centre - Camera.Position;
+                        double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+
+                        if ((float)distance <= magicItem.Light.Radius)
+                        {
+                            GV.Player.MaxLightRadius = 400;
+                            GV.Player.Rate = 400;
+
+                            if ((GV.Player.LightRadius + GV.Player.Rate) < GV.Player.MaxLightRadius)
+                            {
+                                GV.Player.LightRadius += GV.Player.Rate;
+                            }
+                            else if (GV.Player.LightRadius < GV.Player.MaxLightRadius && GV.Player.LightRadius + GV.Player.Rate > GV.Player.MaxLightRadius)
+                                GV.Player.LightRadius += GV.Player.MaxLightRadius - GV.Player.LightRadius;
+
+                            else
+                                GV.Player.LightRadius--;
+                        }
+                    }
 
                 }
             }

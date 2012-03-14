@@ -32,36 +32,24 @@ namespace KismetDataTypes
             DataList.Add("pickupHeal1", new PickUpPoint("pickupHeal", "pickupHeal1", new Vector2(850, 440)));
             TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
-            
+
             /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
-<<<<<<< HEAD
 
             DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
 
             DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));*/
 
 
-           // TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
+            // TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
             //DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
 
-            TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
-            DataList.Add("mini100", new SpawnPoint("miniboss", "mini100", new Vector2(34.0f, 11.0f)));
+            //TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
+            //DataList.Add("mini100", new SpawnPoint("miniboss", "mini100", new Vector2(34.0f, 11.0f)));
 
             TriggerboxList.Add(new TriggerBox("checkPoint", "checkpoint1", new Rectangle(250, 440, 500, 300)));
 
             DataList.Add("checkpoint1", new CheckPoint("1", "checkpoint1", new Vector2(300.0f, 300.0f)));
-
-
-            /*
-            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));*/
-=======
-            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
-            DataList.Add("checkpoint1", new CheckPoint());*/
-            
-            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(800.0f, 240.0f)));
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
         }
-
         public static void Release()
         {
             TriggerboxList = new List<TriggerBox>();

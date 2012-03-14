@@ -62,7 +62,7 @@ namespace KismetDataTypes
                    
                 }
                 //this.state = new InAirState(this);
-                Position = GV.Player.Position;
+                //Position = GV.Player.Position;
              
             }
 
@@ -273,12 +273,9 @@ namespace KismetDataTypes
 
             if (itemType == "light")
             {
-                light.Position = Position;
-<<<<<<< HEAD
-                light.Centre = Position;
-=======
-                light.Centre = new Vector2(Position.X, Position.Y - 32);
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
+                light.Position = Position - Camera.Position;
+                light.Centre = Position - Camera.Position;
+                light.Centre = (new Vector2(Position.X, Position.Y - 32) - Camera.Position) ;
                 //Console.WriteLine("light x" + light.Position.X + " y " + light.Position.X);
 
             }
@@ -298,11 +295,17 @@ namespace KismetDataTypes
             sprite.Position = Position;
             //new Vector2(positionX, -positionY + 280);
             sprite.Draw(gameTime, spriteBatch);
+            
             if (GV.ShowBoxes)
             {
                 BoundingBox boundBox = new BoundingBox();
                 boundBox.Draw(spriteBatch, Bounds, Color.Green);
 
+                if (itemType == "light")
+                {
+                    Circle boundcircle = new Circle(new Vector2(Position.X, Position.Y - (((float)Sprite.BoundingBox.Bottom - (float)Sprite.BoundingBox.Top)) / 2), Light.Radius);
+                    boundcircle.Draw(spriteBatch, Color.Green);
+                }
             }
         }
     }

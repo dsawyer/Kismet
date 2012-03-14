@@ -566,9 +566,9 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Time>2012-03-14T12:16:51.2783247-03:00</Time>
     </Item>
-    <BuildSuccessful>false</BuildSuccessful>
+    <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
@@ -606,7 +606,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-14T12:16:51.4353337-03:00</Value>
+        <Value>2012-03-14T14:52:57.6530507-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

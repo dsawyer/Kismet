@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 C:\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
-=======
-C:\Users\Dylan\Documents\Kismet\Level Editor\Level EditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2

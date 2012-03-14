@@ -29,15 +29,11 @@ namespace KismetDataTypes
             //PositionInTile(p_InitialPosition);
             Position = p_InitialPosition;
             IsAlive = true;
-<<<<<<< HEAD
             Health = 1000;
             IsOnGround = false;
             //Position = p_InitialPosition;
-=======
-            Health = 400;
-            IsOnGround = false;
 
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
+
            
             StateMachine = new StateMachine(this, new EnemyIdleState(this));
 

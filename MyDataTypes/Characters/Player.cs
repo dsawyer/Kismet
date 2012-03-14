@@ -465,6 +465,32 @@ namespace KismetDataTypes
             {
                     DarkCount +=1;
             }
+
+            if (CurrentMagicItem == "fire")
+            {
+                CurrentMagicCount = FireCount;
+            }
+            else if (CurrentMagicItem == "water")
+            {
+               
+                CurrentMagicCount = WaterCount;
+            }
+            else if (CurrentMagicItem == "earth")
+            {
+                CurrentMagicCount = EarthCount;
+            }
+            else if (CurrentMagicItem == "wind")
+            {
+                CurrentMagicCount = WindCount;
+            }
+            else if (CurrentMagicItem == "dark")
+            {
+                CurrentMagicCount = DarkCount;
+            }
+            else if (CurrentMagicItem == "light")
+            {
+                CurrentMagicCount = LightCount;
+            }
         }
 
         public bool CheckInventory(string type)
@@ -584,6 +610,8 @@ namespace KismetDataTypes
             IsAlive = true;
             health = 600;
 
+            CurrentMagicCount = FireCount;
+
             localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
         }
 
@@ -652,8 +680,8 @@ namespace KismetDataTypes
                 boundBox.Draw(spriteBatch, positionBox, Color.Yellow);
 
 
-                Circle boundcircle = new Circle(new Vector2(Position.X, Position.Y - (((float)Sprite.BoundingBox.Bottom - (float)Sprite.BoundingBox.Top)) / 2), lightRadius);
-                boundcircle.Draw(spriteBatch, Color.Green);
+                //Circle boundcircle = new Circle(new Vector2(Position.X, Position.Y - (((float)Sprite.BoundingBox.Bottom - (float)Sprite.BoundingBox.Top)) / 2), lightRadius);
+                //boundcircle.Draw(spriteBatch, Color.Green);
             }
         }
     }

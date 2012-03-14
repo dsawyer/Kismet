@@ -57,7 +57,7 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = Content.Load<Level>("Levels/Level_01D");
+            GV.Level = Content.Load<Level>("Levels/Level_01A");
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);
@@ -70,7 +70,7 @@ namespace Kismet
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
-            GV.ShowBoxes = true;
+            GV.ShowBoxes = false;
 
             GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
 
@@ -89,15 +89,9 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
-<<<<<<< HEAD
-
-
             hubManager = new HubManager();
 
-=======
 
-            hubManager = new HubManager();
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
         }
 
         /// <summary>
@@ -160,7 +154,6 @@ namespace Kismet
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
-<<<<<<< HEAD
 
             //GV.Level.SortLights();
             //GV.Level.Lights;
@@ -168,10 +161,10 @@ namespace Kismet
             GV.Level.SortLights();
 
 
-=======
+
             int min2 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
 
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
+
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
             shaders.Parameters["cameraPosition"].SetValue(Camera.Position);
