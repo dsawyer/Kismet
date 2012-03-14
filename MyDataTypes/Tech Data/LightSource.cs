@@ -17,10 +17,20 @@ namespace KismetDataTypes
 
         private Vector2 centre = Vector2.Zero;
         private Vector2 direction = Vector2.Zero;
+        private Vector2 anchor = Vector2.Zero;
+        private float swingAngle = 0;
+        private float speed = 0;
         private float attenuation = GV.DefaultAttenuation;
         private float illuminationAngle;
         private int radius = 0;
         private int brightness = 0;
+        private Vector3 colour = Vector3.Zero;
+
+        private const int Left = 0;
+        private const int Right = 1;
+
+        private int swingDirection = Left;
+        private float elapsedTime = 0.0f;
 
         #endregion
 
@@ -40,8 +50,40 @@ namespace KismetDataTypes
         /// </summary>
         public Vector2 Direction
         {
-            get { return direction; }
+            get
+            {
+                direction = Centre - Anchor;
+                return direction;
+            }
             set { direction = value; }
+        }
+
+        /// <summary>
+        /// The anchor point from which the light swings
+        /// </summary>
+        public Vector2 Anchor
+        {
+            get { return anchor; }
+            set { anchor = value; }
+        }
+
+        /// <summary>
+        /// The cosine of the maximum angle formed by a vertical vector
+        /// and the direction the light is pointing
+        /// </summary>
+        public float SwingAngle
+        {
+            get { return swingAngle; }
+            set { swingAngle = value; }
+        }
+
+        /// <summary>
+        /// The speed at which the light is swinging from side to side
+        /// </summary>
+        public float Speed
+        {
+            get { return speed; }
+            set { speed = value; }
         }
 
         /// <summary>
@@ -78,6 +120,15 @@ namespace KismetDataTypes
         {
             get { return brightness; }
             set { brightness = value; }
+        }
+
+        /// <summary>
+        /// The colour of the light
+        /// </summary>
+        public Vector3 Colour
+        {
+            get { return colour; }
+            set { colour = value; }
         }
 
         #endregion
@@ -126,6 +177,61 @@ namespace KismetDataTypes
             Attenuation = attenuationFactor;
             Radius = lightRadius;
             Brightness = lightBright;
+        }
+
+        /// <summary>
+        /// Updates the position of the light (causing it to swing) as time goes on
+        /// </summary>
+        /// <param name="gameTime"></param>
+        public void UpdatePosition(GameTime gameTime)
+        {
+            elapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (elapsedTime >= 0.01f)
+            {
+                // Reset the elapsed time
+                elapsedTime = 0.0f;
+
+                // Calculate offsets
+                Vector2 oldOffset = Centre - Anchor;
+                Vector2 newOffset;
+
+                // Modify the new offset based on what direction the light is swinging
+                if (swingDirection == Left)
+                { newOffset = new Vector2(oldOffset.X - Speed / 4, oldOffset.Y); }
+                else
+                { newOffset = new Vector2(oldOffset.X + Speed / 4, oldOffset.Y); }
+
+                // Do calculations based on the normals
+                Vector2 normalOffset = newOffset;
+                normalOffset.Normalize();
+                float cosAngleBetween = Vector2.Dot(normalOffset, new Vector2(0, 1));
+
+                // Check to see if the light has swung as far as it can go
+                if (cosAngleBetween <= SwingAngle && swingDirection == Left)
+                {
+                    swingDirection = Right;
+                    return;
+                }
+                else if (cosAngleBetween <= SwingAngle && swingDirection == Right)
+                {
+                    swingDirection = Left;
+                    return;
+                }
+
+                // Calculate the new x and y positions
+                float yTranslation = oldOffset.Length() * cosAngleBetween;
+                float sinAngleBetween = (float)Math.Sqrt(1 - (cosAngleBetween * cosAngleBetween));
+                float xTranslation = oldOffset.Length() * sinAngleBetween;
+
+                // Since the x translation factor is always positive, we need to take
+                // into account when the light is to the left of its original position
+                if (Anchor.X + newOffset.X < Anchor.X)
+                { xTranslation *= -1; }
+
+                // Move the light and the lantern image associated with it
+                Centre = new Vector2(Anchor.X + xTranslation, Anchor.Y + yTranslation);
+                BoundingBox = new Rectangle((int)(Centre.X) - 16, (int)(Centre.Y) - 16, 32, 32);
+            }
         }
 
         /// <summary>

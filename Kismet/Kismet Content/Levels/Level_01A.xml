@@ -5,7 +5,9 @@
     <Width>11520</Width>
     <Height>736</Height>
     <PlayerStartingPosition>50 450</PlayerStartingPosition>
-    <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
+    <BackgroundLayerTextures>
+      <Item>Mountain</Item>
+    </BackgroundLayerTextures>
     <BackgroundWidth>640</BackgroundWidth>
     <BackgroundHeight>640</BackgroundHeight>
     <GroundLayerTexture>Tiles</GroundLayerTexture>
@@ -34,12 +36,12 @@
       0  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 11 11 11 11 1  1  1  1  1  1  11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 12 50 50 50 50 10 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 11 11 11 11 11 11 11 11 1  1  1  1  1  2  50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  2  50 50 50 50 0  1  11 11 11 11 1  1  1  1  11 11 11 11 1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11
       10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12 50 50 50 50 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
     </GroundLayerValues>
-    <SurGroundLayerTexture>Tiles</SurGroundLayerTexture>
-    <SurGroundLayerValues>
-      </SurGroundLayerValues>
+    <SurgroundLayerTextures>
+      <Item>MountainsFront</Item>
+    </SurgroundLayerTextures>
     <ForegroundLayerTexture>Tiles</ForegroundLayerTexture>
     <ForegroundLayerValues>
-      </ForegroundLayerValues>
+    </ForegroundLayerValues>
     <CollisionLayerTexture>Tiles</CollisionLayerTexture>
     <CollisionLayerValues>
       0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
@@ -66,6 +68,10 @@
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
     </CollisionLayerValues>
+    <NumberOfBackgroundSegments>1</NumberOfBackgroundSegments>
+    <ScrollRates>
+      0.2 0 0.7 0
+    </ScrollRates>
     <NumWarps>1</NumWarps>
     <NumSpawners>41</NumSpawners>
     <NumTriggers>42</NumTriggers>
@@ -892,10 +898,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>416 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>416 66</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>2</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>500</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light2</Name>
@@ -905,10 +915,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1116 266</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1116 216</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.8</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light3</Name>
@@ -918,10 +932,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1916 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1916 66</Anchor>
+        <SwingAngle>0.6</SwingAngle>
+        <Speed>1.5</Speed>
         <Attenuation>3</Attenuation>
-        <IlluminationAngle>0.5</IlluminationAngle>
+        <IlluminationAngle>0.85</IlluminationAngle>
         <Radius>500</Radius>
         <Brightness>3</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light4</Name>
@@ -931,10 +949,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>2916 316</Centre>
         <Direction>0 1</Direction>
+        <Anchor>2916 266</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1.2</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>350</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light5</Name>
@@ -944,10 +966,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>4016 116</Centre>
         <Direction>0 1</Direction>
+        <Anchor>4016 66</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1.7</Speed>
         <Attenuation>8</Attenuation>
-        <IlluminationAngle>0</IlluminationAngle>
+        <IlluminationAngle>0.6</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light6</Name>
@@ -957,10 +983,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>1344 -284</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1344 -334</Anchor>
+        <SwingAngle>0.95</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.98</IlluminationAngle>
         <Radius>360</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light7</Name>
@@ -970,10 +1000,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>5344 80</Centre>
         <Direction>0 1</Direction>
+        <Anchor>5344 30</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light8</Name>
@@ -983,10 +1017,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>8304 320</Centre>
         <Direction>0 1</Direction>
+        <Anchor>8304 270</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>0.6</Speed>
         <Attenuation>8</Attenuation>
-        <IlluminationAngle>0</IlluminationAngle>
+        <IlluminationAngle>0.6</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light9</Name>
@@ -996,10 +1034,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>9712 384</Centre>
         <Direction>0 1</Direction>
+        <Anchor>9712 334</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light10</Name>
@@ -1009,10 +1051,14 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>11440 496</Centre>
         <Direction>0 1</Direction>
+        <Anchor>11440 446</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.97</IlluminationAngle>
         <Radius>200</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.0 0.4 0.4</Colour>
       </Item>
       <Item>
         <Name>Light11</Name>
@@ -1022,11 +1068,16 @@
         <ImageBounds>160 128 32 32</ImageBounds>
         <Centre>6656 80</Centre>
         <Direction>0 1</Direction>
+        <Anchor>6656 30</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>0.7</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>600</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
     </Lights>
+    <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

@@ -566,36 +566,9 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-02-29T17:27:46.6756734-04:00</Time>
+      <Time>0001-01-01T00:00:00</Time>
     </Item>
-    <Item>
-      <Source>Levels\Level_01D.xml</Source>
-      <Name>Levels\Level_01D</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
-      <Time>2012-02-29T17:27:46.6786736-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Levels\Level_01B.xml</Source>
-      <Name>Levels\Level_01B</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01B.xnb</Output>
-      <Time>2012-02-29T17:27:46.6766734-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Levels\Level_01C.xml</Source>
-      <Name>Levels\Level_01C</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
-      <Time>2012-02-29T17:27:46.6776735-04:00</Time>
-    </Item>
-    <BuildSuccessful>true</BuildSuccessful>
+    <BuildSuccessful>false</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
@@ -633,7 +606,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-14T12:02:16.1322692-03:00</Value>
+        <Value>2012-03-14T12:16:51.4353337-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

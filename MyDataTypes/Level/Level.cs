@@ -93,18 +93,22 @@ namespace KismetDataTypes
 
         #region Background Layer
 
-        private string backgroundTexture;
+        // Default the number of segments to 1
+        public int NumberOfBackgroundSegments = 1;
+        public float[] ScrollRates;
+        private string[] backgroundTextures;
         private int backgroundWidth;
         private int backgroundHeight;
+        private Texture2D[] backgroundSegments;
 
         /// <summary>
         /// The name of the image used for the background
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("BackgroundLayerTexture")]
-        public string BackgroundLayerTexture
+        [System.Xml.Serialization.XmlElementAttribute("BackgroundLayerTextures")]
+        public string[] BackgroundLayerTextures
         {
-            get { return backgroundTexture; }
-            set { backgroundTexture = value; }
+            get { return backgroundTextures; }
+            set { backgroundTextures = value; }
         }
 
         /// <summary>
@@ -130,10 +134,6 @@ namespace KismetDataTypes
         #endregion
 
         #region Object layer
-
-        private Vector2[] lightCentres;
-        private float[] lightRadii;
-        private float[] lightBrightness;
 
         [System.Xml.Serialization.XmlElementAttribute("NumWarps")]
         // the number of warps in a level
@@ -248,38 +248,23 @@ namespace KismetDataTypes
 
         #region SurGround Layer
 
+        public int NumberOfSurgroundSegments = 1;
+        private Texture2D[] surgroundSegments;
+
         /// <summary>
         /// The name of the texture for the ground layer
         /// </summary>
-        private string surGroundLayerTexture;
+        private string[] surGroundLayerTextures;
+
         /// <summary>
         /// A texture used as a base tileset for a ground layer
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("SurGroundLayerTexture")]
-        public string SurGroundLayerTexture
+        [System.Xml.Serialization.XmlElementAttribute("SurGroundLayerTextures")]
+        public string[] SurgroundLayerTextures
         {
-            get { return surGroundLayerTexture; }
-            set { surGroundLayerTexture = value; }
+            get { return surGroundLayerTextures; }
+            set { surGroundLayerTextures = value; }
         }
-
-        /// <summary>
-        /// The values for the ground layer's tiles
-        /// </summary>
-        private int[] surGroundLayerValues;
-        /// <summary>
-        /// The values for the ground layer's tiles
-        /// </summary>
-        [XmlArray("SurGroundLayerValues"), XmlArrayItem(typeof(int))]
-        public int[] SurGroundLayerValues
-        {
-            get { return surGroundLayerValues; }
-            set { surGroundLayerValues = value; }
-        }
-
-        /// <summary>
-        /// The ground layer in the level
-        /// </summary>
-        private Layer surGroundLayer;
 
         #endregion
 
@@ -390,14 +375,18 @@ namespace KismetDataTypes
         /// </summary>
         public void Initialise(ContentManager contentManager)
         {
-            if (!ResourceManager.Instance.ContainsTexture(BackgroundLayerTexture))
+            // Initialise the background segments
+            if (NumberOfBackgroundSegments > 0)
+            { backgroundSegments = new Texture2D[NumberOfBackgroundSegments]; }
+
+            for (int i = 0; i < NumberOfBackgroundSegments; i+=1)
             {
-                ResourceManager.Instance.Texture(BackgroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", BackgroundLayerTexture)));
-            }
-            // Initialise the surGroundlayer
-            if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
-            {
-                ResourceManager.Instance.Texture(SurGroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurGroundLayerTexture)));
+                if (!ResourceManager.Instance.ContainsTexture(BackgroundLayerTextures[i]))
+                {
+                    ResourceManager.Instance.Texture(BackgroundLayerTextures[i], contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", BackgroundLayerTextures[i])));
+                }
+
+                backgroundSegments[i] = ResourceManager.Instance.Texture(BackgroundLayerTextures[i]);
             }
             // Initialise the ground layer
             if (!ResourceManager.Instance.ContainsTexture(GroundLayerTexture))
@@ -405,23 +394,32 @@ namespace KismetDataTypes
                 ResourceManager.Instance.Texture(GroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", GroundLayerTexture)));
             }
             groundLayer = new Layer(Width, Height, 0, GroundLayerTexture, GroundLayerValues, 0, 0);
+
+            if (NumberOfSurgroundSegments > 0)
+            { surgroundSegments = new Texture2D[NumberOfSurgroundSegments]; }
+
+            for (int i = 0; i < NumberOfSurgroundSegments; i += 1)
+            {
+                if (!ResourceManager.Instance.ContainsTexture(SurgroundLayerTextures[i]))
+                {
+                    ResourceManager.Instance.Texture(SurgroundLayerTextures[i], contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurgroundLayerTextures[i])));
+                }
+
+                surgroundSegments[i] = ResourceManager.Instance.Texture(SurgroundLayerTextures[i]);
+            }
             // Initialise the surGroundlayer
-            if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
+            /*if (!ResourceManager.Instance.ContainsTexture(SurGroundLayerTexture))
             {
                 ResourceManager.Instance.Texture(SurGroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", SurGroundLayerTexture)));
             }
-            /*surGroundLayer = new Layer(Width, Height, 0, SurGroundLayerTexture, SurGroundLayerValues, 0, 0);
+            surGroundLayer = new Layer(Width, Height, 0, SurGroundLayerTexture, SurGroundLayerValues, 16, 16);
             // Initialise the foreground layer
-            if (!ResourceManager.Instance.ContainsTexture(ForegroundLayerTexture))
+            /*if (!ResourceManager.Instance.ContainsTexture(ForegroundLayerTexture))
             {
                 ResourceManager.Instance.Texture(ForegroundLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", ForegroundLayerTexture)));
             }
-            foregroundLayer = new Layer(Width, Height, 0, ForegroundLayerTexture, ForegroundLayerValues, 0, 0);
+            foregroundLayer = new Layer(Width, Height, 0, ForegroundLayerTexture, ForegroundLayerValues, 0, 0);*/
             // Initialise the collision layer
-            if (!ResourceManager.Instance.ContainsTexture(CollisionLayerTexture))
-            {
-                ResourceManager.Instance.Texture(CollisionLayerTexture, contentManager.Load<Texture2D>(System.IO.Path.Combine(@"Tiles\", CollisionLayerTexture)));
-            }*/
             collisionLayer = new Layer(Width, Height, 0, CollisionLayerTexture, CollisionLayerValues, 0, 0);
 
             TDManager.Initialize();
@@ -452,12 +450,19 @@ namespace KismetDataTypes
         {
             //if (!GV.EDITING)
             { DrawBackground(spriteBatch); }
+            DrawSurground(spriteBatch);
             groundLayer.Draw(spriteBatch);
-            //surGroundLayer.Draw(spriteBatch);
             if (GV.EDITING)
             { DrawObjects(spriteBatch); }
             else
             { DrawLights(spriteBatch); }
+            if (GV.ShowBoxes)
+            {
+                for (int i = 0; i < NumTriggers; i+=1)
+                {
+                    Triggers[i].DrawTriggerBox(spriteBatch);
+                }
+            }
             //foregroundLayer.Draw(spriteBatch);
 
         }
@@ -465,10 +470,59 @@ namespace KismetDataTypes
         // Draws the background image on the level
         private void DrawBackground(SpriteBatch spriteBatch)
         {
-            Rectangle destRect = new Rectangle((int)Camera.Position.X, (int)Camera.Position.Y, Camera.ViewPortWidth, Camera.ViewPortHeight);
-            Rectangle sourceRect = new Rectangle(0, 0, BackgroundWidth, BackgroundHeight);
+            int segmentWidth = Camera.ViewPortWidth;
+            int segmentHeight = Camera.ViewPortHeight;
 
-            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTexture), destRect, sourceRect, Color.White);
+            float x = Camera.Position.X * ScrollRates[0];
+            float y = Camera.Position.Y * ScrollRates[1];
+            int leftSegment = (int)Math.Floor(x / segmentWidth);
+            int rightSegment = leftSegment + 1;
+            int bottomSegment = (int)Math.Floor(y / segmentHeight);
+            int topSegment = bottomSegment + 1;
+            x = (x / segmentWidth - leftSegment) * -segmentWidth;
+            x += Camera.Position.X;
+            y = (y / segmentHeight - bottomSegment) * -segmentHeight;
+            y += Camera.Position.Y;
+
+            Rectangle sourceRect = new Rectangle(0, 0, BackgroundWidth, BackgroundHeight);
+            Rectangle destRect = new Rectangle((int)x, (int)y, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect2 = new Rectangle((int)x + segmentWidth, (int)y, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect3 = new Rectangle((int)x, (int)y + segmentHeight, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect4 = new Rectangle((int)x + segmentWidth, (int)y + segmentHeight, Camera.ViewPortWidth, Camera.ViewPortHeight);
+
+            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTextures[leftSegment % NumberOfBackgroundSegments]), destRect, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTextures[rightSegment % NumberOfBackgroundSegments]), destRect2, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTextures[topSegment % NumberOfBackgroundSegments]), destRect3, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(BackgroundLayerTextures[bottomSegment % NumberOfBackgroundSegments]), destRect4, sourceRect, Color.White);
+        }
+
+        // Draw the secondary background on top of the far background
+        private void DrawSurground(SpriteBatch spriteBatch)
+        {
+            int segmentWidth = Camera.ViewPortWidth;
+            int segmentHeight = Camera.ViewPortHeight;
+
+            float x = Camera.Position.X * ScrollRates[2];
+            float y = Camera.Position.Y * ScrollRates[2];
+            int leftSegment = (int)Math.Floor(x / segmentWidth);
+            int rightSegment = leftSegment + 1;
+            int topSegment = (int)Math.Floor(y / segmentHeight);
+            int bottomSegment = topSegment + 1;
+            x = (x / segmentWidth - leftSegment) * -segmentWidth;
+            x += Camera.Position.X;
+            y = (y / segmentHeight - topSegment) * -segmentHeight;
+            y += Camera.Position.Y;
+
+            Rectangle sourceRect = new Rectangle(0, 0, BackgroundWidth, BackgroundHeight);
+            Rectangle destRect = new Rectangle((int)x, (int)y, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect2 = new Rectangle((int)x + segmentWidth, (int)y, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect3 = new Rectangle((int)x, (int)y + segmentHeight, Camera.ViewPortWidth, Camera.ViewPortHeight);
+            Rectangle destRect4 = new Rectangle((int)x + segmentWidth, (int)y + segmentHeight, Camera.ViewPortWidth, Camera.ViewPortHeight);
+
+            spriteBatch.Draw(ResourceManager.Instance.Texture(SurgroundLayerTextures[leftSegment % NumberOfSurgroundSegments]), destRect, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(SurgroundLayerTextures[rightSegment % NumberOfSurgroundSegments]), destRect2, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(SurgroundLayerTextures[topSegment % NumberOfSurgroundSegments]), destRect3, sourceRect, Color.White);
+            spriteBatch.Draw(ResourceManager.Instance.Texture(SurgroundLayerTextures[bottomSegment % NumberOfSurgroundSegments]), destRect4, sourceRect, Color.White);
         }
 
         // Draw the warps in the level (used in the editor and for testing)
@@ -549,6 +603,18 @@ namespace KismetDataTypes
             }
 
             return lightDirections;
+        }
+
+        public Vector3[] GetLightColours(int num)
+        {
+            Vector3[] lightColours = new Vector3[num];
+
+            for (int i = 0; i < num; i += 1)
+            {
+                lightColours[i] = Lights[i].Colour;
+            }
+
+            return lightColours;
         }
 
         public float[] GetLightRadii(int num)
@@ -647,9 +713,14 @@ namespace KismetDataTypes
         /// <summary>
         /// Method called during update process
         /// </summary>
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             SortLights();
+
+            for (int i = 0; i < NumLights; i += 1)
+            {
+                Lights[i].UpdatePosition(gameTime);
+            }
         }
 
         /// <summary>

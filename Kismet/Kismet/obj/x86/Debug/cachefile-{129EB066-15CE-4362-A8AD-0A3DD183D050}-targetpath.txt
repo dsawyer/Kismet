@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+Content\Levels\Level_01B.xnb
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
 Content\Levels\Level_01D.xnb
 Content\Levels\Level_01A.xnb
 Content\XML Documents\DanAnimations.xnb
@@ -9,7 +13,10 @@ Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\MiniBossAnimations.xnb
 Content\XML Documents\Goblin.xnb
 Content\XML Documents\PickUpItemsAnimations.xnb
+<<<<<<< HEAD
 Content\Levels\Level_01B.xnb
+=======
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
 Content\Levels\Level_01C.xnb
 Content\tiles\Icons.xnb
 Content\tiles\Tiles.xnb
@@ -68,5 +75,11 @@ Content\Sprites\Items\DanPickupWind.xnb
 Content\Sprites\Imp\ImpFly.xnb
 Content\Sprites\Imp\ImpIdle.xnb
 Content\Sprites\Imp\ImpKnockedDown.xnb
+<<<<<<< HEAD
+=======
+Content\tiles\Mountain.xnb
+Content\tiles\MountainsFront.xnb
+Content\tiles\CloudySky.xnb
+Content\tiles\StarlitSky.xnb
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
 Content\LightEffects.xnb
-Content\SpriteFont1.xnb

@@ -36,7 +36,7 @@ namespace KismetDataTypes
         public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
-
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
             
             //is there movement not movement on the thumbstick
             if (Player.IdleCheck())
@@ -49,14 +49,14 @@ namespace KismetDataTypes
 
 
             //if player is jumping
-            else if (keyboardState.IsKeyDown(Keys.A))
+            else if (keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A))
             {
 
                 Player.State = new JumpingState(this.Player);
             }
 
              // if player is attacking
-            else if (keyboardState.IsKeyDown(Keys.S))
+            else if (keyboardState.IsKeyDown(Keys.S) || gamePadState.IsButtonDown(Buttons.X))
             {
                 Player.State = new Attack1State(this);
             }

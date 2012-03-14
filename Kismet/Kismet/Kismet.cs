@@ -89,10 +89,15 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
+<<<<<<< HEAD
 
 
             hubManager = new HubManager();
 
+=======
+
+            hubManager = new HubManager();
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
         }
 
         /// <summary>
@@ -115,7 +120,6 @@ namespace Kismet
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
                 Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
-                //level.Save();
                 this.Exit();
             }
 
@@ -127,8 +131,10 @@ namespace Kismet
             else
             {
                 GV.Player.ResetPlayer();
-
             }
+
+            GV.Level.Update(gameTime);
+
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
@@ -154,6 +160,7 @@ namespace Kismet
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+<<<<<<< HEAD
 
             //GV.Level.SortLights();
             //GV.Level.Lights;
@@ -161,6 +168,10 @@ namespace Kismet
             GV.Level.SortLights();
 
 
+=======
+            int min2 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
+
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
             shaders.Parameters["cameraPosition"].SetValue(Camera.Position);
@@ -170,6 +181,9 @@ namespace Kismet
             shaders.Parameters["lightAngles"].SetValue(GV.Level.GetLightAngles(min));
             shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii(min));
             shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness(min));
+            shaders.Parameters["lightColours"].SetValue(GV.Level.GetLightColours(min));
+            shaders.Parameters["lightSpells"].SetValue(MagicItemManager.GetLightMagicArray(min2));
+            shaders.Parameters["numLightSpells"].SetValue(min2);
             shaders.Parameters["numLights"].SetValue(min);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,

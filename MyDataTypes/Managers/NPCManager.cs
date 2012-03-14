@@ -37,7 +37,7 @@ namespace KismetDataTypes
                     break;
                 
                 default:
-                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Invalid selection in NPC Manager");
                     break;
             }
 

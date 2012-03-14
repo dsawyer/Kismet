@@ -37,18 +37,20 @@ namespace KismetDataTypes
         {
 
             KeyboardState keyboardState = Keyboard.GetState();
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
 
             if (Player.Direction == "left")
                 Player.Velocity = new Vector2(0, Player.Velocity.Y);
             else if (Player.Direction == "right")
                 Player.Velocity = new Vector2(0, Player.Velocity.Y);
 
-            if (keyboardState.IsKeyDown(Keys.S))
+            if (keyboardState.IsKeyDown(Keys.S) ||
+                gamePadState.IsButtonDown(Buttons.X))
             {
                 //Player.IsHit = false;
                 Player.State = new Attack1State(this);
             }
-            else if (keyboardState.IsKeyDown(Keys.A) && Player.IsOnGround )
+            else if ((keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A)) && Player.IsOnGround )
             {
                 Player.IsHit = false;
                 Player.State = new JumpingState(this);

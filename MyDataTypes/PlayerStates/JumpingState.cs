@@ -50,6 +50,7 @@ namespace KismetDataTypes
         public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
 
             if (Player.IsHit)
             {
@@ -61,7 +62,9 @@ namespace KismetDataTypes
                 Player.MaxLightRadius = 200;
                 Player.Rate = 200;
                 Player.UpdateRadius();
-                if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left))
+                if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left) ||
+                     gamePadState.IsButtonDown(Buttons.DPadRight) || gamePadState.IsButtonDown(Buttons.DPadLeft) ||
+                     gamePadState.IsButtonDown(Buttons.LeftThumbstickRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft))
                     Player.State = new WalkingState(this);
                 else 
                     Player.State = new IdleState(this);
@@ -69,7 +72,7 @@ namespace KismetDataTypes
             }
 
             //is there movement not movement on the thumbstick
-            else if (keyboardState.IsKeyDown(Keys.S))
+            else if (keyboardState.IsKeyDown(Keys.S) || gamePadState.IsButtonDown(Buttons.X))
             {
                 Player.State = new JumpingAttackState(this);
             }

@@ -34,6 +34,7 @@ namespace KismetDataTypes
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
             
             /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
+<<<<<<< HEAD
 
             DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
 
@@ -53,6 +54,12 @@ namespace KismetDataTypes
 
             /*
             //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));*/
+=======
+            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
+            DataList.Add("checkpoint1", new CheckPoint());*/
+            
+            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(800.0f, 240.0f)));
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
         }
 
         public static void Release()
@@ -114,7 +121,7 @@ namespace KismetDataTypes
                     }
                     break;
                 default:
-                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Invalid selection in Tech Data Manager");
                     break;
             }
         }

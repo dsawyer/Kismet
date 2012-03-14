@@ -34,7 +34,7 @@ namespace KismetDataTypes
 
                
                 default:
-                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Invalid selection in Pickup Manager");
                     break;
             }
 
@@ -48,6 +48,8 @@ namespace KismetDataTypes
                 for (int i = 0; i < pickUpItemList.Count; i++) // Loop through List with for each item in list
                 {
                     PickUpItem item = pickUpItemList[i];
+
+                    
                     if (!item.Active)
                     {
                         pickUpItemList.Remove(item);
@@ -73,7 +75,27 @@ namespace KismetDataTypes
             {
                 foreach (PickUpItem item in pickUpItemList) // Loop through List with foreach
                 {
-                    item.Draw(gameTime, spriteBatch);
+                    LightSource[] lights = GV.Level.Lights;
+                    int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+                    Vector2 position = new Vector2(item.Position.X, item.Position.Y - (item.Bounds.Height / 2));
+
+                    for (int i = 0; i < min; i+=1)
+                    {
+                        Vector2 pVector = position - lights[i].Centre;
+                        double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+                        pVector.Normalize();
+                        Vector2 normalisedDirection = lights[i].Direction;
+                        normalisedDirection.Normalize();
+                        float angle = Vector2.Dot(normalisedDirection, pVector);
+                        if (angle >= lights[i].IlluminationAngle && (float)distance <= lights[i].Radius)
+                        {
+                            item.Draw(gameTime, spriteBatch);
+                            item.isLit = true;
+                            break;
+                        }
+                        if (angle < lights[i].IlluminationAngle)
+                        { item.isLit = false; }
+                    }
                 }
             }
         }

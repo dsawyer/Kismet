@@ -32,9 +32,7 @@ namespace KismetDataTypes
             currentMagic = "fire";
             texture = GV.ContentManager.Load<Texture2D>("Sprites/greenPixel");
 
-            Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");
-
-    // TODO: Load your game content here            
+            Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");         
 
         }
 
@@ -58,8 +56,10 @@ namespace KismetDataTypes
                 case "dark":
                     activeMagic.PlayAnimation("pickupDark");
                     break;
+                case "light":
+                    break;
                 default:
-                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Invalid selection in Hub Manager");
                     break;
             }
         }

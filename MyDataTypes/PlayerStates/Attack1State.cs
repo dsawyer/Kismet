@@ -40,6 +40,7 @@ namespace KismetDataTypes
                 Player.UpdateRadius();
 
                 KeyboardState keyboardState = Keyboard.GetState();
+                
                 if (Player.IsHit)
                     Player.State = new HittingState(this);
                 //is there movement not movement on the thumbstick

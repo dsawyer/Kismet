@@ -274,7 +274,11 @@ namespace KismetDataTypes
             if (itemType == "light")
             {
                 light.Position = Position;
+<<<<<<< HEAD
                 light.Centre = Position;
+=======
+                light.Centre = new Vector2(Position.X, Position.Y - 32);
+>>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
                 //Console.WriteLine("light x" + light.Position.X + " y " + light.Position.X);
 
             }
@@ -292,12 +296,6 @@ namespace KismetDataTypes
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
-            if (itemType == "light")
-            {
-                light.DrawLightSource(spriteBatch);
-
-
-            }
             //new Vector2(positionX, -positionY + 280);
             sprite.Draw(gameTime, spriteBatch);
             if (GV.ShowBoxes)

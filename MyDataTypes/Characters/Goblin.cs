@@ -30,7 +30,7 @@ namespace KismetDataTypes
             // Actual pixel position
             Position = p_InitialPosition;
             IsAlive = true;
-            Health = 100;
+            Health = 50;
             IsOnGround = false;
             Name = "Goblin";
 
