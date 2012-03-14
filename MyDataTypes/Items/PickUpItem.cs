@@ -144,6 +144,7 @@ namespace KismetDataTypes
             set { isCollision = value; }
         }
 
+        public bool isLit = false;
 
 
         /// <summary>
@@ -191,7 +192,7 @@ namespace KismetDataTypes
 
         public void Update(GameTime gameTime)
         {
-            Velocity = new Vector2(Velocity.X, Velocity.Y);
+            /*Velocity = new Vector2(Velocity.X, Velocity.Y);
             Vector2 nextPosition = Position + Velocity;
             state.Update();
 
@@ -201,10 +202,10 @@ namespace KismetDataTypes
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
 
-            if (IsCollision)
+            if (IsCollision && isLit)
             {
                 Active = false;
-            }
+            }*/
         }
 
 

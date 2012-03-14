@@ -45,6 +45,7 @@ namespace KismetDataTypes
         public override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
             Player.Rate = 0;
             Player.UpdateRadius();
             if (Player.IsHit)
@@ -53,17 +54,19 @@ namespace KismetDataTypes
 
             }
             // if player is attacking
-            else if (keyboardState.IsKeyDown(Keys.S))
+            else if (keyboardState.IsKeyDown(Keys.S) || gamePadState.IsButtonDown(Buttons.X))
             {
                 Player.State = new Attack1State(this);
             }
-            else if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left))
+            else if (keyboardState.IsKeyDown(Keys.Right) || keyboardState.IsKeyDown(Keys.Left) ||
+                     gamePadState.IsButtonDown(Buttons.DPadRight) || gamePadState.IsButtonDown(Buttons.DPadLeft) ||
+                     gamePadState.IsButtonDown(Buttons.LeftThumbstickRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft))
             {
                 Player.State = new WalkingState(this);
             }
            
            
-            else if (keyboardState.IsKeyDown(Keys.D))
+            else if (keyboardState.IsKeyDown(Keys.D) || gamePadState.IsButtonDown(Buttons.B))
             {
                 if (Player.CheckInventory(Player.CurrentMagicItem))
                 {
@@ -71,7 +74,7 @@ namespace KismetDataTypes
                 }
             }
                 //if player is jumping
-            else if (keyboardState.IsKeyDown(Keys.A))
+            else if (keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A))
             {
                 Player.State = new JumpingState(this.Player);
             }

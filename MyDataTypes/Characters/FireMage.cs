@@ -28,7 +28,7 @@ namespace KismetDataTypes
 
             Position = p_InitialPosition;
             IsAlive = true;
-            Health = 50;
+            Health = 60;
 
             IsOnGround = false;
 

@@ -47,8 +47,8 @@ namespace KismetDataTypes
             //if (MagicItem.Sprite.CurrentFrame == MagicItem.Sprite.CurrentAnimation.EndFrame)
             //if (PickUpItem.IsOnGround)
             //{
-
-            PickUpItem.Active = false;
+            if (PickUpItem.isLit)
+            { PickUpItem.Active = false; }
 
             // }
             //MagicItem.Velocity = new Vector2(MagicItem.Velocity.X, MagicItem.Velocity.Y + GV.GRAVITY);

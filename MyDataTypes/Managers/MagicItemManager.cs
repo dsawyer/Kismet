@@ -64,7 +64,7 @@ namespace KismetDataTypes
                
 
                 default:
-                    Console.WriteLine("Invalid selection");
+                    Console.WriteLine("Invalid selection in Magic Item Manager");
                     break;
             }
 
@@ -78,13 +78,15 @@ namespace KismetDataTypes
                 for (int i = 0; i< magicItemList.Count; i++) // Loop through List with for each item in list
                 {
                     MagicItem item = magicItemList[i];
-                    if (item.ItemType == "light")
-                        lightCount--;
+                    /*if (item.ItemType == "light")
+                        lightCount--;*/
 
                     if (!item.Active)
                     {
                         
                         magicItemList.Remove(item);
+                        if (item.ItemType == "light")
+                        { lightCount--; }
                     
                     }
                     else
@@ -97,9 +99,9 @@ namespace KismetDataTypes
             }
         }
 
-        public static LightSource[] GetLightMagicArray()
+        public static Vector2[] GetLightMagicArray(int num)
         {
-            LightSource[] lightarray = new LightSource[lightCount];
+            Vector2[] lightarray = new Vector2[num];
             int count = 0;
             if (magicItemList.Count > 0)
             {
@@ -107,9 +109,11 @@ namespace KismetDataTypes
                 {
                     if (item.ItemType == "light")
                     {
-                        lightarray[count] = item.Light;
+                        lightarray[count] = item.Light.Centre;
                         count++;
                     }
+                    if (count == num)
+                    { break; }
                 }
             }
             return lightarray;

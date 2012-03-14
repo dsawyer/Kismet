@@ -7,6 +7,8 @@ float lightAngles[4];
 float lightRadii[4];
 float lightBrightness[4];
 float3 lightColours[4];
+float2 lightSpells[4];
+int numLightSpells;
 int numLights;
 sampler TextureSampler : register(s0);
 
@@ -41,10 +43,18 @@ float4 PS(PixelInput input) : COLOR0
 	float2 currentLight;
 	float angleBetweenLight;
 
+	if (numLights > 0)
+	{ darkness = float4(0, 0, 0, 0); }
+
 	for (int i = 0; i < numLights; i+=1)
 	{
 		// Get the position of the light in screen coordinates
 		currentLight = lightPositions[i] - cameraPosition;
+
+		//darkness = float4(0.2f, 0.2f, 0.2f, 0);
+
+		// Add the light's value for providing a 'mood' lighting
+		darkness += float4(lightColours[i].x, lightColours[i].y, lightColours[i].z, 0) / numLights;
 		
 		// Get the distance between the point and the light
 		distanceToLight = input.Position - currentLight;
@@ -60,22 +70,31 @@ float4 PS(PixelInput input) : COLOR0
 			if (distance < lightRadii[i])
 			{
 				darknessRatio -= ((lightRadii[i] - distance)/lightRadii[i]) * (lightAttenuations[i] / 2);
-				//darknessRatio /= lightBrightness[i];
+				darknessRatio /= lightBrightness[i];
 				if (angleBetweenLight >= 0)
 				{ darknessRatio /= angleBetweenLight; }
 				else if (angleBetweenLight < 0)
 				{ darknessRatio /= (-1 * angleBetweenLight); }
-
-				darkness = float4(lightColours[i].x, lightColours[i].y, lightColours[i].z, 0);
 			}
+		}
+	}
+
+	for (int i = 0; i < numLightSpells; i+=1)
+	{
+		distanceToLight = input.Position - lightSpells[i];
+		distance = sqrt((distanceToLight.x * distanceToLight.x) + (distanceToLight.y * distanceToLight.y));
+
+		if (distance < 200)
+		{
+			darknessRatio -= ((200 - distance)/200);
 		}
 	}
 	
 	// Clamp the lighting ratio
 	if (darknessRatio > 1)
 	{ darknessRatio = 1; }
-	else if (darknessRatio < 0)
-	{ darknessRatio = 0; }
+	else if (darknessRatio < 0.1)
+	{ darknessRatio = 0.1; }
 
 	// Modify the colour based on the amount of light coming in
 	Colour = Colour - (darknessRatio * darkness);

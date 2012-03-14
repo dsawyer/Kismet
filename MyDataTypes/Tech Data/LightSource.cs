@@ -197,13 +197,9 @@ namespace KismetDataTypes
 
                 // Modify the new offset based on what direction the light is swinging
                 if (swingDirection == Left)
-                {
-                    newOffset = new Vector2(oldOffset.X - Speed / 4, oldOffset.Y);
-                }
+                { newOffset = new Vector2(oldOffset.X - Speed / 4, oldOffset.Y); }
                 else
-                {
-                    newOffset = new Vector2(oldOffset.X + Speed / 4, oldOffset.Y);
-                }
+                { newOffset = new Vector2(oldOffset.X + Speed / 4, oldOffset.Y); }
 
                 // Do calculations based on the normals
                 Vector2 normalOffset = newOffset;
@@ -227,7 +223,8 @@ namespace KismetDataTypes
                 float sinAngleBetween = (float)Math.Sqrt(1 - (cosAngleBetween * cosAngleBetween));
                 float xTranslation = oldOffset.Length() * sinAngleBetween;
 
-                // Make sure the the x is being set properly
+                // Since the x translation factor is always positive, we need to take
+                // into account when the light is to the left of its original position
                 if (Anchor.X + newOffset.X < Anchor.X)
                 { xTranslation *= -1; }
 

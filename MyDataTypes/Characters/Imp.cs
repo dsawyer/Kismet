@@ -32,7 +32,7 @@ namespace KismetDataTypes
             Position = p_InitialPosition;
             IsAlive = true;
             IsOnGround = false;
-            Health = 10;
+            Health = 20;
 
             StateMachine = new StateMachine(this, new FlyState(this));
             //StateMachine = new StateMachine(this, new EnemyIdleState(this));

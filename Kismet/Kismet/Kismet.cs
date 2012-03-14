@@ -113,7 +113,6 @@ namespace Kismet
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
                 Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
-                //level.Save();
                 this.Exit();
             }
 
@@ -125,8 +124,10 @@ namespace Kismet
             else
             {
                 GV.Player.ResetPlayer();
-                GV.Level.Update(gameTime);
             }
+
+            GV.Level.Update(gameTime);
+
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
@@ -152,6 +153,7 @@ namespace Kismet
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+            int min2 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
 
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
@@ -163,6 +165,8 @@ namespace Kismet
             shaders.Parameters["lightRadii"].SetValue(GV.Level.GetLightRadii(min));
             shaders.Parameters["lightBrightness"].SetValue(GV.Level.GetLightBrightness(min));
             shaders.Parameters["lightColours"].SetValue(GV.Level.GetLightColours(min));
+            shaders.Parameters["lightSpells"].SetValue(MagicItemManager.GetLightMagicArray(min2));
+            shaders.Parameters["numLightSpells"].SetValue(min2);
             shaders.Parameters["numLights"].SetValue(min);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,

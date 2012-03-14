@@ -26,11 +26,12 @@ namespace KismetDataTypes
             AnimationReversed = true;
             Direction = GV.LEFT;
             Velocity = new Vector2(0, 0);
-            PositionInTile(p_InitialPosition);
+            //PositionInTile(p_InitialPosition);
+            Position = p_InitialPosition;
             IsAlive = true;
-            Health = 100;
+            Health = 400;
             IsOnGround = false;
-   
+
            
             StateMachine = new StateMachine(this, new EnemyIdleState(this));
 

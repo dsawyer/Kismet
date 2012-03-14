@@ -239,18 +239,21 @@ namespace KismetDataTypes
 
         public void UpdateRadius()
         {
-
+            int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
 
             bool isinLight = false;
             LightSource[] lightarray = GV.Level.Lights;
-            for (int i = 0; i < 4; i++)
+            Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 2));
+            for (int i = 0; i < min; i++)
             {
-                Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height /2));
                 Vector2 pVector = positionvec - lightarray[i].Centre;
                 double distance = Math.Sqrt((Math.Pow((pVector.X),2) + Math.Pow((pVector.Y),2)));
                 pVector.Normalize();
-                lightarray[i].Direction.Normalize();
-                float angle = Vector2.Dot(lightarray[i].Direction, pVector);
+                // Had to make this change due to what the Direction property actually
+                // does, a calculation each time, not returning a set value
+                Vector2 normalisedDirection = lightarray[i].Direction;
+                normalisedDirection.Normalize();
+                float angle = Vector2.Dot(normalisedDirection, pVector);
                 if (angle > lightarray[i].IlluminationAngle && (float)distance <= lightarray[i].Radius )
                 {
                     isinLight = true;
@@ -303,8 +306,9 @@ namespace KismetDataTypes
         public void ToggleMagicItems()
         {
             KeyboardState keyboardState = Keyboard.GetState();
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
             
-            if (lastButtonState && keyboardState.IsKeyUp(Keys.F))
+            if (lastButtonState && (keyboardState.IsKeyDown(Keys.F) || gamePadState.IsButtonDown(Buttons.Y)))
             {
                 if (CurrentMagicItem == "fire")
                 {
@@ -338,7 +342,7 @@ namespace KismetDataTypes
                 }
                 lastButtonState = false;
             }
-            else if (keyboardState.IsKeyDown(Keys.F))
+            else if (keyboardState.IsKeyUp(Keys.F) && gamePadState.IsButtonUp(Buttons.Y))
             {
                 lastButtonState = true;
             }
@@ -385,15 +389,20 @@ namespace KismetDataTypes
         public float AnalogState
         {
             
-            get { 
+            get {
                     keyboardState = Keyboard.GetState();
-                    if (keyboardState.IsKeyDown(Keys.Right))
+                    GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
+                    if (keyboardState.IsKeyDown(Keys.Right) || gamePadState.IsButtonDown(Buttons.DPadRight))
                     {
                         return 5.0f;
                     }
-                    else if (keyboardState.IsKeyDown(Keys.Left))
+                    else if (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft))
                     {
                         return -5.0f;
+                    }
+                    else if (gamePadState.IsButtonDown(Buttons.LeftThumbstickRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft))
+                    {
+                        return gamePadState.ThumbSticks.Left.X * 5.0f;
                     }
                     else
                     {
@@ -557,6 +566,7 @@ namespace KismetDataTypes
 
 
         #endregion
+
         /// <summary>
         /// Constructors a new sprite.
         /// </summary>        
