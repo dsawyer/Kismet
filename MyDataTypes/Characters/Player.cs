@@ -38,7 +38,7 @@ namespace KismetDataTypes
         private bool isHit = false;
         private float idleTime = 0.2f;
         private string currentMagicItem = "fire";
-        private int currentMagicCount = 0;
+        private int currentMagicCount = 100;
         private bool lastButtonState;
         
         // Used to help with testing for platform collision
@@ -267,6 +267,7 @@ namespace KismetDataTypes
             }
             else
             {
+                MaxLightRadius = 50;
                 if (lightRadius + Rate > MaxLightRadius)
                     lightRadius = MaxLightRadius;
             }

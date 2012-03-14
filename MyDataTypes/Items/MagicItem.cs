@@ -58,7 +58,7 @@ namespace KismetDataTypes
 
                 if (p_ItemType == "light")
                 {
-                    light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 500, 2);
+                    light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 200, 2);
                    
                 }
                 //this.state = new InAirState(this);
@@ -274,6 +274,7 @@ namespace KismetDataTypes
             if (itemType == "light")
             {
                 light.Position = Position;
+                light.Centre = Position;
                 //Console.WriteLine("light x" + light.Position.X + " y " + light.Position.X);
 
             }

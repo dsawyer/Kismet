@@ -34,23 +34,23 @@ namespace KismetDataTypes
             DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
             
             /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
-<<<<<<< HEAD
-            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
-=======
-            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));*/
->>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
 
-            TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
-            DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
+            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
+
+            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));*/
+
+
+           // TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
+            //DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
+
+            TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
+            DataList.Add("mini100", new SpawnPoint("miniboss", "mini100", new Vector2(34.0f, 11.0f)));
 
             TriggerboxList.Add(new TriggerBox("checkPoint", "checkpoint1", new Rectangle(250, 440, 500, 300)));
-<<<<<<< HEAD
-            DataList.Add("checkpoint1", new CheckPoint("1", "checkpoint1", new Vector2(300.0f, 300.0f)));
-            */
-=======
-            DataList.Add("checkpoint1", new CheckPoint());
 
->>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
+            DataList.Add("checkpoint1", new CheckPoint("1", "checkpoint1", new Vector2(300.0f, 300.0f)));
+
+
             /*
             //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(1000.0f, 440.0f)));*/
         }

@@ -31,7 +31,7 @@ float4 PS(PixelInput input) : COLOR0
 	float4 Colour = tex2D(TextureSampler, input.TexCoord);
 
 	// The value that represents how much light is to be removed at most
-	float4 darkness = float4(0.7f, 0.7f,0.7f, 0);
+	float4 darkness = float4(0.4f, 0.4f,0.4f, 0);
 
 	// Various needed variables for calculating the necessary lighting
 	float2 distanceToLight;

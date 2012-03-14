@@ -463,11 +463,11 @@ namespace KismetDataTypes
                             enemy.Damage = 2;
                             enemy.State = new KnockedDownState(enemy);
                         }
-                        else
+                        else if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType != "light")
                         {
 
                             enemy.Damage = 2;
-                            //enemy.State = new KnockedDownState(enemy);
+                            enemy.State = new KnockedDownState(enemy);
                         }
                         
                         

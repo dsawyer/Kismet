@@ -1,13 +1,5 @@
-C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll
-C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.pdb
-C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.dll
-C:\Users\Dylan\Documents\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.pdb
-<<<<<<< HEAD
 C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll
 C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.pdb
 C:\Kismet\MyDataTypes\obj\Debug\ResolveAssemblyReference.cache
 C:\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.dll
 C:\Kismet\MyDataTypes\obj\Debug\KismetDataTypes.pdb
-=======
->>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8

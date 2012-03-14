@@ -42,6 +42,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Levels\Level_01D.xml">
+      <Name>Level_01D</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
     <Compile Include="tiles\Icons.png">
       <Name>Icons</Name>
       <Importer>TextureImporter</Importer>
@@ -415,7 +420,6 @@
       <Name>Level_01B</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
-<<<<<<< HEAD
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -426,21 +430,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Levels\Level_01D.xml">
-      <Name>Level_01D</Name>
-=======
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Levels\Level_01C.xml">
-      <Name>Level_01C</Name>
->>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Sprites\Imp\ImpFly.png">
       <Name>ImpFly</Name>
       <Importer>TextureImporter</Importer>
@@ -462,11 +451,6 @@
       <Name>SpriteFont1</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
-=======
-    <Compile Include="Levels\Level_01D.xml">
-      <Name>Level_01D</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -484,7 +468,6 @@
       <Name>ImpKnockedDown</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
->>>>>>> d2be1eaa39a8435b82a9954e60a47249878505e8
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
