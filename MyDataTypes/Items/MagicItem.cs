@@ -273,8 +273,8 @@ namespace KismetDataTypes
 
             if (itemType == "light")
             {
-                light.Position = Position;
-                light.Centre = new Vector2(Position.X, Position.Y - 32);
+                light.Position = Position - Camera.Position;
+                light.Centre = new Vector2(light.Position.X, light.Position.Y - 32);
                 //Console.WriteLine("light x" + light.Position.X + " y " + light.Position.X);
 
             }

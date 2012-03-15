@@ -57,7 +57,7 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = Content.Load<Level>("Levels/Level_01A");
+            GV.Level = Content.Load<Level>("Levels/Level_01D");
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);

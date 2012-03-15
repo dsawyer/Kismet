@@ -244,6 +244,23 @@ namespace KismetDataTypes
             bool isinLight = false;
             LightSource[] lightarray = GV.Level.Lights;
             Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 2));
+
+            int min1 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
+            Vector2[] lightSpells = MagicItemManager.GetLightMagicArray(min1);
+
+            for (int i = 0; i < min1; i += 1)
+            {
+                Vector2 pVector = positionvec - lightSpells[i];
+                float distance = (float)Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+                if (distance <= 200)
+                {
+                    isinLight = true;
+                    break;
+                }
+                else
+                { isinLight = false; }
+            }
+            
             for (int i = 0; i < min; i++)
             {
                 Vector2 pVector = positionvec - lightarray[i].Centre;
@@ -378,7 +395,7 @@ namespace KismetDataTypes
             velocity = new Vector2(0, 0);
             Position = CheckPoint;
             IsAlive = true;
-            health = 600;
+            health = 100000000;
            
         }
 

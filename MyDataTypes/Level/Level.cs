@@ -147,6 +147,9 @@ namespace KismetDataTypes
         // The number of light sources in the level
         [System.Xml.Serialization.XmlElementAttribute("NumLights")]
         public int NumLights = 0;
+        // The number of items in the level
+        /*[System.Xml.Serialization.XmlElementAttribute("NumItems")]
+        public int NumItems = 0;*/
 
         [System.Xml.Serialization.XmlElementAttribute("Warps")]
         public Warp[] Warps;
@@ -156,6 +159,8 @@ namespace KismetDataTypes
         public TriggerBox[] Triggers;
         [System.Xml.Serialization.XmlElementAttribute("Lights")]
         public LightSource[] Lights;
+
+        //public PickUpItem[] Pickups;
 
         /// <summary>
         /// Contains the objects in the level
@@ -456,13 +461,13 @@ namespace KismetDataTypes
             { DrawObjects(spriteBatch); }
             else
             { DrawLights(spriteBatch); }
-            if (GV.ShowBoxes)
+            /*if (GV.ShowBoxes)
             {
                 for (int i = 0; i < NumTriggers; i+=1)
                 {
                     Triggers[i].DrawTriggerBox(spriteBatch);
                 }
-            }
+            }*/
             //foregroundLayer.Draw(spriteBatch);
 
         }
