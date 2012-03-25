@@ -49,7 +49,7 @@ namespace KismetDataTypes
         {
             // Process passing time.
             time += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (time < 4.0)
+            if (time < 6.0)
             {
                 if (MagicItem.ItemType == "wind")
                 {
@@ -71,6 +71,9 @@ namespace KismetDataTypes
 
                     }
                 }
+
+                if(MagicItem.ItemType != "light")
+                GV.Player.Manna = 0;
            }
             else
                 MagicItem.Active = false;

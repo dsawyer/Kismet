@@ -77,6 +77,7 @@ namespace KismetDataTypes
                 Player.State = new JumpingAttackState(this);
             }
 
+
             else
             {
                 Player.Rate = 0; 

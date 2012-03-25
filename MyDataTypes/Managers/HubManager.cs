@@ -16,7 +16,8 @@ namespace KismetDataTypes
     {
         public Sprite activeMagic;
         public string currentMagic;
-        public Texture2D texture;
+        public Texture2D texture1;
+        public Texture2D texture2;
         SpriteFont Font1;
         Vector2 FontPos;
         int magicCount;
@@ -31,9 +32,10 @@ namespace KismetDataTypes
             activeMagic.Scale = 0.5f;
             activeMagic.PlayAnimation("pickupFire");
             currentMagic = "fire";
-            texture = GV.ContentManager.Load<Texture2D>("Sprites/greenPixel");
+            texture1 = GV.ContentManager.Load<Texture2D>("Sprites/greenPixel");
+            texture2 = GV.ContentManager.Load<Texture2D>("Sprites/WhitePixel");
 
-            Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");         
+            //Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");         
 
         }
 
@@ -84,14 +86,17 @@ namespace KismetDataTypes
             activeMagic.Draw(gameTime, spriteBatch);
 
 
-            Vector2 FontOrigin = Font1.MeasureString("" + GV.Player.CurrentMagicCount) / 2;
+           // Vector2 FontOrigin = Font1.MeasureString("" + GV.Player.CurrentMagicCount) / 2;
         // Draw the string
-            spriteBatch.DrawString(Font1, "" + GV.Player.CurrentMagicCount, new Vector2(50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            //spriteBatch.DrawString(Font1, "" + GV.Player.CurrentMagicCount, new Vector2(50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
 
-            Rectangle positionBox = new Rectangle((int)100, (int)+10, GV.Player.Health, 20);
+            Rectangle positionBox = new Rectangle((int)100, (int)+40, GV.Player.Health, 20);
             BoundingBox boundBox = new BoundingBox();
-            spriteBatch.Draw(texture, new Rectangle(positionBox.Left, positionBox.Top, positionBox.Width, 20), Color.Yellow);
-            boundBox.Draw(spriteBatch, positionBox, Color.Blue);
+            spriteBatch.Draw(texture2, new Rectangle(positionBox.Left, positionBox.Top, positionBox.Width, 20), Color.Yellow);
+            //boundBox.Draw(spriteBatch, positionBox, Color.Blue);
+            Rectangle MannaBox = new Rectangle((int)100, (int)+10, GV.Player.Manna, 20);
+            spriteBatch.Draw(texture2, new Rectangle(MannaBox.Left, MannaBox.Top, MannaBox.Width, 20), Color.Purple);
+
         }
 
     }

@@ -49,7 +49,7 @@ namespace KismetDataTypes
 
 
             //if player is jumping
-            else if (keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A))
+            else if ((keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A)) && GV.Player.IsOnGround)
             {
 
                 Player.State = new JumpingState(this.Player);
@@ -60,6 +60,7 @@ namespace KismetDataTypes
             {
                 Player.State = new Attack1State(this);
             }
+            
             else
             {
                 Player.Rate = 5;

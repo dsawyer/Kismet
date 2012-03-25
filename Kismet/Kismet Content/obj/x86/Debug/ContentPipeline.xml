@@ -26,7 +26,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-03-14T12:16:51.1893196-03:00</Time>
+      <Time>2012-03-25T12:48:03.769977-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -35,7 +35,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
-      <Time>2012-02-10T11:10:51.7386139-04:00</Time>
+      <Time>2012-03-22T10:39:26.2146072-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanMagicAnimations.xml</Source>
@@ -44,7 +44,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
-      <Time>2012-03-13T11:34:50.3292416-03:00</Time>
+      <Time>2012-03-23T10:07:02.7718842-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\GoblinAnimations.xml</Source>
@@ -53,7 +53,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
-      <Time>2012-02-11T18:28:01.6635152-04:00</Time>
+      <Time>2012-03-22T14:56:49.0049987-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DemonArcherAnimations.xml</Source>
@@ -89,7 +89,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
-      <Time>2012-01-31T17:34:54-04:00</Time>
+      <Time>2012-03-23T12:26:42.267514-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\Goblin.xml</Source>
@@ -116,7 +116,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
-      <Time>2012-03-14T12:16:51.1913197-03:00</Time>
+      <Time>2012-03-18T12:14:23.4797669-03:00</Time>
     </Item>
     <Item>
       <Source>tiles\Icons.png</Source>
@@ -674,16 +674,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
-      <Time>2012-03-14T14:32:35.3621397-03:00</Time>
-    </Item>
-    <Item>
-      <Source>SpriteFont1.spritefont</Source>
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2012-03-09T01:43:53.4963348-04:00</Time>
+      <Time>2012-03-22T20:05:28.2872719-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -723,7 +714,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-14T14:52:57.6530507-03:00</Value>
+        <Value>2012-03-24T16:48:26.1287084-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

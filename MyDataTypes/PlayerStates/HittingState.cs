@@ -47,7 +47,7 @@ namespace KismetDataTypes
             if (keyboardState.IsKeyDown(Keys.S) ||
                 gamePadState.IsButtonDown(Buttons.X))
             {
-                //Player.IsHit = false;
+                Player.IsHit = false;
                 Player.State = new Attack1State(this);
             }
             else if ((keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A)) && Player.IsOnGround )

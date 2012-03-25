@@ -42,14 +42,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Compile Include="Levels\Level_01B.xml">
       <Name>Level_01B</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
     <Compile Include="Levels\Level_01D.xml">
       <Name>Level_01D</Name>
       <Importer>XmlImporter</Importer>
@@ -425,23 +422,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Levels\Level_01B.xml">
-      <Name>Level_01B</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Levels\Level_01C.xml">
-      <Name>Level_01C</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-=======
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
     <Compile Include="Sprites\Imp\ImpFly.png">
       <Name>ImpFly</Name>
       <Importer>TextureImporter</Importer>
@@ -459,17 +439,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="SpriteFont1.spritefont">
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-=======
     <Compile Include="tiles\Mountain.png">
       <Name>Mountain</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
     </Compile>
     <Compile Include="tiles\MountainsFront.png">
       <Name>MountainsFront</Name>
@@ -487,8 +460,6 @@
       <Name>StarlitSky</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-<<<<<<< HEAD
-=======
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -496,7 +467,7 @@
       <Name>Level_01C</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
->>>>>>> e18925fa4e98565f67d839f4da00a7f8cbb37ee2
+      <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

@@ -74,6 +74,10 @@ namespace KismetDataTypes
                 {
                     MagicItemManager.CreateMagicItem("fireRow", Enemy);
                 }
+                else if (Enemy.GetType().ToString() == "KismetDataTypes.MiniBoss")
+                {
+                    MagicItemManager.CreateMagicItem("egg", Enemy);
+                }
                     Enemy.StateMachine.UpdateState("");
 
                     

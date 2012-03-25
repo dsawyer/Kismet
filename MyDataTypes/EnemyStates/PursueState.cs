@@ -48,7 +48,7 @@ namespace KismetDataTypes
 
             //Enemy.Range = 50;
             Random random = new Random();
-            randomNumber = random.Next(3, 10);
+            randomNumber = random.Next(6, 10);
            
 
            
