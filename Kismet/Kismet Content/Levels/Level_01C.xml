@@ -406,7 +406,7 @@
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.2 0.6 0.6</Colour>
+        <Colour>0.8 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light2</Name>
@@ -423,7 +423,7 @@
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.2 0.6 0.6</Colour>
+        <Colour>0.8 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light3</Name>
@@ -440,7 +440,7 @@
         <IlluminationAngle>0.8</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.2 0.6 0.6</Colour>
+        <Colour>0.8 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light4</Name>
@@ -457,7 +457,7 @@
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.2 0.6 0.6</Colour>
+        <Colour>0.8 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light5</Name>
@@ -474,7 +474,7 @@
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>400</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.2 0.6 0.6</Colour>
+        <Colour>0.8 0.5 0.5</Colour>
       </Item>
     </Lights>
     <CheckPoints>
@@ -495,7 +495,7 @@
         <Position>1916 416</Position>
       </Item>
     </Pickups>
-    <AmbientLight>0.2 0.2 0.2</AmbientLight>
+    <AmbientLight>0.25 0.1 0.1</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

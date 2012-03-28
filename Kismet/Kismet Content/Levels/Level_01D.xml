@@ -133,10 +133,8 @@
         <PointID>checkpoint1</PointID>
       </Item>
     </CheckPoints>
-    <Pickups>
-      
-    </Pickups>
-    <AmbientLight>0.2 0.2 0.2</AmbientLight>
+    <Pickups></Pickups>
+    <AmbientLight>0.4 0.4 0.4</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

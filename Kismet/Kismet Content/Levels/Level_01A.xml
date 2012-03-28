@@ -1081,7 +1081,7 @@
         <IlluminationAngle>0.97</IlluminationAngle>
         <Radius>200</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.0 0.4 0.4</Colour>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light11</Name>
@@ -1098,7 +1098,7 @@
         <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>600</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.5 0.5 0.5</Colour>
+        <Colour>0.7 0 0.7</Colour>
       </Item>
     </Lights>
     <CheckPoints>
