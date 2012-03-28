@@ -225,19 +225,14 @@
     <Item>
       <Name>light</Name>
       <StartFrame>0</StartFrame>
-      <EndFrame>14</EndFrame>
+      <EndFrame>9</EndFrame>
       <Type>playOnce</Type>
       <FilePath>Sprites/Items/DanMagicLight</FilePath>
       <NextAnimation>light1</NextAnimation>
       <FrameWidth>192</FrameWidth>
       <FrameHeight>192</FrameHeight>
-      <TimePerFrame>0.1</TimePerFrame>
+      <TimePerFrame>0.02</TimePerFrame>
       <CollisionBounds>
-        0 0 192 136
-        0 0 192 136
-        0 0 192 136
-        0 0 192 136
-        0 0 192 136
         0 0 192 136
         0 0 192 136
         0 0 192 136
@@ -250,18 +245,22 @@
         0 0 192 136
       </CollisionBounds>
     </Item>
-
     <Item>
       <Name>light1</Name>
       <StartFrame>0</StartFrame>
-      <EndFrame>9</EndFrame>
+      <EndFrame>14</EndFrame>
       <Type>playOnce</Type>
       <FilePath>Sprites/Items/DanMagicLight1</FilePath>
       <NextAnimation></NextAnimation>
       <FrameWidth>192</FrameWidth>
       <FrameHeight>192</FrameHeight>
-      <TimePerFrame>0.1</TimePerFrame>
+      <TimePerFrame>0.08</TimePerFrame>
       <CollisionBounds>
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
+        0 0 192 136
         0 0 192 136
         0 0 192 136
         0 0 192 136

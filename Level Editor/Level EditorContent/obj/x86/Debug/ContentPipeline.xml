@@ -559,15 +559,6 @@
       <Output>C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
       <Time>2012-02-14T15:00:28.0913937-04:00</Time>
     </Item>
-    <Item>
-      <Source>Levels\Level_01A.xml</Source>
-      <Name>Levels\Level_01A</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dylan\Documents\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-03-13T15:42:50.7916002-03:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -606,7 +597,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-14T17:49:22.9652862-03:00</Value>
+        <Value>2012-03-28T14:32:49.1828055-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

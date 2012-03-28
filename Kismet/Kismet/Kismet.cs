@@ -57,7 +57,7 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = Content.Load<Level>("Levels/Level_01D");
+            GV.Level = Content.Load<Level>("Levels/Level_01A");
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);
@@ -89,8 +89,9 @@ namespace Kismet
             Matrix halfPixelOffset = Matrix.CreateTranslation(-0.5f, -0.5f, 0);
 
             shaders.Parameters["MatrixTransform"].SetValue(halfPixelOffset * projection);
-
             hubManager = new HubManager();
+
+
         }
 
         /// <summary>
@@ -148,12 +149,13 @@ namespace Kismet
             Matrix projection = Matrix.CreateOrthographicOffCenter(0, viewport.Width, viewport.Height, 0, 0, 1);
 
             Matrix cameraTranslation = Matrix.CreateTranslation(-Camera.Position.X, -Camera.Position.Y, 0.0f);
-            //Camera.Zoom = 1.25f;
             Matrix cameraZoom = Matrix.CreateScale(Camera.Zoom);
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
             int min2 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
+            
+            GV.Level.SortLights();
 
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
@@ -168,6 +170,7 @@ namespace Kismet
             shaders.Parameters["lightSpells"].SetValue(MagicItemManager.GetLightMagicArray(min2));
             shaders.Parameters["numLightSpells"].SetValue(min2);
             shaders.Parameters["numLights"].SetValue(min);
+            shaders.Parameters["ambientLight"].SetValue(GV.Level.AmbientLight);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
@@ -185,10 +188,9 @@ namespace Kismet
             MagicItemManager.Draw(gameTime, spriteBatch);
             GV.Player.Draw(gameTime, spriteBatch);
             PickUpItemManager.Draw(gameTime, spriteBatch);
-
-            
-
             spriteBatch.End();
+
+            // Draw the HUD to the screen
             spriteBatch.Begin();
             hubManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();

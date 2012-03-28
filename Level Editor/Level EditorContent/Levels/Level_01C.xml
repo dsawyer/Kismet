@@ -4,10 +4,12 @@
     <Name>Level01_C</Name>
     <Width>5120</Width>
     <Height>736</Height>
-    <PlayerStartingPosition>50 80</PlayerStartingPosition>
-    <BackgroundLayerTexture>Mountain</BackgroundLayerTexture>
-    <BackgroundWidth>640</BackgroundWidth>
-    <BackgroundHeight>640</BackgroundHeight>
+    <PlayerStartingPosition>64 80</PlayerStartingPosition>
+    <BackgroundLayerTextures>
+      <Item>StarlitSky</Item>
+    </BackgroundLayerTextures>
+    <BackgroundWidth>480</BackgroundWidth>
+    <BackgroundHeight>480</BackgroundHeight>
     <GroundLayerTexture>Tiles</GroundLayerTexture>
     <GroundLayerValues>
       0  1  21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12
@@ -34,9 +36,9 @@
       10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  2  50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 12 50 50 50 50 50 50 50 50 50 50 50 50 0  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 1  1  11 11 11 11 1  1  11 11 11 11 1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  11 11 11 11 1  1  1  1  11 12
       20 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22 50 50 50 50 50 50 50 50 50 50 50 50 20 21 21 22 50 50 50 50 50 50 50 50 50 50 50 50 20 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22
     </GroundLayerValues>
-    <SurGroundLayerTexture>Tiles</SurGroundLayerTexture>
-    <SurGroundLayerValues>
-    </SurGroundLayerValues>
+    <SurgroundLayerTextures>
+      <Item>CloudySky</Item>
+    </SurgroundLayerTextures>
     <ForegroundLayerTexture>Tiles</ForegroundLayerTexture>
     <ForegroundLayerValues>
     </ForegroundLayerValues>
@@ -66,10 +68,14 @@
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
     </CollisionLayerValues>
+    <NumberOfBackgroundSegments>1</NumberOfBackgroundSegments>
+    <ScrollRates>
+      0.2 0.7 0.7 0.2
+    </ScrollRates>
     <NumWarps>1</NumWarps>
-    <NumSpawners>0</NumSpawners>
-    <NumTriggers>1</NumTriggers>
-    <NumLights>0</NumLights>
+    <NumSpawners>14</NumSpawners>
+    <NumTriggers>15</NumTriggers>
+    <NumLights>5</NumLights>
     <Warps>
       <Item>
         <Name>Warp1</Name>
@@ -77,23 +83,15 @@
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
-        <DestinationLevel>Level01_D</DestinationLevel>
+        <DestinationLevel>Level_01D</DestinationLevel>
         <TargetPosition>100 576</TargetPosition>
       </Item>
     </Warps>
     <Spawners>
+      <!-- Goblin Spawners -->
       <Item>
         <Name>Spawn1</Name>
-        <Position>960 580</Position>
-        <BoundingBox>100 450 32 64</BoundingBox>
-        <ImageName>Tiles</ImageName>
-        <ImageBounds>224 0 32 64</ImageBounds>
-        <Type>demon</Type>
-        <PointID>demon1</PointID>
-      </Item>
-      <Item>
-        <Name>Spawn2</Name>
-        <Position>400 300</Position>
+        <Position>448 416</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
@@ -101,16 +99,128 @@
         <PointID>goblin1</PointID>
       </Item>
       <Item>
-        <Name>Spawn3</Name>
-        <Position>400 300</Position>
+        <Name>Spawn2</Name>
+        <Position>702 500</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
         <Type>goblin</Type>
         <PointID>goblin2</PointID>
       </Item>
+      <Item>
+        <Name>Spawn3</Name>
+        <Position>960 640</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin3</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn4</Name>
+        <Position>1024 640</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin4</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn5</Name>
+        <Position>2944 480</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin5</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn6</Name>
+        <Position>3136 500</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin6</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn7</Name>
+        <Position>3456 448</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin7</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn8</Name>
+        <Position>3584 640</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin8</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn9</Name>
+        <Position>4608 640</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>goblin</Type>
+        <PointID>goblin9</PointID>
+      </Item>
+      <!-- Demon Archer Spawners -->
+      <Item>
+        <Name>Spawn10</Name>
+        <Position>1696 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn11</Name>
+        <Position>1952 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>demon</Type>
+        <PointID>demon2</PointID>
+      </Item>
+      <!-- Imp Spawners -->
+      <Item>
+        <Name>Spawn12</Name>
+        <Position>2080 224</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>imp</Type>
+        <PointID>imp1</PointID>
+      </Item>
+      <!-- Fire Mage Spawners -->
+      <Item>
+        <Name>Spawn13</Name>
+        <Position>3968 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>fireMage</Type>
+        <PointID>fireMage1</PointID>
+      </Item>
+      <Item>
+        <Name>Spawn14</Name>
+        <Position>4800 544</Position>
+        <BoundingBox>100 450 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>fireMage</Type>
+        <PointID>fireMage2</PointID>
+      </Item>
     </Spawners>
     <Triggers>
+      <!-- Warp Triggers -->
       <Item>
         <Name>Trigger1</Name>
         <Position>5028 576</Position>
@@ -121,6 +231,7 @@
         <Triggerbox>5028 576 32 64</Triggerbox>
         <Target>Warp1</Target>
       </Item>
+      <!-- Goblin Spawner Triggers -->
       <Item>
         <Name>Trigger2</Name>
         <Position>250 440</Position>
@@ -128,7 +239,7 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
         <Type>spawn</Type>
-        <Triggerbox>250 440 500 300</Triggerbox>
+        <Triggerbox>64 0 128 736</Triggerbox>
         <Target>goblin1</Target>
       </Item>
       <Item>
@@ -138,8 +249,8 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
         <Type>spawn</Type>
-        <Triggerbox>250 440 500 300</Triggerbox>
-        <Target>demon1</Target>
+        <Triggerbox>64 0 128 736</Triggerbox>
+        <Target>goblin2</Target>
       </Item>
       <Item>
         <Name>Trigger4</Name>
@@ -148,63 +259,212 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
         <Type>spawn</Type>
-        <Triggerbox>250 440 500 300</Triggerbox>
-        <Target>goblin2</Target>
+        <Triggerbox>320 0 128 736</Triggerbox>
+        <Target>goblin3</Target>
+      </Item>
+      <Item>
+        <Name>Trigger5</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>320 0 128 736</Triggerbox>
+        <Target>goblin4</Target>
+      </Item>
+      <Item>
+        <Name>Trigger6</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2560 0 128 736</Triggerbox>
+        <Target>goblin5</Target>
+      </Item>
+      <Item>
+        <Name>Trigger7</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2560 0 128 736</Triggerbox>
+        <Target>goblin6</Target>
+      </Item>
+      <Item>
+        <Name>Trigger8</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2944 0 128 736</Triggerbox>
+        <Target>goblin7</Target>
+      </Item>
+      <Item>
+        <Name>Trigger9</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>2944 0 128 736</Triggerbox>
+        <Target>goblin8</Target>
+      </Item>
+      <Item>
+        <Name>Trigger10</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>4288 0 128 736</Triggerbox>
+        <Target>goblin9</Target>
+      </Item>
+      <!-- Demon Archer Spawner Triggers -->
+      <Item>
+        <Name>Trigger11</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1280 0 128 736</Triggerbox>
+        <Target>demon1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger12</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1280 0 128 736</Triggerbox>
+        <Target>demon2</Target>
+      </Item>
+      <!-- Imp Spawner Triggers -->
+      <Item>
+        <Name>Trigger13</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>1280 0 128 736</Triggerbox>
+        <Target>imp1</Target>
+      </Item>
+      <!-- Fire Mage Spawner Triggers -->
+      <Item>
+        <Name>Trigger14</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>3520 0 128 736</Triggerbox>
+        <Target>fireMage1</Target>
+      </Item>
+      <Item>
+        <Name>Trigger15</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>spawn</Type>
+        <Triggerbox>4480 0 128 736</Triggerbox>
+        <Target>fireMage2</Target>
       </Item>
     </Triggers>
+    <!-- Lights -->
     <Lights>
       <Item>
         <Name>Light1</Name>
-        <Position>400 350</Position>
-        <BoundingBox>400 350 32 32</BoundingBox>
+        <Position>600 150</Position>
+        <BoundingBox>600 150 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>416 366</Centre>
+        <Centre>616 166</Centre>
         <Direction>0 1</Direction>
+        <Anchor>616 116</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.2 0.6 0.6</Colour>
       </Item>
       <Item>
         <Name>Light2</Name>
-        <Position>900 350</Position>
-        <BoundingBox>900 350 32 32</BoundingBox>
+        <Position>1000 250</Position>
+        <BoundingBox>1000 150 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>916 366</Centre>
+        <Centre>1016 266</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1016 216</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>0.4</Speed>
         <Attenuation>3</Attenuation>
-        <IlluminationAngle>0.7</IlluminationAngle>
+        <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.2 0.6 0.6</Colour>
       </Item>
       <Item>
         <Name>Light3</Name>
-        <Position>1400 180</Position>
-        <BoundingBox>1400 180 32 32</BoundingBox>
+        <Position>1840 50</Position>
+        <BoundingBox>1840 50 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>1416 196</Centre>
+        <Centre>1856 66</Centre>
         <Direction>0 1</Direction>
+        <Anchor>1856 16</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
-        <IlluminationAngle>0.7</IlluminationAngle>
-        <Radius>300</Radius>
+        <IlluminationAngle>0.8</IlluminationAngle>
+        <Radius>400</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.2 0.6 0.6</Colour>
       </Item>
       <Item>
         <Name>Light4</Name>
-        <Position>1900 350</Position>
-        <BoundingBox>1900 350 32 32</BoundingBox>
+        <Position>2700 350</Position>
+        <BoundingBox>2700 350 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>1916 366</Centre>
+        <Centre>2716 366</Centre>
         <Direction>0 1</Direction>
+        <Anchor>2716 316</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
+        <Colour>0.2 0.6 0.6</Colour>
+      </Item>
+      <Item>
+        <Name>Light5</Name>
+        <Position>4276 350</Position>
+        <BoundingBox>4276 350 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>4288 366</Centre>
+        <Direction>0 1</Direction>
+        <Anchor>4288 316</Anchor>
+        <SwingAngle>0.9</SwingAngle>
+        <Speed>1</Speed>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.7</IlluminationAngle>
+        <Radius>400</Radius>
+        <Brightness>2</Brightness>
+        <Colour>0.2 0.6 0.6</Colour>
       </Item>
     </Lights>
+    <AmbientLight>0.2 0.2 0.2</AmbientLight>
+    <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

@@ -19,6 +19,7 @@ namespace KismetDataTypes
         public Texture2D texture;
         SpriteFont Font1;
         Vector2 FontPos;
+        int magicCount;
          /// <summary>
         /// Constructor
         /// </summary>
@@ -61,7 +62,10 @@ namespace KismetDataTypes
                 default:
                     Console.WriteLine("Invalid selection in Hub Manager");
                     break;
+
+                    
             }
+            GV.Player.CurrentMagicItem = item;
         }
         public void Update(GameTime gameTime)
         {
@@ -72,7 +76,7 @@ namespace KismetDataTypes
                 ChangeMagicItem(GV.Player.CurrentMagicItem);
                 currentMagic = GV.Player.CurrentMagicItem;
             }
-            
+            magicCount = GV.Player.CurrentMagicCount;
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -82,7 +86,7 @@ namespace KismetDataTypes
 
             Vector2 FontOrigin = Font1.MeasureString("" + GV.Player.CurrentMagicCount) / 2;
         // Draw the string
-            spriteBatch.DrawString(Font1, "" + GV.Player.CurrentMagicCount, new Vector2( 50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            spriteBatch.DrawString(Font1, "" + GV.Player.CurrentMagicCount, new Vector2(50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
 
             Rectangle positionBox = new Rectangle((int)100, (int)+10, GV.Player.Health, 20);
             BoundingBox boundBox = new BoundingBox();

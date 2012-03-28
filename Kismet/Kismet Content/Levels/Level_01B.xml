@@ -212,8 +212,10 @@
     </ScrollRates>
     <NumWarps>1</NumWarps>
     <NumSpawners>26</NumSpawners>
-    <NumTriggers>27</NumTriggers>
+    <NumTriggers>28</NumTriggers>
     <NumLights>5</NumLights>
+    <NumCheckPoints>1</NumCheckPoints>
+    <NumItems>1</NumItems>
     <Warps>
       <Item>
         <Name>Warp1</Name>
@@ -740,6 +742,17 @@
         <Target>imp2</Target>
       </Item>
       <!-- Fire Mage Spawner Triggers -->
+      <!-- CheckPoint Triggers -->
+      <Item>
+        <Name>Trigger28</Name>
+        <Position>250 440</Position>
+        <BoundingBox>250 440 500 300</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>32 160 32 32</ImageBounds>
+        <Type>checkpoint</Type>
+        <Triggerbox>0 1472 1280 64</Triggerbox>
+        <Target>checkpoint1</Target>
+      </Item>
     </Triggers>
     <Lights>
       <Item>
@@ -828,6 +841,25 @@
         <Colour>0.5 0.5 0.5</Colour>
       </Item>
     </Lights>
+    <CheckPoints>
+      <Item>
+        <Name>checkpoint1</Name>
+        <Position>256 1536</Position>
+        <BoundingBox>11424 576 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>1</Type>
+        <PointID>checkpoint1</PointID>
+      </Item>
+    </CheckPoints>
+    <Pickups>
+      <Item>
+        <Name>health1</Name>
+        <Type>pickupHeal</Type>
+        <Position>96 992</Position>
+      </Item>
+    </Pickups>
+    <AmbientLight>0.2 0.2 0.2</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

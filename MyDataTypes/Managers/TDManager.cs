@@ -20,7 +20,8 @@ namespace KismetDataTypes
 
         public static void Initialize()
         {
-            TriggerboxList.Add(new TriggerBox("spawn", "pickupFire1", new Rectangle(250, 440, 500, 300)));
+            // Testing items
+            /*TriggerboxList.Add(new TriggerBox("spawn", "pickupFire1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupFire1", new PickUpPoint("pickupFire", "pickupFire1", new Vector2(100, 440)));
             TriggerboxList.Add(new TriggerBox("spawn", "pickupWater1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupWater1", new PickUpPoint("pickupWater", "pickupWater1", new Vector2(250, 440)));
@@ -31,15 +32,18 @@ namespace KismetDataTypes
             TriggerboxList.Add(new TriggerBox("spawn", "pickupHeal1", new Rectangle(250, 440, 500, 300)));
             DataList.Add("pickupHeal1", new PickUpPoint("pickupHeal", "pickupHeal1", new Vector2(850, 440)));
             TriggerboxList.Add(new TriggerBox("spawn", "pickupDark1", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));
-            
-            /*TriggerboxList.Add(new TriggerBox("spawn", "fireMage1", new Rectangle(250, 440, 500, 300)));
-            DataList.Add("fireMage1", new SpawnPoint("fireMage", "fireMage1", new Vector2(500.0f, 440.0f)));
-            DataList.Add("checkpoint1", new CheckPoint());*/
-            
-            //DataList.Add("miniboss", new SpawnPoint("miniboss", "miniboss", new Vector2(800.0f, 240.0f)));
-        }
+            DataList.Add("pickupDark1", new PickUpPoint("pickupDark", "pickupDark", new Vector2(1050, 440)));*/
 
+            /*TriggerboxList.Add(new TriggerBox("spawn", "pickupHeal1", new Rectangle(250, 440, 500, 300)));
+            DataList.Add("pickupHeal1", new PickUpPoint("pickupHeal", "pickupHeal1", new Vector2(1330, 240)));*/
+
+            // Test demonstration of the imps
+            TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
+            DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
+
+            //TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
+            //DataList.Add("mini100", new SpawnPoint("miniboss", "mini100", new Vector2(34.0f, 11.0f)));
+        }
         public static void Release()
         {
             TriggerboxList = new List<TriggerBox>();
@@ -67,7 +71,6 @@ namespace KismetDataTypes
                 case "KismetDataTypes.PickUpPoint":
                     PickUpPoint newPickUpObject = (PickUpPoint)point;
                     PickUpItemManager.CreatePickUpItem(newPickUpObject.Type, newPickUpObject.Position);
-                    // Remove the trigger box for a spawn point
                     TriggerboxList.Remove(p_TriggerBox);
                     DataList.Remove(target);
                     break;
@@ -85,11 +88,13 @@ namespace KismetDataTypes
                         GV.Player.Position = warp.TargetPosition;
                         GV.Player.Velocity = Vector2.Zero;
                     }
-                    // Change the level
-                    else
+                    else // Change the level
                     {
                         // Load and initialise the new level
+                        // Reset everything in the Tech Data Manager
+                        // as well as the NPC Manager
                         TDManager.Release();
+                        NPCManager.sceneObjectsList = new List<Enemy>();
                         GV.Level = GV.ContentManager.Load<Level>("Levels/" + warp.DestinationLevel);
                         GV.Level.Initialise(GV.ContentManager);
                         Camera.WorldRectangle = new Rectangle(0, 0, GV.Level.Width, GV.Level.Height);

@@ -16,6 +16,7 @@ namespace KismetDataTypes
         public const int Impassable = 1;
         public const int Platform = 2;
         public const int Dead = 3;
+        public const int Hole = 4;
 
         #endregion
 

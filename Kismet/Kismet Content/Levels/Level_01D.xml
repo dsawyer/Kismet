@@ -76,6 +76,8 @@
     <NumSpawners>1</NumSpawners>
     <NumTriggers>1</NumTriggers>
     <NumLights>1</NumLights>
+    <NumCheckPoints>0</NumCheckPoints>
+    <NumItems>0</NumItems>
     <Warps>
     </Warps>
     <Spawners>
@@ -120,6 +122,21 @@
         <Colour>0.5 0.5 0.5</Colour>
       </Item>
     </Lights>
+    <CheckPoints>
+      <Item>
+        <Name>Warp1</Name>
+        <Position>11424 576</Position>
+        <BoundingBox>11424 576 32 64</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>224 0 32 64</ImageBounds>
+        <Type>1</Type>
+        <PointID>checkpoint1</PointID>
+      </Item>
+    </CheckPoints>
+    <Pickups>
+      
+    </Pickups>
+    <AmbientLight>0.2 0.2 0.2</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

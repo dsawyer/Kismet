@@ -94,26 +94,23 @@ namespace KismetDataTypes
                         else
                         { item.isLit = false; }
                     }
-
-                    if (!item.isLit)
+                    
+                    for (int i = 0; i < min; i += 1)
                     {
-                        for (int i = 0; i < min; i += 1)
+                        Vector2 pVector = position - lights[i].Centre;
+                        double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+                        pVector.Normalize();
+                        Vector2 normalisedDirection = lights[i].Direction;
+                        normalisedDirection.Normalize();
+                        float angle = Vector2.Dot(normalisedDirection, pVector);
+                        if (angle >= lights[i].IlluminationAngle && (float)distance <= lights[i].Radius)
                         {
-                            Vector2 pVector = position - lights[i].Centre;
-                            double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
-                            pVector.Normalize();
-                            Vector2 normalisedDirection = lights[i].Direction;
-                            normalisedDirection.Normalize();
-                            float angle = Vector2.Dot(normalisedDirection, pVector);
-                            if (angle >= lights[i].IlluminationAngle && (float)distance <= lights[i].Radius)
-                            {
-                                item.Draw(gameTime, spriteBatch);
-                                item.isLit = true;
-                                break;
-                            }
-                            if (angle < lights[i].IlluminationAngle)
-                            { item.isLit = false; }
+                            item.Draw(gameTime, spriteBatch);
+                            item.isLit = true;
+                            break;
                         }
+                        if (angle < lights[i].IlluminationAngle)
+                        { item.isLit = false; }
                     }
                 }
             }

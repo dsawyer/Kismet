@@ -38,7 +38,7 @@ namespace KismetDataTypes
         private bool isHit = false;
         private float idleTime = 0.2f;
         private string currentMagicItem = "fire";
-        private int currentMagicCount = 0;
+        private int currentMagicCount = 100;
         private bool lastButtonState;
         
         // Used to help with testing for platform collision
@@ -287,6 +287,7 @@ namespace KismetDataTypes
             }
             else
             {
+                MaxLightRadius = 50;
                 if (lightRadius + Rate > MaxLightRadius)
                     lightRadius = MaxLightRadius;
             }
@@ -395,7 +396,7 @@ namespace KismetDataTypes
             velocity = new Vector2(0, 0);
             Position = CheckPoint;
             IsAlive = true;
-            health = 100000000;
+            health = 600;
            
         }
 
@@ -428,9 +429,7 @@ namespace KismetDataTypes
             }
         }
         #endregion
-       
-
-
+        
         #region Inventory
 
         private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100, lightCount = 100;
@@ -480,6 +479,32 @@ namespace KismetDataTypes
             else if (type == "pickupDark")
             {
                     DarkCount +=1;
+            }
+
+            if (CurrentMagicItem == "fire")
+            {
+                CurrentMagicCount = FireCount;
+            }
+            else if (CurrentMagicItem == "water")
+            {
+               
+                CurrentMagicCount = WaterCount;
+            }
+            else if (CurrentMagicItem == "earth")
+            {
+                CurrentMagicCount = EarthCount;
+            }
+            else if (CurrentMagicItem == "wind")
+            {
+                CurrentMagicCount = WindCount;
+            }
+            else if (CurrentMagicItem == "dark")
+            {
+                CurrentMagicCount = DarkCount;
+            }
+            else if (CurrentMagicItem == "light")
+            {
+                CurrentMagicCount = LightCount;
             }
         }
 
@@ -600,6 +625,8 @@ namespace KismetDataTypes
             IsAlive = true;
             health = 600;
 
+            CurrentMagicCount = FireCount;
+
             localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
         }
 
@@ -612,9 +639,9 @@ namespace KismetDataTypes
             {
                 Camera.Move(new Vector2(screenLocX - 540, 0));
             }
-            if (screenLocX < 240)
+            if (screenLocX < 300)
             {
-                Camera.Move(new Vector2(screenLocX - 240, 0));
+                Camera.Move(new Vector2(screenLocX - 300, 0));
             }
             if (screenLocY > 420)
             {

@@ -36,6 +36,8 @@ namespace KismetDataTypes
             active = true;
         }
 
+        public PickUpItem() { }
+
         protected string direction;
         public bool animationReversed = false;
 
@@ -192,7 +194,7 @@ namespace KismetDataTypes
 
         public void Update(GameTime gameTime)
         {
-            /*Velocity = new Vector2(Velocity.X, Velocity.Y);
+            Velocity = new Vector2(Velocity.X, Velocity.Y);
             Vector2 nextPosition = Position + Velocity;
             state.Update();
 
@@ -205,7 +207,7 @@ namespace KismetDataTypes
             if (IsCollision && isLit)
             {
                 Active = false;
-            }*/
+            }
         }
 
 

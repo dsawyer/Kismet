@@ -10,6 +10,7 @@ float3 lightColours[4];
 float2 lightSpells[4];
 int numLightSpells;
 int numLights;
+float3 ambientLight;
 sampler TextureSampler : register(s0);
 
 // The input for the pixel shader
@@ -34,27 +35,25 @@ float4 PS(PixelInput input) : COLOR0
 	float4 Colour = tex2D(TextureSampler, input.TexCoord);
 
 	// The value that represents how much light is to be removed at most
-	float4 darkness = float4(0.5f, 0.5f,0.5f, 0);
-
+	float4 light;
+	float4 lightValue = float4(0,0,0,1);
 	// Various needed variables for calculating the necessary lighting
 	float2 distanceToLight;
 	float distance;
-	float darknessRatio = 1.0f;
+	float darknessRatio;
 	float2 currentLight;
 	float angleBetweenLight;
 
 	if (numLights > 0)
-	{ darkness = float4(0, 0, 0, 0); }
+	{ light = float4(0, 0, 0, 0); }
 
 	for (int i = 0; i < numLights; i+=1)
 	{
 		// Get the position of the light in screen coordinates
 		currentLight = lightPositions[i] - cameraPosition;
 
-		//darkness = float4(0.2f, 0.2f, 0.2f, 0);
-
 		// Add the light's value for providing a 'mood' lighting
-		darkness += float4(lightColours[i].x, lightColours[i].y, lightColours[i].z, 0) / numLights;
+		light = float4(lightColours[i].x, lightColours[i].y, lightColours[i].z, 0) / numLights;
 		
 		// Get the distance between the point and the light
 		distanceToLight = input.Position - currentLight;
@@ -67,37 +66,35 @@ float4 PS(PixelInput input) : COLOR0
 		
 			// If the distance between the point and a light source is less than
 			// the light source's radius, then the point is provided with some light
-			if (distance < lightRadii[i])
+			if (distance <= lightRadii[i])
 			{
-				darknessRatio -= ((lightRadii[i] - distance)/lightRadii[i]) * (lightAttenuations[i] / 2);
-				darknessRatio /= lightBrightness[i];
+				darknessRatio = ((lightRadii[i] - distance)/lightRadii[i]) * ((lightRadii[i] - distance)/lightRadii[i]);
+				darknessRatio *= lightBrightness[i];
+				darknessRatio *= lightAttenuations[i];
+
 				if (angleBetweenLight >= 0)
-				{ darknessRatio /= angleBetweenLight; }
+				{ darknessRatio *= (angleBetweenLight * angleBetweenLight); }
 				else if (angleBetweenLight < 0)
-				{ darknessRatio /= (-1 * angleBetweenLight); }
+				{ darknessRatio *= (-1 * angleBetweenLight) * (-1 * angleBetweenLight); }
+				lightValue += (darknessRatio) * light;
 			}
 		}
 	}
 
 	for (int i = 0; i < numLightSpells; i+=1)
 	{
-		distanceToLight = input.Position - lightSpells[i];
+		distanceToLight = input.Position - (lightSpells[i] - cameraPosition);
 		distance = sqrt((distanceToLight.x * distanceToLight.x) + (distanceToLight.y * distanceToLight.y));
-
+		
 		if (distance < 200)
 		{
-			darknessRatio -= ((200 - distance)/200);
+			darknessRatio = ((200 - distance)/200);
+			lightValue += darknessRatio * float4(1,1,1,1);
 		}
 	}
-	
-	// Clamp the lighting ratio
-	if (darknessRatio > 1)
-	{ darknessRatio = 1; }
-	else if (darknessRatio < 0.1)
-	{ darknessRatio = 0.1; }
 
 	// Modify the colour based on the amount of light coming in
-	Colour = Colour - (darknessRatio * darkness);
+	Colour = Colour * float4(lightValue.rgb + ambientLight.rgb, 1);
 
 	return Colour;
 }

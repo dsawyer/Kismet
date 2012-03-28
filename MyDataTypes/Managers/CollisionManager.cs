@@ -124,7 +124,11 @@ namespace KismetDataTypes
                     {               
                             BottomCollision = true;
                     }
-
+                    // This kills the player if they fall in a hole
+                    if (collision == Layer.Hole)
+                    {
+                        GV.Player.ResetPlayer();
+                    }
                 }
             }
             if (BottomCollision)
@@ -173,6 +177,28 @@ namespace KismetDataTypes
                         GV.Player.IsOnGround = true;
 
                     }
+                    else if (magicItem.ItemType == "light" && magicItem.State.GetType().ToString() == "KismetDataTypes.InUseState")
+                    {
+                        Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 2));
+                        Vector2 pVector = positionvec - magicItem.Light.Centre - Camera.Position;
+                        double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+
+                        if ((float)distance <= magicItem.Light.Radius)
+                        {
+                            GV.Player.MaxLightRadius = 400;
+                            GV.Player.Rate = 400;
+
+                            if ((GV.Player.LightRadius + GV.Player.Rate) < GV.Player.MaxLightRadius)
+                            {
+                                GV.Player.LightRadius += GV.Player.Rate;
+                            }
+                            else if (GV.Player.LightRadius < GV.Player.MaxLightRadius && GV.Player.LightRadius + GV.Player.Rate > GV.Player.MaxLightRadius)
+                                GV.Player.LightRadius += GV.Player.MaxLightRadius - GV.Player.LightRadius;
+
+                            else
+                                GV.Player.LightRadius--;
+                        }
+                    }
 
                 }
             }
@@ -183,7 +209,7 @@ namespace KismetDataTypes
                 {
                     PickUpItem pickUpItem = pickUpItemList[i];
                     Vector2 PickUpItemCollisionDepth = RectangleExtensions.GetIntersectionDepth(GV.Player.Bounds, pickUpItem.Bounds);
-                    if (PickUpItemCollisionDepth != Vector2.Zero )
+                    if (PickUpItemCollisionDepth != Vector2.Zero && pickUpItem.isLit)
                     {
                         GV.Player.AddToInventory(pickUpItem.ItemType);
                         pickUpItem.Active = false;
@@ -463,11 +489,11 @@ namespace KismetDataTypes
                             enemy.Damage = 2;
                             enemy.State = new KnockedDownState(enemy);
                         }
-                        else
+                        else if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType != "light")
                         {
 
                             enemy.Damage = 2;
-                            //enemy.State = new KnockedDownState(enemy);
+                            enemy.State = new KnockedDownState(enemy);
                         }
                         
                         

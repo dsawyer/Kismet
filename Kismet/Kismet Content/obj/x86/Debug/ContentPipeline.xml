@@ -2,13 +2,31 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Levels\Level_01A.xml</Source>
+      <Name>Levels\Level_01A</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
+      <Time>2012-03-28T15:25:51.7028352-03:00</Time>
+    </Item>
+    <Item>
       <Source>Levels\Level_01B.xml</Source>
       <Name>Levels\Level_01B</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb</Output>
-      <Time>2012-03-13T18:41:10.6395965-03:00</Time>
+      <Time>2012-03-28T15:29:54.7167348-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level_01C.xml</Source>
+      <Name>Levels\Level_01C</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
+      <Time>2012-03-28T15:33:59.9017586-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01D.xml</Source>
@@ -17,16 +35,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
-      <Time>2012-03-14T10:45:34.7307157-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Levels\Level_01A.xml</Source>
-      <Name>Levels\Level_01A</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-03-14T18:16:20.0247767-03:00</Time>
+      <Time>2012-03-28T12:02:02.8853869-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -44,7 +53,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
-      <Time>2012-03-11T16:52:52.4208282-03:00</Time>
+      <Time>2012-03-15T17:07:29.0852799-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\GoblinAnimations.xml</Source>
@@ -108,15 +117,6 @@
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb</Output>
       <Time>2012-02-14T15:00:27.7213725-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Levels\Level_01C.xml</Source>
-      <Name>Levels\Level_01C</Name>
-      <Importer>XmlImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
-      <Time>2012-03-14T18:16:47.8483681-03:00</Time>
     </Item>
     <Item>
       <Source>tiles\Icons.png</Source>
@@ -494,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight.xnb</Output>
-      <Time>2012-01-31T15:52:06-04:00</Time>
+      <Time>2012-03-15T17:07:29.0802796-03:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanMagicLight1.png</Source>
@@ -503,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Sprites\Items\DanMagicLight1.xnb</Output>
-      <Time>2012-01-31T15:53:24-04:00</Time>
+      <Time>2012-03-15T17:07:29.0842799-03:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Items\DanMagicWater.png</Source>
@@ -674,7 +674,7 @@
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
-      <Time>2012-03-14T11:47:56.3527243-03:00</Time>
+      <Time>2012-03-28T15:06:14.9095265-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -714,7 +714,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-14T18:06:33.4092242-03:00</Value>
+        <Value>2012-03-28T15:07:24.7335202-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

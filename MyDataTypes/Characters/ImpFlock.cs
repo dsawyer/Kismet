@@ -84,6 +84,7 @@ namespace KismetDataTypes
         private int currentPattern;
         private Vector2 returnPosition;
         public Vector2 ReturnPosition { get { return returnPosition; } set { returnPosition = value; } }
+        public bool playerLight = false;
         /// <summary>
         /// Constructors a new sprite.
         /// </summary>        
@@ -111,7 +112,6 @@ namespace KismetDataTypes
             StateMachine.AddState("KismetDataTypes.FlockPatrolState", "insight", "FlockAttackState");
             StateMachine.AddState("KismetDataTypes.FlockAttackState", "", "FlockAttackState");
             StateMachine.AddState("KismetDataTypes.FlockAttackState", "insight", "FlockAttackState");
-
         }
 
 
@@ -126,6 +126,72 @@ namespace KismetDataTypes
             SightDetected = false;
             if (flockList.Count > 0)
             {
+                float minDistance = 0;
+                int index = 0;
+
+                if (MagicItemManager.lightCount > 0)
+                {
+                    Vector2[] lightSpells = MagicItemManager.GetLightMagicArray(MagicItemManager.lightCount);
+
+                    // Since the camera's position is removed from the light magic's position
+                    // when returning the array of positions (makes it easier for the shader),
+                    // it needs to be added back in for calculating the position in the world.
+                    //
+                    // Check all the lights for moving them close to a nearby light source
+                    for (int i = 0; i < MagicItemManager.lightCount; i += 1)
+                    {
+                        float diffx = lightSpells[i].X - Position.X;
+                        float diffy = lightSpells[i].Y - Position.Y;
+                        float distance = (float)Math.Sqrt((diffx * diffx) + (diffy * diffy));
+                        // Get the distances between the imps and the light sources, comparing
+                        // each time to find the closest one and its index in the array
+                        if (distance < minDistance)
+                        {
+                            minDistance = distance;
+                            index = i;
+                        }
+                        else if (minDistance == 0)
+                        {
+                            minDistance = distance;
+                            index = i;
+                        }
+                    }
+                    // Set the new values for the flock's base location
+                    ReturnPosition = lightSpells[index];
+                    // Sets the flock's current position to be around the light
+                    Position = lightSpells[index];
+                }
+                else // Go into the lights that are a part of the level
+                {
+                    for (int i = 0; i < GV.Level.NumLights; i += 1)
+                    {
+                        float diffx = GV.Level.Lights[i].Centre.X - Position.X;
+                        float diffy = GV.Level.Lights[i].Centre.Y - Position.Y;
+                        float distance = (float)Math.Sqrt((diffx * diffx) + (diffy * diffy));
+                        // Get the distances between the imps and the light sources, comparing
+                        // each time to find the closest one and its index in the array
+                        if (distance < minDistance)
+                        {
+                            minDistance = distance;
+                            index = i;
+                        }
+                        else if (minDistance == 0)
+                        {
+                            minDistance = distance;
+                            index = i;
+                        }
+                    }
+
+                    // Set the new base position foor the flock
+                    ReturnPosition = GV.Level.Lights[index].Centre;
+                }
+
+                float distanceX = Math.Abs(ReturnPosition.X - Position.X);
+                if (distanceX > 15 && !playerLight)
+                {
+                    // Sets the current position if the imps have strayed too far from a light
+                    Position = ReturnPosition;
+                }
 
                 for (int i = 0; i < flockList.Count; i++) // Loop through List with for each item in list
                 {
@@ -133,60 +199,53 @@ namespace KismetDataTypes
                     if (!imp.IsAlive)
                     {
                         flockList.Remove(imp);
-
                     }
                     else
                     {
-                        
-                            float radius = GV.Player.LightRadius;
-                            Vector2 PlayerPosition = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (((float)GV.Player.Sprite.BoundingBox.Bottom - (float)GV.Player.Sprite.BoundingBox.Top)) / 2);
-                            Vector2 impPosition = new Vector2(imp.Position.X, imp.Position.Y - (((float)imp.Sprite.BoundingBox.Bottom - (float)imp.Sprite.BoundingBox.Top)) / 2);
-                            // check to see if there is a collision 
-                            float diffx = PlayerPosition.X - impPosition.X;
-                            float diffy = impPosition.Y - PlayerPosition.Y;
-
-                            double diffRadius = Math.Sqrt(Math.Pow((double)diffx, 2) + Math.Pow((double)diffy, 2));
-
-                            if (diffRadius <= radius)
-                            {
-                                if (diffx < 0)
-                                    imp.Direction = GV.LEFT;
-                                else
-                                    imp.Direction = GV.RIGHT;
-
-                                SightDetected = true;
-
-                            }
+                        float radius = GV.Player.LightRadius;
+                        Vector2 PlayerPosition = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (((float)GV.Player.Sprite.BoundingBox.Bottom - (float)GV.Player.Sprite.BoundingBox.Top)) / 2);
+                        Vector2 impPosition = new Vector2(imp.Position.X, imp.Position.Y - (((float)imp.Sprite.BoundingBox.Bottom - (float)imp.Sprite.BoundingBox.Top)) / 2);
+                        // check to see if there is a collision
+                        float diffx = PlayerPosition.X - impPosition.X;
+                        float diffy = impPosition.Y - PlayerPosition.Y;
                             
-                            if (time >= 2.0f)
-                            {
-                                currentPattern = (currentPattern + 1) % 3;
-                                time = 0.0f;
-                            }
+                        double diffRadius = Math.Sqrt(Math.Pow((double)diffx, 2) + Math.Pow((double)diffy, 2));
+                            
+                        if (diffRadius <= radius)
+                        {
+                            if (diffx < 0)
+                                imp.Direction = GV.LEFT;
+                            else
+                                imp.Direction = GV.RIGHT;
 
-                            if (State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
-                            {
-                                currentPattern = 3;
-                            }
+                            SightDetected = true;
+                        }
+                            
+                        if (time >= 2.0f)
+                        {
+                            currentPattern = (currentPattern + 1) % 3;
+                            time = 0.0f;
+                        }
+
+                        if (State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
+                        {
+                            currentPattern = 3;
+                        }
                                
                                                        
-                            Vector2 patternPosition = patternList[currentPattern][i];
-                            Vector2 flockPosition = PatternMap[(int)patternPosition.X, (int)patternPosition.Y];
-                            //Vector2 patternPosition = patternList[1][i];
-                           
-                            
+                        Vector2 patternPosition = patternList[currentPattern][i];
+                        Vector2 flockPosition = PatternMap[(int)patternPosition.X, (int)patternPosition.Y];
+                        //Vector2 patternPosition = patternList[1][i];
                           
-                            Vector2 worldPosition = Position + flockPosition;
-                            imp.Position += (worldPosition - imp.Position) / 40;
-                            imp.Velocity = Velocity;
-                            imp.Update(gameTime);
-                        
-          
+                        Vector2 worldPosition = Position + flockPosition;
+                        imp.Position += (worldPosition - imp.Position) / 40;
+                        imp.Velocity = Velocity;
+                        imp.Update(gameTime);
                     }
 
                 }
                     
-                    Position += Velocity;
+                Position += Velocity;
                 
                 //Console.WriteLine("insight " + SightDetected);
                 //Console.WriteLine("state " + State.GetType().ToString());
@@ -202,7 +261,7 @@ namespace KismetDataTypes
                 }
                 else if (!SightDetected && State.GetType().ToString() == "KismetDataTypes.FlockAttackState")
                 {
-                    Position = new Vector2(returnPosition.X, returnPosition.Y);
+                    //Position = new Vector2(returnPosition.X, returnPosition.Y);
                     State = new FlockPatrolState(this);
                     //Console.WriteLine("  switch to patrol state");
                 }

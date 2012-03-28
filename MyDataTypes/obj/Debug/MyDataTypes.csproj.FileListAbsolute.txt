@@ -1,5 +1,0 @@
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyDataTypes\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyDataTypes\bin\Debug\MyDataTypes.dll
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyDataTypes\bin\Debug\MyDataTypes.pdb
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyDataTypes\obj\Debug\MyDataTypes.dll
-C:\Users\Dylan\Documents\UPEI\Course Material\Third Year\CSC 483 - VGPS Project\WindowsGame1\MyDataTypes\obj\Debug\MyDataTypes.pdb

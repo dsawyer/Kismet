@@ -1,1 +1,2 @@
+C:\Kismet\Kismet\Kismet Content\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dylan\Documents\Kismet\Kismet\Kismet Content\obj\x86\Debug\ResolveAssemblyReference.cache

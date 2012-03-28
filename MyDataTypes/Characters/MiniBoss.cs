@@ -29,21 +29,25 @@ namespace KismetDataTypes
             //PositionInTile(p_InitialPosition);
             Position = p_InitialPosition;
             IsAlive = true;
-            Health = 400;
+            Health = 1000;
             IsOnGround = false;
+            //Position = p_InitialPosition;
+
 
            
             StateMachine = new StateMachine(this, new EnemyIdleState(this));
 
             StateMachine.AddState("KismetDataTypes.EnemyIdleState", "collision", "PatrolState");
             StateMachine.AddState("KismetDataTypes.EnemyIdleState", "isHit", "KnockedDownState");
-
-            StateMachine.AddState("KismetDataTypes.PatrolState", "collision", "PursueState");
+            StateMachine.AddState("KismetDataTypes.EnemyIdleState", "insight", "AttackState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "collision", "AttackState");
             StateMachine.AddState("KismetDataTypes.PatrolState", "isHit", "KnockedDownState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "insight", "AttackState");
+            StateMachine.AddState("KismetDataTypes.PatrolState", "jump", "TeleportState");
 
-
-            StateMachine.AddState("KismetDataTypes.PursueState", "collision", "AttackState");
+            StateMachine.AddState("KismetDataTypes.PursueState", "collision", "TeleportState");
             StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "PatrolState");
+            
             StateMachine.AddState("KismetDataTypes.PursueState", "isHit", "KnockedDownState");
 
             StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "TeleportState");

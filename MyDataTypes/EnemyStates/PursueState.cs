@@ -79,6 +79,7 @@ namespace KismetDataTypes
                 Enemy.StateMachine.UpdateState("collision");
 
             }
+
             else if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame)
             {
            

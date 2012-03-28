@@ -48,6 +48,11 @@ namespace KismetDataTypes
                 Enemy.StateMachine.UpdateState("isHit");
 
             }
+            else if (Enemy.SightDetected)
+            {
+                Enemy.StateMachine.UpdateState("insight");
+
+            }
             else if (Enemy.CollisionDetected)
             {
                 Enemy.StateMachine.UpdateState("collision");
