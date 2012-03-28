@@ -187,25 +187,11 @@ namespace KismetDataTypes
 
         }
         /// <summary>
-        /// Handles input, and animates the player sprite.
+        /// Handles input, and animates the pickup sprite state etc.
         /// </summary>
 
         public void Update(GameTime gameTime)
         {
-            /*Velocity = new Vector2(Velocity.X, Velocity.Y);
-            Vector2 nextPosition = Position + Velocity;
-            state.Update();
-
-
-            Velocity = CollisionManager.ResolvePickUpStaticCollisions(this, nextPosition, Velocity);
-
-            Position = Position + Velocity;
-            PreviousBottom = Position.Y;
-
-            if (IsCollision && isLit)
-            {
-                Active = false;
-            }*/
         }
 
 

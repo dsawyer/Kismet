@@ -81,3 +81,4 @@ C:\Kismet\Kismet\Kismet\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.exe
 C:\Kismet\Kismet\Kismet\obj\x86\Debug\WindowsGame1.pdb
+C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb

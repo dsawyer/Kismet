@@ -14,6 +14,7 @@ namespace KismetDataTypes
 {
     class EnemyIdleState : EnemyState
     {
+        float time;
         #region Constructors
         /// <summary>
         /// Constructor
@@ -32,7 +33,8 @@ namespace KismetDataTypes
             Enemy = enemy;
             //Enemy.Range = 500;
             Enemy.Sprite.PlayAnimation("idle");
-            Enemy.Velocity = new Vector2(0, 0);
+            Enemy.Velocity = new Vector2(0, Enemy.Velocity.Y);
+            time = 0;
         }
         #endregion
 
@@ -43,6 +45,19 @@ namespace KismetDataTypes
         /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
+            Enemy.Velocity = new Vector2(0, Enemy.Velocity.Y);
+            if (Enemy.GetType().ToString() == "KismetDataTypes.MiniBoss")
+            {
+                time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (time > 2.0f)
+                {
+                    Enemy.StateMachine.UpdateState("teleport");
+                }
+
+
+            }
+
+
             if (Enemy.IsHit)
             {
                 Enemy.StateMachine.UpdateState("isHit");

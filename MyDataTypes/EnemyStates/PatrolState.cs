@@ -50,6 +50,16 @@ namespace KismetDataTypes
             // Process passing time.
             time += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
+            if (Enemy.GetType().ToString() == "KismetDataTypes.MiniBoss")
+            {
+                //time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (time > 2.0f)
+                {
+                    Enemy.StateMachine.UpdateState("idle");
+                }
+
+
+            }
             if (time <= 5.0f)
             {
                 if (Enemy.Direction == GV.LEFT)
@@ -74,6 +84,7 @@ namespace KismetDataTypes
             }
             else
             {
+                
                 time = 0.0f;
                 Enemy.ToggleDirections();
             }

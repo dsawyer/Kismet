@@ -21,6 +21,7 @@ namespace KismetDataTypes
         private const string LEFT = "left";
         private const float GRAVITY = 1.0f;
         float time;
+        float mannaUpdateTime;
         private KeyboardState keyboardState;
 
         private PlayerState state;
@@ -39,7 +40,7 @@ namespace KismetDataTypes
         private bool isHit = false;
         private float idleTime = 0.2f;
         private string currentMagicItem = "fire";
-        private int currentMagicCount = 100;
+        private int currentMagicCount = 200;
         private bool lastButtonState;
         
         // Used to help with testing for platform collision
@@ -178,7 +179,7 @@ namespace KismetDataTypes
         /// </summary>
         public int Health { get { if (health <= 0)IsAlive = false; return health; } set { health = value; } }
        
-        private int mannaRate = 1;
+        private int mannaRate = 0;
 
 
         /// <summary>
@@ -196,7 +197,7 @@ namespace KismetDataTypes
                 if (manna >= 600)
                     return 600;
                 else
-                    return manna += mannaRate;
+                    return manna;
             }
             set 
             { 
@@ -295,12 +296,12 @@ namespace KismetDataTypes
             {
                 MaxLightRadius = 400;
                 Rate = 400;
-                mannaRate = 4;
+                mannaRate = 20;
             }
             else
             {
                 mannaRate = 1;
-                MaxLightRadius = 50;
+                MaxLightRadius = 0;
                 if (lightRadius + Rate > MaxLightRadius)
                     lightRadius = MaxLightRadius;
             }
@@ -364,7 +365,7 @@ namespace KismetDataTypes
                 else if (CurrentMagicItem == "dark")
                 {
                     CurrentMagicItem = "fire";
-                    CurrentMagicCount = LightCount;
+                    CurrentMagicCount = FireCount;
                 }
                
                 lastButtonState = false;
@@ -443,7 +444,7 @@ namespace KismetDataTypes
 
         #region Inventory
 
-        private int fireCount = 100, earthCount = 100, waterCount = 100, windCount = 100, darkCount = 100, lightCount = 100;
+        private int fireCount = 200, earthCount = 300, waterCount = 400, windCount = 500, darkCount = 600, lightCount = 100;
         /// <summary>
         /// Gets or Sets for fire Inventory.
         /// </summary>
@@ -473,23 +474,23 @@ namespace KismetDataTypes
         {
             if (type == "pickupFire")
             {
-                  FireCount +=1; 
+                  Manna += FireCount; 
             }
             else if (type == "pickupEarth")
             {
-                   EarthCount+=1;
+                Manna += EarthCount;
             }
             else if (type == "pickupWater")
             {
-                    WaterCount+=1;
+                Manna += WaterCount;
             }
             else if (type == "pickupWind")
             {
-                   WindCount +=1;
+                Manna += WindCount;
             }
             else if (type == "pickupDark")
             {
-                    DarkCount +=1;
+                Manna += DarkCount;
             }
 
             if (CurrentMagicItem == "fire")
@@ -513,106 +514,60 @@ namespace KismetDataTypes
             {
                 CurrentMagicCount = DarkCount;
             }
-            else if (CurrentMagicItem == "light")
-            {
-                CurrentMagicCount = LightCount;
-            }
+            
         }
 
-        public bool CheckInventory(string type)
+        public bool CheckInventory()
         {
             if (CurrentMagicItem == "fire")
             {
-                if (FireCount > 0)
+                if (FireCount <= Manna)
                 {
-                    FireCount -= 1;
+                    Manna -= FireCount;
                     CurrentMagicCount = FireCount;
                     return true;
                 }
-                else
-                {
-                    FireCount = 0;
-                    CurrentMagicCount = FireCount;
-                    return false;
-                }
+               
             }
             else if (CurrentMagicItem == "earth")
             {
-                if (EarthCount > 0)
+                if (EarthCount <= Manna)
                 {
-                    EarthCount -= 1;
+                    Manna -= EarthCount;
                     CurrentMagicCount = EarthCount;
                     return true;
-                }
-                else
-                {
-                    EarthCount = 0;
-                    CurrentMagicCount = EarthCount;
-                    return false;
                 }
             }
             else if (CurrentMagicItem == "water")
             {
-                if (WaterCount > 0)
+                if (WaterCount <= Manna)
                 {
-                    WaterCount -= 1;
+                    Manna -= WaterCount;
                     CurrentMagicCount = WaterCount;
                     return true;
-                }
-                else
-                {
-                    WaterCount = 0;
-                    CurrentMagicCount = WaterCount;
-                    return false;
                 }
             }
             else if (CurrentMagicItem == "wind")
             {
-                if (WindCount > 0)
+                if (WindCount <= Manna)
                 {
-                    WindCount -= 1;
+                    Manna -= WindCount;
                     CurrentMagicCount = WindCount;
                     return true;
-                }
-                else
-                {
-                    WindCount = 0;
-                    CurrentMagicCount = WindCount;
-                    return false;
                 }
             }
             else if (CurrentMagicItem == "dark")
             {
-                if (DarkCount > 0)
+                if (DarkCount <= Manna)
                 {
-                    DarkCount -= 1;
+                    Manna -= DarkCount;
                     CurrentMagicCount = DarkCount;
                     return true;
-                }
-                else
-                {
-                    DarkCount = 0;
-                    CurrentMagicCount = DarkCount;
-                    return false;
                 }
             }
 
-            else if (CurrentMagicItem == "light")
-            {
-                if (LightCount > 0)
-                {
-                    LightCount -= 1;
-                    CurrentMagicCount = LightCount;
-                    return true;
-                }
-                else
-                {
-                    LightCount = 0;
-                    CurrentMagicCount = LightCount;
-                    return false;
-                }
-            }
-            else
+            
+            
                 return false;
         }
 
@@ -636,7 +591,7 @@ namespace KismetDataTypes
             IsAlive = true;
             health = 600;
 
-            CurrentMagicCount = FireCount;
+            CurrentMagicCount = 200;
 
             localBounds = new Rectangle(Sprite.BoundingBox.Left, Sprite.BoundingBox.Top, Sprite.BoundingBox.Width, Sprite.BoundingBox.Height);
         }
@@ -672,7 +627,6 @@ namespace KismetDataTypes
         {
             KeyboardState keyboardState = Keyboard.GetState();
             GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
-
             repositionCamera();
             DirectionCheck();
             ToggleMagicItems();
@@ -688,6 +642,7 @@ namespace KismetDataTypes
             PreviousBottom = Position.Y;
           
             time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            mannaUpdateTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (time > 0.5)
             {
                 if (keyboardState.IsKeyDown(Keys.C) || gamePadState.IsButtonDown(Buttons.RightTrigger))
@@ -696,8 +651,13 @@ namespace KismetDataTypes
                     time = 0;
                 }
             }
-            //Velocity = new Vector2(this.Velocity.X, this.Velocity.Y + GV.GRAVITY);
-            //state.Update();
+
+
+            if (mannaUpdateTime > 1.0f)
+            {
+                Manna += MannaRate;
+                mannaUpdateTime = 0;
+            }
         }
 
 

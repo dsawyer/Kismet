@@ -132,6 +132,7 @@ namespace Kismet
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
+            RewardManager.Update(gameTime);
             hubManager.Update(gameTime);
             base.Update(gameTime);
         }
@@ -188,19 +189,18 @@ namespace Kismet
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, shaders);
 
-            // Draw the layers and the player
-            GV.Level.Draw(spriteBatch);
-            NPCManager.Draw(gameTime, spriteBatch);
-            //GV.Player.Draw(gameTime, spriteBatch);
-            MagicItemManager.Draw(gameTime, spriteBatch);
-            GV.Player.Draw(gameTime, spriteBatch);
-            PickUpItemManager.Draw(gameTime, spriteBatch);
-
-            
-
+                // Draw the layers and the player
+                GV.Level.Draw(spriteBatch);
+                NPCManager.Draw(gameTime, spriteBatch);
+                //GV.Player.Draw(gameTime, spriteBatch);
+                MagicItemManager.Draw(gameTime, spriteBatch);
+                GV.Player.Draw(gameTime, spriteBatch);
+                PickUpItemManager.Draw(gameTime, spriteBatch);
+                //RewardManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
-            spriteBatch.Begin();
-            hubManager.Draw(gameTime, spriteBatch);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);
+                hubManager.Draw(gameTime, spriteBatch);
+                RewardManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

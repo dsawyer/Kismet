@@ -38,7 +38,7 @@ namespace KismetDataTypes
         /// <summary>
         /// Gets and Sets the health of the Enemy object 
         /// </summary>
-        public int Health { get { if (health <= 0)IsAlive = false; return health; } set { health = value; } }
+        public int Health { get { if (health <= 0)State = new EnemyDyingState(this);  return health; } set { health = value; } }
         public int Damage { set { health -= value; } }
         /// <summary>
         /// Gets and Sets the Spriteof the Enemy object 

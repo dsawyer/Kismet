@@ -69,6 +69,7 @@
     <Compile Include="Animation\Animation.cs" />
     <Compile Include="EnemyStates\AttackState.cs" />
     <Compile Include="EnemyStates\AwakeState.cs" />
+    <Compile Include="EnemyStates\EnemyDyingState.cs" />
     <Compile Include="EnemyStates\EnemyIdleState.cs" />
     <Compile Include="EnemyStates\EnemyJumpingState.cs" />
     <Compile Include="EnemyStates\FlockAttackState.cs" />
@@ -82,10 +83,13 @@
     <Compile Include="Extras\GV.cs" />
     <Compile Include="Items\PickUpItem.cs" />
     <Compile Include="Items\PickUpState.cs" />
+    <Compile Include="Items\Reward.cs" />
+    <Compile Include="Items\RewardState.cs" />
     <Compile Include="MagicStates\EggState.cs" />
     <Compile Include="MagicStates\FireState.cs" />
     <Compile Include="Managers\HubManager.cs" />
     <Compile Include="Managers\PickUpItemManager.cs" />
+    <Compile Include="Managers\RewardManager.cs" />
     <Compile Include="PickUpStates\ActiveState.cs" />
     <Compile Include="PickUpStates\InActiveState.cs" />
     <Compile Include="PlayerStates\LightState.cs" />

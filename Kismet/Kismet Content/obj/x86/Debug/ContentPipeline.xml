@@ -676,6 +676,15 @@
       <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
       <Time>2012-03-22T20:05:28.2872719-03:00</Time>
     </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2012-03-27T10:17:45.4968947-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -714,7 +723,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-24T16:48:26.1287084-03:00</Value>
+        <Value>2012-03-28T15:49:53.7158263-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

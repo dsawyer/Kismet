@@ -72,8 +72,8 @@ namespace KismetDataTypes
                     }
                 }
 
-                if(MagicItem.ItemType != "light")
-                GV.Player.Manna = 0;
+                //if(MagicItem.ItemType != "light")
+                //GV.Player.Manna = 0;
            }
             else
                 MagicItem.Active = false;
