@@ -37,6 +37,12 @@ namespace KismetDataTypes
                 case "arrow":
                     magicItemList.Add(new MagicItem("XML Documents/EnemyMagicAnimations", "enemy", type, 5, enemy));
                     break;
+
+                // enemy weapons
+                case "egg":
+                    magicItemList.Add(new MagicItem("XML Documents/DanMagicAnimations", "enemy", type, 5, enemy));
+                    lightCount++;
+                    break;
                 // enemy weapons
                 case "fireRow":
                     MagicItem magicItem1 = (new MagicItem("XML Documents/EnemyMagicAnimations", "enemy", type, 5, enemy));

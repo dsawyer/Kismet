@@ -73,7 +73,6 @@ C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\MountainsFront.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\CloudySky.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\tiles\StarlitSky.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb
-C:\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.exe
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\WindowsGame1.pdb
 C:\Kismet\Kismet\Kismet\bin\x86\Debug\KismetDataTypes.dll

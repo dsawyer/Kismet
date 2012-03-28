@@ -83,11 +83,13 @@
     <Compile Include="Items\Pickup.cs" />
     <Compile Include="Items\PickUpItem.cs" />
     <Compile Include="Items\PickUpState.cs" />
+    <Compile Include="MagicStates\EggState.cs" />
     <Compile Include="MagicStates\FireState.cs" />
     <Compile Include="Managers\HubManager.cs" />
     <Compile Include="Managers\PickUpItemManager.cs" />
     <Compile Include="PickUpStates\ActiveState.cs" />
     <Compile Include="PickUpStates\InActiveState.cs" />
+    <Compile Include="PlayerStates\LightState.cs" />
     <Compile Include="Tech Data\CheckPoint.cs" />
     <Compile Include="Tech Data\PickUpPoint.cs" />
     <Compile Include="Tech Data\SpawnPoint.cs" />

@@ -1125,7 +1125,7 @@
       <Item>
         <Name>health1</Name>
         <Type>pickupHeal</Type>
-        <Position>1312 340</Position>
+        <Position>1412 64</Position>
       </Item>
       <Item>
         <Name>health2</Name>

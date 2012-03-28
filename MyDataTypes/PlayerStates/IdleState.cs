@@ -73,11 +73,14 @@ namespace KismetDataTypes
                     Player.State = new MagicAttackState(this);
                 }
             }
+
+           
                 //if player is jumping
-            else if (keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A))
+            else if ((keyboardState.IsKeyDown(Keys.A) || gamePadState.IsButtonDown(Buttons.A) )&& GV.Player.IsOnGround)
             {
                 Player.State = new JumpingState(this.Player);
             }
+            
   
             //else
             //this updates the player velocity

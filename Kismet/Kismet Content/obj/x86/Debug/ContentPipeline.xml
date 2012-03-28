@@ -8,7 +8,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-03-28T15:25:51.7028352-03:00</Time>
+      <Time>2012-03-28T15:47:37.4565201-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01B.xml</Source>
@@ -26,7 +26,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
-      <Time>2012-03-28T15:33:59.9017586-03:00</Time>
+      <Time>2012-03-28T15:43:28.2342654-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01D.xml</Source>
@@ -44,7 +44,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanAnimations.xnb</Output>
-      <Time>2012-01-31T14:47:32-04:00</Time>
+      <Time>2012-03-28T15:43:27.9942516-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanMagicAnimations.xml</Source>
@@ -53,7 +53,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\DanMagicAnimations.xnb</Output>
-      <Time>2012-03-15T17:07:29.0852799-03:00</Time>
+      <Time>2012-03-28T15:43:27.9952517-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\GoblinAnimations.xml</Source>
@@ -62,7 +62,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\GoblinAnimations.xnb</Output>
-      <Time>2012-02-14T15:00:27.7213725-04:00</Time>
+      <Time>2012-03-28T15:43:27.9962517-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DemonArcherAnimations.xml</Source>
@@ -98,7 +98,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\XML Documents\MiniBossAnimations.xnb</Output>
-      <Time>2012-01-31T17:34:54-04:00</Time>
+      <Time>2012-03-28T15:43:27.9972518-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\Goblin.xml</Source>
@@ -714,7 +714,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-28T15:07:24.7335202-03:00</Value>
+        <Value>2012-03-28T15:44:54.264186-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

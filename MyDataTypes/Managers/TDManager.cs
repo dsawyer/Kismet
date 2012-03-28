@@ -41,7 +41,7 @@ namespace KismetDataTypes
             TriggerboxList.Add(new TriggerBox("spawn", "imp100", new Rectangle(0, 0, 200, 736)));
             DataList.Add("imp100", new SpawnPoint("imp", "imp100", new Vector2(300.0f, 300.0f)));
 
-            //TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
+           // TriggerboxList.Add(new TriggerBox("spawn", "mini100", new Rectangle(0, 0, 200, 736)));
             //DataList.Add("mini100", new SpawnPoint("miniboss", "mini100", new Vector2(34.0f, 11.0f)));
         }
         public static void Release()

@@ -42,6 +42,7 @@ namespace KismetDataTypes
                     Velocity = new Vector2((GV.Player.Position.X - enemy.Position.X) / 20, (GV.Player.Position.Y - enemy.Position.Y)/20); 
                     Direction = enemy.Direction;
                     Sprite.Rotation = 0.0f;
+                    itemType = p_ItemType;
                     
                 }
                 else if (p_ItemType == "fireRow")
@@ -49,6 +50,20 @@ namespace KismetDataTypes
                         this.state = new FireState(this);
                         //Position = new Vector2(enemy.Position.X, enemy.Position.Y);
                         //Direction = enemy.Direction;
+                        itemType = p_ItemType;
+                }
+                else if (p_ItemType == "egg")
+                {
+                        Position = Enemy.Position;
+                        this.state = new EggState(this);
+                        
+                        light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 200, 2);
+                        
+
+                        itemType = "light";
+                    
+                    //Position = new Vector2(enemy.Position.X, enemy.Position.Y);
+                    //Direction = enemy.Direction;
                 }
             }
             else
@@ -63,11 +78,11 @@ namespace KismetDataTypes
                 }
                 //this.state = new InAirState(this);
                 //Position = GV.Player.Position;
-             
+                itemType = p_ItemType;
             }
 
             
-            itemType = p_ItemType;
+           
             Duration = p_Duration; 
             active = true;
         }

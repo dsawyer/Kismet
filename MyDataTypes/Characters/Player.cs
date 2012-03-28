@@ -20,7 +20,7 @@ namespace KismetDataTypes
         private const string RIGHT = "right";
         private const string LEFT = "left";
         private const float GRAVITY = 1.0f;
-
+        float time;
         private KeyboardState keyboardState;
 
         private PlayerState state;
@@ -33,6 +33,7 @@ namespace KismetDataTypes
         private Vector2 velocity;
         private bool isAlive;
         private int health;
+        private int manna = 0;
         private Vector2 checkPoint;
         private bool isOnGround = false;
         private bool isHit = false;
@@ -176,6 +177,33 @@ namespace KismetDataTypes
         /// Gets and Sets the health of the player object 
         /// </summary>
         public int Health { get { if (health <= 0)IsAlive = false; return health; } set { health = value; } }
+       
+        private int mannaRate = 1;
+
+
+        /// <summary>
+        /// Gets and Sets the status of the Enemy object 
+        /// </summary>
+        public int MannaRate { get { return mannaRate; } set { mannaRate = value; } }
+        /// <summary>
+        /// Gets and Sets the manna for the player 
+        /// </summary>
+        /// 
+        public int Manna
+        {
+            get
+            {
+                if (manna >= 600)
+                    return 600;
+                else
+                    return manna += mannaRate;
+            }
+            set 
+            { 
+                manna = value; 
+            } 
+            
+        }
         public int Damage { set { health -= value; } }
         /// <summary>
         /// gets the bounds for the next position.  Used for collisions
@@ -284,9 +312,11 @@ namespace KismetDataTypes
             {
                 MaxLightRadius = 400;
                 Rate = 400;
+                mannaRate = 4;
             }
             else
             {
+                mannaRate = 1;
                 MaxLightRadius = 50;
                 if (lightRadius + Rate > MaxLightRadius)
                     lightRadius = MaxLightRadius;
@@ -350,14 +380,10 @@ namespace KismetDataTypes
                 }
                 else if (CurrentMagicItem == "dark")
                 {
-                    CurrentMagicItem = "light";
+                    CurrentMagicItem = "fire";
                     CurrentMagicCount = LightCount;
                 }
-                else if (CurrentMagicItem == "light")
-                {
-                    CurrentMagicItem = "fire";
-                    CurrentMagicCount = FireCount;
-                }
+               
                 lastButtonState = false;
             }
             else if (keyboardState.IsKeyUp(Keys.F) && gamePadState.IsButtonUp(Buttons.Y))
@@ -659,6 +685,9 @@ namespace KismetDataTypes
 
         public void Update(GameTime gameTime)
         {
+            KeyboardState keyboardState = Keyboard.GetState();
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
+
             repositionCamera();
             DirectionCheck();
             ToggleMagicItems();
@@ -673,6 +702,15 @@ namespace KismetDataTypes
             Position = Position + Velocity;
             PreviousBottom = Position.Y;
           
+            time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (time > 0.5)
+            {
+                if (keyboardState.IsKeyDown(Keys.C) || gamePadState.IsButtonDown(Buttons.RightTrigger))
+                {
+                    State = new LightState(this);
+                    time = 0;
+                }
+            }
             //Velocity = new Vector2(this.Velocity.X, this.Velocity.Y + GV.GRAVITY);
             //state.Update();
         }
