@@ -130,7 +130,11 @@ namespace KismetDataTypes
                     {               
                             BottomCollision = true;
                     }
-
+                    // This kills the player if they fall in a hole
+                    if (collision == Layer.Hole)
+                    {
+                        GV.Player.ResetPlayer();
+                    }
                 }
             }
             if (BottomCollision)
@@ -213,7 +217,7 @@ namespace KismetDataTypes
                 {
                     PickUpItem pickUpItem = pickUpItemList[i];
                     Vector2 PickUpItemCollisionDepth = RectangleExtensions.GetIntersectionDepth(GV.Player.Bounds, pickUpItem.Bounds);
-                    if (PickUpItemCollisionDepth != Vector2.Zero )
+                    if (PickUpItemCollisionDepth != Vector2.Zero && pickUpItem.isLit)
                     {
                         GV.Player.AddToInventory(pickUpItem.ItemType);
                         pickUpItem.Active = false;

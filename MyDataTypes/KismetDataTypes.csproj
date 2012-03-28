@@ -81,6 +81,7 @@
     <Compile Include="EnemyStates\PursueState.cs" />
     <Compile Include="EnemyStates\TeleportState.cs" />
     <Compile Include="Extras\GV.cs" />
+    <Compile Include="Items\Pickup.cs" />
     <Compile Include="Items\PickUpItem.cs" />
     <Compile Include="Items\PickUpState.cs" />
     <Compile Include="Items\Reward.cs" />

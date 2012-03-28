@@ -147,6 +147,12 @@ namespace KismetDataTypes
         // The number of light sources in the level
         [System.Xml.Serialization.XmlElementAttribute("NumLights")]
         public int NumLights = 0;
+        // the number of check points in the level
+        [System.Xml.Serialization.XmlElementAttribute("NumCheckPoints")]
+        public int NumCheckPoints = 0;
+        // The number of items in the level
+        [System.Xml.Serialization.XmlElementAttribute("NumItems")]
+        public int NumItems = 0;
 
         [System.Xml.Serialization.XmlElementAttribute("Warps")]
         public Warp[] Warps;
@@ -156,6 +162,12 @@ namespace KismetDataTypes
         public TriggerBox[] Triggers;
         [System.Xml.Serialization.XmlElementAttribute("Lights")]
         public LightSource[] Lights;
+        [System.Xml.Serialization.XmlElementAttribute("CheckPoints")]
+        public CheckPoint[] CheckPoints;
+        [System.Xml.Serialization.XmlElementAttribute("Pickups")]
+        public Pickup[] Pickups;
+
+        public Vector3 AmbientLight;
 
         /// <summary>
         /// Contains the objects in the level
@@ -441,6 +453,17 @@ namespace KismetDataTypes
             {
                 TDManager.TriggerboxList.Add(Triggers[i]);
             }
+
+            for (int i = 0; i < NumCheckPoints; i += 1)
+            {
+                TDManager.DataList.Add(CheckPoints[i].PointID, CheckPoints[i]);
+            }
+
+            for (int i = 0; i < NumItems; i += 1)
+            {
+                TDManager.TriggerboxList.Add(new TriggerBox("spawn", Pickups[i].Name, new Rectangle(0, 0, Width, Height)));
+                TDManager.DataList.Add(Pickups[i].Name, new PickUpPoint(Pickups[i].Type, Pickups[i].Name, Pickups[i].Position));
+            }
         }
 
         /// <summary>
@@ -456,13 +479,13 @@ namespace KismetDataTypes
             { DrawObjects(spriteBatch); }
             else
             { DrawLights(spriteBatch); }
-            if (GV.ShowBoxes)
+            /*if (GV.ShowBoxes)
             {
                 for (int i = 0; i < NumTriggers; i+=1)
                 {
                     Triggers[i].DrawTriggerBox(spriteBatch);
                 }
-            }
+            }*/
             //foregroundLayer.Draw(spriteBatch);
 
         }

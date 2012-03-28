@@ -60,4 +60,3 @@ Content\XML Documents\EnemyMagicAnimations.xnb
 Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\Goblin.xnb
 Content\XML Documents\PickUpItemsAnimations.xnb
-Content\Levels\Level_01A.xnb

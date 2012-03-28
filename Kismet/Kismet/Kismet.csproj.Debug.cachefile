@@ -1,6 +1,7 @@
-Content\Levels\Level_01B.xnb
-Content\Levels\Level_01D.xnb
 Content\Levels\Level_01A.xnb
+Content\Levels\Level_01B.xnb
+Content\Levels\Level_01C.xnb
+Content\Levels\Level_01D.xnb
 Content\XML Documents\DanAnimations.xnb
 Content\XML Documents\DanMagicAnimations.xnb
 Content\XML Documents\GoblinAnimations.xnb
@@ -10,7 +11,6 @@ Content\XML Documents\FireMageAnimations.xnb
 Content\XML Documents\MiniBossAnimations.xnb
 Content\XML Documents\Goblin.xnb
 Content\XML Documents\PickUpItemsAnimations.xnb
-Content\Levels\Level_01C.xnb
 Content\tiles\Icons.xnb
 Content\tiles\Tiles.xnb
 Content\Sprites\Dan\DanAttack1.xnb

@@ -15,7 +15,7 @@ namespace KismetDataTypes
     public class PickUpPoint : LevelObject
     {
         //private Vector2 initialPoint;
-        private string type;// styoe of object
+        private string type;// style of object
         private string pointID;
 
 
@@ -54,6 +54,7 @@ namespace KismetDataTypes
             PointID = p_PointID;
             Position = p_InitialPoint;
             Name = PointID;
+            Console.WriteLine("PickupPoint Created: " + Name + "\t" + Type);
 
         }
 

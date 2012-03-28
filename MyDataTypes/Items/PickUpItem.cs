@@ -36,6 +36,8 @@ namespace KismetDataTypes
             active = true;
         }
 
+        public PickUpItem() { }
+
         protected string direction;
         public bool animationReversed = false;
 
@@ -192,6 +194,21 @@ namespace KismetDataTypes
 
         public void Update(GameTime gameTime)
         {
+            Velocity = new Vector2(Velocity.X, Velocity.Y);
+            Vector2 nextPosition = Position + Velocity;
+            state.Update();
+
+
+            Velocity = CollisionManager.ResolvePickUpStaticCollisions(this, nextPosition, Velocity);
+
+            Position = Position + Velocity;
+            PreviousBottom = Position.Y;
+
+            if (IsCollision && isLit)
+            {
+                Active = false;
+            }
+
         }
 
 

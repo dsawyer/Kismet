@@ -150,21 +150,13 @@ namespace Kismet
             Matrix projection = Matrix.CreateOrthographicOffCenter(0, viewport.Width, viewport.Height, 0, 0, 1);
 
             Matrix cameraTranslation = Matrix.CreateTranslation(-Camera.Position.X, -Camera.Position.Y, 0.0f);
-            //Camera.Zoom = 1.25f;
             Matrix cameraZoom = Matrix.CreateScale(Camera.Zoom);
             Matrix cameraTransform = cameraTranslation * cameraZoom * projection;
 
             int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
-
-            //GV.Level.SortLights();
-            //GV.Level.Lights;
-
-            GV.Level.SortLights();
-
-
-
             int min2 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
-
+            
+            GV.Level.SortLights();
 
             // Set all the shader's parameters based on the lights in the level
             shaders.Parameters["MatrixTransform"].SetValue(cameraTransform);
@@ -179,6 +171,7 @@ namespace Kismet
             shaders.Parameters["lightSpells"].SetValue(MagicItemManager.GetLightMagicArray(min2));
             shaders.Parameters["numLightSpells"].SetValue(min2);
             shaders.Parameters["numLights"].SetValue(min);
+            shaders.Parameters["ambientLight"].SetValue(GV.Level.AmbientLight);
 
             //spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
            //                  RasterizerState.CullCounterClockwise, shaders, cameraTransform);
@@ -201,6 +194,7 @@ namespace Kismet
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);
                 hubManager.Draw(gameTime, spriteBatch);
                 RewardManager.Draw(gameTime, spriteBatch);
+
             spriteBatch.End();
 
             base.Draw(gameTime);

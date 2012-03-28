@@ -77,9 +77,25 @@ namespace KismetDataTypes
                 {
                     LightSource[] lights = GV.Level.Lights;
                     int min = 4 < GV.Level.NumLights ? 4 : GV.Level.NumLights;
+                    int min1 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
                     Vector2 position = new Vector2(item.Position.X, item.Position.Y - (item.Bounds.Height / 2));
+                    Vector2[] lightSpells = MagicItemManager.GetLightMagicArray(min1);
 
-                    for (int i = 0; i < min; i+=1)
+                    for (int i = 0; i < min1; i+=1)
+                    {
+                        Vector2 pVector = position - lightSpells[i];
+                        float distance = (float)Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
+                        if (distance <= 200)
+                        {
+                            item.Draw(gameTime, spriteBatch);
+                            item.isLit = true;
+                            break;
+                        }
+                        else
+                        { item.isLit = false; }
+                    }
+                    
+                    for (int i = 0; i < min; i += 1)
                     {
                         Vector2 pVector = position - lights[i].Centre;
                         double distance = Math.Sqrt((Math.Pow((pVector.X), 2) + Math.Pow((pVector.Y), 2)));
