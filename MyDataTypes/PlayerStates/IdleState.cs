@@ -68,7 +68,7 @@ namespace KismetDataTypes
            
             else if (keyboardState.IsKeyDown(Keys.D) || gamePadState.IsButtonDown(Buttons.B))
             {
-                if (Player.CheckInventory(Player.CurrentMagicItem))
+                if (Player.CheckInventory())
                 {
                     Player.State = new MagicAttackState(this);
                 }

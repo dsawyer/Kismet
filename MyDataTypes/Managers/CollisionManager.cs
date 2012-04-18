@@ -192,7 +192,7 @@ namespace KismetDataTypes
                         if ((float)distance <= magicItem.Light.Radius)
                         {
                             GV.Player.MaxLightRadius = 400;
-                            GV.Player.Rate = 400;
+                            GV.Player.LightRadius = 400;
 
                             if ((GV.Player.LightRadius + GV.Player.Rate) < GV.Player.MaxLightRadius)
                             {
@@ -204,7 +204,7 @@ namespace KismetDataTypes
                             else
                                 GV.Player.LightRadius--;
 
-                            GV.Player.MannaRate = 4;
+                            GV.Player.MannaRate = 20;
                         }
                     }
 
@@ -221,6 +221,11 @@ namespace KismetDataTypes
                     {
                         GV.Player.AddToInventory(pickUpItem.ItemType);
                         pickUpItem.Active = false;
+                        if (pickUpItem.ItemType == "pickupHeal")
+                        {
+                            RewardManager.AddReward("health", 100, pickUpItem.Position);
+                            GV.Player.Health += 100;
+                        }
                     }
 
                 }
@@ -341,7 +346,14 @@ namespace KismetDataTypes
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     int collision = GV.Level.GetCollision(x, bottomTile);
-                    if (collision != Layer.Passable)
+                    if (collision == Layer.Hole)
+                    {
+                        if (enemy.GetType().ToString() == "KismetDataTypes.Goblin" ||
+                            enemy.GetType().ToString() == "KismetDataTypes.FireMage" ||
+                            enemy.GetType().ToString() == "KismetDataTypes.DemonArcher")
+                        { enemy.IsAlive = false; }
+                    }
+                    else if (collision != Layer.Passable)
                     {
                         BottomCollision = true;
                     }
@@ -559,18 +571,53 @@ namespace KismetDataTypes
                             enemy.Position = new Vector2(magicItem.Position.X, magicItem.Bounds.Bottom);
                             enemy.State = new KnockedDownState(enemy);
                             enemy.ToggleDirections();
-                            enemy.Damage = 2;
-                            enemy.State = new KnockedDownState(enemy);
+                            //enemy.Damage = 2;
+
                         }
-                        else if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType != "light")
+                        else if (ItemCollisionDepth != Vector2.Zero && magicItem.ItemType != "light" && magicItem.ItemType != "earth")
                         {
 
                             enemy.Damage = 2;
                             enemy.State = new KnockedDownState(enemy);
                         }
-                        
-                        
+
                     }
+
+
+
+                    if (magicItem.Enemy == null && magicItem.Owner == "player" && enemy.State.GetType().ToString() == "KismetDataTypes.PatrolState")
+                    {
+                        float xdistance = enemyPosition.X - magicItem.Position.X;
+                        float ydistance = enemyPosition.Y - magicItem.Position.Y;
+
+                        double c = Math.Sqrt(Math.Pow((double)xdistance, 2) + Math.Pow((double)ydistance, 2));
+
+                        if (c <= magicItem.EffectRadius)
+                        {
+
+                            if (magicItem.ItemType == "light")
+                            {
+                                xVel /= 5.0f;
+                                yVel /= 5.0f;
+                            }
+
+                            if (magicItem.ItemType == "dark")
+                            {
+                                enemy.State = new EnemyDyingState(enemy);
+                                
+                            }
+
+                        }
+
+                    }
+
+
+
+
+
+
+
+                   
                  
                 }
             }

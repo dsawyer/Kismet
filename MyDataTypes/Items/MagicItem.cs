@@ -23,7 +23,7 @@ namespace KismetDataTypes
         private const float GRAVITY = 1.0f;
         private string owner;
         LightSource light;
-        
+        float effectRadius;
         /// <summary>
         /// Constructors a new sprite.
         /// </summary>        
@@ -50,6 +50,7 @@ namespace KismetDataTypes
                         this.state = new FireState(this);
                         //Position = new Vector2(enemy.Position.X, enemy.Position.Y);
                         //Direction = enemy.Direction;
+                        light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 200, 2);
                         itemType = p_ItemType;
                 }
                 else if (p_ItemType == "egg")
@@ -74,8 +75,15 @@ namespace KismetDataTypes
                 if (p_ItemType == "light")
                 {
                     light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 200, 2);
-                   
+                    EffectRadius = light.Radius;
                 }
+                else if (p_ItemType == "dark")
+                {
+                    EffectRadius = 500.0f;
+                }
+                else
+                    EffectRadius = 0.0f;
+
                 //this.state = new InAirState(this);
                 //Position = GV.Player.Position;
                 itemType = p_ItemType;
@@ -226,6 +234,15 @@ namespace KismetDataTypes
         {
             get { return isCollision; }
             set { isCollision = value; }
+        }
+
+        /// <summary>
+        /// Gets or Sets effect radius of the magic item
+        /// </summary>
+        public float EffectRadius
+        {
+            get { return effectRadius; }
+            set { effectRadius = value; }
         }
 
         // The bounding box of the image

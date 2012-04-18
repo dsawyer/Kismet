@@ -16,11 +16,16 @@ namespace KismetDataTypes
     {
         public Sprite activeMagic;
         public string currentMagic;
+        public int minMannaNeeded = 200;
         public Texture2D texture1;
         public Texture2D texture2;
+        Vector4 ColorVector;
         SpriteFont Font1;
         Vector2 FontPos;
-        int magicCount;
+        Rectangle MannaBox;
+        Color magicColor;
+        Color healthColor;
+        float time;
          /// <summary>
         /// Constructor
         /// </summary>
@@ -32,11 +37,14 @@ namespace KismetDataTypes
             activeMagic.Scale = 0.5f;
             activeMagic.PlayAnimation("pickupFire");
             currentMagic = "fire";
+            magicColor = Color.OrangeRed;
             texture1 = GV.ContentManager.Load<Texture2D>("Sprites/greenPixel");
             texture2 = GV.ContentManager.Load<Texture2D>("Sprites/WhitePixel");
-
-            //Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");         
-
+            time = 0.0f;
+            Font1 = GV.ContentManager.Load<SpriteFont>("SpriteFont1");         
+            ColorVector = Color.DarkGray.ToVector4();
+            ColorVector.W = 0.5f;
+            healthColor = new Color(ColorVector);
         }
 
         public  void ChangeMagicItem(string item)
@@ -46,20 +54,23 @@ namespace KismetDataTypes
             {
                 case "fire":
                     activeMagic.PlayAnimation("pickupFire");
+                    magicColor = Color.OrangeRed;
                     break;
                 case "water":
+                    magicColor = Color.Blue;
                     activeMagic.PlayAnimation("pickupWater");
                     break;
                 case "wind":
+                    magicColor = Color.Green;
                     activeMagic.PlayAnimation("pickupWind");
                     break;
                 case "earth":
+                    magicColor = Color.Brown;
                     activeMagic.PlayAnimation("pickupEarth");
                     break;
                 case "dark":
+                    magicColor = Color.Purple;
                     activeMagic.PlayAnimation("pickupDark");
-                    break;
-                case "light":
                     break;
                 default:
                     Console.WriteLine("Invalid selection in Hub Manager");
@@ -78,7 +89,6 @@ namespace KismetDataTypes
                 ChangeMagicItem(GV.Player.CurrentMagicItem);
                 currentMagic = GV.Player.CurrentMagicItem;
             }
-            magicCount = GV.Player.CurrentMagicCount;
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -86,17 +96,25 @@ namespace KismetDataTypes
             activeMagic.Draw(gameTime, spriteBatch);
 
 
-           // Vector2 FontOrigin = Font1.MeasureString("" + GV.Player.CurrentMagicCount) / 2;
-        // Draw the string
-            //spriteBatch.DrawString(Font1, "" + GV.Player.CurrentMagicCount, new Vector2(50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            Vector2 FontOrigin = Font1.MeasureString("" + GV.Player.Manna  + "/" + GV.Player.CurrentMagicCount) / 2;
+            // Draw the string
+            spriteBatch.DrawString(Font1, "" + GV.Player.Manna + "/" + GV.Player.CurrentMagicCount, new Vector2(50, 90), Color.BlueViolet, 0, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
 
             Rectangle positionBox = new Rectangle((int)100, (int)+40, GV.Player.Health, 20);
             BoundingBox boundBox = new BoundingBox();
             spriteBatch.Draw(texture2, new Rectangle(positionBox.Left, positionBox.Top, positionBox.Width, 20), Color.Yellow);
             //boundBox.Draw(spriteBatch, positionBox, Color.Blue);
-            Rectangle MannaBox = new Rectangle((int)100, (int)+10, GV.Player.Manna, 20);
-            spriteBatch.Draw(texture2, new Rectangle(MannaBox.Left, MannaBox.Top, MannaBox.Width, 20), Color.Purple);
 
+            MannaBox = new Rectangle((int)100, (int)+10, GV.Player.Manna, 20);
+            Rectangle mannapower = new Rectangle((int)100, (int)+10, GV.Player.CurrentMagicCount, 20);
+            
+            positionBox = new Rectangle((int)100, (int)+5, 600, 25);
+            //spriteBatch.Draw(texture2, new Rectangle(positionBox.Left, positionBox.Top, positionBox.Width, 20), Color.White);
+            spriteBatch.Draw(texture2, new Rectangle(mannapower.Left, mannapower.Top, mannapower.Width, 20), magicColor);
+            spriteBatch.Draw(texture2, new Rectangle(MannaBox.Left, MannaBox.Top, MannaBox.Width, 20), healthColor);
+
+
+           
         }
 
     }

@@ -57,7 +57,7 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
-            GV.Level = Content.Load<Level>("Levels/Level_01A");
+            GV.Level = Content.Load<Level>("Levels/Level_01C");
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);
@@ -70,6 +70,7 @@ namespace Kismet
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
+            // Set this to true to see the hit boxes and light circles
             GV.ShowBoxes = false;
 
             GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
@@ -132,6 +133,7 @@ namespace Kismet
             TDManager.Update(gameTime);
             MagicItemManager.Update(gameTime);
             PickUpItemManager.Update(gameTime);
+            RewardManager.Update(gameTime);
             hubManager.Update(gameTime);
             base.Update(gameTime);
         }
@@ -181,18 +183,19 @@ namespace Kismet
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, shaders);
 
-            // Draw the layers and the player
-            GV.Level.Draw(spriteBatch);
-            NPCManager.Draw(gameTime, spriteBatch);
-            //GV.Player.Draw(gameTime, spriteBatch);
-            MagicItemManager.Draw(gameTime, spriteBatch);
-            GV.Player.Draw(gameTime, spriteBatch);
-            PickUpItemManager.Draw(gameTime, spriteBatch);
+                // Draw the layers and the player
+                GV.Level.Draw(spriteBatch);
+                NPCManager.Draw(gameTime, spriteBatch);
+                //GV.Player.Draw(gameTime, spriteBatch);
+                MagicItemManager.Draw(gameTime, spriteBatch);
+                GV.Player.Draw(gameTime, spriteBatch);
+                PickUpItemManager.Draw(gameTime, spriteBatch);
+                //RewardManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);
+                hubManager.Draw(gameTime, spriteBatch);
+                RewardManager.Draw(gameTime, spriteBatch);
 
-            // Draw the HUD to the screen
-            spriteBatch.Begin();
-            hubManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

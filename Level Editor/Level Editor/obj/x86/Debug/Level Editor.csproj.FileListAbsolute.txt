@@ -60,7 +60,6 @@ C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\EnemyMag
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\FireMageAnimations.xnb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\Goblin.xnb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
-C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Content\Levels\Level_01A.xnb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.exe
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\Level Editor.pdb
 C:\Kismet\Level Editor\Level Editor\bin\x86\Debug\KismetDataTypes.dll

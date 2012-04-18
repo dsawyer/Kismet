@@ -14,6 +14,14 @@ namespace KismetDataTypes
 {
     class TeleportState : EnemyState
     {
+        static int currentposition = 0;
+        Vector2[] TeleportMap = new Vector2[]
+        {
+            new Vector2(34.0f, 11.0f),
+            new Vector2(6.0f, 14.0f),
+            new Vector2(16.0f, 12.0f),
+            new Vector2(25.0f, 11.0f)
+        };
         #region Constructors
         /// <summary>
         /// Constructor
@@ -48,16 +56,23 @@ namespace KismetDataTypes
 
             if (Enemy.Sprite.CurrentFrame == Enemy.Sprite.CurrentAnimation.EndFrame && Enemy.Sprite.CurrentAnimation.Name == "teleport1")
             {
-                if (GV.Player.IsOnGround)
+                /*if (GV.Player.IsOnGround)
                 {
                     float xPos = (int)Math.Floor((float)GV.Player.Position.X / Layer.TileWidth);
                     float yPos = (int)Math.Floor((float)GV.Player.Position.Y / Layer.TileHeight-1);
-                    Enemy.PositionInTile(new Vector2(xPos, yPos));
+                    //Enemy.PositionInTile(new Vector2(xPos, yPos));
                 }
                 else
-                {
-                    Enemy.PositionInTile(new Vector2(34.0f, 11.0f));
-                }
+                {*/
+                    Random random = new Random();
+                    int randnum;
+                    do
+                    {
+                       randnum = random.Next(0, 3);
+                    }while (randnum == currentposition);
+                    currentposition = randnum;
+                    Enemy.PositionInTile(TeleportMap[randnum]);
+                //}
 
                 
                 Enemy.Sprite.PlayAnimation("teleport2");

@@ -172,6 +172,12 @@ namespace KismetDataTypes
             }
         }
 
+        public Vector2 Centre
+        {
+            get
+            { return new Vector2(Position.X - (Sprite.BoundingBox.X), Position.Y - Sprite.BoundingBox.Y); }
+        }
+
         /// <summary>
         /// function to toggle the direction of the item
         /// </summary>
@@ -189,7 +195,7 @@ namespace KismetDataTypes
 
         }
         /// <summary>
-        /// Handles input, and animates the player sprite.
+        /// Handles input, and animates the pickup sprite state etc.
         /// </summary>
 
         public void Update(GameTime gameTime)
@@ -208,9 +214,8 @@ namespace KismetDataTypes
             {
                 Active = false;
             }
+
         }
-
-
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
@@ -222,7 +227,6 @@ namespace KismetDataTypes
             {
                 BoundingBox boundBox = new BoundingBox();
                 boundBox.Draw(spriteBatch, Bounds, Color.Green);
-
             }
         }
     }

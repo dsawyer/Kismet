@@ -8,7 +8,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01A.xnb</Output>
-      <Time>2012-03-28T15:56:59.7046788-03:00</Time>
+      <Time>2012-04-17T18:19:34.9460921-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01B.xml</Source>
@@ -17,7 +17,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01B.xnb</Output>
-      <Time>2012-03-28T15:29:54.7167348-03:00</Time>
+      <Time>2012-04-17T18:23:12.1745169-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01C.xml</Source>
@@ -26,7 +26,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01C.xnb</Output>
-      <Time>2012-03-28T15:56:13.0140083-03:00</Time>
+      <Time>2012-04-17T18:25:40.0719761-03:00</Time>
     </Item>
     <Item>
       <Source>Levels\Level_01D.xml</Source>
@@ -35,7 +35,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\Levels\Level_01D.xnb</Output>
-      <Time>2012-03-28T15:57:28.8083434-03:00</Time>
+      <Time>2012-04-17T16:01:25.2637687-03:00</Time>
     </Item>
     <Item>
       <Source>XML Documents\DanAnimations.xml</Source>
@@ -676,6 +676,15 @@
       <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\LightEffects.xnb</Output>
       <Time>2012-03-28T15:06:14.9095265-03:00</Time>
     </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dylan\Documents\Kismet\Kismet\Kismet\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2012-03-11T16:52:52.4198282-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -714,7 +723,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Dylan\Documents\Kismet\MyDataTypes\bin\Debug\KismetDataTypes.dll</Key>
-        <Value>2012-03-28T15:44:54.264186-03:00</Value>
+        <Value>2012-04-17T17:52:53.2024776-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

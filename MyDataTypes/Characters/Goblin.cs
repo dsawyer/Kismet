@@ -50,7 +50,7 @@ namespace KismetDataTypes
             StateMachine.AddState("KismetDataTypes.PursueState", "noCollision", "PatrolState");
             StateMachine.AddState("KismetDataTypes.PursueState", "isHit", "KnockedDownState");
 
-            StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "PatrolState");
+            StateMachine.AddState("KismetDataTypes.KnockedDownState", "", "PursueState");
 
             StateMachine.AddState("KismetDataTypes.AttackState", "", "PatrolState");
             StateMachine.AddState("KismetDataTypes.AttackState", "isHit", "KnockedDownState");
