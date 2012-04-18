@@ -66,6 +66,10 @@ namespace KismetDataTypes
                 Enemy.IsHit = false;
                     Enemy.StateMachine.UpdateState(""); 
             }
+            if (Enemy.IsOnGround)
+            {
+                Enemy.Velocity = Vector2.Zero;
+            }
         }
         #endregion
     }

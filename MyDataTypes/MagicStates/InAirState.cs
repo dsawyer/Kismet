@@ -31,13 +31,14 @@ namespace KismetDataTypes
         {
             MagicItem = magicItem;
             MagicItem.Sprite.PlayAnimation("base");
-            
-            //CollisionManager.ResolveEnemyCollisions(enemy, Enemy.EnemyBounds);
-            if (GV.Player.Direction == "left")
+            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
+            MagicItem.Velocity = new Vector2(  gamePadState.ThumbSticks.Right.X * 10.0f, gamePadState.ThumbSticks.Right.Y * -20.0f);
+
+            /*if (GV.Player.Direction == "left")
                 MagicItem.Velocity = new Vector2(-10, -20);
             else if (GV.Player.Direction == "right")
-                MagicItem.Velocity = new Vector2(10, -20);
-            //MagicItem.Velocity = new Vector2(2, 10);
+                MagicItem.Velocity = new Vector2(10, -20);*/
+
         }
         #endregion
 

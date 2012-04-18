@@ -243,7 +243,7 @@ namespace KismetDataTypes
                 else if (Direction == RIGHT)
                     left += (Bounds.Width);
 
-                return new Rectangle(left, bounds.Top, 70, bounds.Height);
+                return new Rectangle(left, bounds.Top +25, 70, 15);
             }
 
         }
@@ -318,7 +318,7 @@ namespace KismetDataTypes
             else
             {
                 mannaRate = 1;
-                MaxLightRadius = 0;
+                MaxLightRadius = 100;
                 if (lightRadius + Rate > MaxLightRadius)
                     lightRadius = MaxLightRadius;
             }

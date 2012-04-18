@@ -36,7 +36,7 @@ float4 PS(PixelInput input) : COLOR0
 
 	// The value that represents how much light is to be removed at most
 	float4 light;
-	float4 lightValue = float4(0,0,0,1);
+	float4 lightValue = float4(0.1,0.1,0.1,0);
 	// Various needed variables for calculating the necessary lighting
 	float2 distanceToLight;
 	float distance;

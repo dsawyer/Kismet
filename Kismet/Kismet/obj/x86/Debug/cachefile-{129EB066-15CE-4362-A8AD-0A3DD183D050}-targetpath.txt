@@ -1,33 +1,10 @@
-Content\Levels\Level_01A.xnb
-Content\Levels\Level_01B.xnb
-Content\Levels\Level_01C.xnb
-Content\Levels\Level_01D.xnb
-Content\XML Documents\DanAnimations.xnb
-Content\XML Documents\DanMagicAnimations.xnb
-Content\XML Documents\GoblinAnimations.xnb
-Content\XML Documents\DemonArcherAnimations.xnb
-Content\XML Documents\EnemyMagicAnimations.xnb
-Content\XML Documents\FireMageAnimations.xnb
-Content\XML Documents\MiniBossAnimations.xnb
-Content\XML Documents\Goblin.xnb
-Content\XML Documents\PickUpItemsAnimations.xnb
-Content\tiles\Icons.xnb
-Content\tiles\Tiles.xnb
 Content\Sprites\Dan\DanAttack1.xnb
-Content\Sprites\Dan\DanIdle.xnb
-Content\Sprites\Dan\DanWalking.xnb
-Content\Sprites\Goblin\GoblinAttack.xnb
-Content\Sprites\Goblin\GoblinAwake.xnb
-Content\Sprites\Goblin\GoblinIdle.xnb
-Content\Sprites\Goblin\GoblinJumping.xnb
-Content\Sprites\Goblin\GoblinKnockedDown.xnb
-Content\Sprites\Goblin\GoblinLittleHit.xnb
-Content\Sprites\Goblin\GoblinWalking.xnb
-Content\Sprites\Items\DanMagicItem.xnb
 Content\Sprites\Dan\DanHitting.xnb
+Content\Sprites\Dan\DanIdle.xnb
 Content\Sprites\Dan\DanJumping.xnb
 Content\Sprites\Dan\DanJumpingAttack.xnb
 Content\Sprites\Dan\DanMagicAttack.xnb
+Content\Sprites\Dan\DanWalking.xnb
 Content\Sprites\DemonArcher\DemonAttack.xnb
 Content\Sprites\DemonArcher\DemonGetUp.xnb
 Content\Sprites\DemonArcher\DemonIdle.xnb
@@ -37,7 +14,38 @@ Content\Sprites\DemonArcher\DemonWalking.xnb
 Content\Sprites\FireMage\FireMageAttack1.xnb
 Content\Sprites\FireMage\FireMageAttack2.xnb
 Content\Sprites\FireMage\FireMageIdle.xnb
+Content\Sprites\FireMage\FireMageJumping.xnb
+Content\Sprites\FireMage\FireMageKnockedDown.xnb
+Content\Sprites\FireMage\FireMageWalking.xnb
+Content\Sprites\Goblin\GoblinAttack.xnb
+Content\Sprites\Goblin\GoblinAwake.xnb
+Content\Sprites\Goblin\GoblinIdle.xnb
+Content\Sprites\Goblin\GoblinJumping.xnb
+Content\Sprites\Goblin\GoblinKnockedDown.xnb
+Content\Sprites\Goblin\GoblinLittleHit.xnb
+Content\Sprites\Goblin\GoblinWalking.xnb
+Content\Sprites\greenPixel.xnb
+Content\Sprites\Imp\ImpFly.xnb
+Content\Sprites\Imp\ImpIdle.xnb
+Content\Sprites\Imp\ImpKnockedDown.xnb
+Content\Sprites\Items\DanHeal.xnb
+Content\Sprites\Items\DanMagicDark.xnb
+Content\Sprites\Items\DanMagicDark1.xnb
+Content\Sprites\Items\DanMagicEarth.xnb
 Content\Sprites\Items\DanMagicFire.xnb
+Content\Sprites\Items\DanMagicItem.xnb
+Content\Sprites\Items\DanMagicLight.xnb
+Content\Sprites\Items\DanMagicLight1.xnb
+Content\Sprites\Items\DanMagicWater.xnb
+Content\Sprites\Items\DanMagicWater1.xnb
+Content\Sprites\Items\DanMagicWind.xnb
+Content\Sprites\Items\DanMagicWind1.xnb
+Content\Sprites\Items\DanPickupDark.xnb
+Content\Sprites\Items\DanPickupEarth.xnb
+Content\Sprites\Items\DanPickupFire.xnb
+Content\Sprites\Items\DanPickupHeal.xnb
+Content\Sprites\Items\DanPickupWater.xnb
+Content\Sprites\Items\DanPickupWind.xnb
 Content\Sprites\Items\DemonArcherArrow.xnb
 Content\Sprites\Items\FireMageFire.xnb
 Content\Sprites\Items\MiniBossEnergy.xnb
@@ -47,30 +55,25 @@ Content\Sprites\MiniBoss\MiniBossKnockedDown.xnb
 Content\Sprites\MiniBoss\MiniBossTeleport1.xnb
 Content\Sprites\MiniBoss\MiniBossTeleport2.xnb
 Content\Sprites\MiniBoss\MiniBossWalking.xnb
-Content\Sprites\greenPixel.xnb
 Content\Sprites\WhitePixel.xnb
-Content\Sprites\Items\DanMagicDark.xnb
-Content\Sprites\Items\DanMagicDark1.xnb
-Content\Sprites\Items\DanMagicEarth.xnb
-Content\Sprites\Items\DanMagicLight.xnb
-Content\Sprites\Items\DanMagicLight1.xnb
-Content\Sprites\Items\DanMagicWater.xnb
-Content\Sprites\Items\DanMagicWater1.xnb
-Content\Sprites\Items\DanMagicWind.xnb
-Content\Sprites\Items\DanMagicWind1.xnb
-Content\Sprites\Items\DanHeal.xnb
-Content\Sprites\Items\DanPickupDark.xnb
-Content\Sprites\Items\DanPickupEarth.xnb
-Content\Sprites\Items\DanPickupFire.xnb
-Content\Sprites\Items\DanPickupHeal.xnb
-Content\Sprites\Items\DanPickupWater.xnb
-Content\Sprites\Items\DanPickupWind.xnb
-Content\Sprites\Imp\ImpFly.xnb
-Content\Sprites\Imp\ImpIdle.xnb
-Content\Sprites\Imp\ImpKnockedDown.xnb
+Content\tiles\CloudySky.xnb
+Content\tiles\Icons.xnb
 Content\tiles\Mountain.xnb
 Content\tiles\MountainsFront.xnb
-Content\tiles\CloudySky.xnb
 Content\tiles\StarlitSky.xnb
+Content\tiles\Tiles.xnb
+Content\XML Documents\DanAnimations.xnb
+Content\XML Documents\DanMagicAnimations.xnb
+Content\XML Documents\GoblinAnimations.xnb
+Content\XML Documents\DemonArcherAnimations.xnb
+Content\XML Documents\EnemyMagicAnimations.xnb
+Content\XML Documents\FireMageAnimations.xnb
+Content\XML Documents\MiniBossAnimations.xnb
+Content\XML Documents\Goblin.xnb
+Content\XML Documents\PickUpItemsAnimations.xnb
+Content\Levels\Level_01A.xnb
+Content\Levels\Level_01B.xnb
+Content\Levels\Level_01C.xnb
+Content\Levels\Level_01D.xnb
 Content\LightEffects.xnb
 Content\SpriteFont1.xnb

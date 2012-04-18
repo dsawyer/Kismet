@@ -1,3 +1,4 @@
+using KismetDataTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-using KismetDataTypes;
+
 
 namespace Kismet
 {
@@ -30,7 +31,7 @@ namespace Kismet
 
             // Opens the game in full screen
             //graphics.IsFullScreen = true;
-
+            //Content = new ContentManager(Services);
             Content.RootDirectory = "Content";
         }
 
@@ -58,6 +59,7 @@ namespace Kismet
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
             GV.Level = Content.Load<Level>("Levels/Level_01A");
+            
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);

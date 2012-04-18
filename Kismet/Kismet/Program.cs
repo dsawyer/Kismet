@@ -11,7 +11,6 @@ namespace Kismet
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main(string[] args)
         {
             using (Kismet game = new Kismet())

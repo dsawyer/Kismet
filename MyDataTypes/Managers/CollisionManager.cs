@@ -237,7 +237,7 @@ namespace KismetDataTypes
 
             if (vel.Y >= 32)
                 yVel = 31;
-            if (Math.Abs(vel.X) > 32)
+            if (Math.Abs(vel.X) >= 32)
             {
                 if (vel.X < 0)
                     vel.X = -31;
@@ -334,7 +334,7 @@ namespace KismetDataTypes
             }
 
 
-           
+
 
             if (vel.Y > 0)
             {
@@ -350,7 +350,7 @@ namespace KismetDataTypes
                     else if (x == rightTile && collision == Layer.Passable)
                         RightLedgeDetected = true;
 
-                }            
+                }
             }
             if (BottomCollision)
             {
@@ -359,9 +359,11 @@ namespace KismetDataTypes
                 float absDepthY = Math.Abs(depth.Y);
                 if (enemy.PreviousBottom <= tileBounds.Top)
                     yVel = vel.Y + depth.Y;
+                
                 enemy.IsOnGround = true;
 
             }
+     
 
 
             //GV.Player.IsHit = false;
@@ -385,7 +387,7 @@ namespace KismetDataTypes
                         || GV.Player.State.GetType().ToString() == "KismetDataTypes.JumpingAttackState" && GV.Player.Sprite.CurrentFrame == 2)
                     {
 
-                       //Console.WriteLine("Enemy Health " + enemy.Health);
+                        //Console.WriteLine("Enemy Health " + enemy.Health);
                         enemy.IsHit = true;
                         enemy.Damage = 10;
 
@@ -398,8 +400,8 @@ namespace KismetDataTypes
                             enemy.FaceOff = true;
                         }
                     }
-                
-                
+
+
                 }
 
 
@@ -409,7 +411,7 @@ namespace KismetDataTypes
             if (sightDepth != Vector2.Zero)
             {
                 //if (!enemy.IsHit && enemy.State.GetType().ToString() != "KismetDataTypes.KnockedDownState")
-                    enemy.CollisionDetected = true;
+                enemy.CollisionDetected = true;
             }
             float radius = GV.Player.LightRadius;
             //Vector2 PlayerPosition = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - ((float)GV.Player.Sprite.BoundingBox.Height));
@@ -420,12 +422,12 @@ namespace KismetDataTypes
             float diffx = enemyPosition.X - PlayerPosition.X;
             float diffy = enemyPosition.Y - PlayerPosition.Y;
             bool blocked = false;
-            double diffRadius = Math.Sqrt(Math.Pow((double)diffx,2) + Math.Pow((double)diffy,2));
+            double diffRadius = Math.Sqrt(Math.Pow((double)diffx, 2) + Math.Pow((double)diffy, 2));
 
             if (diffRadius <= radius)
             {
-               
-               //calculate the starting and finishing x coordinates
+
+                //calculate the starting and finishing x coordinates
                 int start = (int)PlayerPosition.X, finish = (int)PlayerPosition.X;
                 float slope = 0, b = 0;
                 if (diffx > 0 && diffy >= 0)
@@ -454,11 +456,11 @@ namespace KismetDataTypes
                     slope = diffy / diffx;
                     b = PlayerPosition.Y - (slope * PlayerPosition.X);
                 }
-               
+
                 for (int x = start; x <= finish; x++)
                 {
                     float y = slope * (float)x + b;
-                    int collision = GV.Level.GetCollision(x/Layer.TileWidth, (int)y/Layer.TileHeight);
+                    int collision = GV.Level.GetCollision(x / Layer.TileWidth, (int)y / Layer.TileHeight);
                     if (collision == Layer.Impassable)
                     {
                         blocked = true;
@@ -483,17 +485,17 @@ namespace KismetDataTypes
                         //enemy.JumpVelocity = new Vector2(-diffx, -diffy);
 
                     }
-                    
-                    if (diffy > 0 && GV.Player.IsOnGround)
-                    enemy.JumpVelocity = new Vector2(-diffx, -diffy);
 
-                  
+                    if (diffy > 0 && GV.Player.IsOnGround)
+                        enemy.JumpVelocity = new Vector2(-diffx, -diffy);
+
+
                 }
-                
+
             }
 
 
-            if (LeftLedgeDetected && enemy.IsOnGround )
+            if (LeftLedgeDetected && enemy.IsOnGround)
                 enemy.Direction = GV.RIGHT;
 
             else if (RightLedgeDetected & enemy.IsOnGround)
@@ -509,7 +511,7 @@ namespace KismetDataTypes
                 GV.Player.Damage = 1;
             }
 
-           
+
 
             if (magicItemList.Count != 0)
             {
@@ -592,7 +594,7 @@ namespace KismetDataTypes
                             if (magicItem.ItemType == "dark")
                             {
                                 enemy.State = new EnemyDyingState(enemy);
-                                
+
                             }
 
                         }
@@ -605,8 +607,8 @@ namespace KismetDataTypes
 
 
 
-                   
-                 
+
+
                 }
             }
 

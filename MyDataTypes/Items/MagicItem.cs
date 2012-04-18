@@ -72,14 +72,14 @@ namespace KismetDataTypes
                 this.state = new InAirState(this);
                 Position = GV.Player.Position;
 
-                if (p_ItemType == "light")
-                {
+               if (p_ItemType == "light")
+               {
                     light = new LightSource((int)Position.X, (int)Position.Y, (int)Position.X, (int)Position.Y, 200, 2);
                     EffectRadius = light.Radius;
                 }
                 else if (p_ItemType == "dark")
                 {
-                    EffectRadius = 500.0f;
+                    EffectRadius = 100.0f;
                 }
                 else
                     EffectRadius = 0.0f;
