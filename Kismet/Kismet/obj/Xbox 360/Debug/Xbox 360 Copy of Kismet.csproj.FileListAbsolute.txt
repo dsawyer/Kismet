@@ -1,3 +1,27 @@
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.exe.config
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.exe
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.pdb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\KismetDataTypes.dll
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\KismetDataTypes.pdb
+C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\WindowsGame1.exe
+C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\WindowsGame1.pdb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01A.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01B.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01C.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01D.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DanAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DanMagicAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\GoblinAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DemonArcherAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\FireMageAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\MiniBossAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\Goblin.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\Icons.xnb
+C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\Tiles.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\Dan\DanAttack1.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\Dan\DanHitting.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\Dan\DanIdle.xnb
@@ -57,32 +81,8 @@ C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\MiniBoss\MiniBossTele
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\MiniBoss\MiniBossWalking.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Sprites\WhitePixel.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\CloudySky.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\Icons.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\Mountain.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\MountainsFront.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\StarlitSky.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\tiles\Tiles.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DanAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DanMagicAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\GoblinAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\DemonArcherAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\EnemyMagicAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\FireMageAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\MiniBossAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\Goblin.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\XML Documents\PickUpItemsAnimations.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01A.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01B.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01C.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\Levels\Level_01D.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\LightEffects.xnb
 C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\Content\SpriteFont1.xnb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.exe.config
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.exe
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\WindowsGame1.pdb
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\KismetDataTypes.dll
-C:\Kismet\Kismet\Kismet\bin\Xbox 360\Debug\KismetDataTypes.pdb
-C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
-C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\WindowsGame1.exe
-C:\Kismet\Kismet\Kismet\obj\Xbox 360\Debug\WindowsGame1.pdb

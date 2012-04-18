@@ -272,7 +272,7 @@ namespace KismetDataTypes
 
             bool isinLight = false;
             LightSource[] lightarray = GV.Level.Lights;
-            Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 2));
+            Vector2 positionvec = new Vector2(GV.Player.Position.X, GV.Player.Position.Y - (GV.Player.Bounds.Height / 3));
 
             int min1 = 4 < MagicItemManager.lightCount ? 4 : MagicItemManager.lightCount;
             Vector2[] lightSpells = MagicItemManager.GetLightMagicArray(min1);

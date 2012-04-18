@@ -27,13 +27,13 @@
       10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 39 39 39 39 50 50 50 50 28 28 28 28 50 50 50 50 50 50 23 24 24 25 10 12
       10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 0  1  1  1  11 12
       10 12 50 50 50 50 39 39 39 39 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 10 11 11 11 11 12
-      10 12 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 3  4  4  5  50 50 10 11 11 11 11 12
-      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 23 24 24 25 50 50 10 11 11 11 11 12
-      10 12 50 50 50 50 50 50 50 50 3  4  4  5  50 50 50 50 50 50 50 50 3  4  4  5  50 50 0  1  1  2  50 50 10 11 11 11 11 12
-      10 12 50 50 50 50 50 50 50 50 23 24 24 25 50 50 50 50 50 50 50 50 23 24 24 25 50 50 10 11 11 12 50 50 10 11 11 11 11 12
-      10 12 3  4  4  4  4  4  4  5  0  1  1  2  3  4  4  4  4  4  4  5  0  1  1  2  3  5  10 11 11 12 3  5  10 11 11 11 11 12
-      10 12 23 24 24 24 24 24 24 25 10 11 11 12 23 14 14 14 14 14 14 25 10 11 11 12 23 25 10 11 11 12 23 25 10 11 11 11 11 12
-      10 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  11 11 11 11 1  1  11 11 11 11 11 12
+      10 12 50 50 50 50 28 28 28 28 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 3  4  4  4  4  5  10 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 50 23 24 24 24 24 25 10 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 3  4  4  5  50 50 50 50 50 50 50 50 3  4  4  4  4  5  0  1  1  1  1  1  11 11 11 11 11 12
+      10 12 50 50 50 50 50 50 50 50 23 24 24 25 50 50 50 50 50 50 50 50 23 24 24 24 24 25 10 11 11 11 11 11 11 11 11 11 11 12
+      10 12 3  4  4  4  4  4  4  5  0  1  1  2  3  4  4  4  4  4  4  5  0  1  1  1  1  1  11 11 11 11 11 11 11 11 11 11 11 12
+      10 12 23 24 24 24 24 24 24 25 10 11 11 12 23 14 14 14 14 14 14 25 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12
+      10 11 1  1  1  1  1  1  1  1  11 11 11 11 1  1  1  1  1  1  1  1  11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 12
       20 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22
     </GroundLayerValues>
     <SurgroundLayerTextures>
@@ -60,10 +60,10 @@
       1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
       1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
       1  1  0  0  0  0  2  2  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1 
-      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
-      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
-      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
-      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  1  1  1  1  0  0  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+      1  1  0  0  0  0  0  0  0  0  1  1  1  1  0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
       1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
@@ -75,7 +75,7 @@
     <NumWarps>0</NumWarps>
     <NumSpawners>1</NumSpawners>
     <NumTriggers>1</NumTriggers>
-    <NumLights>1</NumLights>
+    <NumLights>2</NumLights>
     <NumCheckPoints>0</NumCheckPoints>
     <NumItems>0</NumItems>
     <Warps>
@@ -99,24 +99,43 @@
         <ImageName>Tiles</ImageName>
         <ImageBounds>32 160 32 32</ImageBounds>
         <Type>spawn</Type>
-        <Triggerbox>128 0 128 736</Triggerbox>
+        <Triggerbox>0 0 1280 736</Triggerbox>
         <Target>miniboss1</Target>
       </Item>
     </Triggers>
     <Lights>
       <Item>
         <Name>Light1</Name>
-        <Position>624 150</Position>
-        <BoundingBox>624 150 32 32</BoundingBox>
+        <Position>324 150</Position>
+        <BoundingBox>324 150 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>640 166</Centre>
+        <Centre>340 166</Centre>
         <Direction>0 1</Direction>
-        <Anchor>640 116</Anchor>
-        <SwingAngle>0.999</SwingAngle>
-        <Speed>0.2</Speed>
+        <Anchor>340 116</Anchor>
+        <SwingAngle>0.85</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>1.2</Speed>
         <Attenuation>3</Attenuation>
-        <IlluminationAngle>0.98</IlluminationAngle>
+        <IlluminationAngle>0.9</IlluminationAngle>
+        <Radius>500</Radius>
+        <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
+      </Item>
+      <Item>
+        <Name>Light2</Name>
+        <Position>824 150</Position>
+        <BoundingBox>824 150 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>840 166</Centre>
+        <Direction>0 1</Direction>
+        <Anchor>840 116</Anchor>
+        <SwingAngle>0.85</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>1.0</Speed>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.9</IlluminationAngle>
         <Radius>500</Radius>
         <Brightness>2</Brightness>
         <Colour>0.5 0.5 0.5</Colour>
@@ -136,7 +155,7 @@
     <Pickups>
       
     </Pickups>
-    <AmbientLight>0.2 0.2 0.2</AmbientLight>
+    <AmbientLight>0.4 0.4 0.4</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

@@ -172,6 +172,12 @@ namespace KismetDataTypes
             }
         }
 
+        public Vector2 Centre
+        {
+            get
+            { return new Vector2(Position.X - (Sprite.BoundingBox.X), Position.Y - Sprite.BoundingBox.Y); }
+        }
+
         /// <summary>
         /// function to toggle the direction of the item
         /// </summary>
@@ -211,8 +217,6 @@ namespace KismetDataTypes
 
         }
 
-
-
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Position = Position;
@@ -223,7 +227,6 @@ namespace KismetDataTypes
             {
                 BoundingBox boundBox = new BoundingBox();
                 boundBox.Draw(spriteBatch, Bounds, Color.Green);
-
             }
         }
     }

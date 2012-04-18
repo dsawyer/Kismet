@@ -221,6 +221,11 @@ namespace KismetDataTypes
                     {
                         GV.Player.AddToInventory(pickUpItem.ItemType);
                         pickUpItem.Active = false;
+                        if (pickUpItem.ItemType == "pickupHeal")
+                        {
+                            RewardManager.AddReward("health", 100, pickUpItem.Position);
+                            GV.Player.Health += 100;
+                        }
                     }
 
                 }
@@ -341,7 +346,14 @@ namespace KismetDataTypes
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     int collision = GV.Level.GetCollision(x, bottomTile);
-                    if (collision != Layer.Passable)
+                    if (collision == Layer.Hole)
+                    {
+                        if (enemy.GetType().ToString() == "KismetDataTypes.Goblin" ||
+                            enemy.GetType().ToString() == "KismetDataTypes.FireMage" ||
+                            enemy.GetType().ToString() == "KismetDataTypes.DemonArcher")
+                        { enemy.IsAlive = false; }
+                    }
+                    else if (collision != Layer.Passable)
                     {
                         BottomCollision = true;
                     }

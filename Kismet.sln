@@ -13,11 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kismet", "Kismet\Kismet\Kis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kismet Content", "Kismet\Kismet Content\Kismet Content.contentproj", "{129EB066-15CE-4362-A8AD-0A3DD183D050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbox 360 Copy of Kismet", "Kismet\Kismet\Xbox 360 Copy of Kismet.csproj", "{7EA10278-D835-4F31-82B4-8D835F103774}"
-	ProjectSection(ProjectDependencies) = postProject
-		{3F2D4295-0B1B-49AF-AD89-1BD2D67E053D} = {3F2D4295-0B1B-49AF-AD89-1BD2D67E053D}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,22 +93,6 @@ Global
 		{129EB066-15CE-4362-A8AD-0A3DD183D050}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{129EB066-15CE-4362-A8AD-0A3DD183D050}.Release|x86.ActiveCfg = Release|x86
 		{129EB066-15CE-4362-A8AD-0A3DD183D050}.Release|Xbox 360.ActiveCfg = Release|x86
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Any CPU.ActiveCfg = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Mixed Platforms.ActiveCfg = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Mixed Platforms.Build.0 = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Mixed Platforms.Deploy.0 = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|x86.ActiveCfg = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Any CPU.ActiveCfg = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Mixed Platforms.ActiveCfg = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Mixed Platforms.Build.0 = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Mixed Platforms.Deploy.0 = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|x86.ActiveCfg = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Xbox 360.Build.0 = Release|Xbox 360
-		{7EA10278-D835-4F31-82B4-8D835F103774}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

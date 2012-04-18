@@ -60,10 +60,42 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Level Editor\Level Editor\Level Editor.csproj">
-      <Project>{D2172BCE-40AC-4E54-AC7D-965AF59E42E6}</Project>
-      <Name>Level Editor</Name>
-    </ProjectReference>
+    <Compile Include="Levels\Level_01A.xml">
+      <SubType>Designer</SubType>
+      <Name>Level_01A</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level_01B.xml">
+      <Name>Level_01B</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="Levels\Level_01C.xml">
+      <SubType>Designer</SubType>
+      <Name>Level_01C</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Levels\Level_01D.xml">
+      <Name>Level_01D</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="tiles\Icons.png">
+      <Name>Icons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="tiles\Tiles.png">
+      <Name>Tiles</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\MyDataTypes\KismetDataTypes.csproj">
       <Project>{999363E1-0FFD-49C2-890C-AE48899124E3}</Project>
       <Name>KismetDataTypes</Name>
@@ -503,6 +535,7 @@
       <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

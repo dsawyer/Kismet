@@ -75,7 +75,7 @@
     <NumWarps>1</NumWarps>
     <NumSpawners>41</NumSpawners>
     <NumTriggers>44</NumTriggers>
-    <NumLights>11</NumLights>
+    <NumLights>14</NumLights>
     <NumCheckPoints>2</NumCheckPoints>
     <NumItems>3</NumItems>
     <Warps>
@@ -192,7 +192,7 @@
       </Item>
       <Item>
         <Name>Spawn12</Name>
-        <Position>3394 224</Position>
+        <Position>3794 224</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
@@ -201,7 +201,7 @@
       </Item>
       <Item>
         <Name>Spawn13</Name>
-        <Position>3586 352</Position>
+        <Position>4096 352</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
@@ -210,7 +210,7 @@
       </Item>
       <Item>
         <Name>Spawn14</Name>
-        <Position>3394 480</Position>
+        <Position>4360 480</Position>
         <BoundingBox>100 450 32 64</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>224 0 32 64</ImageBounds>
@@ -923,6 +923,7 @@
         <Direction>0 1</Direction>
         <Anchor>416 96</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>2</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
@@ -940,6 +941,7 @@
         <Direction>0 1</Direction>
         <Anchor>1116 216</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.8</IlluminationAngle>
@@ -949,14 +951,15 @@
       </Item>
       <Item>
         <Name>Light3</Name>
-        <Position>1900 100</Position>
-        <BoundingBox>1900 100 32 32</BoundingBox>
+        <Position>1900 150</Position>
+        <BoundingBox>1900 150 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>1916 116</Centre>
+        <Centre>1916 166</Centre>
         <Direction>0 1</Direction>
-        <Anchor>1916 66</Anchor>
+        <Anchor>1916 116</Anchor>
         <SwingAngle>0.6</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1.5</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.85</IlluminationAngle>
@@ -974,6 +977,7 @@
         <Direction>0 1</Direction>
         <Anchor>2916 266</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1.2</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
@@ -991,12 +995,31 @@
         <Direction>0 1</Direction>
         <Anchor>4016 66</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1.7</Speed>
         <Attenuation>8</Attenuation>
         <IlluminationAngle>0.6</IlluminationAngle>
         <Radius>300</Radius>
         <Brightness>2</Brightness>
         <Colour>0.5 0.5 0.5</Colour>
+      </Item>
+      <Item>
+        <Name>Light5-2</Name>
+        <Position>4600 300</Position>
+        <BoundingBox>4600 300 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>4616 316</Centre>
+        <Direction>0 1</Direction>
+        <Anchor>4616 266</Anchor>
+        <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>1.3</Speed>
+        <Attenuation>8</Attenuation>
+        <IlluminationAngle>0.8</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+        <Colour>0.4 0.4 0.4</Colour>
       </Item>
       <Item>
         <Name>Light6</Name>
@@ -1008,6 +1031,7 @@
         <Direction>0 1</Direction>
         <Anchor>1344 -284</Anchor>
         <SwingAngle>0.95</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.98</IlluminationAngle>
@@ -1025,6 +1049,7 @@
         <Direction>0 1</Direction>
         <Anchor>5344 30</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
@@ -1034,18 +1059,37 @@
       </Item>
       <Item>
         <Name>Light8</Name>
-        <Position>8288 304</Position>
-        <BoundingBox>8288 304 32 32</BoundingBox>
+        <Position>7988 254</Position>
+        <BoundingBox>7988 254 32 32</BoundingBox>
         <ImageName>Tiles</ImageName>
         <ImageBounds>160 128 32 32</ImageBounds>
-        <Centre>8304 320</Centre>
+        <Centre>8004 270</Centre>
         <Direction>0 1</Direction>
-        <Anchor>8304 270</Anchor>
-        <SwingAngle>0.8</SwingAngle>
-        <Speed>0.6</Speed>
+        <Anchor>8004 220</Anchor>
+        <SwingAngle>0.7</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>0.8</Speed>
         <Attenuation>8</Attenuation>
-        <IlluminationAngle>0.6</IlluminationAngle>
-        <Radius>400</Radius>
+        <IlluminationAngle>0.8</IlluminationAngle>
+        <Radius>450</Radius>
+        <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
+      </Item>
+      <Item>
+        <Name>Light8-2</Name>
+        <Position>8588 254</Position>
+        <BoundingBox>8588 254 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>8604 270</Centre>
+        <Direction>0 1</Direction>
+        <Anchor>8604 220</Anchor>
+        <SwingAngle>0.7</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>1.2</Speed>
+        <Attenuation>8</Attenuation>
+        <IlluminationAngle>0.8</IlluminationAngle>
+        <Radius>450</Radius>
         <Brightness>2</Brightness>
         <Colour>0.5 0.5 0.5</Colour>
       </Item>
@@ -1059,6 +1103,7 @@
         <Direction>0 1</Direction>
         <Anchor>9712 334</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.7</IlluminationAngle>
@@ -1076,12 +1121,31 @@
         <Direction>0 1</Direction>
         <Anchor>11440 446</Anchor>
         <SwingAngle>0.8</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>1</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.97</IlluminationAngle>
         <Radius>200</Radius>
         <Brightness>2</Brightness>
-        <Colour>0.0 0.4 0.4</Colour>
+        <Colour>0.5 0.5 0.5</Colour>
+      </Item>
+      <Item>
+        <Name>Light10-2</Name>
+        <Position>10424 364</Position>
+        <BoundingBox>10424 364 32 32</BoundingBox>
+        <ImageName>Tiles</ImageName>
+        <ImageBounds>160 128 32 32</ImageBounds>
+        <Centre>10440 396</Centre>
+        <Direction>0 1</Direction>
+        <Anchor>10440 346</Anchor>
+        <SwingAngle>0.5</SwingAngle>
+        <SwingDirection>0</SwingDirection>
+        <Speed>1.2</Speed>
+        <Attenuation>3</Attenuation>
+        <IlluminationAngle>0.9</IlluminationAngle>
+        <Radius>300</Radius>
+        <Brightness>2</Brightness>
+        <Colour>0.5 0.5 0.5</Colour>
       </Item>
       <Item>
         <Name>Light11</Name>
@@ -1093,6 +1157,7 @@
         <Direction>0 1</Direction>
         <Anchor>6656 30</Anchor>
         <SwingAngle>0.9</SwingAngle>
+        <SwingDirection>0</SwingDirection>
         <Speed>0.7</Speed>
         <Attenuation>3</Attenuation>
         <IlluminationAngle>0.9</IlluminationAngle>
@@ -1125,7 +1190,7 @@
       <Item>
         <Name>health1</Name>
         <Type>pickupHeal</Type>
-        <Position>1412 64</Position>
+        <Position>1400 64</Position>
       </Item>
       <Item>
         <Name>health2</Name>
@@ -1138,7 +1203,7 @@
         <Position>8960 440</Position>
       </Item>
     </Pickups>
-    <AmbientLight>0.1 0.1 0.1</AmbientLight>
+    <AmbientLight>0.2 0.2 0.2</AmbientLight>
     <NumberOfSurgroundSegments>1</NumberOfSurgroundSegments>
   </Asset>
 </XnaContent>

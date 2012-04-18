@@ -78,6 +78,15 @@ namespace KismetDataTypes
         }
 
         /// <summary>
+        /// The direction the light is swinging
+        /// </summary>
+        public int SwingDirection
+        {
+            get { return swingDirection; }
+            set { swingDirection = value; }
+        }
+
+        /// <summary>
         /// The speed at which the light is swinging from side to side
         /// </summary>
         public float Speed

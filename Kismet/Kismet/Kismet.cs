@@ -58,8 +58,9 @@ namespace Kismet
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Old loading method
+
             GV.Level = Content.Load<Level>("Levels/Level_01A");
-            
+
             // New loading method
             //GV.Level = Level.Load("../../../../Kismet Content/Levels/Level01_A.xml");
             GV.Level.Initialise(Content);
@@ -72,6 +73,7 @@ namespace Kismet
             GV.LEFT = "left";
             GV.RIGHT = "right";
             GV.GRAVITY = 1.0f;
+            // Set this to true to see the hit boxes and light circles
             GV.ShowBoxes = false;
 
             GV.Player = new Player("XML Documents/DanAnimations", GV.Level.PlayerStartingPosition);
